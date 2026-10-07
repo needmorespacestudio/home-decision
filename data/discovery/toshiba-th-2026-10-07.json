@@ -1,0 +1,766 @@
+{
+  "products": [
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "อะไหล่ 5 ปี คอมเพรสเซอร์ 10 ปี; ตามหน้ารุ่น ต้องตรวจเงื่อนไขและข้อยกเว้น",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "RAS-10TKCV2G-T",
+      "outdoor_model": "RAS-10TACV2G-T",
+      "image_url": null,
+      "id": "toshiba-ras-10tkcv2g-t-ras-10tacv2g-t",
+      "brand": "Toshiba",
+      "family": "TKCV2G-T",
+      "family_id": "toshiba-tkcv2g-t",
+      "model": "RAS-10TKCV2G-T/RAS-10TACV2G-T",
+      "type": "wall",
+      "nominal_btu": 9200,
+      "feature_tags": [
+        "Self Cleaning"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning",
+        "Removable drain pan"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "raw_lowest_dba": 23,
+        "unit": "dBA",
+        "location": "unspecified on spec table",
+        "mode": "unspecified; five listed levels"
+      },
+      "electrical_raw": "200V/50Hz; phase unspecified. Not normalized to 220V.",
+      "metric_raw": {
+        "label": "EER or SEER BTU/Hr/W",
+        "value": 18.0,
+        "normalization": "unresolved; excluded from energy ranking"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "feature_tags",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty_summary": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "อะไหล่ 5 ปี คอมเพรสเซอร์ 10 ปี; ตามหน้ารุ่น ต้องตรวจเงื่อนไขและข้อยกเว้น",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "RAS-13TKCV2G-T",
+      "outdoor_model": "RAS-13TACV2G-T",
+      "image_url": null,
+      "id": "toshiba-ras-13tkcv2g-t-ras-13tacv2g-t",
+      "brand": "Toshiba",
+      "family": "TKCV2G-T",
+      "family_id": "toshiba-tkcv2g-t",
+      "model": "RAS-13TKCV2G-T/RAS-13TACV2G-T",
+      "type": "wall",
+      "nominal_btu": 12000,
+      "feature_tags": [
+        "Self Cleaning"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning",
+        "Removable drain pan"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "raw_lowest_dba": 24,
+        "unit": "dBA",
+        "location": "unspecified on spec table",
+        "mode": "unspecified; five listed levels"
+      },
+      "electrical_raw": "200V/50Hz; phase unspecified. Not normalized to 220V.",
+      "metric_raw": {
+        "label": "EER or SEER BTU/Hr/W",
+        "value": 18.0,
+        "normalization": "unresolved; excluded from energy ranking"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "feature_tags",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty_summary": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "อะไหล่ 5 ปี คอมเพรสเซอร์ 10 ปี; ตามหน้ารุ่น ต้องตรวจเงื่อนไขและข้อยกเว้น",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "RAS-16TKCV2G-T",
+      "outdoor_model": "RAS-16TACV2G-T",
+      "image_url": null,
+      "id": "toshiba-ras-16tkcv2g-t-ras-16tacv2g-t",
+      "brand": "Toshiba",
+      "family": "TKCV2G-T",
+      "family_id": "toshiba-tkcv2g-t",
+      "model": "RAS-16TKCV2G-T/RAS-16TACV2G-T",
+      "type": "wall",
+      "nominal_btu": 15000,
+      "feature_tags": [
+        "Self Cleaning"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning",
+        "Removable drain pan"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "raw_lowest_dba": 25,
+        "unit": "dBA",
+        "location": "unspecified on spec table",
+        "mode": "unspecified; five listed levels"
+      },
+      "electrical_raw": "200V/50Hz; phase unspecified. Not normalized to 220V.",
+      "metric_raw": {
+        "label": "EER or SEER BTU/Hr/W",
+        "value": 18.0,
+        "normalization": "unresolved; excluded from energy ranking"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "feature_tags",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty_summary": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "อะไหล่ 5 ปี คอมเพรสเซอร์ 10 ปี; ตามหน้ารุ่น ต้องตรวจเงื่อนไขและข้อยกเว้น",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "RAS-18TKCV2G-T",
+      "outdoor_model": "RAS-18TACV2G-T",
+      "image_url": null,
+      "id": "toshiba-ras-18tkcv2g-t-ras-18tacv2g-t",
+      "brand": "Toshiba",
+      "family": "TKCV2G-T",
+      "family_id": "toshiba-tkcv2g-t",
+      "model": "RAS-18TKCV2G-T/RAS-18TACV2G-T",
+      "type": "wall",
+      "nominal_btu": 18000,
+      "feature_tags": [
+        "Self Cleaning"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning",
+        "Removable drain pan"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "raw_lowest_dba": 25,
+        "unit": "dBA",
+        "location": "unspecified on spec table",
+        "mode": "unspecified; five listed levels"
+      },
+      "electrical_raw": "200V/50Hz; phase unspecified. Not normalized to 220V.",
+      "metric_raw": {
+        "label": "EER or SEER BTU/Hr/W",
+        "value": 18.0,
+        "normalization": "unresolved; excluded from energy ranking"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "feature_tags",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty_summary": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "อะไหล่ 5 ปี คอมเพรสเซอร์ 10 ปี; ตามหน้ารุ่น ต้องตรวจเงื่อนไขและข้อยกเว้น",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "RAS-24TKCV2G-T",
+      "outdoor_model": "RAS-24TACV2G-T",
+      "image_url": null,
+      "id": "toshiba-ras-24tkcv2g-t-ras-24tacv2g-t",
+      "brand": "Toshiba",
+      "family": "TKCV2G-T",
+      "family_id": "toshiba-tkcv2g-t",
+      "model": "RAS-24TKCV2G-T/RAS-24TACV2G-T",
+      "type": "wall",
+      "nominal_btu": 24000,
+      "feature_tags": [
+        "Self Cleaning"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning",
+        "Removable drain pan"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "raw_lowest_dba": 35,
+        "unit": "dBA",
+        "location": "unspecified on spec table",
+        "mode": "unspecified; five listed levels"
+      },
+      "electrical_raw": "200V/50Hz; phase unspecified. Not normalized to 220V.",
+      "metric_raw": {
+        "label": "EER or SEER BTU/Hr/W",
+        "value": 18.0,
+        "normalization": "unresolved; excluded from energy ranking"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "feature_tags",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty_summary": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "warranty": {
+          "source": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "5 exact pairs; 200V source and ambiguous EER/SEER withheld from normalized fields. Indoor/mode noise scope unresolved.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

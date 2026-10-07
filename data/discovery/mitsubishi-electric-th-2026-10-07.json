@@ -1,0 +1,1098 @@
+{
+  "products": [
+    {
+      "id": "mitsubishi-ka09",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA09VF",
+      "type": "wall",
+      "nominal_btu": 9212,
+      "min_btu": 2730,
+      "max_btu": 9895,
+      "seer": 18.5,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": null,
+      "warranty_summary": "Heat exchangers 3y / compressor 5y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Fast Cooling",
+        "Sleep Mode",
+        "R32"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 97,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "inverter",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "inverter": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        2.7,
+        0.8,
+        2.9
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-ka13",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA13VF",
+      "type": "wall",
+      "nominal_btu": 12283,
+      "min_btu": 3071,
+      "max_btu": 12966,
+      "seer": 18.5,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": null,
+      "warranty_summary": "Heat exchangers 3y / compressor 5y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Fast Cooling",
+        "Sleep Mode",
+        "R32"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 97,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "inverter",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "inverter": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        3.6,
+        0.9,
+        3.8
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-ka18",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA18VF",
+      "type": "wall",
+      "nominal_btu": 17742,
+      "min_btu": 4436,
+      "max_btu": 18426,
+      "seer": 18.5,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": null,
+      "warranty_summary": "Heat exchangers 3y / compressor 5y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Fast Cooling",
+        "Sleep Mode",
+        "R32"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 97,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "inverter",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "inverter": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        5.2,
+        1.3,
+        5.4
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-ka24",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA24VF",
+      "type": "wall",
+      "nominal_btu": 21154,
+      "min_btu": 5459,
+      "max_btu": 21155,
+      "seer": 18.5,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": null,
+      "warranty_summary": "Heat exchangers 3y / compressor 5y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Fast Cooling",
+        "Sleep Mode",
+        "R32"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 97,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "inverter",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "inverter": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        6.2,
+        1.6,
+        6.2
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-plysm36-1p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-SM36EA4 (1 phase)",
+      "type": "cassette",
+      "nominal_btu": 36167,
+      "min_btu": 13649,
+      "max_btu": 36169,
+      "seer": 22.28,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "Compressor 5y / heat exchangers 3y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "4-Way Cassette",
+        "Inverter",
+        "EGAT 5-star level"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 98,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        10.6,
+        4,
+        10.6
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-plysm42-1p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-SM42EA4 (1 phase)",
+      "type": "cassette",
+      "nominal_btu": 42000,
+      "min_btu": 20814,
+      "max_btu": 41969,
+      "seer": 20.6,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "Official page; warranty field needs fresh capture",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "4-Way Cassette",
+        "Inverter",
+        "EGAT 4-star level"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 95,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "refrigerant",
+        "frequency_hz",
+        "warranty",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        12.3,
+        6.1,
+        12.3
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-plym48-1p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-M48EA2 (1 phase)",
+      "type": "cassette",
+      "nominal_btu": 48109,
+      "min_btu": 23885,
+      "max_btu": 48111,
+      "seer": 15.0,
+      "phase": "1",
+      "voltage": "220V",
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "Compressor 5y / heat exchangers 3y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "4-Way Cassette",
+        "Inverter"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 98,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        14.1,
+        7,
+        14.1
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    },
+    {
+      "id": "mitsubishi-plysm48-3p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-SM48EA4 (3 phase)",
+      "type": "cassette",
+      "nominal_btu": 48000,
+      "min_btu": 23885,
+      "max_btu": 48111,
+      "seer": 19.06,
+      "phase": "3",
+      "voltage": "380V",
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": "Compressor 5y / heat exchangers 3y / parts 1y",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "4-Way Cassette",
+        "Inverter",
+        "EGAT 3-star level"
+      ],
+      "lifecycle": "current",
+      "recommendation_ready": false,
+      "data_confidence": 98,
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "warranty",
+        "refrigerant",
+        "frequency_hz",
+        "warranty_summary",
+        "lifecycle"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Exact official Thailand product page and 2026 catalogue link present, manually reviewed 2026-10-07; stock not guaranteed",
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "min_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "max_btu": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "seer": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "phase": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "voltage": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "type": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "Exact model technical table manually reviewed; min/max derived from original kW using documented conversion"
+        }
+      },
+      "verification_basis": "mixed_manual_official_review",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": 50,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown",
+      "capacity_raw_kw": [
+        14.1,
+        7,
+        14.1
+      ],
+      "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "8 inherited records preserved, independent current field re-audit pending; web fetch 403 is not a broken-source observation.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

@@ -1,0 +1,815 @@
+{
+  "products": [
+    {
+      "min_btu": 2400,
+      "max_btu": 13000,
+      "seer": 17.49,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 19,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "FTKQ12XV2S",
+      "outdoor_model": "RKQ12XV2S",
+      "image_url": null,
+      "id": "daikin-ftkq12xv2s-rkq12xv2s",
+      "brand": "Daikin",
+      "family": "MAX INVERTER KQ FTKQ-X",
+      "family_id": "daikin-max-inverter-kq-ftkq-x",
+      "model": "FTKQ12XV2S/RKQ12XV2S",
+      "type": "wall",
+      "nominal_btu": 12300,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Coanda",
+        "Drying only"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "PM2.5 filter",
+          "scope": "PM2.5 & Enzyme Blue filter; no room-performance/health claim"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Drying only"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "optional_module",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "wifi_optional": true,
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "lowest listed; precise sound metric unspecified"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "wifi",
+        "wifi_optional",
+        "noise_low_dba",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi_optional": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 3800,
+      "max_btu": 16400,
+      "seer": 17.49,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 25,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "FTKQ15XV2S",
+      "outdoor_model": "RKQ15XV2S",
+      "image_url": null,
+      "id": "daikin-ftkq15xv2s-rkq15xv2s",
+      "brand": "Daikin",
+      "family": "MAX INVERTER KQ FTKQ-X",
+      "family_id": "daikin-max-inverter-kq-ftkq-x",
+      "model": "FTKQ15XV2S/RKQ15XV2S",
+      "type": "wall",
+      "nominal_btu": 15000,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Coanda",
+        "Drying only"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "PM2.5 filter",
+          "scope": "PM2.5 & Enzyme Blue filter; no room-performance/health claim"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Drying only"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "optional_module",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "wifi_optional": true,
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "lowest listed; precise sound metric unspecified"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "wifi",
+        "wifi_optional",
+        "noise_low_dba",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi_optional": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 3800,
+      "max_btu": 18400,
+      "seer": 17.49,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 25,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "FTKQ18XV2S",
+      "outdoor_model": "RKQ18XV2S",
+      "image_url": null,
+      "id": "daikin-ftkq18xv2s-rkq18xv2s",
+      "brand": "Daikin",
+      "family": "MAX INVERTER KQ FTKQ-X",
+      "family_id": "daikin-max-inverter-kq-ftkq-x",
+      "model": "FTKQ18XV2S/RKQ18XV2S",
+      "type": "wall",
+      "nominal_btu": 18100,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Coanda",
+        "Drying only"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "PM2.5 filter",
+          "scope": "PM2.5 & Enzyme Blue filter; no room-performance/health claim"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Drying only"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "optional_module",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "wifi_optional": true,
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "lowest listed; precise sound metric unspecified"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "wifi",
+        "wifi_optional",
+        "noise_low_dba",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi_optional": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 3800,
+      "max_btu": 20800,
+      "seer": 17.49,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 27,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "FTKQ24XV2S",
+      "outdoor_model": "RKQ24XV2S",
+      "image_url": null,
+      "id": "daikin-ftkq24xv2s-rkq24xv2s",
+      "brand": "Daikin",
+      "family": "MAX INVERTER KQ FTKQ-X",
+      "family_id": "daikin-max-inverter-kq-ftkq-x",
+      "model": "FTKQ24XV2S/RKQ24XV2S",
+      "type": "wall",
+      "nominal_btu": 20500,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Coanda",
+        "Drying only"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "PM2.5 filter",
+          "scope": "PM2.5 & Enzyme Blue filter; no room-performance/health claim"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Drying only"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "optional_module",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "wifi_optional": true,
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "lowest listed; precise sound metric unspecified"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "wifi",
+        "wifi_optional",
+        "noise_low_dba",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi_optional": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.daikin.co.th/th/product/FTKQ-X",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "9K FTKQ09 remains in older PDF/shop link but absent from current variant tabs; not promoted. New cassette exact pairs not verified.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

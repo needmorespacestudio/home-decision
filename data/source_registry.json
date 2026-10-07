@@ -16,19 +16,23 @@
       "brand": "Daikin",
       "region": "TH",
       "official_catalog_urls": [
-        "https://www.daikin.co.th/"
+        "https://www.daikin.co.th/",
+        "https://www.daikin.co.th/th/product/FTKQ-X"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "9K FTKQ09 remains in older PDF/shop link but absent from current variant tabs; not promoted. New cassette exact pairs not verified."
     },
     {
       "id": "mitsubishi-electric-th",
@@ -45,35 +49,46 @@
         "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH"
       ],
       "url_scope": "inherited_product_pages_not_exhaustive",
-      "url_evidence": "Existing main catalog references",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "Eight inherited exact-model official pages independently reconfirmed with 2026 catalogue links. Additional residential 24K/30K cassette models not ingested; partial enumeration only."
     },
     {
       "id": "mitsubishi-heavy-duty-th",
       "brand": "Mitsubishi Heavy Duty",
       "region": "TH",
       "official_catalog_urls": [
-        "https://www.mitsuheavythai.com/en/products-main.php"
+        "https://www.mitsuheavythai.com/en/products-main.php",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=123",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=124",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=125",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=126",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=127"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "5 exact Yuki 2026 indoor/outdoor pairs; cassette and full denominator not audited."
     },
     {
       "id": "panasonic-th",
@@ -83,38 +98,47 @@
         "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
         "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
         "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
-        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html"
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html"
       ],
       "url_scope": "inherited_product_pages_not_exhaustive",
-      "url_evidence": "Existing main catalog references",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "Added YU28/36. NX cassette official PDF access denied; no variants promoted from snippets."
     },
     {
       "id": "carrier-th",
       "brand": "Carrier",
       "region": "TH",
       "official_catalog_urls": [
-        "https://www.toshiba-carrier.co.th/"
+        "https://www.toshiba-carrier.co.th/",
+        "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "Exact suffix specs from official 2023 PDF; current family marketed, exact suffix lifecycle unclear."
     },
     {
       "id": "samsung-th",
@@ -128,16 +152,19 @@
         "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/"
       ],
       "url_scope": "inherited_product_pages_not_exhaustive",
-      "url_evidence": "Existing main catalog references",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "5 inherited records. Search extracts mix hidden discontinued templates with buy UI; lifecycle must be checked on rendered exact page."
     },
     {
       "id": "lg-th",
@@ -150,92 +177,118 @@
         "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/"
       ],
       "url_scope": "inherited_product_pages_not_exhaustive",
-      "url_evidence": "Existing main catalog references",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "4 inherited records; new wall/cassette exact variants not audited."
     },
     {
       "id": "toshiba-th",
       "brand": "Toshiba",
       "region": "TH",
       "official_catalog_urls": [
-        "https://www.carrier.com/commercial/en/th/products/toshiba/split-type-air-conditioner/"
+        "https://www.carrier.com/commercial/en/th/products/toshiba/split-type-air-conditioner/",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "5 exact pairs; 200V source and ambiguous EER/SEER withheld from normalized fields. Indoor/mode noise scope unresolved."
     },
     {
       "id": "haier-th",
       "brand": "Haier",
       "region": "TH",
       "official_catalog_urls": [
-        "https://www.haier.com/th/air-conditioners/"
+        "https://www.haier.com/th/air-conditioners/",
+        "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+        "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+        "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+        "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "4 exact VQAC05 models; warranty, price, Wi-Fi unconfirmed."
     },
     {
       "id": "sharp-th",
       "brand": "Sharp",
       "region": "TH",
       "official_catalog_urls": [
-        "https://www.th.sharp/th/aircare/airconditioner/pci"
+        "https://www.th.sharp/th/aircare/airconditioner/pci",
+        "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "5 exact models from 2025 official PDF; current lifecycle unclear, phase not inferred."
     },
     {
       "id": "hisense-th",
       "brand": "Hisense",
       "region": "TH",
       "official_catalog_urls": [
-        "https://hisense.co.th/products/product_detail/27/"
+        "https://hisense.co.th/hisense_new/products/product_list/air",
+        "https://hisense.co.th/products/product_detail/26/"
       ],
       "url_scope": "discovery_entry_point_not_exhaustive",
-      "url_evidence": "Official website search result located 2026-10-07; scope/access not audited",
+      "url_evidence": "Partial official Thailand source discovery/review 2026-10-07; scope not exhaustive; access policy for automated adapters remains unaudited",
       "adapter": "manual_official",
       "enabled": false,
       "terms_reviewed_at": null,
       "robots_reviewed_at": null,
       "policy_status": "manual_review_required",
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "denominator_known": false,
       "automatic_promotion": false,
-      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch"
+      "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
+      "discovered_count": null,
+      "denominator_scope": null,
+      "gap": "Official TR page contains family/capacity classes and image specs but no verified exact Thai SKU extracted; no retailer SKU promoted."
     }
   ]
 }

@@ -2,44 +2,45 @@
   "schema_version": 1,
   "generated_at": "2026-10-07",
   "coverage_status": "beta/incomplete",
-  "verification_basis": "Inherited field evidence, not a new independent source audit",
+  "verification_basis": "Mixed: explicitly labelled inherited baseline and fresh manual official field review",
   "global": {
-    "records": 21,
-    "brands_ingested": 4,
-    "verified_records": 21,
-    "recommendation_ready": 21,
+    "records": 51,
+    "brands_ingested": 10,
+    "verified_records": 51,
+    "recommendation_ready": 51,
     "types": {
-      "wall": 13,
+      "wall": 43,
       "cassette": 8
     },
     "nominal_btu_min": 9000,
     "nominal_btu_max": 48109,
-    "missing_price": 16,
-    "missing_min_max": 7,
+    "missing_price": 46,
+    "missing_min_max": 18,
     "stale_specs": 0,
-    "link_health_unknown": 21,
-    "missing_phase": 9,
-    "missing_seer": 8,
-    "missing_voltage": 9,
-    "missing_wifi": 15,
-    "missing_noise_low_dba": 18,
-    "missing_warranty_summary": 12
+    "link_health_unknown": 51,
+    "missing_phase": 21,
+    "missing_seer": 15,
+    "missing_voltage": 16,
+    "missing_wifi": 31,
+    "missing_noise_low_dba": 25,
+    "missing_warranty_summary": 31
   },
   "brands": [
     {
       "brand": "Daikin",
       "official_catalog_urls": [
-        "https://www.daikin.co.th/"
+        "https://www.daikin.co.th/",
+        "https://www.daikin.co.th/th/product/FTKQ-X"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 0,
-      "verified_count": 0,
-      "recommendation_ready_count": 0,
+      "ingested_count": 4,
+      "verified_count": 4,
+      "recommendation_ready_count": 4,
       "coverage_pct": null,
-      "last_discovery_at": null,
-      "last_verified_at": null,
-      "status": "not_ingested"
+      "last_discovery_at": "2026-10-07",
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
     },
     {
       "brand": "Mitsubishi Electric",
@@ -59,24 +60,29 @@
       "verified_count": 8,
       "recommendation_ready_count": 8,
       "coverage_pct": null,
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "last_verified_at": "2026-10-07",
       "status": "beta_incomplete"
     },
     {
       "brand": "Mitsubishi Heavy Duty",
       "official_catalog_urls": [
-        "https://www.mitsuheavythai.com/en/products-main.php"
+        "https://www.mitsuheavythai.com/en/products-main.php",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=123",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=124",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=125",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=126",
+        "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=127"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 0,
-      "verified_count": 0,
-      "recommendation_ready_count": 0,
+      "ingested_count": 5,
+      "verified_count": 5,
+      "recommendation_ready_count": 5,
       "coverage_pct": null,
-      "last_discovery_at": null,
-      "last_verified_at": null,
-      "status": "not_ingested"
+      "last_discovery_at": "2026-10-07",
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
     },
     {
       "brand": "Panasonic",
@@ -84,32 +90,35 @@
         "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
         "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
         "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
-        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html"
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 4,
-      "verified_count": 4,
-      "recommendation_ready_count": 4,
+      "ingested_count": 6,
+      "verified_count": 6,
+      "recommendation_ready_count": 6,
       "coverage_pct": null,
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "last_verified_at": "2026-10-07",
       "status": "beta_incomplete"
     },
     {
       "brand": "Carrier",
       "official_catalog_urls": [
-        "https://www.toshiba-carrier.co.th/"
+        "https://www.toshiba-carrier.co.th/",
+        "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 0,
-      "verified_count": 0,
-      "recommendation_ready_count": 0,
+      "ingested_count": 5,
+      "verified_count": 5,
+      "recommendation_ready_count": 5,
       "coverage_pct": null,
-      "last_discovery_at": null,
-      "last_verified_at": null,
-      "status": "not_ingested"
+      "last_discovery_at": "2026-10-07",
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
     },
     {
       "brand": "Samsung",
@@ -126,7 +135,7 @@
       "verified_count": 5,
       "recommendation_ready_count": 5,
       "coverage_pct": null,
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "last_verified_at": "2026-10-07",
       "status": "beta_incomplete"
     },
@@ -144,59 +153,70 @@
       "verified_count": 4,
       "recommendation_ready_count": 4,
       "coverage_pct": null,
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "last_verified_at": "2026-10-07",
       "status": "beta_incomplete"
     },
     {
       "brand": "Toshiba",
       "official_catalog_urls": [
-        "https://www.carrier.com/commercial/en/th/products/toshiba/split-type-air-conditioner/"
+        "https://www.carrier.com/commercial/en/th/products/toshiba/split-type-air-conditioner/",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
+        "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 0,
-      "verified_count": 0,
-      "recommendation_ready_count": 0,
+      "ingested_count": 5,
+      "verified_count": 5,
+      "recommendation_ready_count": 5,
       "coverage_pct": null,
-      "last_discovery_at": null,
-      "last_verified_at": null,
-      "status": "not_ingested"
+      "last_discovery_at": "2026-10-07",
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
     },
     {
       "brand": "Haier",
       "official_catalog_urls": [
-        "https://www.haier.com/th/air-conditioners/"
+        "https://www.haier.com/th/air-conditioners/",
+        "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+        "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+        "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+        "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 0,
-      "verified_count": 0,
-      "recommendation_ready_count": 0,
+      "ingested_count": 4,
+      "verified_count": 4,
+      "recommendation_ready_count": 4,
       "coverage_pct": null,
-      "last_discovery_at": null,
-      "last_verified_at": null,
-      "status": "not_ingested"
+      "last_discovery_at": "2026-10-07",
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
     },
     {
       "brand": "Sharp",
       "official_catalog_urls": [
-        "https://www.th.sharp/th/aircare/airconditioner/pci"
+        "https://www.th.sharp/th/aircare/airconditioner/pci",
+        "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf"
       ],
       "discovered_count": null,
       "denominator_scope": null,
-      "ingested_count": 0,
-      "verified_count": 0,
-      "recommendation_ready_count": 0,
+      "ingested_count": 5,
+      "verified_count": 5,
+      "recommendation_ready_count": 5,
       "coverage_pct": null,
-      "last_discovery_at": null,
-      "last_verified_at": null,
-      "status": "not_ingested"
+      "last_discovery_at": "2026-10-07",
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
     },
     {
       "brand": "Hisense",
       "official_catalog_urls": [
-        "https://hisense.co.th/products/product_detail/27/"
+        "https://hisense.co.th/hisense_new/products/product_list/air",
+        "https://hisense.co.th/products/product_detail/26/"
       ],
       "discovered_count": null,
       "denominator_scope": null,
@@ -204,7 +224,7 @@
       "verified_count": 0,
       "recommendation_ready_count": 0,
       "coverage_pct": null,
-      "last_discovery_at": null,
+      "last_discovery_at": "2026-10-07",
       "last_verified_at": null,
       "status": "not_ingested"
     }

@@ -1,0 +1,347 @@
+{
+  "products": [
+    {
+      "id": "lg-iz10r",
+      "brand": "LG",
+      "model": "IZ10R",
+      "type": "wall",
+      "nominal_btu": 9200,
+      "min_btu": 1800,
+      "max_btu": 11900,
+      "seer": 18.0,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": null,
+      "warranty_summary": "Compressor 10y (per official product page)",
+      "refrigerant": "R32",
+      "feature_tags": [
+        "LG ThinQ",
+        "Dual Inverter Compressor",
+        "Auto Clean",
+        "Allergy Filter"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 93,
+      "official_source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "type",
+        "wifi",
+        "warranty",
+        "refrigerant"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "min_btu": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "max_btu": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "seer": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "wifi": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "warranty": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    },
+    {
+      "id": "lg-ihq18r",
+      "brand": "LG",
+      "model": "IHQ18R",
+      "type": "wall",
+      "nominal_btu": 17700,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": null,
+      "warranty_summary": "Compressor 10y (per official product page)",
+      "refrigerant": null,
+      "feature_tags": [
+        "LG ThinQ",
+        "Dual Inverter Compressor",
+        "PM2.5 filter",
+        "Plasmaster Ionizer"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 83,
+      "official_source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type",
+        "wifi",
+        "warranty",
+        "feature_tags"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "wifi": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "warranty": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "feature_tags": {
+          "source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    },
+    {
+      "id": "lg-ztq36gnla0",
+      "brand": "LG",
+      "model": "ZT-Q36GNLA0",
+      "type": "cassette",
+      "nominal_btu": 36200,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": null,
+      "feature_tags": [
+        "4-Way Cassette"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 76,
+      "official_source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown"
+    },
+    {
+      "id": "lg-ztq48lmla0",
+      "brand": "LG",
+      "model": "ZT-Q48LMLA0",
+      "type": "cassette",
+      "nominal_btu": 48000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": null,
+      "feature_tags": [
+        "4-Way Cassette",
+        "Dual Vane",
+        "Optional Wi-Fi",
+        "LG ThinQ"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 80,
+      "official_source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type",
+        "wifi",
+        "feature_tags"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "wifi_optional": true,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "wifi": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "feature_tags": {
+          "source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "optional_module"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "4 inherited records; new wall/cassette exact variants not audited.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

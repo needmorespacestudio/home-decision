@@ -13,7 +13,9 @@ EVENTS = {'NEW_MODEL', 'NEW_VARIANT', 'SPEC_CHANGED', 'PRICE_CHANGED',
           'MODEL_RENAMED', 'DATA_STALE'}
 SPEC_FIELDS = ('type', 'nominal_btu', 'min_btu', 'max_btu', 'seer', 'phase',
                'voltage', 'inverter', 'wifi', 'wifi_optional', 'noise_low_dba',
-               'warranty_summary', 'refrigerant', 'feature_tags', 'verified_fields')
+               'warranty_summary', 'refrigerant', 'feature_tags', 'verified_fields',
+               'lifecycle', 'eer', 'cspf', 'frequency_hz', 'air_quality_features',
+               'wifi_status', 'indoor_model', 'outdoor_model', 'noise', 'cleaning_features')
 TARGETS = ['Daikin', 'Mitsubishi Electric', 'Mitsubishi Heavy Duty', 'Panasonic',
            'Carrier', 'Samsung', 'LG', 'Toshiba', 'Haier', 'Sharp', 'Hisense']
 
@@ -50,6 +52,11 @@ def verified(p, field):
 def verified_record(p):
     return bool(p.get('official_source') and p.get('checked_at') and
                 all(verified(p, k) for k in ('model', 'type', 'nominal_btu')))
+
+
+def ready_record(p):
+    return (p.get('recommendation_ready') is True and verified_record(p)
+            and p.get('lifecycle') in ('current', 'active', 'unclear'))
 
 
 def verified_price(p):
@@ -131,13 +138,13 @@ def coverage(products, registry, today):
         by_brand.append({'brand': brand, 'official_catalog_urls': source['official_catalog_urls'],
                          'discovered_count': None, 'denominator_scope': None,
                          'ingested_count': len(group), 'verified_count': sum(verified_record(p) for p in group),
-                         'recommendation_ready_count': sum(p.get('recommendation_ready') is True for p in group),
-                         'coverage_pct': None, 'last_discovery_at': None,
+                         'recommendation_ready_count': sum(ready_record(p) for p in group),
+                         'coverage_pct': None, 'last_discovery_at': source.get('last_discovery_at'),
                          'last_verified_at': max((p['checked_at'] for p in group if p.get('checked_at')), default=None),
                          'status': 'beta_incomplete' if group else 'not_ingested'})
     metrics = {'records': len(products), 'brands_ingested': len(set(p['brand'] for p in products)),
                'verified_records': sum(verified_record(p) for p in products),
-               'recommendation_ready': sum(p.get('recommendation_ready') is True for p in products),
+               'recommendation_ready': sum(ready_record(p) for p in products),
                'types': dict(Counter(p['type'] for p in products)),
                'nominal_btu_min': min(p['nominal_btu'] for p in products),
                'nominal_btu_max': max(p['nominal_btu'] for p in products),
@@ -148,7 +155,7 @@ def coverage(products, registry, today):
     for field in ('phase', 'seer', 'voltage', 'wifi', 'noise_low_dba', 'warranty_summary'):
         metrics['missing_' + field] = sum(not verified(p, field) for p in products)
     return {'schema_version': 1, 'generated_at': today.isoformat(), 'coverage_status': 'beta/incomplete',
-            'verification_basis': 'Inherited field evidence, not a new independent source audit',
+            'verification_basis': 'Mixed: explicitly labelled inherited baseline and fresh manual official field review',
             'global': metrics, 'brands': by_brand}
 
 
@@ -156,7 +163,7 @@ def report(cov, queue):
     counts = Counter(e['type'] for e in queue['events'] if e['status'] == 'pending_review')
     lines = ['# Catalog health', '', f"Generated: {cov['generated_at']} · Beta / incomplete", '',
              'Official market denominators unknown; no market coverage percentage is asserted.',
-             'Verified means inherited identity/type/BTU evidence; it does not mean every spec is known.',
+             'Verified means field-scoped identity/type/BTU evidence; inherited and fresh review are labelled separately.',
              'Link health is untested unless an adapter supplies an explicit observation.', '', '## Metrics', '']
     lines += [f'- {k}: {v}' for k, v in cov['global'].items()]
     lines += ['', '## Review queue', ''] + [f'- {k}: {counts[k]}' for k in sorted(EVENTS)]

@@ -1,0 +1,603 @@
+{
+  "products": [
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18.7,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 27,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "haier-hsu-09vqac05",
+      "brand": "Haier",
+      "family": "Clean Cool VQAC05",
+      "family_id": "haier-clean-cool-vqac05",
+      "model": "HSU-09VQAC05",
+      "type": "wall",
+      "nominal_btu": 9200,
+      "feature_tags": [
+        "Self Cleaning",
+        "Turbo Cool"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "So",
+        "metric": "Noise"
+      },
+      "notes": [
+        "SEER hero labels BTU/h/W but lower table says W/W. Stored as SEER BTU/h/W from explicit hero; ambiguity retained. No min/max inferred from single capacity."
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "inverter",
+        "seer",
+        "refrigerant",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "noise_low_dba",
+        "feature_tags",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 17.23,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 27,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "haier-hsu-12vqac05",
+      "brand": "Haier",
+      "family": "Clean Cool VQAC05",
+      "family_id": "haier-clean-cool-vqac05",
+      "model": "HSU-12VQAC05",
+      "type": "wall",
+      "nominal_btu": 12300,
+      "feature_tags": [
+        "Self Cleaning",
+        "Turbo Cool"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "So",
+        "metric": "Noise"
+      },
+      "notes": [
+        "SEER hero labels BTU/h/W but lower table says W/W. Stored as SEER BTU/h/W from explicit hero; ambiguity retained. No min/max inferred from single capacity."
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "inverter",
+        "seer",
+        "refrigerant",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "noise_low_dba",
+        "feature_tags",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 17.27,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 30,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "haier-hsu-18vqac05",
+      "brand": "Haier",
+      "family": "Clean Cool VQAC05",
+      "family_id": "haier-clean-cool-vqac05",
+      "model": "HSU-18VQAC05",
+      "type": "wall",
+      "nominal_btu": 18000,
+      "feature_tags": [
+        "Self Cleaning",
+        "Turbo Cool"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "So",
+        "metric": "Noise"
+      },
+      "notes": [
+        "SEER hero labels BTU/h/W but lower table says W/W. Stored as SEER BTU/h/W from explicit hero; ambiguity retained. No min/max inferred from single capacity."
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "inverter",
+        "seer",
+        "refrigerant",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "noise_low_dba",
+        "feature_tags",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18.08,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 38,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "haier-hsu-24vqac05",
+      "brand": "Haier",
+      "family": "Clean Cool VQAC05",
+      "family_id": "haier-clean-cool-vqac05",
+      "model": "HSU-24VQAC05",
+      "type": "wall",
+      "nominal_btu": 24000,
+      "feature_tags": [
+        "Self Cleaning",
+        "Turbo Cool"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "So",
+        "metric": "Noise"
+      },
+      "notes": [
+        "SEER hero labels BTU/h/W but lower table says W/W. Stored as SEER BTU/h/W from explicit hero; ambiguity retained. No min/max inferred from single capacity."
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "inverter",
+        "seer",
+        "refrigerant",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "noise_low_dba",
+        "feature_tags",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "phase": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "4 exact VQAC05 models; warranty, price, Wi-Fi unconfirmed.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

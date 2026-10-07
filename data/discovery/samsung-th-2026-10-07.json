@@ -1,0 +1,577 @@
+{
+  "products": [
+    {
+      "id": "samsung-ar60h09",
+      "brand": "Samsung",
+      "model": "F-AR60H09D1DWN",
+      "type": "wall",
+      "nominal_btu": 9000,
+      "min_btu": 3000,
+      "max_btu": 12000,
+      "seer": 18.6,
+      "phase": "1",
+      "voltage": "220-240V",
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 19,
+      "warranty_summary": null,
+      "refrigerant": null,
+      "feature_tags": [
+        "WindFree",
+        "AI Auto Cooling",
+        "SmartThings",
+        "Wi-Fi",
+        "Auto Clean"
+      ],
+      "price_thb": 15990,
+      "price_source": "Samsung Thailand",
+      "price_checked_at": "2026-10-07",
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 98,
+      "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "wifi",
+        "noise_low_dba",
+        "price"
+      ],
+      "sponsored": false,
+      "price_note": "Official price checked 2026-10-07",
+      "price_url": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "min_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "max_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "seer": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "phase": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "voltage": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "wifi": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "noise_low_dba": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "price": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": "official_thailand",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    },
+    {
+      "id": "samsung-ar60h12",
+      "brand": "Samsung",
+      "model": "F-AR60H12D1DWN",
+      "type": "wall",
+      "nominal_btu": 12000,
+      "min_btu": 3000,
+      "max_btu": 13600,
+      "seer": 19.2,
+      "phase": "1",
+      "voltage": "220-240V",
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 19,
+      "warranty_summary": null,
+      "refrigerant": null,
+      "feature_tags": [
+        "WindFree",
+        "AI Auto Cooling",
+        "SmartThings",
+        "Wi-Fi",
+        "Auto Clean"
+      ],
+      "price_thb": 17990,
+      "price_source": "Samsung Thailand",
+      "price_checked_at": "2026-10-07",
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 98,
+      "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "wifi",
+        "noise_low_dba",
+        "price"
+      ],
+      "sponsored": false,
+      "price_note": "Official price checked 2026-10-07",
+      "price_url": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "min_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "max_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "seer": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "phase": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "voltage": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "wifi": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "noise_low_dba": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "price": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": "official_thailand",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    },
+    {
+      "id": "samsung-ar70f24",
+      "brand": "Samsung",
+      "model": "F-AR70F24D1BWN",
+      "type": "wall",
+      "nominal_btu": 21500,
+      "min_btu": 5000,
+      "max_btu": 26000,
+      "seer": null,
+      "phase": "1",
+      "voltage": null,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": null,
+      "feature_tags": [
+        "WindFree",
+        "AI",
+        "Wi-Fi"
+      ],
+      "price_thb": 42990,
+      "price_source": "Samsung Thailand",
+      "price_checked_at": "2026-10-07",
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 88,
+      "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "type",
+        "price"
+      ],
+      "sponsored": false,
+      "price_note": "Official price checked 2026-10-07",
+      "price_url": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "min_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "max_btu": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "price": {
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": "official_thailand",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    },
+    {
+      "id": "samsung-fac100-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC100-4W1PMD",
+      "type": "cassette",
+      "nominal_btu": 36200,
+      "min_btu": 10200,
+      "max_btu": 44400,
+      "seer": 19.2,
+      "phase": "1",
+      "voltage": "220-240V",
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 33,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "feature_tags": [
+        "WindFree",
+        "4-Way Cassette",
+        "PM1.0",
+        "Wi-Fi built-in"
+      ],
+      "price_thb": 89500,
+      "price_source": "Samsung Thailand",
+      "price_checked_at": "2026-10-07",
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 98,
+      "official_source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "wifi",
+        "noise_low_dba",
+        "price",
+        "refrigerant"
+      ],
+      "sponsored": false,
+      "price_note": "Official price checked 2026-10-07",
+      "price_url": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "min_btu": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "max_btu": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "seer": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "phase": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "voltage": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "wifi": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "noise_low_dba": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "price": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": "official_thailand",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    },
+    {
+      "id": "samsung-fac140-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC140-4W1PMD",
+      "type": "cassette",
+      "nominal_btu": 48000,
+      "min_btu": 13600,
+      "max_btu": 56300,
+      "seer": 17.7,
+      "phase": "1",
+      "voltage": "220-240V",
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "feature_tags": [
+        "WindFree",
+        "4-Way Cassette",
+        "PM1.0",
+        "Wi-Fi"
+      ],
+      "price_thb": 98000,
+      "price_source": "Samsung Thailand",
+      "price_checked_at": "2026-10-07",
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 97,
+      "official_source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "type",
+        "price",
+        "refrigerant"
+      ],
+      "sponsored": false,
+      "price_note": "Official price checked 2026-10-07",
+      "price_url": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "min_btu": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "max_btu": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "seer": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "phase": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "voltage": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "price": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": "official_thailand",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "built_in"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "5 inherited records. Search extracts mix hidden discontinued templates with buy UI; lifecycle must be checked on rendered exact page.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

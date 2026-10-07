@@ -1,0 +1,1186 @@
+{
+  "products": [
+    {
+      "min_btu": 3412,
+      "max_btu": 11942,
+      "seer": 22.73,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 19,
+      "warranty_summary": "แคตตาล็อก Yuki 2026 ระบุรับประกัน 5 ปีทุกชิ้นส่วน; ต้องตรวจเงื่อนไขลงทะเบียน/ข้อยกเว้นกับผู้จำหน่าย",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "SRK10YYS-W1",
+      "outdoor_model": "SRC10YYS-W1",
+      "image_url": null,
+      "id": "mitsubishi-heavy-duty-srk10yys-w1-src10yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "family": "Yuki YYS",
+      "family_id": "mitsubishi-heavy-duty-yuki-yys",
+      "model": "SRK10YYS-W1/SRC10YYS-W1",
+      "type": "wall",
+      "nominal_btu": 9633,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Allergy Filter",
+        "Self Clean Operation",
+        "3D Auto"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Nano Air Filter PM2.5"
+        },
+        {
+          "capability": "Activated Carbon & Anti-Allergy Filter"
+        },
+        {
+          "capability": "24 Hour ION"
+        }
+      ],
+      "comfort_features": [
+        "3D Auto airflow"
+      ],
+      "cleaning_features": [
+        "Self Clean Operation"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=123",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "built_in",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=123",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Ulo",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "warranty_summary",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "type": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=123",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "indoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "outdoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "min_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "max_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "seer": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "phase": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "voltage": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "inverter": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "noise_low_dba": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "wifi": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "feature_tags": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "air_quality_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "comfort_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "cleaning_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 4436,
+      "max_btu": 14330,
+      "seer": 22.83,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 19,
+      "warranty_summary": "แคตตาล็อก Yuki 2026 ระบุรับประกัน 5 ปีทุกชิ้นส่วน; ต้องตรวจเงื่อนไขลงทะเบียน/ข้อยกเว้นกับผู้จำหน่าย",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "SRK13YYS-W1",
+      "outdoor_model": "SRC13YYS-W1",
+      "image_url": null,
+      "id": "mitsubishi-heavy-duty-srk13yys-w1-src13yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "family": "Yuki YYS",
+      "family_id": "mitsubishi-heavy-duty-yuki-yys",
+      "model": "SRK13YYS-W1/SRC13YYS-W1",
+      "type": "wall",
+      "nominal_btu": 12406,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Allergy Filter",
+        "Self Clean Operation",
+        "3D Auto"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Nano Air Filter PM2.5"
+        },
+        {
+          "capability": "Activated Carbon & Anti-Allergy Filter"
+        },
+        {
+          "capability": "24 Hour ION"
+        }
+      ],
+      "comfort_features": [
+        "3D Auto airflow"
+      ],
+      "cleaning_features": [
+        "Self Clean Operation"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=124",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "built_in",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=124",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Ulo",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "warranty_summary",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "type": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=124",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "indoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "outdoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "min_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "max_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "seer": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "phase": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "voltage": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "inverter": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "noise_low_dba": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "wifi": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "feature_tags": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "air_quality_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "comfort_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "cleaning_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 4436,
+      "max_btu": 17742,
+      "seer": 22.96,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 23,
+      "warranty_summary": "แคตตาล็อก Yuki 2026 ระบุรับประกัน 5 ปีทุกชิ้นส่วน; ต้องตรวจเงื่อนไขลงทะเบียน/ข้อยกเว้นกับผู้จำหน่าย",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "SRK15YYS-W1",
+      "outdoor_model": "SRC15YYS-W1",
+      "image_url": null,
+      "id": "mitsubishi-heavy-duty-srk15yys-w1-src15yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "family": "Yuki YYS",
+      "family_id": "mitsubishi-heavy-duty-yuki-yys",
+      "model": "SRK15YYS-W1/SRC15YYS-W1",
+      "type": "wall",
+      "nominal_btu": 15640,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Allergy Filter",
+        "Self Clean Operation",
+        "3D Auto"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Nano Air Filter PM2.5"
+        },
+        {
+          "capability": "Activated Carbon & Anti-Allergy Filter"
+        },
+        {
+          "capability": "24 Hour ION"
+        }
+      ],
+      "comfort_features": [
+        "3D Auto airflow"
+      ],
+      "cleaning_features": [
+        "Self Clean Operation"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=125",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "built_in",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=125",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Ulo",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "warranty_summary",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "type": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=125",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "indoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "outdoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "min_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "max_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "seer": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "phase": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "voltage": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "inverter": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "noise_low_dba": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "wifi": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "feature_tags": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "air_quality_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "comfort_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "cleaning_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 4436,
+      "max_btu": 18766,
+      "seer": 21.45,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 23,
+      "warranty_summary": "แคตตาล็อก Yuki 2026 ระบุรับประกัน 5 ปีทุกชิ้นส่วน; ต้องตรวจเงื่อนไขลงทะเบียน/ข้อยกเว้นกับผู้จำหน่าย",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "SRK18YYS-W1",
+      "outdoor_model": "SRC18YYS-W1",
+      "image_url": null,
+      "id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "family": "Yuki YYS",
+      "family_id": "mitsubishi-heavy-duty-yuki-yys",
+      "model": "SRK18YYS-W1/SRC18YYS-W1",
+      "type": "wall",
+      "nominal_btu": 18244,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Allergy Filter",
+        "Self Clean Operation",
+        "3D Auto"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Nano Air Filter PM2.5"
+        },
+        {
+          "capability": "Activated Carbon & Anti-Allergy Filter"
+        },
+        {
+          "capability": "24 Hour ION"
+        }
+      ],
+      "comfort_features": [
+        "3D Auto airflow"
+      ],
+      "cleaning_features": [
+        "Self Clean Operation"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=126",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "built_in",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=126",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Ulo",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "warranty_summary",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "type": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=126",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "indoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "outdoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "min_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "max_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "seer": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "phase": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "voltage": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "inverter": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "noise_low_dba": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "wifi": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "feature_tags": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "air_quality_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "comfort_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "cleaning_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 3071,
+      "max_btu": 29343,
+      "seer": 22.66,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 23,
+      "warranty_summary": "แคตตาล็อก Yuki 2026 ระบุรับประกัน 5 ปีทุกชิ้นส่วน; ต้องตรวจเงื่อนไขลงทะเบียน/ข้อยกเว้นกับผู้จำหน่าย",
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "SRK24YYS-W1",
+      "outdoor_model": "SRC24YYS-W1",
+      "image_url": null,
+      "id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "family": "Yuki YYS",
+      "family_id": "mitsubishi-heavy-duty-yuki-yys",
+      "model": "SRK24YYS-W1/SRC24YYS-W1",
+      "type": "wall",
+      "nominal_btu": 24215,
+      "feature_tags": [
+        "PM2.5 filter",
+        "Allergy Filter",
+        "Self Clean Operation",
+        "3D Auto"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Nano Air Filter PM2.5"
+        },
+        {
+          "capability": "Activated Carbon & Anti-Allergy Filter"
+        },
+        {
+          "capability": "24 Hour ION"
+        }
+      ],
+      "comfort_features": [
+        "3D Auto airflow"
+      ],
+      "cleaning_features": [
+        "Self Clean Operation"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=127",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "built_in",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=127",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Ulo",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "warranty_summary",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features",
+        "warranty"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "type": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "nominal_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "lifecycle": {
+          "source": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=127",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "indoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "outdoor_model": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "min_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "max_btu": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "seer": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "phase": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "voltage": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "frequency_hz": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "inverter": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "refrigerant": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "noise_low_dba": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "wifi": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty_summary": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "feature_tags": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "air_quality_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "comfort_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "cleaning_features": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        },
+        "warranty": {
+          "source": "https://www.mitsuheavythai.com/backoffice/uploads/eventThumb1m120260616030732.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "5 exact Yuki 2026 indoor/outdoor pairs; cassette and full denominator not audited.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

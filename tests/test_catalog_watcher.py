@@ -36,7 +36,7 @@ class WatcherTests(unittest.TestCase):
         products = read(ROOT / 'data/aircon_catalog.json')
         self.assertEqual(products, inline_catalog())
         cov = coverage(products, read(ROOT / 'data/source_registry.json'), date(2026, 10, 7))
-        self.assertEqual(cov['global']['records'], 21)
+        self.assertEqual(cov['global']['records'], len(products))
         self.assertTrue(all(b['coverage_pct'] is None and b['discovered_count'] is None for b in cov['brands']))
 
     def test_staleness_boundary_and_idempotent_events(self):

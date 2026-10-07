@@ -2,5 +2,1358 @@
   "schema_version": 1,
   "generated_at": "2026-10-07",
   "automatic_promotion": false,
-  "events": []
+  "release_status": "awaiting_human_release",
+  "events": [
+    {
+      "event_id": "ccd1c94d0f4310b455ed",
+      "type": "SPEC_CHANGED",
+      "product_id": "panasonic-yu9zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU9ZKT/CU-YU9ZKT",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "16578e9ad3a49ed0953b",
+      "type": "SPEC_CHANGED",
+      "product_id": "panasonic-yu13zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU13ZKT/CU-YU13ZKT",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "e7eb5e2bb89cda151a59",
+      "type": "SPEC_CHANGED",
+      "product_id": "panasonic-yu18zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU18ZKT/CU-YU18ZKT",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "c663c86d940e9602fa62",
+      "type": "SPEC_CHANGED",
+      "product_id": "panasonic-yu24zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU24ZKT/CU-YU24ZKT",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "b25a1dc94f3990d2f5bc",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-ka09",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA09VF",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "64990677581d4b6c3508",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-ka13",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA13VF",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "9f4b92562f6f52cbadfd",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-ka18",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA18VF",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "3eb3df3dcb9995d1a824",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-ka24",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA24VF",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "inverter",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "452a2bd1476e910f79eb",
+      "type": "SPEC_CHANGED",
+      "product_id": "samsung-ar60h09",
+      "brand": "Samsung",
+      "model": "F-AR60H09D1DWN",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_shop_active",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "5ea5d7282b955234b2d4",
+      "type": "SPEC_CHANGED",
+      "product_id": "samsung-ar60h12",
+      "brand": "Samsung",
+      "model": "F-AR60H12D1DWN",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_shop_active",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "b46661487375e85b5746",
+      "type": "SPEC_CHANGED",
+      "product_id": "samsung-ar70f24",
+      "brand": "Samsung",
+      "model": "F-AR70F24D1BWN",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_shop_active",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "7e61988bfc9bf47ef9d7",
+      "type": "SPEC_CHANGED",
+      "product_id": "lg-iz10r",
+      "brand": "LG",
+      "model": "IZ10R",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "46effcc5b0d363373797",
+      "type": "SPEC_CHANGED",
+      "product_id": "lg-ihq18r",
+      "brand": "LG",
+      "model": "IHQ18R",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "ad74510854b6460c63d8",
+      "type": "SPEC_CHANGED",
+      "product_id": "samsung-fac100-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC100-4W1PMD",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live_notify_stock",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "b19f6ced32afdfdc2ec4",
+      "type": "SPEC_CHANGED",
+      "product_id": "samsung-fac140-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC140-4W1PMD",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live_notify_stock",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "built_in"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "e7f1ebb53e2273d52c5d",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-plysm36-1p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-SM36EA4 (1 phase)",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "87bd825bad968bb55127",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-plysm42-1p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-SM42EA4 (1 phase)",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "refrigerant",
+            "frequency_hz",
+            "warranty",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "be455603c1130b349d45",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-plym48-1p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-M48EA2 (1 phase)",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "b0e8124f19589274852b",
+      "type": "SPEC_CHANGED",
+      "product_id": "mitsubishi-plysm48-3p",
+      "brand": "Mitsubishi Electric",
+      "model": "PLY-SM48EA4 (3 phase)",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "verified_fields": {
+          "before": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "warranty",
+            "refrigerant"
+          ],
+          "after": [
+            "model",
+            "nominal_btu",
+            "min_btu",
+            "max_btu",
+            "seer",
+            "phase",
+            "voltage",
+            "type",
+            "warranty",
+            "refrigerant",
+            "frequency_hz",
+            "warranty_summary",
+            "lifecycle"
+          ]
+        },
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "current"
+        },
+        "frequency_hz": {
+          "before": null,
+          "after": 50
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "58b97e064b79918d0ee4",
+      "type": "SPEC_CHANGED",
+      "product_id": "lg-ztq36gnla0",
+      "brand": "LG",
+      "model": "ZT-Q36GNLA0",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "unknown"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "5b2a41c84ecca5e5c775",
+      "type": "SPEC_CHANGED",
+      "product_id": "lg-ztq48lmla0",
+      "brand": "LG",
+      "model": "ZT-Q48LMLA0",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "lifecycle": {
+          "before": "official_page_live",
+          "after": "unclear"
+        },
+        "air_quality_features": {
+          "before": null,
+          "after": []
+        },
+        "wifi_status": {
+          "before": null,
+          "after": "optional_module"
+        },
+        "cleaning_features": {
+          "before": null,
+          "after": []
+        }
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "6454348554da2c6e2c64",
+      "type": "NEW_MODEL",
+      "product_id": "daikin-ftkq12xv2s-rkq12xv2s",
+      "brand": "Daikin",
+      "model": "FTKQ12XV2S/RKQ12XV2S",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "135a7971943d72eb9fcc",
+      "type": "NEW_MODEL",
+      "product_id": "daikin-ftkq15xv2s-rkq15xv2s",
+      "brand": "Daikin",
+      "model": "FTKQ15XV2S/RKQ15XV2S",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "e0758d37567ee1633bda",
+      "type": "NEW_MODEL",
+      "product_id": "daikin-ftkq18xv2s-rkq18xv2s",
+      "brand": "Daikin",
+      "model": "FTKQ18XV2S/RKQ18XV2S",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "7602988a7fcf96c500f4",
+      "type": "NEW_MODEL",
+      "product_id": "daikin-ftkq24xv2s-rkq24xv2s",
+      "brand": "Daikin",
+      "model": "FTKQ24XV2S/RKQ24XV2S",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "24a572198dbb4f6c6110",
+      "type": "NEW_MODEL",
+      "product_id": "mitsubishi-heavy-duty-srk10yys-w1-src10yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "model": "SRK10YYS-W1/SRC10YYS-W1",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "c9ec846f9462673dc87c",
+      "type": "NEW_MODEL",
+      "product_id": "mitsubishi-heavy-duty-srk13yys-w1-src13yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "model": "SRK13YYS-W1/SRC13YYS-W1",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "9eba7a6053b4de6217db",
+      "type": "NEW_MODEL",
+      "product_id": "mitsubishi-heavy-duty-srk15yys-w1-src15yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "model": "SRK15YYS-W1/SRC15YYS-W1",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "6f63e41fae85b20c054f",
+      "type": "NEW_MODEL",
+      "product_id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "model": "SRK18YYS-W1/SRC18YYS-W1",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "614d8f47ddd8371ae6c6",
+      "type": "NEW_MODEL",
+      "product_id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+      "brand": "Mitsubishi Heavy Duty",
+      "model": "SRK24YYS-W1/SRC24YYS-W1",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "68a5bd41948f55d64d42",
+      "type": "NEW_MODEL",
+      "product_id": "carrier-42tvab010-w-i-38tvab010-i",
+      "brand": "Carrier",
+      "model": "42TVAB010-W-I/38TVAB010-I",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "9abd916a4ebb2d5fa955",
+      "type": "NEW_MODEL",
+      "product_id": "carrier-42tvab013-w-i-38tvab013-i",
+      "brand": "Carrier",
+      "model": "42TVAB013-W-I/38TVAB013-I",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "06bdbacdac5349e78321",
+      "type": "NEW_MODEL",
+      "product_id": "carrier-42tvab016-w-i-38tvab016-i",
+      "brand": "Carrier",
+      "model": "42TVAB016-W-I/38TVAB016-I",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "a5e0aa3de58b7adf79b6",
+      "type": "NEW_MODEL",
+      "product_id": "carrier-42tvab018-w-i-38tvab018-i",
+      "brand": "Carrier",
+      "model": "42TVAB018-W-I/38TVAB018-I",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "2c0e85576e93974f2198",
+      "type": "NEW_MODEL",
+      "product_id": "carrier-42tvab024-w-i-38tvab024-i",
+      "brand": "Carrier",
+      "model": "42TVAB024-W-I/38TVAB024-I",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "a2edd600aa47d7183037",
+      "type": "NEW_MODEL",
+      "product_id": "toshiba-ras-10tkcv2g-t-ras-10tacv2g-t",
+      "brand": "Toshiba",
+      "model": "RAS-10TKCV2G-T/RAS-10TACV2G-T",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "a2d944fb90f2951183aa",
+      "type": "NEW_MODEL",
+      "product_id": "toshiba-ras-13tkcv2g-t-ras-13tacv2g-t",
+      "brand": "Toshiba",
+      "model": "RAS-13TKCV2G-T/RAS-13TACV2G-T",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "8a0912d5e8bd03a6e144",
+      "type": "NEW_MODEL",
+      "product_id": "toshiba-ras-16tkcv2g-t-ras-16tacv2g-t",
+      "brand": "Toshiba",
+      "model": "RAS-16TKCV2G-T/RAS-16TACV2G-T",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "18887d60da09c69c90d3",
+      "type": "NEW_MODEL",
+      "product_id": "toshiba-ras-18tkcv2g-t-ras-18tacv2g-t",
+      "brand": "Toshiba",
+      "model": "RAS-18TKCV2G-T/RAS-18TACV2G-T",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "609a1ca75142da1995c5",
+      "type": "NEW_MODEL",
+      "product_id": "toshiba-ras-24tkcv2g-t-ras-24tacv2g-t",
+      "brand": "Toshiba",
+      "model": "RAS-24TKCV2G-T/RAS-24TACV2G-T",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "6f7c2e8add844e970ef9",
+      "type": "NEW_MODEL",
+      "product_id": "haier-hsu-09vqac05",
+      "brand": "Haier",
+      "model": "HSU-09VQAC05",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "5f84d9cdd016f2cc4ce2",
+      "type": "NEW_MODEL",
+      "product_id": "haier-hsu-12vqac05",
+      "brand": "Haier",
+      "model": "HSU-12VQAC05",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "ff3c023aa6301a727029",
+      "type": "NEW_MODEL",
+      "product_id": "haier-hsu-18vqac05",
+      "brand": "Haier",
+      "model": "HSU-18VQAC05",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "0607a75244c92e25a39f",
+      "type": "NEW_MODEL",
+      "product_id": "haier-hsu-24vqac05",
+      "brand": "Haier",
+      "model": "HSU-24VQAC05",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "5a65284455a3125f9ec9",
+      "type": "NEW_MODEL",
+      "product_id": "sharp-ah-xp10ymb",
+      "brand": "Sharp",
+      "model": "AH-XP10YMB",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "ff6f7849b8c58af52c74",
+      "type": "NEW_MODEL",
+      "product_id": "sharp-ah-xp13ymb",
+      "brand": "Sharp",
+      "model": "AH-XP13YMB",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "35a2ff92b17dee769f85",
+      "type": "NEW_MODEL",
+      "product_id": "sharp-ah-xp18ymb",
+      "brand": "Sharp",
+      "model": "AH-XP18YMB",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "4a1874fe06988c8b1a98",
+      "type": "NEW_MODEL",
+      "product_id": "sharp-ah-xp24ymb",
+      "brand": "Sharp",
+      "model": "AH-XP24YMB",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "20e709dcc9aaf5a4129e",
+      "type": "NEW_MODEL",
+      "product_id": "sharp-ah-xp13cpb",
+      "brand": "Sharp",
+      "model": "AH-XP13CPB",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "aab61e5a4e0e4dcd6020",
+      "type": "NEW_MODEL",
+      "product_id": "panasonic-cs-yu28zkt-cu-yu28zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU28ZKT/CU-YU28ZKT",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    },
+    {
+      "event_id": "fdde0bf2218d265acdfa",
+      "type": "NEW_MODEL",
+      "product_id": "panasonic-cs-yu36zkt-cu-yu36zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU36ZKT/CU-YU36ZKT",
+      "detected_at": "2026-10-07",
+      "status": "awaiting_human_release",
+      "detail": {
+        "stage": "discovered"
+      },
+      "auto_promoted": false,
+      "reviewer": "Codex",
+      "reviewed_at": "2026-10-07"
+    }
+  ]
 }

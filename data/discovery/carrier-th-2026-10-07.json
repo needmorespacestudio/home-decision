@@ -1,0 +1,896 @@
+{
+  "products": [
+    {
+      "min_btu": 3700,
+      "max_btu": 10900,
+      "seer": 24,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 22,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "42TVAB010-W-I",
+      "outdoor_model": "38TVAB010-I",
+      "image_url": null,
+      "id": "carrier-42tvab010-w-i-38tvab010-i",
+      "brand": "Carrier",
+      "family": "XInverter Plus TVAB-I",
+      "family_id": "carrier-xinverter-plus-tvab-i",
+      "model": "42TVAB010-W-I/38TVAB010-I",
+      "type": "wall",
+      "nominal_btu": 9200,
+      "feature_tags": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "L",
+        "metric": "sound_pressure_level"
+      },
+      "notes": [
+        "No family-wide feature claim promoted without suffix-specific evidence"
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "feature_tags"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "type": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "nominal_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "lifecycle": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "indoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "outdoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "min_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "max_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "seer": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "phase": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "voltage": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "frequency_hz": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "inverter": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "refrigerant": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "noise_low_dba": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "feature_tags": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 4700,
+      "max_btu": 13900,
+      "seer": 22.5,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 23,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "42TVAB013-W-I",
+      "outdoor_model": "38TVAB013-I",
+      "image_url": null,
+      "id": "carrier-42tvab013-w-i-38tvab013-i",
+      "brand": "Carrier",
+      "family": "XInverter Plus TVAB-I",
+      "family_id": "carrier-xinverter-plus-tvab-i",
+      "model": "42TVAB013-W-I/38TVAB013-I",
+      "type": "wall",
+      "nominal_btu": 12200,
+      "feature_tags": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "L",
+        "metric": "sound_pressure_level"
+      },
+      "notes": [
+        "No family-wide feature claim promoted without suffix-specific evidence"
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "feature_tags"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "type": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "nominal_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "lifecycle": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "indoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "outdoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "min_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "max_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "seer": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "phase": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "voltage": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "frequency_hz": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "inverter": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "refrigerant": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "noise_low_dba": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "feature_tags": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 4400,
+      "max_btu": 17000,
+      "seer": 22.5,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 32,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "42TVAB016-W-I",
+      "outdoor_model": "38TVAB016-I",
+      "image_url": null,
+      "id": "carrier-42tvab016-w-i-38tvab016-i",
+      "brand": "Carrier",
+      "family": "XInverter Plus TVAB-I",
+      "family_id": "carrier-xinverter-plus-tvab-i",
+      "model": "42TVAB016-W-I/38TVAB016-I",
+      "type": "wall",
+      "nominal_btu": 15000,
+      "feature_tags": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "L",
+        "metric": "sound_pressure_level"
+      },
+      "notes": [
+        "No family-wide feature claim promoted without suffix-specific evidence"
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "feature_tags"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "type": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "nominal_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "lifecycle": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "indoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "outdoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "min_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "max_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "seer": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "phase": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "voltage": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "frequency_hz": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "inverter": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "refrigerant": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "noise_low_dba": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "feature_tags": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 3900,
+      "max_btu": 21100,
+      "seer": 22.5,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 32,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "42TVAB018-W-I",
+      "outdoor_model": "38TVAB018-I",
+      "image_url": null,
+      "id": "carrier-42tvab018-w-i-38tvab018-i",
+      "brand": "Carrier",
+      "family": "XInverter Plus TVAB-I",
+      "family_id": "carrier-xinverter-plus-tvab-i",
+      "model": "42TVAB018-W-I/38TVAB018-I",
+      "type": "wall",
+      "nominal_btu": 18000,
+      "feature_tags": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "L",
+        "metric": "sound_pressure_level"
+      },
+      "notes": [
+        "No family-wide feature claim promoted without suffix-specific evidence"
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "feature_tags"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "type": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "nominal_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "lifecycle": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "indoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "outdoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "min_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "max_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "seer": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "phase": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "voltage": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "frequency_hz": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "inverter": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "refrigerant": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "noise_low_dba": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "feature_tags": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 4000,
+      "max_btu": 23200,
+      "seer": 20.88,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": 35,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "42TVAB024-W-I",
+      "outdoor_model": "38TVAB024-I",
+      "image_url": null,
+      "id": "carrier-42tvab024-w-i-38tvab024-i",
+      "brand": "Carrier",
+      "family": "XInverter Plus TVAB-I",
+      "family_id": "carrier-xinverter-plus-tvab-i",
+      "model": "42TVAB024-W-I/38TVAB024-I",
+      "type": "wall",
+      "nominal_btu": 20400,
+      "feature_tags": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "L",
+        "metric": "sound_pressure_level"
+      },
+      "notes": [
+        "No family-wide feature claim promoted without suffix-specific evidence"
+      ],
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "noise_low_dba",
+        "feature_tags"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "type": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "nominal_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "lifecycle": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "indoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "outdoor_model": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "min_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "max_btu": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "seer": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "phase": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "voltage": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "frequency_hz": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "inverter": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "refrigerant": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "noise_low_dba": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        },
+        "feature_tags": {
+          "source": "https://carrierthailand.com/wp-content/uploads/2023/02/XInverterPlus2023.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee",
+          "locator": "PDF page 4, white indoor variants"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "Exact suffix specs from official 2023 PDF; current family marketed, exact suffix lifecycle unclear.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

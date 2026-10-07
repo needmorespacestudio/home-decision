@@ -1,0 +1,925 @@
+{
+  "products": [
+    {
+      "min_btu": 2870,
+      "max_btu": 10600,
+      "seer": 18.8,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 21,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "AH-XP10YMB",
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "sharp-ah-xp10ymb",
+      "brand": "Sharp",
+      "family": "YMB",
+      "family_id": "sharp-ymb",
+      "model": "AH-XP10YMB",
+      "type": "wall",
+      "nominal_btu": 9000,
+      "feature_tags": [
+        "Plasmacluster",
+        "Coanda",
+        "Self Cleaning"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Plasmacluster ion generator"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unavailable",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Q",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "inverter",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "voltage",
+        "frequency_hz",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 2870,
+      "max_btu": 13650,
+      "seer": 18.22,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 22,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "AH-XP13YMB",
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "sharp-ah-xp13ymb",
+      "brand": "Sharp",
+      "family": "YMB",
+      "family_id": "sharp-ymb",
+      "model": "AH-XP13YMB",
+      "type": "wall",
+      "nominal_btu": 12000,
+      "feature_tags": [
+        "Plasmacluster",
+        "Coanda",
+        "Self Cleaning"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Plasmacluster ion generator"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unavailable",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Q",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "inverter",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "voltage",
+        "frequency_hz",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 5460,
+      "max_btu": 20130,
+      "seer": 18.97,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 24,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "AH-XP18YMB",
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "sharp-ah-xp18ymb",
+      "brand": "Sharp",
+      "family": "YMB",
+      "family_id": "sharp-ymb",
+      "model": "AH-XP18YMB",
+      "type": "wall",
+      "nominal_btu": 18000,
+      "feature_tags": [
+        "Plasmacluster",
+        "Coanda",
+        "Self Cleaning"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Plasmacluster ion generator"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unavailable",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Q",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "inverter",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "voltage",
+        "frequency_hz",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 5460,
+      "max_btu": 24220,
+      "seer": 19.36,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": false,
+      "noise_low_dba": 24,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "AH-XP24YMB",
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "sharp-ah-xp24ymb",
+      "brand": "Sharp",
+      "family": "YMB",
+      "family_id": "sharp-ymb",
+      "model": "AH-XP24YMB",
+      "type": "wall",
+      "nominal_btu": 21500,
+      "feature_tags": [
+        "Plasmacluster",
+        "Coanda",
+        "Self Cleaning"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Plasmacluster ion generator"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unavailable",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Q",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "inverter",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "voltage",
+        "frequency_hz",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": 2870,
+      "max_btu": 13600,
+      "seer": 18.02,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "wifi": true,
+      "noise_low_dba": 24,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "AH-XP13CPB",
+      "outdoor_model": null,
+      "image_url": null,
+      "id": "sharp-ah-xp13cpb",
+      "brand": "Sharp",
+      "family": "Airest CPB",
+      "family_id": "sharp-airest-cpb",
+      "model": "AH-XP13CPB",
+      "type": "wall",
+      "nominal_btu": 12000,
+      "feature_tags": [
+        "Plasmacluster",
+        "Coanda",
+        "Self Cleaning",
+        "PM2.5 filter"
+      ],
+      "air_quality_features": [
+        {
+          "capability": "Plasmacluster ion generator"
+        },
+        {
+          "capability": "PM2.5 main filter"
+        }
+      ],
+      "comfort_features": [
+        "Coanda ceiling airflow"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "lifecycle": "unclear",
+      "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "built_in",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "noise": {
+        "unit": "dBA",
+        "location": "indoor",
+        "mode": "Q",
+        "metric": "Noise Level"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "inverter",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "voltage",
+        "frequency_hz",
+        "refrigerant",
+        "noise_low_dba",
+        "wifi",
+        "feature_tags",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "min_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "max_btu": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "seer": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "voltage": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "frequency_hz": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "noise_low_dba": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "wifi": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "air_quality_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "5 exact models from 2025 official PDF; current lifecycle unclear, phase not inferred.",
+  "discovered_count": null,
+  "denominator_scope": null
+}

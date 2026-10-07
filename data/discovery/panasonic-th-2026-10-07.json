@@ -1,0 +1,617 @@
+{
+  "products": [
+    {
+      "id": "panasonic-yu9zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU9ZKT/CU-YU9ZKT",
+      "type": "wall",
+      "nominal_btu": 9080,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Avoid me",
+        "Gear Mode",
+        "i-Clean",
+        "Inverter"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 80,
+      "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type",
+        "inverter",
+        "refrigerant",
+        "feature_tags"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "inverter": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "feature_tags": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown"
+    },
+    {
+      "id": "panasonic-yu13zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU13ZKT/CU-YU13ZKT",
+      "type": "wall",
+      "nominal_btu": 12297,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Avoid me",
+        "Gear Mode",
+        "i-Clean",
+        "Inverter"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 80,
+      "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type",
+        "inverter",
+        "refrigerant",
+        "feature_tags"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "inverter": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "feature_tags": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown"
+    },
+    {
+      "id": "panasonic-yu18zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU18ZKT/CU-YU18ZKT",
+      "type": "wall",
+      "nominal_btu": 18097,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Avoid me",
+        "Gear Mode",
+        "i-Clean",
+        "Inverter"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 80,
+      "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type",
+        "inverter",
+        "refrigerant",
+        "feature_tags"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "inverter": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "feature_tags": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown"
+    },
+    {
+      "id": "panasonic-yu24zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU24ZKT/CU-YU24ZKT",
+      "type": "wall",
+      "nominal_btu": 24322,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "phase": null,
+      "voltage": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "feature_tags": [
+        "Avoid me",
+        "Gear Mode",
+        "i-Clean",
+        "Inverter"
+      ],
+      "lifecycle": "unclear",
+      "recommendation_ready": false,
+      "data_confidence": 80,
+      "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+      "checked_at": "2026-10-07",
+      "verified_fields": [
+        "model",
+        "nominal_btu",
+        "type",
+        "inverter",
+        "refrigerant",
+        "feature_tags"
+      ],
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "price_url": null,
+      "source_type": "official_thailand",
+      "lifecycle_note": "Inherited official reference; current availability not independently reconfirmed in Sprint 1",
+      "evidence": {
+        "model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "nominal_btu": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "type": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "inverter": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "refrigerant": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        },
+        "feature_tags": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "inherited_baseline_not_fresh_audit"
+        }
+      },
+      "verification_basis": "inherited_baseline",
+      "price_source_type": null,
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "frequency_hz": null,
+      "eer": null,
+      "cspf": null,
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "wifi_status": "unknown"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "CS-YU28ZKT",
+      "outdoor_model": "CU-YU28ZKT",
+      "image_url": null,
+      "id": "panasonic-cs-yu28zkt-cu-yu28zkt",
+      "brand": "Panasonic",
+      "family": "Standard Inverter YU ZKT",
+      "family_id": "panasonic-standard-inverter-yu-zkt",
+      "model": "CS-YU28ZKT/CU-YU28ZKT",
+      "type": "wall",
+      "nominal_btu": 28005,
+      "feature_tags": [
+        "Avoid me",
+        "Gear Mode",
+        "i-Clean",
+        "Inverter"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [
+        "Avoid me"
+      ],
+      "cleaning_features": [
+        "i-Clean"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "feature_tags",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    },
+    {
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": true,
+      "wifi": null,
+      "noise_low_dba": null,
+      "warranty_summary": null,
+      "refrigerant": "R32",
+      "price_thb": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_source_type": null,
+      "indoor_model": "CS-YU36ZKT",
+      "outdoor_model": "CU-YU36ZKT",
+      "image_url": null,
+      "id": "panasonic-cs-yu36zkt-cu-yu36zkt",
+      "brand": "Panasonic",
+      "family": "Standard Inverter YU ZKT",
+      "family_id": "panasonic-standard-inverter-yu-zkt",
+      "model": "CS-YU36ZKT/CU-YU36ZKT",
+      "type": "wall",
+      "nominal_btu": 36137,
+      "feature_tags": [
+        "Avoid me",
+        "Gear Mode",
+        "i-Clean",
+        "Inverter"
+      ],
+      "air_quality_features": [],
+      "comfort_features": [
+        "Avoid me"
+      ],
+      "cleaning_features": [
+        "i-Clean"
+      ],
+      "lifecycle": "current",
+      "lifecycle_note": "Listed on official Thailand product/catalog page; stock and site compatibility must be confirmed",
+      "recommendation_ready": false,
+      "data_confidence": null,
+      "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+      "checked_at": "2026-10-07",
+      "source_type": "official_thailand",
+      "verification_basis": "fresh_manual_official_review",
+      "wifi_status": "unknown",
+      "sponsored": false,
+      "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
+      "image_source_url": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+      "promotion_review": {
+        "status": "awaiting_human_release",
+        "reviewer": "Codex",
+        "reviewed_at": "2026-10-07",
+        "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "lifecycle",
+        "indoor_model",
+        "outdoor_model",
+        "inverter",
+        "refrigerant",
+        "feature_tags",
+        "comfort_features",
+        "cleaning_features"
+      ],
+      "evidence": {
+        "model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "type": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "nominal_btu": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "lifecycle": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "indoor_model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "outdoor_model": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "inverter": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "refrigerant": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "feature_tags": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "comfort_features": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        },
+        "cleaning_features": {
+          "source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
+          "checked_at": "2026-10-07",
+          "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
+        }
+      },
+      "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    }
+  ],
+  "complete_brands": [],
+  "discovery_at": "2026-10-07",
+  "region": "TH",
+  "scope": "Manual partial wall/cassette review; no exhaustive denominator",
+  "gap": "Added YU28/36. NX cassette official PDF access denied; no variants promoted from snippets.",
+  "discovered_count": null,
+  "denominator_scope": null
+}
