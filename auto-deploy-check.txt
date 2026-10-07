@@ -1,2 +1,0 @@
-Home Decision Vercel auto-deploy verification
-2026-10-07
