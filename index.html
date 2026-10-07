@@ -528,4 +528,92 @@ function showProductDetail(id,match){
      <br><button class="selectproduct" onclick="openQuoteCompare('${p.id}')">เลือกรุ่นนี้ → เทียบร้าน/Quote</button>
    </div>
    ${decisionBriefHTML(p.match_type!=="exact"?"unresolved":"available")}`;
-  
+   wiz.classList.add("hidden");home.classList.add("hidden");quote.classList.add("hidden");result.classList.remove("hidden");scrollTo(0,0);
+}
+
+function qMoney(n){return new Intl.NumberFormat("th-TH",{maximumFractionDigits:0}).format(Math.round(n||0))+" บาท"}
+function yesNoOptions(v){
+ return [["yes","มี / ยืนยัน"],["unknown","ไม่ระบุ"],["no","ไม่มี / ไม่พบ"]]
+   .map(x=>`<option value="${x[0]}" ${x[0]===v?"selected":""}>${x[1]}</option>`).join("");
+}
+function vatOptions(v){
+ return [["included","รวม VAT"],["excluded","ยังไม่รวม VAT"],["unknown","ไม่ระบุ VAT"]]
+   .map(x=>`<option value="${x[0]}" ${x[0]===v?"selected":""}>${x[1]}</option>`).join("");
+}
+
+let quickQuoteState=[];
+function newQuickQuote(name="ร้าน 1"){
+ return {
+   name,total:0,installIncluded:"unknown",written:"unknown",
+   vat:"unknown",copper:"unknown",breaker:"unknown",core:"unknown",
+   ceiling:"unknown",workWarranty:0,identity:"unknown",notes:""
+ };
+}
+function quoteYesNo(v){
+ return `<option value="unknown" ${v==="unknown"?"selected":""}>ไม่แน่ใจ</option>
+ <option value="yes" ${v==="yes"?"selected":""}>ใช่</option>
+ <option value="no" ${v==="no"?"selected":""}>ไม่ใช่</option>`;
+}
+function syncQuickQuote(i,k,v){
+ if(!quickQuoteState[i])return;
+ quickQuoteState[i][k]=(k==="total"||k==="workWarranty")?Number(v||0):v;
+}
+function quickQuoteCard(q,i){
+ return `<div class="quickQuote" data-i="${i}">
+  <div class="quickQuoteHead">
+    <b>ร้านที่ ${i+1}</b>
+    ${i>1?`<button class="outlinebtn" onclick="removeQuickQuote(${i})">ลบ</button>`:""}
+  </div>
+  <div class="quick3">
+    <div><label>ชื่อร้าน</label><input value="${q.name}" oninput="syncQuickQuote(${i},'name',this.value)"></div>
+    <div><label>ราคารวมที่ร้านบอก</label><input type="number" min="0" value="${q.total||""}" placeholder="เช่น 25900" oninput="syncQuickQuote(${i},'total',this.value)"></div>
+    <div><label>ร้านบอกว่ารวมติดตั้งแล้ว?</label><select onchange="syncQuickQuote(${i},'installIncluded',this.value)">${quoteYesNo(q.installIncluded)}</select></div>
+  </div>
+  <details class="quoteAdvanced">
+   <summary>เพิ่มรายละเอียดถ้ารู้ — ไม่จำเป็นต้องกรอก</summary>
+   <div class="q2">
+    <div><label>มีใบเสนอราคา/แชตเป็นลายลักษณ์อักษร</label><select onchange="syncQuickQuote(${i},'written',this.value)">${quoteYesNo(q.written)}</select></div>
+    <div><label>VAT รวมแล้ว</label><select onchange="syncQuickQuote(${i},'vat',this.value)">${quoteYesNo(q.vat)}</select></div>
+    <div><label>ร้านระบุเรื่องท่อ/ท่อเกิน</label><select onchange="syncQuickQuote(${i},'copper',this.value)">${quoteYesNo(q.copper)}</select></div>
+    <div><label>ร้านระบุ Breaker/งานไฟ</label><select onchange="syncQuickQuote(${i},'breaker',this.value)">${quoteYesNo(q.breaker)}</select></div>
+    <div><label>ร้านระบุค่าเจาะผนัง/Core</label><select onchange="syncQuickQuote(${i},'core',this.value)">${quoteYesNo(q.core)}</select></div>
+    <div><label>ร้านระบุงานฝ้า/เก็บงาน</label><select onchange="syncQuickQuote(${i},'ceiling',this.value)">${quoteYesNo(q.ceiling)}</select></div>
+    <div><label>Warranty งานติดตั้ง (เดือน)</label><input type="number" min="0" value="${q.workWarranty||""}" oninput="syncQuickQuote(${i},'workWarranty',this.value)"></div>
+    <div><label>ตรวจสอบชื่อ/ที่อยู่ร้านได้</label><select onchange="syncQuickQuote(${i},'identity',this.value)">${quoteYesNo(q.identity)}</select></div>
+   </div>
+   <label>หมายเหตุจากร้าน</label><textarea placeholder="ไม่ต้องกรอกก็ได้" oninput="syncQuickQuote(${i},'notes',this.value)">${q.notes||""}</textarea>
+  </details>
+  <div class="quoteResult" id="qqsum${i}"><span class="muted">กรอกเพียงราคารวมก็เริ่มเทียบได้</span></div>
+ </div>`;
+}
+function renderQuickQuotes(){
+ const el=document.getElementById("quickQuotes");
+ if(el)el.innerHTML=quickQuoteState.map(quickQuoteCard).join("");
+}
+function addQuickQuote(){
+ quickQuoteState.push(newQuickQuote("ร้าน "+(quickQuoteState.length+1)));
+ renderQuickQuotes();
+}
+function removeQuickQuote(i){
+ quickQuoteState.splice(i,1);
+ quickQuoteState.forEach((q,idx)=>{if(/^ร้าน \d+$/.test(q.name))q.name="ร้าน "+(idx+1)});
+ renderQuickQuotes(); analyzeQuickQuotes();
+}
+function quoteMissing(q){
+ const missing=[];
+ if(q.installIncluded==="unknown")missing.push("ราคานี้รวมค่าติดตั้งแล้วหรือยัง");
+ if(q.written!=="yes")missing.push("ขอใบเสนอราคา/รายละเอียดเป็นลายลักษณ์อักษร");
+ if(q.vat==="unknown")missing.push("ราคานี้รวม VAT หรือยัง");
+ if(q.copper==="unknown")missing.push("ท่อมาตรฐานรวมกี่เมตร และเกินคิดเท่าไร");
+ if(q.breaker==="unknown")missing.push("Breaker/งานไฟรวมไหม");
+ if(q.core==="unknown")missing.push("ค่าเจาะผนัง/Core รวมไหม");
+ if(q.ceiling==="unknown" && selectedProductId && PRODUCTS.find(x=>x.id===selectedProductId)?.type==="cassette")missing.push("งานเปิด/เก็บฝ้ารวมไหม");
+ if(!q.workWarranty)missing.push("รับประกันงานติดตั้งกี่เดือน");
+ if(q.identity!=="yes")missing.push("ขอชื่อกิจการ/ที่อยู่ที่ตรวจสอบได้");
+ return missing;
+}
+function quoteConfidence(q){
+ let score=15;
+ if(q.total>0)score+=20;
+ if(q.installIncluded!=="unknown")score+=10;
+ i
