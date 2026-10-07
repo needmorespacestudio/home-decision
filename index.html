@@ -826,4 +826,72 @@ ${p?`ตัวเลือกที่ระบบพบ
 5. รับประกัน Compressor / Parts / Labor อย่างไร
 6. ราคานี้รวม VAT และติดตั้งอะไรบ้าง
 7. ท่อทองแดงรวมกี่เมตร และส่วนเกินคิดเท่าไร
-8. รับประกันงานติดตั้งกี่เ
+8. รับประกันงานติดตั้งกี่เดือน
+
+Home Decision Thailand
+“ก่อนทำอะไรกับบ้าน ลองเช็กที่นี่ก่อน”`;
+}
+async function copyBrief(statusOverride){
+ const t=briefText(statusOverride);
+ try{await navigator.clipboard.writeText(t);alert("คัดลอก Decision Brief แล้ว")}
+ catch(e){prompt("คัดลอกข้อความนี้",t)}
+}
+async function shareBrief(statusOverride){
+ const t=briefText(statusOverride);
+ if(navigator.share){
+   try{await navigator.share({title:"Home Decision Brief — Aircon",text:t});return}catch(e){}
+ }
+ copyBrief(statusOverride);
+}
+function downloadBrief(statusOverride){
+ const t=briefText(statusOverride);
+ const blob=new Blob([t],{type:"text/plain;charset=utf-8"});
+ const u=URL.createObjectURL(blob);
+ const a=document.createElement("a");
+ a.href=u;a.download="home-decision-aircon-brief.txt";a.click();
+ setTimeout(()=>URL.revokeObjectURL(u),1000);
+}
+function printBrief(statusOverride){
+ const t=briefText(statusOverride).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+ const w=window.open("","_blank");
+ w.document.write(`<html><head><meta charset="utf-8"><title>Home Decision Brief</title><style>body{font-family:system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;white-space:pre-wrap;line-height:1.6;color:#161616}h1{font-size:22px}
+.quickmeta{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
+.quickmeta span{font-size:10px;color:var(--muted)}
+.advancedBtn{border:1px dashed #bbb;background:#fff;border-radius:11px;padding:9px 10px;font-size:11px;font-weight:800;cursor:pointer}
+.assumption{background:#f7f7f4;border-radius:12px;padding:11px;margin-top:10px;font-size:11px;line-height:1.5;color:var(--muted)}
+.advgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.advgrid label{display:block;font-size:10px;font-weight:800;margin-bottom:4px}
+.advgrid input,.advgrid select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff}
+@media(max-width:600px){.advgrid{grid-template-columns:1fr}}
+
+.modegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.modecard{border:1px solid var(--line);background:#fff;border-radius:17px;padding:16px;text-align:left;cursor:pointer}
+.modecard b{display:block;font-size:16px;margin-bottom:5px}
+.modecard small{color:var(--muted);line-height:1.45}
+.modecard.recommended{border:2px solid #111}
+.modebadge{display:inline-block;font-size:9px;font-weight:900;background:#111;color:#fff;border-radius:99px;padding:4px 6px;margin-bottom:8px}
+.modeSwitch{display:flex;gap:7px;flex-wrap:wrap;margin:7px 0 10px}
+.modeSwitch button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 9px;font-size:10px;font-weight:800;cursor:pointer}
+.modeSwitch button.on{background:#111;color:#fff;border-color:#111}
+@media(max-width:600px){.modegrid{grid-template-columns:1fr}}
+
+.quoteHero{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.quoteChoice{border:1px solid var(--line);background:#fff;border-radius:16px;padding:15px;text-align:left}
+.quoteChoice b{display:block;font-size:15px;margin-bottom:5px}.quoteChoice small{color:var(--muted);line-height:1.45}
+.quickQuotes{display:grid;gap:10px}.quickQuote{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px}
+.quickQuoteHead{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.quickQuote input,.quickQuote select,.quickQuote textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.quickQuote label{display:block;font-size:10px;font-weight:850;margin:8px 0 4px}
+.quick3{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:7px}
+.quoteResult{background:#f7f7f4;border-radius:13px;padding:11px;margin-top:10px}
+.quoteRisk{font-size:11px;color:var(--muted);line-height:1.55;margin-top:7px}
+details.quoteAdvanced{margin-top:10px;border-top:1px dashed var(--line);padding-top:9px}
+details.quoteAdvanced summary{cursor:pointer;font-size:11px;font-weight:850}
+.uploadbox{border:1px dashed #aaa;border-radius:14px;padding:14px;margin-top:9px;background:#fafaf7}
+.uploadbox input{width:100%}
+.copybox{background:#111;color:#fff;border-radius:15px;padding:14px;margin-top:10px}
+.copybox p{color:#ddd;font-size:12px;line-height:1.5}
+@media(max-width:700px){.quoteHero,.quick3{grid-template-columns:1fr}}
+
+.trustgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.truststat{background:#f7f7f4;border-radius:12px;padding:10px}.truststat b{display:block;font-size:17px}.truststat span{font-size:10px;color:var(--muted)}.trustflow{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}.trustflow span{font-size:10px;border:1px solid var(--line);background:#fff;border-radius:99px;padding:5px 7px}.coveragewarn{background:#fff2d1;border-radius:12px;padding:10px;font-size:11px;line-height:1.55}.trustdetails summary{cursor:pointer;font-size:11px;font-weight:850}.trustdetails{margin-top:10px}.installHelp{font-size:10px;color:var(--muted)}
+@media(max-width:600px){.trustgrid{grid-templ
