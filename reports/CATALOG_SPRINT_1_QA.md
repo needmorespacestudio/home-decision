@@ -84,7 +84,7 @@ No discontinued recommendation is allowed by runtime tests. No stale assertions 
 
 ## Validation
 
-42 representative recommendation/regression cases, 7 PWA cases and 10 Python integrity/watcher tests pass. Exact mirror check passes. Zero duplicate exact variants. All published nominal/range/SEER units are bounded; manufacturer rounded BTU vs converted kW endpoints allow <1% rounding only. No contradictory verified 1-phase/380V record. All 9 watcher event categories are covered by tests; absent products in partial snapshots are never marked discontinued.
+43 representative recommendation/regression cases, 7 PWA cases and 10 Python integrity/watcher tests pass. Exact mirror check passes. Zero duplicate exact variants. All published nominal/range/SEER units are bounded; manufacturer rounded BTU vs converted kW endpoints allow <1% rounding only. No contradictory verified 1-phase/380V record. All 9 watcher event categories are covered by tests; absent products in partial snapshots are never marked discontinued.
 
 Browser and release checks are recorded separately in BROWSER_VALIDATION.md; automated checks do not prove a completed live deployment.
 

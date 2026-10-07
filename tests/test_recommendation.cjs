@@ -49,6 +49,7 @@ test('Sponsor grants no score',`priorityScore(PRODUCTS[0])===priorityScore({...P
 test('Inventory insertion order cannot bias ties',`(()=>{let x=rankCandidates(load()).map(p=>p.id).join();PRODUCTS.reverse();let y=rankCandidates(load()).map(p=>p.id).join();PRODUCTS.reverse();return x===y})()`);
 test('Reasons stay within 2–4',`(()=>{let p=rankCandidates(load())[0];return productReasons(p).length>=2&&productReasons(p).length<=4})()`);
 test('Unknown specs visible in progressive disclosure',`productSpecsHTML(PRODUCTS[0]).includes('ยังไม่มีข้อมูลยืนยัน')`);
+test('Unverified inherited Wi-Fi never displayed as built-in',`!productSpecsHTML({verified_fields:[],wifi:true,wifi_status:'built_in'}).includes('Wi-Fi</b>: มีในตัว')`);
 test('Result renders budget and brief',`(()=>{finish();return result.innerHTML.includes('Decision Brief')&&result.innerHTML.includes('budgetReality')})()`);
 test('Product detail retains source and quote actions',`(()=>{showProductDetail(lastTop[0].id);return result.innerHTML.includes('ใช้รุ่นนี้ไปถามราคา')&&result.innerHTML.includes('สเปกและข้อมูล')})()`);
 console.log(count+' recommendation/regression cases passed');

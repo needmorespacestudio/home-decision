@@ -252,7 +252,7 @@
       "phase": "1",
       "voltage": null,
       "inverter": true,
-      "wifi": true,
+      "wifi": null,
       "noise_low_dba": null,
       "warranty_summary": null,
       "refrigerant": null,
@@ -326,7 +326,8 @@
       "air_quality_features": [],
       "comfort_features": [],
       "cleaning_features": [],
-      "wifi_status": "built_in"
+      "wifi_status": "unknown",
+      "unverified_inherited_wifi": true
     },
     {
       "id": "samsung-fac100-4w1pmd",

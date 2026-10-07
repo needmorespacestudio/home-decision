@@ -257,7 +257,7 @@
     "Hisense": "Official TR page contains family/capacity classes and image specs but no verified exact Thai SKU extracted; no retailer SKU promoted."
   },
   "tests": {
-    "recommendation_cases": 42,
+    "recommendation_cases": 43,
     "python_tests": 10,
     "pwa_cases": 7,
     "automated_status": "passed",
