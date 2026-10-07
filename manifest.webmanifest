@@ -1,0 +1,19 @@
+{
+  "name": "Home Decision Thailand",
+  "short_name": "Home Decision",
+  "description": "ก่อนทำอะไรกับบ้าน ลองเช็กที่นี่ก่อน",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f6f3",
+  "theme_color": "#151515",
+  "lang": "th",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
