@@ -40,6 +40,15 @@ Privacy-safe analytics uses vendor-free `trackHD` and the `home-decision` browse
 
 Air quality: never invent PM2.5, filtration or purification capability. Claims need a verified structured field, source, checked date and scope; verified feature tags count as structured evidence only for the exact named capability. Auto-clean, inverter, brand reputation and generic marketing do not imply purification. Filters are not verified room-performance or health outcomes.
 
+
+## Cooling Load Engine V2 validation gate
+
+Cooling Load V2 is an engineering-informed **shadow model** used to validate the production sizing layer before promotion. It separates opaque-envelope, roof, glazing/solar, infiltration sensible, infiltration latent/moisture, occupants and internal gains; emits sensible/latent totals, uncertainty, unresolved inputs, risk flags and a qualitative confidence level. It must not be described as Manual J, ASHRAE-compliant software, or an exact engineering calculation.
+
+Quick Flow stays simple. Extra glazing, top-floor/roof and openness questions appear only for higher-risk rooms where they materially reduce uncertainty; “ไม่แน่ใจ” remains valid. Unknown inputs widen uncertainty instead of becoming invented facts. Low confidence or material disagreement between the legacy estimator and V2 forces site-check language.
+
+Until expert calibration is complete, the existing estimator remains the production sizing source of truth. V2 runs in shadow, may widen the production range conservatively, and is visible only as progressive-disclosure evidence. Promotion to primary requires representative Thai residential expert review, comparison with accepted professional load calculations/software, documented error bounds/failure modes, regression coverage and an explicit Decision Log entry. Multi-zone promotion requires zone-specific loads rather than area-only 50:50/60:40 allocation.
+
 ## Budget
 
 Modes: no budget, best value, suggested ceiling, custom ceiling. Present market context for compatible products before asking for an amount. No min-max slider. Budget Reality Check: suitable / tight / below-market; explain how much to add and the verified benefit gained. Unknown prices remain unknown, never zero. Current verified prices are unit-price-only; do not imply installation totals unless verified. A ceiling may distinguish compatible choices but cannot admit unsafe/incompatible products. A sparse price sample is not a market-wide price estimate.
@@ -108,4 +117,5 @@ Not a marketplace pretending to be independent; not a full HVAC engineering tool
 | 2026-10-07 | User-supplied 362-entry PDF is Tier C discovery/enrichment; field-level tiers A/B/C govern promotion | Breadth must not imply verification; preserve unknowns, conflicts, lifecycle and price scope | Any assumption that importing a report certifies recommendations |
 | 2026-10-07 | Exclude unclear lifecycle and Tier C from recommendations; fresh scoped price samples only | Keep legacy uncertain records and price history without promoting unknowns; two fresh exact-model Batch A additions | Unclear lifecycle was allowed; dated price presence alone qualified as budget sample |
 
+| 2026-10-07 | Add Cooling Load V2 as a component-based shadow model with adaptive uncertainty questions | Improve sizing rigor without replacing a validated production method or adding false precision; expert calibration remains a hard promotion gate | Single heuristic estimator had no independent component cross-check or explicit load-confidence model |
 | 2026-10-07 | Sprint A expands vendor-free allowlisted analytics, memory-only aggregates and optional result feedback | Validate funnel/action usefulness without private answers or persistent tracking; other text remains DOM-only; HVAC and real-user gates pending | Setup-only event foundation; no beta measurement contract |
