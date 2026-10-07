@@ -25,6 +25,11 @@ class IngestionTests(unittest.TestCase):
   self.p['identity_status']='exact_code_reported';labels,ids=reconcile(self.p,[{'id':'other','brand':self.p['brand'],'model':self.p['model']+'B'}]);self.assertEqual(ids,[])
  def test_separate_mitsubishi_brands(self):
   self.p['identity_status']='exact_code_reported';self.p['brand']='Mitsubishi Electric';_,ids=reconcile(self.p,[{'id':'other','brand':'Mitsubishi Heavy Duty','model':self.p['model']}]);self.assertEqual(ids,[])
+ def test_case_and_whitespace_aliases(self):
+  for a,b in [('lg','LG'),('SAMSUNG','Samsung'),('COMFEE','Comfee'),('Mitsubishi  Heavy Duty','Mitsubishi Heavy Duty'),('แอลจี','LG')]:
+   with self.subTest(a=a):self.assertEqual(brand_alias(a),b)
+ def test_ambiguous_mitsubishi_not_assigned(self):
+  self.assertEqual(brand_alias('Mitsubishi'),'Mitsubishi');self.assertEqual(brand_alias('มิตซูบิชิ'),'มิตซูบิชิ')
  def test_historical_extracted(self):
   ps=read(ROOT/'data/imports/aircon_thailand_2026_v2_normalized.json')['products'];self.assertEqual(sum(p['lifecycle']=='historical' for p in ps),35)
  def test_bundle_unready(self):
@@ -39,6 +44,12 @@ class IngestionTests(unittest.TestCase):
  def test_ready_official_values_match(self):
   for p in read(ROOT/'data/discovery/batch_a_verification.json')['products']:
    if p.get('promotion_candidate'):self.assertEqual(promotion_errors(p,date(2026,10,7)),[])
+ def test_receipts_match_stored_values(self):
+  for path in ('data/discovery/batch_a_verification.json','data/aircon_catalog.json'):
+   d=read(ROOT/path)
+   for p in d if isinstance(d,list) else d['products']:
+    for f,e in p.get('evidence',{}).items():
+     if 'value' in e:self.assertEqual(e['value'],p.get(f),(p['id'],f))
  def test_gate_rejects_tier_c_even_if_marked_ready(self):
   self.p['recommendation_ready']=True;self.assertTrue(promotion_errors(self.p,date(2026,10,7)))
  def test_tier_c_with_copied_official_receipts_still_rejected(self):

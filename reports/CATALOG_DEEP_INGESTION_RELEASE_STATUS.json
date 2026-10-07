@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-07",
+  "application_commit": "73711a75322bd5dcb5da85188a0b7cf1f71d6b01",
+  "production_url": "https://home-decision-eight.vercel.app",
+  "project_id": "prj_eBJq4YuuGiqSueFCmJAN06jhvY8F",
+  "deployment_id": "dpl_84VvCbkFPoDvvXs3bWiD5PxC4eDq",
+  "project_api_ready_state": "READY",
+  "target": "production",
+  "github_vercel_status": "success",
+  "initial_live_script_sha256": "f3f69a9c884b675efa039074a20cf9edc897a6f4a72fbeb7a41602faa3e68d6f",
+  "initial_live_script_matched": true,
+  "local_checks": {
+    "catalog_python": 56,
+    "configuration": 62,
+    "recommendation": 53,
+    "pwa": 7,
+    "browser": 65
+  },
+  "live_browser_checked": [
+    "Quick at 390px",
+    "Special Needs / Top3",
+    "new Samsung shortlist/detail/official link",
+    "unknown price budget",
+    "Quote manual fallback",
+    "Decision Brief",
+    "Detailed 50m2 open-plan and four adaptive questions",
+    "two-zone result",
+    "alternative comparison and selection",
+    "1440px centered mobile-width content without overflow",
+    "console error log empty"
+  ],
+  "limits": [
+    "Terminal Production browser runner denied external network; supported in-app browser used instead",
+    "Scoped deployment-list API returned 403; exact project API independently returned Production READY",
+    "Live offline navigation not simulated by the in-app browser; local real-browser offline/cache tests passed"
+  ],
+  "followup": "Final evidence receipt cleanup and release documentation commit pending; final delivery report records its READY and source match"
+}

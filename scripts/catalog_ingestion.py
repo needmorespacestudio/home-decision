@@ -8,9 +8,13 @@ from catalog_watcher import ROOT, read, write
 FIELDS = ['model','family','inverter','nominal_btu','seer','energy_label','wifi_indicator','pm25_indicator','compressor_warranty_years','price_value','source_note']
 ALIASES = {'ไดกิ้น':'Daikin','มิตซูบิชิ อีเล็คทริค':'Mitsubishi Electric','mitsubishi electric':'Mitsubishi Electric','mitsubishi heavy duty':'Mitsubishi Heavy Duty','mhi':'Mitsubishi Heavy Duty','พานาโซนิค':'Panasonic','แคเรียร์':'Carrier','โตชิบา':'Toshiba','ชาร์ป':'Sharp','ไฮเออร์':'Haier','ไฮเซนส์':'Hisense','ซัยโจ เด็นกิ':'Saijo Denki','xiaomi mijia':'Xiaomi','xiaomi':'Xiaomi','star aire':'Star Aire','shinflow':'Shinflow'}
 MAJOR = {'Daikin','Mitsubishi Electric','Mitsubishi Heavy Duty','Carrier','Panasonic','Samsung','LG','Sharp','Toshiba','Haier'}
+CANONICAL_BRANDS = ['Daikin','Mitsubishi Electric','Mitsubishi Heavy Duty','Carrier','Panasonic','Samsung','LG','Sharp','Toshiba','Hitachi','Haier','TCL','Hisense','Midea','AUX','Electrolux','Gree','Comfee','Saijo Denki','Star Aire','Shinflow','KUKU','Xiaomi']
+ALIASES.update({b.casefold():b for b in CANONICAL_BRANDS})
+ALIASES.update({'แอลจี':'LG','ซัมซุง':'Samsung','ฮิตาชิ':'Hitachi','ทีซีแอล':'TCL','ไมเดีย':'Midea','อีเลคโทรลักซ์':'Electrolux','กรี':'Gree','คอมฟี่':'Comfee','เสี่ยวหมี่':'Xiaomi','mitsubishi heavy industries':'Mitsubishi Heavy Duty'})
 
 def brand_alias(value):
-    return ALIASES.get(value.strip().casefold(),value.strip())
+    value = ' '.join(value.split())
+    return ALIASES.get(value.casefold(),value)
 
 def model_key(value):
     value = unicodedata.normalize('NFKC',value or '').upper().strip()
@@ -149,7 +153,8 @@ def main():
         return str(k) if abs(p['nominal_btu']-k)<=k*.12 else 'other'
     metrics['reported_btu_buckets']=dict(Counter(bucket(p) for p in products))
     metrics['review_queue']={'events':len(merged),'pending_priorities':dict(Counter(str(e.get('priority','legacy')) for e in merged if e.get('status')=='pending_review'))}
-    metrics['deployment_status']='prepared_not_published'
+    metrics['deployment_status']='see_dated_release_status_report'
+    metrics['release_status_report']='reports/CATALOG_DEEP_INGESTION_RELEASE_STATUS.json'
     write(ROOT/'reports/catalog_ingestion_health.json',metrics)
     print(json.dumps(metrics,ensure_ascii=False))
 

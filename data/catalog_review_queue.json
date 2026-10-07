@@ -46278,6 +46278,613 @@
       "reviewer": "Codex manual browser field review",
       "resolved_at": "2026-10-07",
       "resolution": "Exact selected model has visible enabled purchase link in rendered official Thailand page; stock and price remain unknown."
+    },
+    {
+      "event_id": "e605e5f01aead4b877a3",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "carrier-42tveb010",
+      "brand": "Carrier",
+      "model": "42TVEB010",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://carrierthailand.com/copper-ion/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "8b5efeb9db2bf89484b3",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "carrier-42tveb013",
+      "brand": "Carrier",
+      "model": "42TVEB013",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://carrierthailand.com/copper-ion/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "18b8ca68d139be12e78b",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "carrier-42tveb016",
+      "brand": "Carrier",
+      "model": "42TVEB016",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://carrierthailand.com/copper-ion/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "8314c4796ea18abfb39f",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "carrier-42tveb018",
+      "brand": "Carrier",
+      "model": "42TVEB018",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://carrierthailand.com/copper-ion/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "049049d767addd21822b",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "carrier-42tveb022",
+      "brand": "Carrier",
+      "model": "42TVEB022",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://carrierthailand.com/copper-ion/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "4b339538607abd79d9b1",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "carrier-42tveb026",
+      "brand": "Carrier",
+      "model": "42TVEB026",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://carrierthailand.com/copper-ion/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "ca9b82ad2c5f0a4c5341",
+      "type": "POSSIBLE_DISCONTINUED",
+      "product_id": "electrolux-esv127c1sa",
+      "brand": "Electrolux",
+      "model": "ESV127C1SA",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+        "official_claim": "หยุดการผลิต",
+        "note": "Official Thailand page explicitly says หยุดการผลิต; report price retained as historical only."
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "d960490a73e948c43381",
+      "type": "ELECTRICAL_UNVERIFIED",
+      "product_id": "electrolux-esv127c1sa",
+      "brand": "Electrolux",
+      "model": "ESV127C1SA",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+        "missing_fields": [
+          "phase",
+          "voltage",
+          "frequency_hz"
+        ]
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "a17611f608c0865d6e76",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "panasonic-yu9zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU9ZKT/CU-YU9ZKT",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "2cf8ee72f3fe25f042ff",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "panasonic-yu13zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU13ZKT/CU-YU13ZKT",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "dc7f9622bff77294d7f1",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "panasonic-yu18zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU18ZKT/CU-YU18ZKT",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "fa28a2debc602dd65b17",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "panasonic-yu24zkt",
+      "brand": "Panasonic",
+      "model": "CS-YU24ZKT/CU-YU24ZKT",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "745fcc9f50155965e886",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "samsung-ar60h09",
+      "brand": "Samsung",
+      "model": "F-AR60H09D1DWN",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "2e741868e3f838315372",
+      "type": "PRICE_REFRESH_REQUIRED",
+      "product_id": "samsung-ar60h09",
+      "brand": "Samsung",
+      "model": "F-AR60H09D1DWN",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "price_scope": "unclear",
+        "reason": "Inherited observation does not qualify as fresh comparable unit-price sample"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "e8891bae34b0373c1440",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "samsung-ar60h12",
+      "brand": "Samsung",
+      "model": "F-AR60H12D1DWN",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "9dc193d0292c6de517e8",
+      "type": "PRICE_REFRESH_REQUIRED",
+      "product_id": "samsung-ar60h12",
+      "brand": "Samsung",
+      "model": "F-AR60H12D1DWN",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "price_scope": "unclear",
+        "reason": "Inherited observation does not qualify as fresh comparable unit-price sample"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "d399864bde0229868fd1",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "samsung-ar70f24",
+      "brand": "Samsung",
+      "model": "F-AR70F24D1BWN",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "b49ad4b4d9c460646a71",
+      "type": "PRICE_REFRESH_REQUIRED",
+      "product_id": "samsung-ar70f24",
+      "brand": "Samsung",
+      "model": "F-AR70F24D1BWN",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "price_scope": "unclear",
+        "reason": "Inherited observation does not qualify as fresh comparable unit-price sample"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "08850c87cae3a5f097f3",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "lg-iz10r",
+      "brand": "LG",
+      "model": "IZ10R",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "3cd5e64c1dd973500c99",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "lg-ihq18r",
+      "brand": "LG",
+      "model": "IHQ18R",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "a4d128673dd0be12306e",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "samsung-fac100-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC100-4W1PMD",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "d425565db587b5379c64",
+      "type": "PRICE_REFRESH_REQUIRED",
+      "product_id": "samsung-fac100-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC100-4W1PMD",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 2,
+      "detail": {
+        "price_scope": "unclear",
+        "reason": "Inherited observation does not qualify as fresh comparable unit-price sample"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "4aeeec3ec4393d37bff1",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "samsung-fac140-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC140-4W1PMD",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "fbe86977bface6df7a2c",
+      "type": "PRICE_REFRESH_REQUIRED",
+      "product_id": "samsung-fac140-4w1pmd",
+      "brand": "Samsung",
+      "model": "F-AC140-4W1PMD",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 2,
+      "detail": {
+        "price_scope": "unclear",
+        "reason": "Inherited observation does not qualify as fresh comparable unit-price sample"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "9d6e6da1344d2ed09235",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "lg-ztq36gnla0",
+      "brand": "LG",
+      "model": "ZT-Q36GNLA0",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "a16a43281e06abc6f26d",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "lg-ztq48lmla0",
+      "brand": "LG",
+      "model": "ZT-Q48LMLA0",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "c6d7d48e24f9735b0b8b",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "carrier-42tvab010-w-i-38tvab010-i",
+      "brand": "Carrier",
+      "model": "42TVAB010-W-I/38TVAB010-I",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "0fe54517f9b204b32e25",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "carrier-42tvab013-w-i-38tvab013-i",
+      "brand": "Carrier",
+      "model": "42TVAB013-W-I/38TVAB013-I",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "98dd8eb5a8af0b02c0e8",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "carrier-42tvab016-w-i-38tvab016-i",
+      "brand": "Carrier",
+      "model": "42TVAB016-W-I/38TVAB016-I",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "2d277c7345c6fd40b5fd",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "carrier-42tvab018-w-i-38tvab018-i",
+      "brand": "Carrier",
+      "model": "42TVAB018-W-I/38TVAB018-I",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "a9898297fb17029f43b7",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "carrier-42tvab024-w-i-38tvab024-i",
+      "brand": "Carrier",
+      "model": "42TVAB024-W-I/38TVAB024-I",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "42aeba0d0cd6c0b253d6",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "sharp-ah-xp10ymb",
+      "brand": "Sharp",
+      "model": "AH-XP10YMB",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "2d4ae5d666e37811e280",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "sharp-ah-xp13ymb",
+      "brand": "Sharp",
+      "model": "AH-XP13YMB",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "a2af34fea6bea163760f",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "sharp-ah-xp18ymb",
+      "brand": "Sharp",
+      "model": "AH-XP18YMB",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "9242ae8c24447b138f56",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "sharp-ah-xp24ymb",
+      "brand": "Sharp",
+      "model": "AH-XP24YMB",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "edccc50bf10032f3f201",
+      "type": "LIFECYCLE_UNCLEAR",
+      "product_id": "sharp-ah-xp13cpb",
+      "brand": "Sharp",
+      "model": "AH-XP13CPB",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "official_reference": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
+        "runtime_readiness": false,
+        "reason": "Current lifecycle was not reconfirmed; inherited record retained and withheld"
+      },
+      "auto_promoted": false
+    },
+    {
+      "event_id": "d3f4462e0ee809af4365",
+      "type": "PRICE_REFRESH_REQUIRED",
+      "product_id": "mitsubishi-electric-msy-ka15vf",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA15VF",
+      "detected_at": "2026-10-07",
+      "status": "pending_review",
+      "priority": 1,
+      "detail": {
+        "price_scope": "unclear",
+        "reason": "Inherited observation does not qualify as fresh comparable unit-price sample"
+      },
+      "auto_promoted": false
     }
   ],
   "release_approval": {

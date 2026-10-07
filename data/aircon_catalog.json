@@ -8622,56 +8622,6 @@
         "confidence_scope": "manual_exact_model_field_review",
         "review_method": "official_source_read"
       },
-      "price_scope": {
-        "tier": "A",
-        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "checked_at": "2026-10-07",
-        "verification_status": "verified",
-        "value": "unclear",
-        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
-        "confidence_scope": "manual_exact_model_field_review",
-        "review_method": "official_source_read"
-      },
-      "price_status": {
-        "tier": "A",
-        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "checked_at": "2026-10-07",
-        "verification_status": "verified",
-        "value": "live",
-        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
-        "confidence_scope": "manual_exact_model_field_review",
-        "review_method": "official_source_read"
-      },
-      "price_source_type": {
-        "tier": "A",
-        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "checked_at": "2026-10-07",
-        "verification_status": "verified",
-        "value": "official_thailand",
-        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
-        "confidence_scope": "manual_exact_model_field_review",
-        "review_method": "official_source_read"
-      },
-      "price_source": {
-        "tier": "A",
-        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "checked_at": "2026-10-07",
-        "verification_status": "verified",
-        "value": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
-        "confidence_scope": "manual_exact_model_field_review",
-        "review_method": "official_source_read"
-      },
-      "price_url": {
-        "tier": "A",
-        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "checked_at": "2026-10-07",
-        "verification_status": "verified",
-        "value": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
-        "confidence_scope": "manual_exact_model_field_review",
-        "review_method": "official_source_read"
-      },
       "lifecycle": {
         "tier": "A",
         "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
@@ -8707,11 +8657,6 @@
       "comfort_features",
       "cleaning_features",
       "feature_tags",
-      "price_scope",
-      "price_status",
-      "price_source_type",
-      "price_source",
-      "price_url",
       "lifecycle"
     ],
     "conflicts": [],
@@ -8736,9 +8681,9 @@
     "price_thb": null,
     "price_scope": "unclear",
     "price_status": "no_price",
-    "price_source_type": "official_thailand",
-    "price_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
-    "price_url": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+    "price_source_type": null,
+    "price_source": null,
+    "price_url": null,
     "price_checked_at": null,
     "price_history": [],
     "feature_tags": [
@@ -8794,7 +8739,7 @@
     "promotion_blockers": [],
     "verification_status": "recommendation_ready",
     "lifecycle_note": "Exact Thailand product actively listed with enabled purchase action in rendered browser; stock and live price unknown.",
-    "price_note": "ราคาบน Samsung Thailand ที่ตรวจอ่าน 7 ต.ค. 2026 · ยังไม่ยืนยัน scope การติดตั้ง จึงไม่ใช้เป็นราคาเครื่องใน Budget Reality Check",
+    "price_note": "ยังไม่ยืนยันราคาขายและขอบเขตติดตั้ง จึงไม่ใช้เป็นตัวอย่างราคาในงบประมาณ",
     "promotion_candidate": true
   }
 ]

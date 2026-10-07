@@ -191,12 +191,13 @@
     "unknown": 3
   },
   "review_queue": {
-    "events": 2524,
+    "events": 2561,
     "pending_priorities": {
-      "1": 1400,
-      "2": 95,
+      "1": 1435,
+      "2": 97,
       "3": 977
     }
   },
-  "deployment_status": "prepared_not_published"
+  "deployment_status": "see_dated_release_status_report",
+  "release_status_report": "reports/CATALOG_DEEP_INGESTION_RELEASE_STATUS.json"
 }
