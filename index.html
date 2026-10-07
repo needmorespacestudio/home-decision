@@ -474,7 +474,7 @@ function finish(){
  <div class=card><div class=kicker>PRODUCT MATCHING — VERIFIED + CATALOG SEED</div>
  <h3>${usedFallback?"ยังไม่มีรุ่นที่ครอบคลุมช่วงโหลดได้มั่นใจ — แสดง Borderline / Near Match":"รุ่นที่ครอบคลุมช่วงความเย็นได้เหมาะสม"}</h3>
  ${usedFallback?`<div class=notice><b>ต้องยืนยันเพิ่ม:</b> ยังไม่มี Candidate ที่ครอบคลุมช่วง Cooling Load ตามเกณฑ์ Exact ของระบบ ตัวเลือกด้านล่างจึงเป็น Borderline/Near Match และไม่ควรใช้เป็นคำสั่งซื้อทันที โดยเฉพาะพื้นที่ใหญ่/Open plan ควร Site Check</div>`:""}
- ${top.length?top.map((p,idx)=>>`<div class=product>
+ ${top.length?top.map((p,idx)=>`<div class=product>
    <div class=productimg>${productImage(p)}</div>
    <div>
      <div class=phead><div><b>${p.brand}</b><div>${p.model}</div></div><div class=score>${p.match}%</div></div><div class=chips><span class=chip>${p.match_type==="exact"?"Exact-range candidate":p.match_type==="borderline"?"Borderline • Site Check":"Near Match"}</span><span class=chip>Data ${p.data_confidence||"—"}%</span></div>
