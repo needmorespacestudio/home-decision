@@ -285,4 +285,125 @@ function render(){
  h+=`<div class=actions><button class="btn back" onclick=prev()>ย้อนกลับ</button><button class=btn onclick=next()>${i===qs.length-1?"ดูผลลัพธ์":"ต่อไป"}</button></div>`;
  box.innerHTML=h;
 }
-let advancedRetu
+let advancedReturn="wizard";
+function openAdvancedFromResult(){advancedReturn="result";result.classList.add("hidden");openAdvanced()}
+
+function openAdvanced(){
+ if(!result.classList.contains("hidden")) advancedReturn="result"; else if(advancedReturn!=="result") advancedReturn="wizard";
+ wiz.classList.add("hidden");result.classList.add("hidden");advanced.classList.remove("hidden");
+ document.getElementById("advHeight").value=String(s.height||2.7);
+ document.getElementById("advGlass").value=s.glass||"unknown";
+ document.getElementById("advRoof").value=s.roof||"unknown";
+ document.getElementById("advOpen").value=s.open||"unknown";
+ document.getElementById("advPhase").value=s.phase||"unknown";
+ document.getElementById("advPeople").value=s.people||2;
+ scrollTo(0,0);
+}
+function closeAdvanced(){
+ advanced.classList.add("hidden");
+ if(advancedReturn==="result"){advancedReturn="wizard";finish()}
+ else{wiz.classList.remove("hidden");render()}
+ scrollTo(0,0)
+}
+function saveAdvanced(){
+ s.height=Number(document.getElementById("advHeight").value||2.7);
+ s.glass=document.getElementById("advGlass").value;
+ s.roof=document.getElementById("advRoof").value;
+ s.open=document.getElementById("advOpen").value;
+ s.phase=document.getElementById("advPhase").value;
+ s.people=Math.max(1,Number(document.getElementById("advPeople").value||2));
+ closeAdvanced();
+}
+
+function switchFlowMode(mode){
+ const old=getQs();
+ const oldKey=old[Math.min(i,old.length-1)]?.[0];
+ flowMode=mode==="detailed"?"detailed":"quick";
+ const qs=getQs();
+ const newIndex=qs.findIndex(x=>x[0]===oldKey);
+ i=newIndex>=0?newIndex:Math.min(i,qs.length-1);
+ render();
+}
+function pick(k,v){
+ if(k==="height") s[k]=Number(v); else s[k]=v;
+ const qs=getQs();
+ if(i<qs.length-1){i++;render()}
+}
+function toggleP(p){let a=s.priorities,ix=a.indexOf(p);if(ix>=0)a.splice(ix,1);else if(a.length<2)a.push(p);render()}
+function prev(){if(i>0){i--;render()}else{wiz.classList.add("hidden");home.classList.remove("hidden")}}
+function next(){
+ const qs=getQs();
+ const k=qs[i][0];
+ if(k==="area"&&(!s.area||s.area<5))return alert("กรุณาระบุพื้นที่");
+ if(k==="people"&&(!s.people||s.people<1))return alert("กรุณาระบุจำนวนคน");
+ if(i===qs.length-1)return finish();
+ i++;render();
+}
+function load(){
+ let low=650,high=750;
+ const room={bed:.96,living:1,ld:1.03,office:1.06}[s.room]||1;
+ const usage={night:.96,day:1.04,afternoon:1.06,long:1.04}[s.usage]||1;
+ const sun={shade:.94,morning:1,afternoon:1.10,all:1.15,unknown:1.05}[s.sun]||1.05;
+ const glass={low:.98,medium:1.03,high:1.10,unknown:1.04}[s.glass]||1.04;
+ const roof={no:1,yes:1.10,unknown:1.04}[s.roof]||1.04;
+ const op={closed:1,partial:1.05,open:1.10,unknown:1.04}[s.open]||1.04;
+ const hf=Math.max(.92,Math.min(1.45,(s.height||2.7)/2.7));
+ const m=room*usage*sun*glass*roof*op*hf, people=Math.max(0,(s.people||2)-2)*600;
+ return {low:s.area*low*m*.96+people,high:s.area*high*m*1.04+people,mid:s.area*700*m+people};
+}
+function capScore(p,L){
+ const mid=L.mid;
+ if(p.min_btu&&p.max_btu){
+   if(mid>=p.min_btu&&mid<=p.max_btu){
+     const nominalGap=Math.abs(p.nominal_btu-mid)/Math.max(mid,1);
+     const highShortfall=Math.max(0,L.high-p.max_btu)/Math.max(L.high,1);
+     const lowMismatch=Math.max(0,p.min_btu-L.low)/Math.max(L.low,1);
+     return Math.max(45,Math.min(100,96-nominalGap*30-highShortfall*60-lowMismatch*30));
+   }
+   if(mid<p.min_btu){
+     const d=(p.min_btu-mid)/Math.max(mid,1);
+     return Math.max(25,80-d*100);
+   }
+   const d=(mid-p.max_btu)/Math.max(mid,1);
+   return Math.max(20,80-d*120);
+ }
+ const d=Math.abs(p.nominal_btu-mid)/Math.max(mid,1);
+ return Math.max(20,100-d*125);
+}
+function phaseCompatible(p){
+ if(s.phase==="unknown")return true;
+ if(!p.phase)return true;
+ return p.phase===s.phase;
+}
+function eligible(p,L){
+ if(p.recommendation_ready===false)return false;
+ if(s.install!=="any"&&p.type!==s.install)return false;
+ if(!phaseCompatible(p))return false;
+
+ // Guard against gross nominal oversizing even if an inverter can technically modulate low.
+ // For very small rooms, allow the common ~9k market floor but not 18k/24k/36k classes.
+ const nominalUpper=Math.max(9500,L.high*1.75);
+
+ if(p.min_btu&&p.max_btu){
+   const overlaps=p.max_btu>=L.low*.90 && p.min_btu<=L.high*1.15;
+   if(overlaps && p.nominal_btu<=nominalUpper)return true;
+ }
+
+ const generalUpper=Math.max(9500,L.high*(L.mid<9000?1.80:1.45));
+ if(p.nominal_btu<L.low*.70 || p.nominal_btu>generalUpper)return false;
+ return true;
+}
+function capacityFitStatus(p,L){
+ if(p.min_btu&&p.max_btu){
+   const exact = p.max_btu>=L.high*.90 && p.min_btu<=L.low*1.10 && p.nominal_btu<=L.high*1.45;
+   if(exact)return "exact";
+   const borderline = p.max_btu>=L.mid*.95 && p.min_btu<=L.high && p.nominal_btu<=L.high*1.60;
+   if(borderline)return "borderline";
+   return "near";
+ }
+ const exact = p.nominal_btu>=L.low*.90 && p.nominal_btu<=L.high*1.25;
+ if(exact)return "exact";
+ const borderline = p.nominal_btu>=L.mid*.85 && p.nominal_btu<=L.high*1.40;
+ return borderline?"borderline":"near";
+}
+function sco
