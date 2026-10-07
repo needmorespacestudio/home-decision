@@ -406,4 +406,72 @@ function capacityFitStatus(p,L){
  const borderline = p.nominal_btu>=L.mid*.85 && p.nominal_btu<=L.high*1.40;
  return borderline?"borderline":"near";
 }
-function sco
+function score(p,L){
+ let cap=capScore(p,L);
+ let eff=p.seer?Math.max(35,Math.min(100,(p.seer-14)*12+45)):50;
+ let pref=70;
+ if(s.priorities.includes("smart")){
+   if(p.wifi===true) pref+=20;
+   else if(p.wifi_optional===true) pref+=5;
+   else if(p.wifi===false) pref-=10;
+ }
+ let quiet=50;
+ if(p.noise_low_dba!=null){
+   quiet=Math.max(35,Math.min(100,100-(p.noise_low_dba-18)*4));
+   if(s.priorities.includes("quiet")) pref+=(quiet-50)*.25;
+ }
+ let service=p.warranty_summary?75:50;
+ if(s.priorities.includes("service")) pref+=(service-50)*.35;
+ if(s.priorities.includes("saving") && p.seer) pref+=Math.max(-5,(p.seer-18)*5);
+ let smart=p.wifi===true?100:(p.wifi_optional===true?70:(p.wifi===false?45:50));
+ let raw=cap*.35+eff*.20+Math.min(100,Math.max(0,pref))*.20+quiet*.10+service*.10+smart*.05;
+ const confidence=(p.data_confidence||50)/100;
+ return Math.round(raw*(.85+.15*confidence));
+}
+function baht(n){return n?new Intl.NumberFormat("th-TH").format(n)+" บาท":"ยังไม่มีราคายืนยัน"}
+function typeName(t){return t==="wall"?"ติดผนัง":t==="cassette"?"ฝังฝ้า 4 ทิศทาง":t}
+function finish(){
+ let L=load(),unknown=[s.sun,s.glass,s.roof,s.open,s.phase].filter(x=>!x||x==="unknown").length;
+ let conf=(unknown>=3||s.open==="open"||s.height>3.5)?"ปานกลาง":"สูง";
+ let list=PRODUCTS.filter(p=>eligible(p,L))
+   .map(p=>({...p,match:score(p,L),match_type:capacityFitStatus(p,L)}))
+   .sort((a,b)=>{
+      const rank={exact:3,borderline:2,near:1};
+      return (rank[b.match_type]-rank[a.match_type]) || (b.match-a.match);
+   });
+ let exactCount=list.filter(p=>p.match_type==="exact").length;
+ let usedFallback=exactCount===0;
+ if(!list.length){
+   list=PRODUCTS.filter(p=>(s.install==="any"||p.type===s.install)&&phaseCompatible(p)&&p.recommendation_ready!==false)
+     .map(p=>({...p,match:Math.max(35,score(p,L)-12),match_type:"near"}))
+     .sort((a,b)=>Math.abs(a.nominal_btu-L.mid)-Math.abs(b.nominal_btu-L.mid));
+ }
+ const top=list.slice(0,5); lastTop=top;
+ const lo=Math.round(L.low/100)*100,hi=Math.round(L.high/100)*100;
+ result.innerHTML=`
+ <button class="navbtn backhome" onclick="goHome()">← กลับหน้าแรก</button><button class="navbtn backhome" onclick="restartToWizard()">เริ่มใหม่</button><div class=card><div class=kicker>ผลประเมิน Beta • ${flowMode==="detailed"?"DETAILED":"QUICK"}</div><h2>ห้องนี้ต้องการความเย็นประมาณ</h2>
+ <div class=big>${lo.toLocaleString("th-TH")}–${hi.toLocaleString("th-TH")}</div><b>BTU/h</b>
+ <p><span class="badge ${conf==="สูง"?"high":"med"}">Confidence: ${conf}</span></p>
+ <div class=notice>ระบบคำนวณ “ภาระความเย็น” ก่อน แล้วจึงคัดสินค้าที่ติดตั้งได้จริง ไม่เอาสินค้ามากำหนดคำตอบย้อนกลับ</div></div>
+ <div class=card><h3>เงื่อนไขการคัดสินค้า</h3>
+ <div class=row><b>ประเภท</b><span>${s.install==="any"?"ยังไม่ล็อกประเภท":typeName(s.install)}</span></div>
+ <div class=row><b>ระบบไฟ</b><span>${s.phase==="unknown"?"ยังไม่แน่ใจ":s.phase+" เฟส"}</span></div>
+ <div class=row><b>สิ่งที่ให้ความสำคัญ</b><span>${s.priorities.length?s.priorities.join(", "):"สมดุลโดยรวม"}</span></div></div>
+ <div class=card>
+ <div class=kicker>WHY TRUST THIS RESULT</div><h3>เราไม่ได้สุ่มเลือก 3 รุ่นให้คุณ</h3>
+ <div class=trustgrid>
+   <div class=truststat><b>${CATALOG_META.verifiedRecords}</b><span>Product records ที่อยู่ในชุดเปรียบเทียบ Beta</span></div>
+   <div class=truststat><b>${CATALOG_META.brands.length} แบรนด์</b><span>ใน Verified Beta Set ปัจจุบัน</span></div>
+   <div class=truststat><b>${exactCount}</b><span>รุ่นที่ผ่าน Exact capacity criteria ในโจทย์นี้</span></div>
+ </div>
+ <div class=trustflow><span>1 Compatibility</span><span>2 Capacity</span><span>3 ความต้องการของคุณ</span><span>4 Data Confidence</span><span>5 Trade-off</span></div>
+ <div class=coveragewarn><b>Coverage ตอนนี้:</b> ${CATALOG_META.scope}<br>${CATALOG_META.coverageStatus} — ดังนั้นเราใช้คำว่า “เหมาะที่สุดในกลุ่มที่ตรวจสอบแล้ว” ไม่ใช่ “ดีที่สุดในประเทศไทย”</div>
+ <details class=trustdetails><summary>ดูหลักการคัดเลือกและข้อจำกัด</summary>
+   <p class=disclaimer>รุ่นที่ระบบแนะนำต้องผ่าน Hard Filter ก่อน เช่น ประเภทติดตั้ง ระบบไฟเมื่อมีข้อมูลยืนยัน และ Capacity จากนั้นจึงเรียงตามสิ่งที่คุณให้ความสำคัญ ข้อมูลที่ไม่มีหลักฐานจะเป็น “ยังไม่ยืนยัน” ไม่เติมค่าด้วย AI และ Sponsor ไม่สามารถซื้อ Match Score หรืออันดับ Organic ได้</p>
+   <p class=disclaimer>ข้อมูลชุดนี้ตรวจ/ปรับล่าสุด ${CATALOG_META.checkedAt} โดยแต่ละรุ่นมีลิงก์ Official source ให้ตรวจสอบต่อได้</p>
+ </details>
+ </div>
+ <div class=card><div class=kicker>PRODUCT MATCHING — VERIFIED + CATALOG SEED</div>
+ <h3>${usedFallback?"ยังไม่มีรุ่นที่ครอบคลุมช่วงโหลดได้มั่นใจ — แสดง Borderline / Near Match":"รุ่นที่ครอบคลุมช่วงความเย็นได้เหมาะสม"}</h3>
+ ${usedFallback?`<div class=notice><b>ต้องยืนยันเพิ่ม:</b> ยังไม่มี Candidate ที่ครอบคลุมช่วง Cooling Load ตามเกณฑ์ Exact ของระบบ ตัวเลือกด้านล่างจึงเป็น Borderline/Near Match และไม่ควรใช้เป็นคำสั่งซื้อทันที โดยเฉพาะพื้นที่ใหญ่/Open plan ควร Site Check</div>`:""}
+ ${top.length?top.map((p,idx)=>
