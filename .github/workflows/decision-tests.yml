@@ -20,6 +20,7 @@ jobs:
           node tests/test_beta_analytics.cjs
           node tests/test_beta_actions.cjs
           node tests/test_beta_scenarios.cjs
+          node tests/test_cooling_load_v2.cjs
           node tests/test_configuration.cjs
           node tests/test_recommendation.cjs
           node tests/test_pwa.cjs
