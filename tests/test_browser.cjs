@@ -9,7 +9,9 @@ let browser;
   const context=await browser.newContext({viewport:{width,height:844}}),page=await context.newPage();
   page.on('pageerror',e=>errors.push(e.message));
   page.on('dialog',d=>d.accept());
-  await page.goto(baseURL);await page.getByRole('button',{name:mode==='quick'?'แบบง่าย':'แบบละเอียด',exact:false}).first().click();
+  const response=await page.goto(baseURL);
+  if(process.env.VERIFY_SOURCE==='1'){assert.equal((await response.text()).replace(/\r\n/g,'\n'),fs.readFileSync('index.html','utf8').replace(/\r\n/g,'\n'),'live release source differs from tested checkout');checks++}
+  await page.getByRole('button',{name:mode==='quick'?'แบบง่าย':'แบบละเอียด',exact:false}).first().click();
   const answers={room,area,sun:'shade',usage:'night',install,phase:'1',height:'2.7',glass:'low',roof:'no',open:room==='ld'?'open':'closed',people:2,zoneUsage:'partial',shape:area>=40?'long':'compact',zoneControl:'yes',ceiling:install==='wall'?'no':'yes',outdoorSpace:'two'};
   for(let j=0;j<25;j++){
    if(await page.locator('#result').isVisible())break;
@@ -52,13 +54,17 @@ let browser;
   }
   await context.close();
  }
- await exercise(390,'quick','bed',18,'any');await exercise(390,'quick','ld',50,'any');await exercise(390,'detailed','living',30,'wall');await exercise(1440,'quick','ld',50,'any');
+ if(process.env.PWA_ONLY!=='1'){await exercise(390,'quick','bed',18,'any');await exercise(390,'quick','ld',50,'any');await exercise(390,'detailed','living',30,'wall');await exercise(1440,'quick','ld',50,'any')}
  const pwaContext=await browser.newContext({viewport:{width:390,height:844}}),pwaPage=await pwaContext.newPage();
+ await pwaContext.addInitScript(()=>{if(!sessionStorage.getItem('qaSeededOldCache')){sessionStorage.setItem('qaSeededOldCache','1');const oldCache=caches.open('home-decision-v4-catalog-sprint1');const register=navigator.serviceWorker.register.bind(navigator.serviceWorker);navigator.serviceWorker.register=(...args)=>oldCache.then(()=>register(...args))}});
  await pwaPage.goto(baseURL);
- await pwaPage.evaluate(async()=>{await navigator.serviceWorker.ready;await caches.open('home-decision-v4-catalog-sprint1');await navigator.serviceWorker.register('/sw.js?qa_update=1')});
+ await pwaPage.evaluate(async()=>{await navigator.serviceWorker.ready});
  await pwaPage.waitForFunction(async()=>!(await caches.keys()).includes('home-decision-v4-catalog-sprint1'));checks++;
  await pwaPage.reload();await pwaPage.waitForFunction(()=>navigator.serviceWorker.controller!==null);checks++;
- await pwaContext.setOffline(true);await pwaPage.reload();assert(await pwaPage.getByRole('button',{name:'แบบง่าย',exact:false}).first().isVisible());checks++;
+ await pwaPage.waitForFunction(async()=>Boolean(await caches.match('/')));checks++;
+ console.log('PWA evidence '+JSON.stringify(await pwaPage.evaluate(async()=>({controller:navigator.serviceWorker.controller.scriptURL,cache_names:await caches.keys(),cached_shell:!!(await caches.match('/'))}))));
+ // Test navigation as an installed PWA starts offline; browser hard-reload can bypass SW.
+ await pwaContext.setOffline(true);await pwaPage.goto(baseURL+'/?qa_offline=1');assert(await pwaPage.getByRole('button',{name:'แบบง่าย',exact:false}).first().isVisible());checks++;
  await pwaPage.getByRole('button',{name:'แบบง่าย',exact:false}).first().click();assert(await pwaPage.locator('#wiz').isVisible());checks++;
  await pwaContext.close();
  assert.deepEqual(errors,[]);checks++;
