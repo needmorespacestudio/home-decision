@@ -694,4 +694,136 @@ function openQuoteCompare(id){
    <p class="muted">ขั้นนี้ไม่ควรเป็นแบบฟอร์มยาว ๆ — Home Decision จะให้คุณใส่เท่าที่รู้ แล้วบอกเองว่าต้องถามร้านอะไรเพิ่ม</p>
   </div>
 
-  <div class="quote
+  <div class="quoteHero">
+   <div class="quoteChoice">
+    <b>📎 มีใบเสนอราคา / รูป / PDF</b>
+    <small>นี่คือวิธีที่ควรง่ายที่สุดใน Product จริง: ส่งไฟล์มา แล้วระบบอ่านรายการให้ก่อน คุณแค่ตรวจว่าถูกไหม</small>
+    <div class="uploadbox"><input type="file" accept="image/*,.pdf" onchange="handleQuoteUpload(this)"><div id="uploadStatus" class="quoteRisk"></div></div>
+   </div>
+   <div class="quoteChoice">
+    <b>💬 ยังไม่มี Quote</b>
+    <small>ไม่ต้องรู้ว่าต้องถามอะไร กดครั้งเดียวแล้วส่งข้อความมาตรฐานให้ร้านได้เลย</small>
+    <button class="btn" style="margin-top:10px" onclick="copyQuoteRequest()">คัดลอกข้อความถามร้าน</button>
+   </div>
+  </div>
+
+  <div class="card">
+   <div class="kicker">QUICK COMPARE</div>
+   <h2>ถ้ารู้ราคาแล้ว กรอกแค่นี้ก็พอ</h2>
+   <p class="muted">ชื่อร้าน + ราคารวม + รวมติดตั้งหรือยัง ส่วนข้อมูลอื่นกดเพิ่มเฉพาะเมื่อรู้</p>
+   <div id="quickQuotes" class="quickQuotes"></div>
+   <div class="actions">
+    <button class="outlinebtn" onclick="addQuickQuote()">+ เพิ่มร้าน</button>
+    <button class="btn" onclick="analyzeQuickQuotes()">วิเคราะห์ร้านที่กรอก</button>
+   </div>
+   <div id="finalDecision" style="margin-top:14px"></div>
+  </div>`;
+ home.classList.add("hidden");wiz.classList.add("hidden");result.classList.add("hidden");quote.classList.remove("hidden");
+ renderQuickQuotes();
+ analyzeQuickQuotes();
+ scrollTo(0,0);
+}
+
+function roomLabel(v){
+ const map={living:"ห้องนั่งเล่น",bedroom:"ห้องนอน",office:"ห้องทำงาน",dining:"ห้องทานอาหาร",other:"อื่น ๆ"};
+ return map[v]||v||"—";
+}
+function sunLabel(v){
+ const map={shade:"แทบไม่โดนแดด",morning:"แดดเช้า",afternoon:"แดดบ่าย",all:"โดนแดดมาก",unknown:"ไม่แน่ใจ"};
+ return map[v]||v||"—";
+}
+function glassLabel(v){
+ const map={low:"กระจกน้อย",medium:"กระจกปานกลาง",high:"กระจกเยอะ",unknown:"ไม่แน่ใจ"};
+ return map[v]||v||"—";
+}
+function installLabel(v){
+ const map={any:"เปิดกว้าง",wall:"ติดผนัง",cassette:"ฝังฝ้า 4 ทิศทาง"};
+ return map[v]||v||"—";
+}
+function usageLabel(v){
+ const map={night:"กลางคืน",day:"กลางวัน",afternoon:"บ่าย–ค่ำ",long:"ใช้นานทั้งวัน"};
+ return map[v]||v||"—";
+}
+function currentLoad(){
+ try{return load()}catch(e){return null}
+}
+function topRecommendation(){
+ return lastTop && lastTop.length ? lastTop[0] : null;
+}
+function briefObject(statusOverride){
+ const L=currentLoad();
+ const p=topRecommendation();
+ const unresolved = statusOverride==="unresolved" || !p || p.match_type==="near";
+ const created=new Date().toISOString();
+ return {
+   brief_version:"1.0",
+   created_at:created,
+   decision_status:unresolved?"needs_help":"recommendation_available",
+   category:"aircon",
+   need:{
+     room_type:s.room,
+     area_sqm:s.area,
+     ceiling_height_m:s.height,
+     sun:s.sun,
+     glazing:s.glass,
+     top_floor:s.roof,
+     openness:s.open,
+     occupants:s.people,
+     usage:s.usage,
+     installation_type:s.install,
+     electrical_phase:s.phase,
+     priorities:s.priorities||[]
+   },
+   decision:{
+     cooling_load_low_btu:L?Math.round(L.low):null,
+     cooling_load_high_btu:L?Math.round(L.high):null,
+     cooling_load_mid_btu:L?Math.round(L.mid):null,
+     recommended_product:p?{
+       brand:p.brand,model:p.model,nominal_btu:p.nominal_btu,
+       match_percent:p.match,data_confidence_percent:p.data_confidence||null,
+       match_type:p.match_type||"exact"
+     }:null
+   }
+ };
+}
+function briefText(statusOverride){
+ const b=briefObject(statusOverride), L=b.decision;
+ const p=L.recommended_product;
+ const pri=(b.need.priorities||[]).length?(b.need.priorities||[]).join(", "):"ไม่ได้ระบุ";
+ return `HOME DECISION BRIEF — AIRCON
+สร้างเมื่อ: ${new Date(b.created_at).toLocaleString("th-TH")}
+
+ข้อมูลห้อง
+- ประเภท: ${roomLabel(b.need.room_type)}
+- พื้นที่: ${b.need.area_sqm??"—"} ตร.ม.
+- ฝ้าสูง: ${b.need.ceiling_height_m??"—"} ม.
+- แดด: ${sunLabel(b.need.sun)}
+- กระจก: ${glassLabel(b.need.glazing)}
+- จำนวนผู้ใช้งาน: ${b.need.occupants??"—"} คน
+- ช่วงใช้งานหลัก: ${usageLabel(b.need.usage)}
+- ประเภทติดตั้ง: ${installLabel(b.need.installation_type)}
+- ระบบไฟ: ${b.need.electrical_phase==="unknown"?"ยังไม่ยืนยัน":b.need.electrical_phase+" เฟส"}
+- สิ่งที่ให้ความสำคัญ: ${pri}
+
+ช่วง Cooling Load ที่ประเมิน
+- ${L.cooling_load_low_btu?.toLocaleString("th-TH")??"—"} – ${L.cooling_load_high_btu?.toLocaleString("th-TH")??"—"} BTU/h
+
+${p?`ตัวเลือกที่ระบบพบ
+- ${p.brand} ${p.model}
+- ${p.nominal_btu.toLocaleString("th-TH")} BTU
+- Match ${p.match_percent}%
+- Data Confidence ${p.data_confidence_percent??"—"}%
+- สถานะ: ${p.match_type==="near"?"Near Match / ต้องยืนยันเพิ่ม":"Candidate ที่ตรงช่วง"}`:
+`ระบบยังไม่มีรุ่นที่ยืนยันได้เพียงพอ
+- ใช้ Brief นี้ส่งให้ร้าน/ช่างเพื่อขอรุ่นที่ตรง Requirement
+- กรุณาขอราคาแบบแจกแจงรายการและเงื่อนไขรับประกัน`}
+
+คำถามที่ควรถามร้าน
+1. รุ่น Indoor / Outdoor exact model อะไร
+2. Nominal และ Inverter min/max capacity เท่าไร
+3. SEER และระดับเสียงต่ำสุดเท่าไร
+4. มี Wi-Fi / ต้องซื้อ module เพิ่มไหม
+5. รับประกัน Compressor / Parts / Labor อย่างไร
+6. ราคานี้รวม VAT และติดตั้งอะไรบ้าง
+7. ท่อทองแดงรวมกี่เมตร และส่วนเกินคิดเท่าไร
+8. รับประกันงานติดตั้งกี่เ
