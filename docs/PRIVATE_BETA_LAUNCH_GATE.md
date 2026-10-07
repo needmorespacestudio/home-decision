@@ -9,7 +9,8 @@ Status: **Private Beta candidate; supervised internal QA ready. Unattended 20–
 - [x] Recommendation reasons/tradeoff and product/quote/brief paths retained.
 - [ ] Real testers understand result within 2 minutes; measured task study required.
 - [ ] Real testers find Quote path understandable; observed task study required.
-- [ ] Final exact-release live UI checks recorded in release QA (do not infer from local tests).
+- [x] Main application READY and exact-source live Quick/Detailed/product/Quote/Brief/feedback checks recorded in release QA.
+- [ ] Exact 390px and real-device PWA install/offline/update sign-off; automation environment limitations recorded.
 
 ## Data readiness
 - [x] Catalog disclosures distinguish Tier C discovery from eligible recommendation records; known unknowns preserved.

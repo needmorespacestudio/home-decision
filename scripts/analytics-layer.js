@@ -8,7 +8,7 @@ function trackHD(name,payload={},onceKey){
  if(!HD_EVENTS.has(name))return false;
  if(hdFlow&&onceKey&&hdSeen.has(name+':'+onceKey))return false;
  const detail={event:name};
- const enums={flow_mode:['quick','detailed'],setup_type:['wall','cassette','mixed','ducted'],fit_status:['exact','near','catalog_gap','site_check','infeasible'],budget_status:['suitable','tight','below-market','unknown'],rating:['positive','neutral','negative'],reason:HD_REASONS.map(x=>x[0]),btu_bucket:['under_18k','18k_30k','30k_48k','over_48k','unknown']};
+ const enums={flow_mode:['quick','detailed'],setup_type:['wall','cassette','mixed','ducted'],fit_status:['exact','near','catalog_gap','infeasible'],setup_fit_status:['fit','site_check','catalog_gap','advanced','infeasible'],budget_status:['suitable','tight','below-market','unknown'],rating:['positive','neutral','negative'],reason:HD_REASONS.map(x=>x[0]),btu_bucket:['under_18k','18k_30k','30k_48k','over_48k','unknown']};
  for(const [key,values] of Object.entries(enums))if(values.includes(payload[key]))detail[key]=payload[key];
  if(HD_STEPS.has(payload.step_key))detail.step_key=payload.step_key;
  for(const key of ['unit_count','flag_count','alternative_count'])if(Number.isInteger(payload[key])&&payload[key]>=0&&payload[key]<=20)detail[key]=payload[key];
@@ -40,14 +40,20 @@ function hdBegin(){
 function hdAbandon(){if(hdFlow&&!hdFlow.completed&&!hdFlow.abandoned){hdFlow.abandoned=true;trackHD('flow_abandoned',{flow_mode:flowMode,step_key:getQs()[i]?.[0]})}}
 function hdAnswer(key){trackHD('step_answered',{flow_mode:flowMode,step_key:key},key)}
 function hdComplete(){if(hdFlow&&!hdFlow.completed){hdFlow.completed=true;hdDebug.completed++;trackHD('flow_completed',{flow_mode:flowMode},'flow')}}
+function hdBudgetStatus(c){
+ const min=c?.estimated_cost_scope.min_sample_thb;
+ if(min==null||!['target','ceiling'].includes(s.budgetMode)||!(s.budgetAmount>0))return 'unknown';
+ if(min>s.budgetAmount)return 'below-market';
+ return c.zone_plan.every((zone,ix)=>withZone(zone,c.unit_count,()=>budgetReality(c.product_matches[ix]).status==='งบเหมาะสม'))?'suitable':'tight';
+}
 function hdResult(){
  const c=selectedConfiguration(),e=coolingConfigurations();
- const fit=!c?'infeasible':c.fit_status==='catalog_gap'?'catalog_gap':c.product_matches.some(l=>!l.some(p=>p.match_type==='exact')&&l.some(p=>p.match_type==='near'))?'near':c.fit_status==='fit'?'exact':'site_check';
+ const fit=!c?'infeasible':!c.product_matches.length?'catalog_gap':c.product_matches.every(l=>l.some(p=>p.match_type==='exact'))?'exact':c.product_matches.every(l=>l.some(p=>['exact','near'].includes(p.match_type)))?'near':'catalog_gap';
  const target=c?.zone_plan[0]?.capacity_per_unit_target;
- const meta={flow_mode:flowMode,setup_type:c?.unit_type,unit_count:c?.unit_count,fit_status:fit,has_site_check:!c||Boolean(c.site_check_flags.length),alternative_count:e.alternatives.length,budget_status:c?.estimated_cost_scope.min_sample_thb==null?'unknown':s.budgetAmount==null?'suitable':s.budgetAmount<c.estimated_cost_scope.min_sample_thb*.8?'below-market':s.budgetAmount<c.estimated_cost_scope.min_sample_thb?'tight':'suitable',btu_bucket:!target?'unknown':target<18000?'under_18k':target<=30000?'18k_30k':target<=48000?'30k_48k':'over_48k'};
+ const meta={flow_mode:flowMode,setup_type:c?.unit_type,unit_count:c?.unit_count,fit_status:fit,setup_fit_status:c?.fit_status||'infeasible',has_site_check:!c||Boolean(c.site_check_flags.length),alternative_count:e.alternatives.length,budget_status:hdBudgetStatus(c),btu_bucket:!target?'unknown':target<18000?'under_18k':target<=30000?'18k_30k':target<=48000?'30k_48k':'over_48k'};
  if(hdFlow&&!hdFlow.result){hdFlow.result=true;hdDebug.times.push(Date.now()-hdFlow.start);if(hdDebug.times.length>500)hdDebug.times.shift()}
  trackHD('result_shown',meta,'flow');
- if(!c||fit==='catalog_gap')trackHD('catalog_gap_shown',meta,'flow');
+ if(!c||fit==='catalog_gap'||c.fit_status==='catalog_gap')trackHD('catalog_gap_shown',meta,'flow');
  if(!c)trackHD('site_check_flagged',{flag_count:1},'flow');
  result.innerHTML+=hdFeedbackHTML();
  hdObserveCards();
