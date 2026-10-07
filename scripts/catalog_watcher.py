@@ -55,13 +55,20 @@ def verified_record(p):
 
 
 def ready_record(p):
-    return (p.get('recommendation_ready') is True and verified_record(p)
-            and p.get('lifecycle') in ('current', 'active', 'unclear'))
+    return (p.get('recommendation_ready') is True and p.get('source_tier') != 'C' and verified_record(p)
+            and p.get('lifecycle') in ('current', 'active'))
 
 
 def verified_price(p):
-    return (verified(p, 'price_thb') and isinstance(p.get('price_thb'), (float, int))
-            and p['price_thb'] > 0 and bool(p.get('price_url') and p.get('price_checked_at')))
+    try:
+        age = (date.today() - date.fromisoformat(p.get('price_checked_at'))).days
+    except (ValueError, TypeError):
+        return False
+    return (p.get('price_source_type') in ('official_thailand', 'authorized_retailer')
+            and p.get('price_scope') == 'unit_only' and p.get('price_status') == 'live'
+            and 0 <= age <= 30 and verified(p, 'price_thb')
+            and isinstance(p.get('price_thb'), (float, int)) and p['price_thb'] > 0
+            and bool(p.get('price_url')))
 
 
 def stale(value, today, days):

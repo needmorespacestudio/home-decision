@@ -1,0 +1,94 @@
+{
+  "before_records": 51,
+  "before_ready": 51,
+  "after_records": 53,
+  "after_ready": 30,
+  "withheld_unclear": 23,
+  "per_brand": {
+    "Carrier": {
+      "records": 5,
+      "ready": 0
+    },
+    "Daikin": {
+      "records": 4,
+      "ready": 4
+    },
+    "Haier": {
+      "records": 4,
+      "ready": 4
+    },
+    "LG": {
+      "records": 4,
+      "ready": 0
+    },
+    "Mitsubishi Electric": {
+      "records": 9,
+      "ready": 9
+    },
+    "Mitsubishi Heavy Duty": {
+      "records": 5,
+      "ready": 5
+    },
+    "Panasonic": {
+      "records": 6,
+      "ready": 2
+    },
+    "Samsung": {
+      "records": 6,
+      "ready": 1
+    },
+    "Sharp": {
+      "records": 5,
+      "ready": 0
+    },
+    "Toshiba": {
+      "records": 5,
+      "ready": 5
+    }
+  },
+  "types": {
+    "wall": 45,
+    "cassette": 8
+  },
+  "critical_field_completeness": {
+    "nominal_btu": {
+      "before": 51,
+      "after": 53
+    },
+    "min_btu": {
+      "before": 33,
+      "after": 35
+    },
+    "max_btu": {
+      "before": 33,
+      "after": 35
+    },
+    "seer": {
+      "before": 36,
+      "after": 38
+    },
+    "phase": {
+      "before": 31,
+      "after": 33
+    },
+    "voltage": {
+      "before": 35,
+      "after": 37
+    },
+    "frequency_hz": {
+      "before": 36,
+      "after": 38
+    },
+    "noise_low_dba": {
+      "before": 26,
+      "after": 27
+    },
+    "refrigerant": {
+      "before": 45,
+      "after": 47
+    }
+  },
+  "fresh_new_ready": 2,
+  "inherited_lifecycle_unclear_withheld": 23,
+  "deployment": "prepared_not_published"
+}

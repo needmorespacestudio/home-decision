@@ -1,0 +1,202 @@
+{
+  "source_sha256": "f436eba097e65dc5058feba0fda9cb7c201c4bac730c6035aa09ed9f24c3bb64",
+  "pages_read": 30,
+  "reported_rows": 362,
+  "extracted_rows": 362,
+  "row_brands": 22,
+  "unique_exact_codes": 324,
+  "bundle_rows": 2,
+  "color_group_rows": 18,
+  "historical_rows": 35,
+  "conflict_rows": 1,
+  "classifications": {
+    "NEEDS_MODEL_CODE_REVIEW": 38,
+    "NEW_EXACT_MODEL": 307,
+    "HISTORICAL/PREVIOUS_YEAR": 35,
+    "EXACT_MATCH_EXISTING": 17,
+    "CONFLICTING_SPEC": 1
+  },
+  "per_brand": {
+    "Daikin": 56,
+    "Mitsubishi Electric": 29,
+    "Mitsubishi Heavy Duty": 26,
+    "Carrier": 25,
+    "Panasonic": 18,
+    "Samsung": 24,
+    "LG": 24,
+    "Sharp": 14,
+    "Toshiba": 5,
+    "Hitachi": 20,
+    "Haier": 23,
+    "TCL": 23,
+    "Hisense": 20,
+    "Midea": 16,
+    "AUX": 13,
+    "Electrolux": 7,
+    "Gree": 3,
+    "Comfee": 4,
+    "KUKU": 3,
+    "Shinflow": 2,
+    "Star Aire": 6,
+    "Xiaomi": 1
+  },
+  "discovered_type_counts": {
+    "wall": 362
+  },
+  "price_scopes": {
+    "unclear": 329,
+    "includes_pipe": 20,
+    "unit_only": 13
+  },
+  "price_status": {
+    "historical": 275,
+    "no_price": 87
+  },
+  "pdf_official_verified": 0,
+  "pdf_authorized_retailer_verified": 0,
+  "pdf_recommendation_ready": 0,
+  "runtime_records": 53,
+  "runtime_ready_total": 30,
+  "runtime_ready_inherited": 0,
+  "denominator_coverage": null,
+  "new_review_events": 0,
+  "manual_official_review": {
+    "candidates": 13,
+    "field_verified": 13,
+    "promotion_candidates": 2,
+    "recommendation_ready_in_staging": 0,
+    "unresolved_conflicts": 4
+  },
+  "pdf_field_presence": {
+    "nominal_btu": 359,
+    "seer": 290,
+    "wifi_indicator": 187,
+    "pm25_indicator": 248,
+    "price_value": 275,
+    "phase": 0,
+    "voltage": 0,
+    "frequency_hz": 0,
+    "noise_low_dba": 0
+  },
+  "runtime_field_completeness": {
+    "nominal_btu": {
+      "present": 53,
+      "denominator": 53
+    },
+    "seer": {
+      "present": 38,
+      "denominator": 53
+    },
+    "phase": {
+      "present": 33,
+      "denominator": 53
+    },
+    "voltage": {
+      "present": 37,
+      "denominator": 53
+    },
+    "frequency_hz": {
+      "present": 38,
+      "denominator": 53
+    },
+    "noise_low_dba": {
+      "present": 27,
+      "denominator": 53
+    }
+  },
+  "per_brand_lifecycle": {
+    "Daikin": {
+      "unclear": 44,
+      "historical": 12
+    },
+    "Mitsubishi Electric": {
+      "unclear": 22,
+      "historical": 7
+    },
+    "Mitsubishi Heavy Duty": {
+      "unclear": 26
+    },
+    "Carrier": {
+      "unclear": 24,
+      "historical": 1
+    },
+    "Panasonic": {
+      "unclear": 16,
+      "historical": 2
+    },
+    "Samsung": {
+      "unclear": 21,
+      "historical": 3
+    },
+    "LG": {
+      "unclear": 22,
+      "historical": 2
+    },
+    "Sharp": {
+      "unclear": 14
+    },
+    "Toshiba": {
+      "unclear": 5
+    },
+    "Hitachi": {
+      "unclear": 20
+    },
+    "Haier": {
+      "unclear": 23
+    },
+    "TCL": {
+      "unclear": 15,
+      "historical": 8
+    },
+    "Hisense": {
+      "unclear": 20
+    },
+    "Midea": {
+      "unclear": 16
+    },
+    "AUX": {
+      "unclear": 13
+    },
+    "Electrolux": {
+      "unclear": 7
+    },
+    "Gree": {
+      "unclear": 3
+    },
+    "Comfee": {
+      "unclear": 4
+    },
+    "KUKU": {
+      "unclear": 3
+    },
+    "Shinflow": {
+      "unclear": 2
+    },
+    "Star Aire": {
+      "unclear": 6
+    },
+    "Xiaomi": {
+      "unclear": 1
+    }
+  },
+  "reported_btu_buckets": {
+    "9000": 85,
+    "12000": 91,
+    "30000": 10,
+    "36000": 6,
+    "15000": 20,
+    "18000": 83,
+    "24000": 60,
+    "other": 4,
+    "unknown": 3
+  },
+  "review_queue": {
+    "events": 2524,
+    "pending_priorities": {
+      "1": 1400,
+      "2": 95,
+      "3": 977
+    }
+  },
+  "deployment_status": "prepared_not_published"
+}

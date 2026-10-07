@@ -9,7 +9,7 @@ class IntegrityTests(unittest.TestCase):
         keys=[(p['brand'],p['model'],p.get('phase')) for p in self.p]
         self.assertEqual(len(keys),len(set(keys)))
     def test_ready_minimum_evidence(self):
-        self.assertTrue(all(ready_record(p) for p in self.p))
+        self.assertTrue(all(ready_record(p) for p in self.p if p.get("recommendation_ready")))
         self.assertTrue(all(p.get('evidence') and p.get('source_type')=='official_thailand' for p in self.p))
     def test_ranges_and_units(self):
         for p in self.p:

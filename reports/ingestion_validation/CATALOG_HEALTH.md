@@ -1,0 +1,2530 @@
+# Catalog health
+
+Generated: 2026-10-07 · Beta / incomplete
+
+Official market denominators unknown; no market coverage percentage is asserted.
+Verified means field-scoped identity/type/BTU evidence; inherited and fresh review are labelled separately.
+Link health is untested unless an adapter supplies an explicit observation.
+
+## Metrics
+
+- records: 53
+- brands_ingested: 10
+- verified_records: 53
+- recommendation_ready: 30
+- types: {'wall': 45, 'cassette': 8}
+- nominal_btu_min: 9000
+- nominal_btu_max: 48109
+- missing_price: 53
+- missing_min_max: 18
+- stale_specs: 0
+- link_health_unknown: 53
+- missing_phase: 21
+- missing_seer: 15
+- missing_voltage: 16
+- missing_wifi: 32
+- missing_noise_low_dba: 26
+- missing_warranty_summary: 32
+
+## Review queue
+
+- DATA_STALE: 0
+- MODEL_RENAMED: 0
+- NEW_MODEL: 308
+- NEW_VARIANT: 0
+- POSSIBLE_DISCONTINUED: 35
+- PRICE_CHANGED: 0
+- SOURCE_BROKEN: 0
+- SOURCE_MOVED: 0
+- SPEC_CHANGED: 0
+
+## Brand coverage
+
+| Brand | Ingested | Verified | Ready | Discovered | Coverage | Status |
+|---|---:|---:|---:|---|---|---|
+| Daikin | 4 | 4 | 4 | Unknown | Not audited | beta_incomplete |
+| Mitsubishi Electric | 9 | 9 | 9 | Unknown | Not audited | beta_incomplete |
+| Mitsubishi Heavy Duty | 5 | 5 | 5 | Unknown | Not audited | beta_incomplete |
+| Panasonic | 6 | 6 | 2 | Unknown | Not audited | beta_incomplete |
+| Carrier | 5 | 5 | 0 | Unknown | Not audited | beta_incomplete |
+| Samsung | 6 | 6 | 1 | Unknown | Not audited | beta_incomplete |
+| LG | 4 | 4 | 0 | Unknown | Not audited | beta_incomplete |
+| Toshiba | 5 | 5 | 5 | Unknown | Not audited | beta_incomplete |
+| Haier | 4 | 4 | 4 | Unknown | Not audited | beta_incomplete |
+| Sharp | 5 | 5 | 0 | Unknown | Not audited | beta_incomplete |
+| Hisense | 0 | 0 | 0 | Unknown | Not audited | not_ingested |
+
+## Pending events
+
+- POSSIBLE_DUPLICATE · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p06-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p06-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p06-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r28 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r31 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r31 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r31 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r31 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r31 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r31 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r32 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r32 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r32 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r32 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r32 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r32 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p07-t1-r33 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p07-t1-r33 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p07-t1-r33 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p07-t1-r33 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p07-t1-r33 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p07-t1-r33 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- NEW_MODEL · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SPEC_CONFLICT · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- SOURCE_MISSING · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- IMAGE_MISSING · pdf2026-p09-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING", "CONFLICTING_SPEC"], "conflicts": [{"field": "nominal_btu", "reported_value": 22519.0, "catalog_value": 21154, "catalog_id": "mitsubishi-ka24", "status": "pending_review"}]}
+- NEW_MODEL · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p09-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p11-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p12-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p13-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p16-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p16-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p16-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p16-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p16-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p16-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p17-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p17-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p17-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p17-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p17-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p17-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p18-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p18-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p18-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p18-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p18-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p18-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p18-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p18-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p18-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["EXACT_MATCH_EXISTING"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p19-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p19-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p19-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p19-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p19-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p19-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p20-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p21-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p23-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p23-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p23-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p23-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p23-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p23-t2-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p24-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p24-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p24-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p24-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p24-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p24-t2-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p25-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r10 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r11 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r12 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p25-t3-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t2-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p26-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t2-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p27-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t2-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t2-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t2-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t4-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t4-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t4-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t4-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p27-t4-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r03 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r04 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r05 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r06 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r07 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- NEW_MODEL · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- PRICE_REFRESH_REQUIRED · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DUPLICATE · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- LIFECYCLE_UNCLEAR · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- SOURCE_MISSING · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- AIR_QUALITY_UNVERIFIED · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- ELECTRICAL_UNVERIFIED · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- IMAGE_MISSING · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r29 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p13-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEEDS_MODEL_CODE_REVIEW"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p14-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p15-t2-r26 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p17-t1-r08 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r25 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- NEW_MODEL · pdf2026-p28-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r15 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r18 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "EXACT_MATCH_EXISTING"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r21 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p08-t1-r30 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r13 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r16 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r19 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p10-t1-r22 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p14-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p15-t2-r24 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p15-t2-r27 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p17-t1-r09 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r14 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r17 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r20 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- POSSIBLE_DISCONTINUED · pdf2026-p22-t1-r23 · {"import_source": "aircon-thailand-2026-v2", "reconciliation": ["HISTORICAL/PREVIOUS_YEAR", "NEW_EXACT_MODEL"], "conflicts": []}
+- SPEC_CONFLICT · haier-hsu-09vrwa05sbf · {"field": "energy_metric_unit", "status": "pending_review", "official_headline": "BTU/h/W", "official_spec_table": "W/W", "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml"}
+- SPEC_CONFLICT · haier-hsu-12vrwa05bf · {"field": "energy_metric_unit", "status": "pending_review", "official_headline": "BTU/h/W", "official_spec_table": "W/W", "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml"}
+- SPEC_CONFLICT · haier-hsu-18vrwa05bf · {"field": "energy_metric_unit", "status": "pending_review", "official_headline": "BTU/h/W", "official_spec_table": "W/W", "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml"}
+- SPEC_CONFLICT · haier-hsu-24vrwa05bf · {"field": "energy_metric_unit", "status": "pending_review", "official_headline": "BTU/h/W", "official_spec_table": "W/W", "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml"}

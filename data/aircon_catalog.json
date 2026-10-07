@@ -22,7 +22,7 @@
       "Inverter"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 80,
     "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
     "checked_at": "2026-10-07",
@@ -83,7 +83,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "unknown"
+    "wifi_status": "unknown",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "panasonic-yu13zkt",
@@ -108,7 +112,7 @@
       "Inverter"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 80,
     "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
     "checked_at": "2026-10-07",
@@ -169,7 +173,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "unknown"
+    "wifi_status": "unknown",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "panasonic-yu18zkt",
@@ -194,7 +202,7 @@
       "Inverter"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 80,
     "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
     "checked_at": "2026-10-07",
@@ -255,7 +263,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "unknown"
+    "wifi_status": "unknown",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "panasonic-yu24zkt",
@@ -280,7 +292,7 @@
       "Inverter"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 80,
     "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html",
     "checked_at": "2026-10-07",
@@ -341,7 +353,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "unknown"
+    "wifi_status": "unknown",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-ka09",
@@ -480,7 +496,11 @@
       0.8,
       2.9
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-ka13",
@@ -619,7 +639,11 @@
       0.9,
       3.8
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-ka18",
@@ -758,7 +782,11 @@
       1.3,
       5.4
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-ka24",
@@ -897,7 +925,11 @@
       1.6,
       6.2
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "samsung-ar60h09",
@@ -926,7 +958,7 @@
     "price_source": "Samsung Thailand",
     "price_checked_at": "2026-10-07",
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 98,
     "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
     "checked_at": "2026-10-07",
@@ -1017,7 +1049,20 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "built_in"
+    "wifi_status": "built_in",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "stale",
+    "price_history": [
+      {
+        "price_value": 15990,
+        "price_scope": "unclear",
+        "price_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+        "price_checked_at": "2026-10-07",
+        "price_status": "stale",
+        "verification_basis": "inherited_baseline"
+      }
+    ]
   },
   {
     "id": "samsung-ar60h12",
@@ -1046,7 +1091,7 @@
     "price_source": "Samsung Thailand",
     "price_checked_at": "2026-10-07",
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 98,
     "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
     "checked_at": "2026-10-07",
@@ -1137,7 +1182,20 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "built_in"
+    "wifi_status": "built_in",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "stale",
+    "price_history": [
+      {
+        "price_value": 17990,
+        "price_scope": "unclear",
+        "price_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+        "price_checked_at": "2026-10-07",
+        "price_status": "stale",
+        "verification_basis": "inherited_baseline"
+      }
+    ]
   },
   {
     "id": "samsung-ar70f24",
@@ -1164,7 +1222,7 @@
     "price_source": "Samsung Thailand",
     "price_checked_at": "2026-10-07",
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 88,
     "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
     "checked_at": "2026-10-07",
@@ -1226,7 +1284,20 @@
     "comfort_features": [],
     "cleaning_features": [],
     "wifi_status": "unknown",
-    "unverified_inherited_wifi": true
+    "unverified_inherited_wifi": true,
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "stale",
+    "price_history": [
+      {
+        "price_value": 42990,
+        "price_scope": "unclear",
+        "price_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+        "price_checked_at": "2026-10-07",
+        "price_status": "stale",
+        "verification_basis": "inherited_baseline"
+      }
+    ]
   },
   {
     "id": "lg-iz10r",
@@ -1251,7 +1322,7 @@
       "Allergy Filter"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 93,
     "official_source": "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
     "checked_at": "2026-10-07",
@@ -1330,7 +1401,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "built_in"
+    "wifi_status": "built_in",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "lg-ihq18r",
@@ -1355,7 +1430,7 @@
       "Plasmaster Ionizer"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 83,
     "official_source": "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
     "checked_at": "2026-10-07",
@@ -1416,7 +1491,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "built_in"
+    "wifi_status": "built_in",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "samsung-fac100-4w1pmd",
@@ -1444,7 +1523,7 @@
     "price_source": "Samsung Thailand",
     "price_checked_at": "2026-10-07",
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 98,
     "official_source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
     "checked_at": "2026-10-07",
@@ -1541,7 +1620,20 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "built_in"
+    "wifi_status": "built_in",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "stale",
+    "price_history": [
+      {
+        "price_value": 89500,
+        "price_scope": "unclear",
+        "price_source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+        "price_checked_at": "2026-10-07",
+        "price_status": "stale",
+        "verification_basis": "inherited_baseline"
+      }
+    ]
   },
   {
     "id": "samsung-fac140-4w1pmd",
@@ -1569,7 +1661,7 @@
     "price_source": "Samsung Thailand",
     "price_checked_at": "2026-10-07",
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 97,
     "official_source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
     "checked_at": "2026-10-07",
@@ -1654,7 +1746,20 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "built_in"
+    "wifi_status": "built_in",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "stale",
+    "price_history": [
+      {
+        "price_value": 98000,
+        "price_scope": "unclear",
+        "price_source": "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/",
+        "price_checked_at": "2026-10-07",
+        "price_status": "stale",
+        "verification_basis": "inherited_baseline"
+      }
+    ]
   },
   {
     "id": "mitsubishi-plysm36-1p",
@@ -1787,7 +1892,11 @@
       4,
       10.6
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-plysm42-1p",
@@ -1920,7 +2029,11 @@
       6.1,
       12.3
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-plym48-1p",
@@ -2052,7 +2165,11 @@
       7,
       14.1
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "mitsubishi-plysm48-3p",
@@ -2185,7 +2302,11 @@
       7,
       14.1
     ],
-    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969)."
+    "capacity_conversion_note": "Original kW rated/min/max; min/max BTU rounded from kW × 3412.142. Published nominal BTU may be a rounded class (42,000 vs converted 41,969).",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "lg-ztq36gnla0",
@@ -2207,7 +2328,7 @@
       "4-Way Cassette"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 76,
     "official_source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
     "checked_at": "2026-10-07",
@@ -2250,7 +2371,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "unknown"
+    "wifi_status": "unknown",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "id": "lg-ztq48lmla0",
@@ -2275,7 +2400,7 @@
       "LG ThinQ"
     ],
     "lifecycle": "unclear",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": 80,
     "official_source": "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/",
     "checked_at": "2026-10-07",
@@ -2331,7 +2456,11 @@
     "air_quality_features": [],
     "comfort_features": [],
     "cleaning_features": [],
-    "wifi_status": "optional_module"
+    "wifi_status": "optional_module",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 2400,
@@ -2534,7 +2663,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3800,
@@ -2737,7 +2870,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3800,
@@ -2940,7 +3077,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3800,
@@ -3143,7 +3284,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3412,
@@ -3380,7 +3525,11 @@
         "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 4436,
@@ -3617,7 +3766,11 @@
         "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 4436,
@@ -3854,7 +4007,11 @@
         "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 4436,
@@ -4091,7 +4248,11 @@
         "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3071,
@@ -4328,7 +4489,11 @@
         "locator": "PDF page 2 (10/13/15), page 3 (18/24); cover warranty"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3700,
@@ -4364,7 +4529,7 @@
     "cleaning_features": [],
     "lifecycle": "unclear",
     "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "checked_at": "2026-10-07",
@@ -4507,7 +4672,11 @@
         "locator": "PDF page 4, white indoor variants"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 4700,
@@ -4543,7 +4712,7 @@
     "cleaning_features": [],
     "lifecycle": "unclear",
     "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "checked_at": "2026-10-07",
@@ -4686,7 +4855,11 @@
         "locator": "PDF page 4, white indoor variants"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 4400,
@@ -4722,7 +4895,7 @@
     "cleaning_features": [],
     "lifecycle": "unclear",
     "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "checked_at": "2026-10-07",
@@ -4865,7 +5038,11 @@
         "locator": "PDF page 4, white indoor variants"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 3900,
@@ -4901,7 +5078,7 @@
     "cleaning_features": [],
     "lifecycle": "unclear",
     "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "checked_at": "2026-10-07",
@@ -5044,7 +5221,11 @@
         "locator": "PDF page 4, white indoor variants"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 4000,
@@ -5080,7 +5261,7 @@
     "cleaning_features": [],
     "lifecycle": "unclear",
     "lifecycle_note": "Official Thailand currently markets TVAB family; exact -W-I variant specs are from 2023 catalogue. Confirm exact suffix and current availability.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "checked_at": "2026-10-07",
@@ -5223,7 +5404,11 @@
         "locator": "PDF page 4, white indoor variants"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -5376,7 +5561,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -5529,7 +5718,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -5682,7 +5875,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -5835,7 +6032,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -5988,7 +6189,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -6138,7 +6343,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -6288,7 +6497,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -6438,7 +6651,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -6588,7 +6805,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 2870,
@@ -6636,7 +6857,7 @@
     ],
     "lifecycle": "unclear",
     "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "checked_at": "2026-10-07",
@@ -6772,7 +6993,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 2870,
@@ -6820,7 +7045,7 @@
     ],
     "lifecycle": "unclear",
     "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "checked_at": "2026-10-07",
@@ -6956,7 +7181,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 5460,
@@ -7004,7 +7233,7 @@
     ],
     "lifecycle": "unclear",
     "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "checked_at": "2026-10-07",
@@ -7140,7 +7369,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 5460,
@@ -7188,7 +7421,7 @@
     ],
     "lifecycle": "unclear",
     "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "checked_at": "2026-10-07",
@@ -7324,7 +7557,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": 2870,
@@ -7376,7 +7613,7 @@
     ],
     "lifecycle": "unclear",
     "lifecycle_note": "Listed in official 2025 catalogue; exact current stock/lifecycle requires confirmation. Not inferred from retailer listings.",
-    "recommendation_ready": true,
+    "recommendation_ready": false,
     "data_confidence": null,
     "official_source": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "checked_at": "2026-10-07",
@@ -7512,7 +7749,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -7645,7 +7886,11 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
   },
   {
     "min_btu": null,
@@ -7778,6 +8023,778 @@
         "confidence_scope": "exact_model_fields_manually_checked; no health outcome or stock guarantee"
       }
     },
-    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score"
+    "data_confidence_scope": "Field evidence available; no calibrated numeric confidence score",
+    "source_tier": "A",
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_history": []
+  },
+  {
+    "id": "mitsubishi-electric-msy-ka15vf",
+    "brand": "Mitsubishi Electric",
+    "model": "MSY-KA15VF",
+    "identity_status": "exact_code_reported",
+    "source_type": "official_thailand",
+    "source_tier": "A",
+    "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+    "checked_at": "2026-10-07",
+    "evidence": {
+      "model": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "MSY-KA15VF",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "type": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "wall",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "nominal_btu": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 15013,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "min_btu": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 4095,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read",
+        "derivation": "round(1.2 kW × 3412.142 BTU/h per kW)"
+      },
+      "max_btu": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 15013,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "seer": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 18.5,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "phase": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "1",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "voltage": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "220V",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "frequency_hz": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 50,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "inverter": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": true,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "refrigerant": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "R32",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "lifecycle": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "current",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_metric_type": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "SEER",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_metric_value": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 18.5,
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_metric_unit": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "BTU/h/W",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_label": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": {
+          "number": 5,
+          "star_count": 0
+        },
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "warranty_summary": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "คอยล์ร้อน/เย็น 3 ปี · คอมเพรสเซอร์ 5 ปี · อะไหล่ 1 ปี",
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "warranty_scopes": {
+        "tier": "A",
+        "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": [
+          {
+            "scope": "heat_exchangers",
+            "years": 3
+          },
+          {
+            "scope": "compressor",
+            "years": 5
+          },
+          {
+            "scope": "parts",
+            "years": 1
+          }
+        ],
+        "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      }
+    },
+    "verified_fields": [
+      "model",
+      "type",
+      "nominal_btu",
+      "min_btu",
+      "max_btu",
+      "seer",
+      "phase",
+      "voltage",
+      "frequency_hz",
+      "inverter",
+      "refrigerant",
+      "lifecycle",
+      "energy_metric_type",
+      "energy_metric_value",
+      "energy_metric_unit",
+      "energy_label",
+      "warranty_summary",
+      "warranty_scopes"
+    ],
+    "conflicts": [],
+    "bundle": false,
+    "sponsored": false,
+    "data_confidence": null,
+    "recommendation_ready": true,
+    "verification_basis": "fresh_manual_official_review",
+    "discovery_row_ids": [
+      "pdf2026-p09-t2-r05"
+    ],
+    "discovery_relation": "exact_report_code",
+    "family": null,
+    "family_id": null,
+    "indoor_model": null,
+    "outdoor_model": null,
+    "wifi": null,
+    "wifi_status": "unknown",
+    "warranty_summary": "คอยล์ร้อน/เย็น 3 ปี · คอมเพรสเซอร์ 5 ปี · อะไหล่ 1 ปี",
+    "warranty_scopes": [
+      {
+        "scope": "heat_exchangers",
+        "years": 3
+      },
+      {
+        "scope": "compressor",
+        "years": 5
+      },
+      {
+        "scope": "parts",
+        "years": 1
+      }
+    ],
+    "price_value": null,
+    "price_thb": null,
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_source_type": null,
+    "price_source": null,
+    "price_url": null,
+    "price_checked_at": null,
+    "price_history": [
+      {
+        "price_value": 27360.0,
+        "price_source": "HomePro",
+        "price_source_type": "user_supplied_report",
+        "price_scope": "unclear",
+        "price_status": "historical",
+        "price_checked_at": null,
+        "reported_at": "2026-10-07",
+        "tier": "C"
+      }
+    ],
+    "feature_tags": [],
+    "air_quality_capabilities": [],
+    "air_quality_features": [],
+    "comfort_features": [],
+    "cleaning_features": [],
+    "availability_status": "unknown",
+    "image_url": null,
+    "nominal_btu": 15013,
+    "min_btu": 4095,
+    "max_btu": 15013,
+    "seer": 18.5,
+    "eer": null,
+    "cspf": null,
+    "phase": "1",
+    "voltage": "220V",
+    "frequency_hz": 50,
+    "inverter": true,
+    "refrigerant": "R32",
+    "noise_low_dba": null,
+    "noise_mode": null,
+    "type": "wall",
+    "lifecycle": "current",
+    "energy_metric_type": "SEER",
+    "energy_metric_value": 18.5,
+    "energy_metric_unit": "BTU/h/W",
+    "energy_label": {
+      "number": 5,
+      "star_count": 0
+    },
+    "promotion_review": {
+      "reviewer": "Codex manual field review",
+      "approval_authority": "User-authorized safe Batch A release in this sprint",
+      "reviewed_at": "2026-10-07",
+      "scope": "Exact listed fields; unknown fields not certified"
+    },
+    "promotion_blockers": [],
+    "verification_status": "recommendation_ready",
+    "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+    "capacity_raw_kw": [
+      4.4,
+      1.2,
+      4.4
+    ],
+    "capacity_conversion_note": "min_btu = round(1.2 × 3412.142); max equals published nominal at 4.4 kW. Not copied from report.",
+    "promotion_candidate": true
+  },
+  {
+    "id": "samsung-f-ar70f12d1dwn",
+    "brand": "Samsung",
+    "model": "F-AR70F12D1DWN",
+    "identity_status": "exact_code_reported",
+    "source_type": "official_thailand",
+    "source_tier": "A",
+    "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+    "checked_at": "2026-10-07",
+    "evidence": {
+      "model": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "F-AR70F12D1DWN",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "type": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "wall",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "nominal_btu": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 12000,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "min_btu": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 3000,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "max_btu": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 14000,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "seer": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 18.6,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "phase": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "1",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "voltage": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "220-240V",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "frequency_hz": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 50,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "inverter": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": true,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "refrigerant": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "R32",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "wifi": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": true,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "wifi_status": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "built_in",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "noise_low_dba": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 19,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "noise_mode": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "Indoor Low per High/Low specification",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_metric_type": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "SEER",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_metric_value": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": 18.6,
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_metric_unit": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "BTU/h/W",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "energy_label": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": {
+          "number": 5,
+          "star_count": 1
+        },
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "air_quality_capabilities": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": [
+          "4-in-1 Care Filter",
+          "Copper Anti-bacterial Filter"
+        ],
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "air_quality_features": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": [
+          "4-in-1 Care Filter",
+          "Copper Anti-bacterial Filter"
+        ],
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "comfort_features": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": [
+          "WindFree"
+        ],
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "cleaning_features": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": [
+          "Auto Clean",
+          "Freeze Wash"
+        ],
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "feature_tags": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": [
+          "WindFree",
+          "Auto Clean",
+          "Freeze Wash"
+        ],
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "price_scope": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "unclear",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "price_status": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "live",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "price_source_type": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "official_thailand",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "price_source": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "price_url": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+        "confidence_scope": "manual_exact_model_field_review",
+        "review_method": "official_source_read"
+      },
+      "lifecycle": {
+        "tier": "A",
+        "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+        "checked_at": "2026-10-07",
+        "verification_status": "verified",
+        "value": "current",
+        "locator": "Rendered browser exact F-AR70F12D1DWN selected 12000 BTU; visible enabled ซื้อ action; stock and price not verified",
+        "confidence_scope": "manual_exact_model_field_review"
+      }
+    },
+    "verified_fields": [
+      "model",
+      "type",
+      "nominal_btu",
+      "min_btu",
+      "max_btu",
+      "seer",
+      "phase",
+      "voltage",
+      "frequency_hz",
+      "inverter",
+      "refrigerant",
+      "wifi",
+      "wifi_status",
+      "noise_low_dba",
+      "noise_mode",
+      "energy_metric_type",
+      "energy_metric_value",
+      "energy_metric_unit",
+      "energy_label",
+      "air_quality_capabilities",
+      "air_quality_features",
+      "comfort_features",
+      "cleaning_features",
+      "feature_tags",
+      "price_scope",
+      "price_status",
+      "price_source_type",
+      "price_source",
+      "price_url",
+      "lifecycle"
+    ],
+    "conflicts": [],
+    "bundle": false,
+    "sponsored": false,
+    "data_confidence": null,
+    "recommendation_ready": true,
+    "verification_basis": "fresh_manual_official_review",
+    "discovery_row_ids": [
+      "pdf2026-p15-t2-r08"
+    ],
+    "discovery_relation": "related_report_code_not_merged",
+    "family": null,
+    "family_id": null,
+    "indoor_model": null,
+    "outdoor_model": null,
+    "wifi": true,
+    "wifi_status": "built_in",
+    "warranty_summary": null,
+    "warranty_scopes": [],
+    "price_value": null,
+    "price_thb": null,
+    "price_scope": "unclear",
+    "price_status": "no_price",
+    "price_source_type": "official_thailand",
+    "price_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+    "price_url": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+    "price_checked_at": null,
+    "price_history": [],
+    "feature_tags": [
+      "WindFree",
+      "Auto Clean",
+      "Freeze Wash"
+    ],
+    "air_quality_capabilities": [
+      "4-in-1 Care Filter",
+      "Copper Anti-bacterial Filter"
+    ],
+    "air_quality_features": [
+      "4-in-1 Care Filter",
+      "Copper Anti-bacterial Filter"
+    ],
+    "comfort_features": [
+      "WindFree"
+    ],
+    "cleaning_features": [
+      "Auto Clean",
+      "Freeze Wash"
+    ],
+    "availability_status": "unknown",
+    "image_url": null,
+    "nominal_btu": 12000,
+    "min_btu": 3000,
+    "max_btu": 14000,
+    "seer": 18.6,
+    "eer": null,
+    "cspf": null,
+    "phase": "1",
+    "voltage": "220-240V",
+    "frequency_hz": 50,
+    "inverter": true,
+    "refrigerant": "R32",
+    "noise_low_dba": 19,
+    "noise_mode": "Indoor Low per High/Low specification",
+    "type": "wall",
+    "lifecycle": "current",
+    "energy_metric_type": "SEER",
+    "energy_metric_value": 18.6,
+    "energy_metric_unit": "BTU/h/W",
+    "energy_label": {
+      "number": 5,
+      "star_count": 1
+    },
+    "promotion_review": {
+      "reviewer": "Codex manual field review",
+      "approval_authority": "User-authorized safe Batch A release in this sprint",
+      "reviewed_at": "2026-10-07",
+      "scope": "Exact listed fields; unknown fields not certified"
+    },
+    "promotion_blockers": [],
+    "verification_status": "recommendation_ready",
+    "lifecycle_note": "Exact Thailand product actively listed with enabled purchase action in rendered browser; stock and live price unknown.",
+    "price_note": "ราคาบน Samsung Thailand ที่ตรวจอ่าน 7 ต.ค. 2026 · ยังไม่ยืนยัน scope การติดตั้ง จึงไม่ใช้เป็นราคาเครื่องใน Budget Reality Check",
+    "promotion_candidate": true
   }
 ]

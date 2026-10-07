@@ -32,7 +32,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "9K FTKQ09 remains in older PDF/shop link but absent from current variant tabs; not promoted. New cassette exact pairs not verified."
+      "gap": "9K FTKQ09 remains in older PDF/shop link but absent from current variant tabs; not promoted. New cassette exact pairs not verified.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "mitsubishi-electric-th",
@@ -61,7 +66,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "Eight inherited exact-model official pages independently reconfirmed with 2026 catalogue links. Additional residential 24K/30K cassette models not ingested; partial enumeration only."
+      "gap": "Eight inherited exact-model official pages independently reconfirmed with 2026 catalogue links. Additional residential 24K/30K cassette models not ingested; partial enumeration only.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "mitsubishi-heavy-duty-th",
@@ -88,7 +98,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "5 exact Yuki 2026 indoor/outdoor pairs; cassette and full denominator not audited."
+      "gap": "5 exact Yuki 2026 indoor/outdoor pairs; cassette and full denominator not audited.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "panasonic-th",
@@ -115,7 +130,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "Added YU28/36. NX cassette official PDF access denied; no variants promoted from snippets."
+      "gap": "Added YU28/36. NX cassette official PDF access denied; no variants promoted from snippets.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "carrier-th",
@@ -138,7 +158,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "Exact suffix specs from official 2023 PDF; current family marketed, exact suffix lifecycle unclear."
+      "gap": "Exact suffix specs from official 2023 PDF; current family marketed, exact suffix lifecycle unclear.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "samsung-th",
@@ -164,7 +189,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "5 inherited records. Search extracts mix hidden discontinued templates with buy UI; lifecycle must be checked on rendered exact page."
+      "gap": "5 inherited records. Search extracts mix hidden discontinued templates with buy UI; lifecycle must be checked on rendered exact page.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "lg-th",
@@ -189,7 +219,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "4 inherited records; new wall/cassette exact variants not audited."
+      "gap": "4 inherited records; new wall/cassette exact variants not audited.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "toshiba-th",
@@ -216,7 +251,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "5 exact pairs; 200V source and ambiguous EER/SEER withheld from normalized fields. Indoor/mode noise scope unresolved."
+      "gap": "5 exact pairs; 200V source and ambiguous EER/SEER withheld from normalized fields. Indoor/mode noise scope unresolved.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "haier-th",
@@ -242,7 +282,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "4 exact VQAC05 models; warranty, price, Wi-Fi unconfirmed."
+      "gap": "4 exact VQAC05 models; warranty, price, Wi-Fi unconfirmed.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "sharp-th",
@@ -265,7 +310,12 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "5 exact models from 2025 official PDF; current lifecycle unclear, phase not inferred."
+      "gap": "5 exact models from 2025 official PDF; current lifecycle unclear, phase not inferred.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
     },
     {
       "id": "hisense-th",
@@ -288,7 +338,322 @@
       "todo": "Review source access policy and regional scope; build fixture-tested adapter before enabling fetch",
       "discovered_count": null,
       "denominator_scope": null,
-      "gap": "Official TR page contains family/capacity classes and image specs but no verified exact Thai SKU extracted; no retailer SKU promoted."
+      "gap": "Official TR page contains family/capacity classes and image specs but no verified exact Thai SKU extracted; no retailer SKU promoted.",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "hitachi-th",
+      "brand": "Hitachi",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.hitachi-homeappliances.com/th-th/products/air-conditioners/"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "tcl-th",
+      "brand": "TCL",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.tcl.com/th/th/air-conditioners"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "midea-th",
+      "brand": "Midea",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.midea.com/th"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "aux-th",
+      "brand": "AUX",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.auxair.com/th"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "electrolux-th",
+      "brand": "Electrolux",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.electrolux.co.th/appliances/air-conditioners/"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "gree-th",
+      "brand": "Gree",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.gree.co.th/"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "comfee-th",
+      "brand": "Comfee",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.feelcomfee.com/th/products/airconditioner/cfs-13vgsf"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "saijo-denki-th",
+      "brand": "Saijo Denki",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.saijo-denki.co.th/"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "star-aire-th",
+      "brand": "Star Aire",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.staraire.com/"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "shinflow-th",
+      "brand": "Shinflow",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.shinflow.com/th/product"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "xiaomi-th",
+      "brand": "Xiaomi",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://www.mi.com/th/product/mijia-air-conditioner-eco-inverter-24000-btu/"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    },
+    {
+      "id": "kuku-th",
+      "brand": "KUKU",
+      "region": "TH",
+      "official_catalog_urls": [
+        "https://page.line.me/kukuair?openQrModal=true"
+      ],
+      "url_scope": "candidate_discovery_entry_point_not_exhaustive",
+      "url_evidence": "Manual discovery lead; ownership/region/exact-model evidence must be reviewed before use",
+      "adapter": "manual_official",
+      "enabled": false,
+      "policy_status": "manual_review_required",
+      "terms_reviewed_at": null,
+      "robots_reviewed_at": null,
+      "denominator_known": false,
+      "discovered_count": null,
+      "denominator_scope": null,
+      "automatic_promotion": false,
+      "todo": "Audit exact models, Thai support and lawful adapter access; no inferred specs",
+      "cadence": {
+        "discovery": "weekly",
+        "spec_reverification": "monthly",
+        "price_refresh": "separate_source_specific"
+      }
+    }
+  ],
+  "seed_snapshots": [
+    {
+      "id": "aircon-thailand-2026-v2",
+      "tier": "C",
+      "path": "data/imports/aircon_thailand_2026_v2_raw.json",
+      "snapshot_date": "2026-10-07",
+      "live_source": false,
+      "automatic_promotion": false
     }
   ]
 }

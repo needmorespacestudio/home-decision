@@ -11,7 +11,7 @@ function test(name,code){try{assert.equal(vm.runInContext(code,ctx),true);count+
 vm.runInContext(`s={room:'bed',area:18,height:2.7,sun:'shade',glass:'low',roof:'no',open:'closed',people:2,usage:'night',install:'wall',phase:'1',specialNeeds:[],needsAnswered:true,budgetMode:'unset',budgetAmount:null,priorities:['quiet','saving','smart']};`,ctx);
 test('Quick retains 8 questions',`quickQs.length===8`);
 test('Detailed retains 14 questions',`detailedQs.length===14`);
-test('Catalog mirror count',`PRODUCTS.length===51`);
+test('Catalog mirror count',`PRODUCTS.length===53`);
 test('Room load grows with area',`(()=>{let a=s.area;s.area=12;let x=load().mid;s.area=36;let y=load().mid;s.area=a;return y>x})()`);
 test('Afternoon sun increases load',`(()=>{let a=s.sun;s.sun='shade';let x=load().mid;s.sun='afternoon';let y=load().mid;s.sun=a;return y>x})()`);
 test('Open plan increases load',`(()=>{let a=s.open;s.open='closed';let x=load().mid;s.open='open';let y=load().mid;s.open=a;return y>x})()`);
@@ -40,6 +40,17 @@ test('Unverified Wi-Fi grants no score',`featureEvidence({wifi:true,verified_fie
 test('Optional Wi-Fi disclosed',`featureEvidence({wifi:false,wifi_optional:true,verified_fields:['wifi']},'smart').text.includes('เสริม')`);
 test('Warranty does not claim service quality',`featureEvidence({warranty_summary:'5 ปี',verified_fields:['warranty']},'service').text.includes('ยังเทียบ')`);
 test('Ambiguous energy metric grants no SEER score',`featureEvidence({metric_raw:{value:18},seer:null,verified_fields:[]},'saving').value===null`);
+test('Tier C cannot bypass readiness',`!eligible({...PRODUCTS.find(p=>p.recommendation_ready),source_tier:'C'},load())`);
+test('Unclear lifecycle is excluded',`!eligible({...PRODUCTS.find(p=>p.recommendation_ready),lifecycle:'unclear'},load())`);
+const sampleCode=`({price_thb:10000,price_url:'https://example.test',price_source_type:'authorized_retailer',price_scope:'unit_only',price_status:'live',price_checked_at:new Date().toISOString().slice(0,10),verified_fields:['price']})`;
+test('Fresh scoped price is accepted',`verifiedPrice(${sampleCode})`);
+test('Installation price is not unit sample',`!verifiedPrice({...${sampleCode},price_scope:'includes_standard_installation'})`);
+test('Pipe price is not unit sample',`!verifiedPrice({...${sampleCode},price_scope:'includes_pipe'})`);
+test('Unclear scope is excluded',`!verifiedPrice({...${sampleCode},price_scope:'unclear'})`);
+test('PDF price is excluded',`!verifiedPrice({...${sampleCode},price_source_type:'user_supplied_report'})`);
+test('Historical price is excluded',`!verifiedPrice({...${sampleCode},price_status:'historical'})`);
+test('Stale price is excluded',`!verifiedPrice({...${sampleCode},price_checked_at:'2020-01-01'})`);
+test('Future price date is excluded',`!verifiedPrice({...${sampleCode},price_checked_at:'2099-01-01'})`);
 test('Zero price is unknown',`!verifiedPrice({price_thb:0,price_url:'https://example.test',price_checked_at:'2026-10-07',verified_fields:['price']})`);
 test('Missing price is not free',`budgetReality([{...PRODUCTS[0],match_type:'exact',price_thb:null}]).min===null`);
 test('Ceiling excludes unknown from confirmed budget',`(()=>{let a=s.budgetMode,b=s.budgetAmount;s.budgetMode='ceiling';s.budgetAmount=25000;let r=budgetReality([{...PRODUCTS[0],match_type:'exact',price_thb:null}]);s.budgetMode=a;s.budgetAmount=b;return r.inBudget.length===0&&r.unknownPrices===1})()`);

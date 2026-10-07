@@ -1,0 +1,4125 @@
+{
+  "schema_version": 2,
+  "products": [
+    {
+      "id": "mitsubishi-electric-msy-ka15vf",
+      "brand": "Mitsubishi Electric",
+      "model": "MSY-KA15VF",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "MSY-KA15VF",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 15013,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "min_btu": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 4095,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read",
+          "derivation": "round(1.2 kW × 3412.142 BTU/h per kW)"
+        },
+        "max_btu": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 15013,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18.5,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "phase": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "1",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "voltage": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "220V",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "frequency_hz": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 50,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "current",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18.5,
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_label": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "number": 5,
+            "star_count": 0
+          },
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "warranty_summary": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "คอยล์ร้อน/เย็น 3 ปี · คอมเพรสเซอร์ 5 ปี · อะไหล่ 1 ปี",
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "warranty_scopes": {
+          "tier": "A",
+          "source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5529.aspx",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            {
+              "scope": "heat_exchangers",
+              "years": 3
+            },
+            {
+              "scope": "compressor",
+              "years": 5
+            },
+            {
+              "scope": "parts",
+              "years": 1
+            }
+          ],
+          "locator": "Technical specification table MODEL MSY-KA15VF; original cooling 4.4 (1.2–4.4) kW; listed nominal 15,013 BTU/h",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "lifecycle",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "energy_label",
+        "warranty_summary",
+        "warranty_scopes"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p09-t2-r05"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": null,
+      "wifi_status": "unknown",
+      "warranty_summary": "คอยล์ร้อน/เย็น 3 ปี · คอมเพรสเซอร์ 5 ปี · อะไหล่ 1 ปี",
+      "warranty_scopes": [
+        {
+          "scope": "heat_exchangers",
+          "years": 3
+        },
+        {
+          "scope": "compressor",
+          "years": 5
+        },
+        {
+          "scope": "parts",
+          "years": 1
+        }
+      ],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 27360.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 15013,
+      "min_btu": 4095,
+      "max_btu": 15013,
+      "seer": 18.5,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "lifecycle": "current",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18.5,
+      "energy_metric_unit": "BTU/h/W",
+      "energy_label": {
+        "number": 5,
+        "star_count": 0
+      },
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [],
+      "verification_status": "record_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "capacity_raw_kw": [
+        4.4,
+        1.2,
+        4.4
+      ],
+      "capacity_conversion_note": "min_btu = round(1.2 × 3412.142); max equals published nominal at 4.4 kW. Not copied from report.",
+      "promotion_candidate": true
+    },
+    {
+      "id": "haier-hsu-09vrwa05sbf",
+      "brand": "Haier",
+      "model": "HSU-09VRWA05SBF",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "HSU-09VRWA05SBF",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 9000,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 20.78,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "phase": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "1",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "voltage": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "220V",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "frequency_hz": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 50,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "current",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_low_dba": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 30,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_mode": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "Lo (indoor fan); So reported separately",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "indoor_modes": [
+              "Hi",
+              "Mid",
+              "Lo",
+              "So"
+            ],
+            "indoor_dba": [
+              40,
+              37,
+              30,
+              25
+            ]
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 20.78,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_label": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "number": 5,
+            "star_count": 2
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "comfort_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "feature_tags": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC",
+            "Self Cleaning",
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "lifecycle",
+        "wifi",
+        "noise_low_dba",
+        "noise_mode",
+        "noise",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "energy_label",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "comfort_features",
+        "feature_tags"
+      ],
+      "conflicts": [
+        {
+          "field": "energy_metric_unit",
+          "status": "pending_review",
+          "official_headline": "BTU/h/W",
+          "official_spec_table": "W/W",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-09vrwa05sbf.shtml"
+        }
+      ],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p20-t2-r16"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 20990.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [
+        "PM1.0 filter",
+        "UVC",
+        "Self Cleaning",
+        "I Feel"
+      ],
+      "air_quality_capabilities": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "air_quality_features": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "comfort_features": [
+        "I Feel"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 9000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 20.78,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": 30,
+      "noise_mode": "Lo (indoor fan); So reported separately",
+      "type": "wall",
+      "lifecycle": "current",
+      "noise": {
+        "indoor_modes": [
+          "Hi",
+          "Mid",
+          "Lo",
+          "So"
+        ],
+        "indoor_dba": [
+          40,
+          37,
+          30,
+          25
+        ]
+      },
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 20.78,
+      "energy_metric_unit": "BTU/h/W",
+      "energy_label": {
+        "number": 5,
+        "star_count": 2
+      },
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "unresolved_conflict"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "energy_units_note": "Headline specifies BTU/h/W; lower table labels same number W/W. Preserve reported headline unit; metric unit discrepancy needs review.",
+      "air_quality_note": "Named PM1.0 filter/UVC capability only; no health or room purification outcome inferred. Illustration alt text PM2.5 differs from PM1.0 primary claim.",
+      "promotion_candidate": false
+    },
+    {
+      "id": "haier-hsu-12vrwa05bf",
+      "brand": "Haier",
+      "model": "HSU-12VRWA05BF",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "HSU-12VRWA05BF",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 12000,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 20.64,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "phase": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "1",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "voltage": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "220V",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "frequency_hz": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 50,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "current",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_low_dba": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 32,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_mode": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "Lo (indoor fan); So reported separately",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "indoor_modes": [
+              "Hi",
+              "Mid",
+              "Lo",
+              "So"
+            ],
+            "indoor_dba": [
+              40,
+              36,
+              32,
+              27
+            ]
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 20.64,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_label": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "number": 5,
+            "star_count": 2
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "comfort_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "feature_tags": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC",
+            "Self Cleaning",
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "lifecycle",
+        "wifi",
+        "noise_low_dba",
+        "noise_mode",
+        "noise",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "energy_label",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "comfort_features",
+        "feature_tags"
+      ],
+      "conflicts": [
+        {
+          "field": "energy_metric_unit",
+          "status": "pending_review",
+          "official_headline": "BTU/h/W",
+          "official_spec_table": "W/W",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-12vrwa05bf.shtml"
+        }
+      ],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p20-t2-r17"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 21990.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [
+        "PM1.0 filter",
+        "UVC",
+        "Self Cleaning",
+        "I Feel"
+      ],
+      "air_quality_capabilities": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "air_quality_features": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "comfort_features": [
+        "I Feel"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 12000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 20.64,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": 32,
+      "noise_mode": "Lo (indoor fan); So reported separately",
+      "type": "wall",
+      "lifecycle": "current",
+      "noise": {
+        "indoor_modes": [
+          "Hi",
+          "Mid",
+          "Lo",
+          "So"
+        ],
+        "indoor_dba": [
+          40,
+          36,
+          32,
+          27
+        ]
+      },
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 20.64,
+      "energy_metric_unit": "BTU/h/W",
+      "energy_label": {
+        "number": 5,
+        "star_count": 2
+      },
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "unresolved_conflict"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "energy_units_note": "Headline specifies BTU/h/W; lower table labels same number W/W. Preserve reported headline unit; metric unit discrepancy needs review.",
+      "air_quality_note": "Named PM1.0 filter/UVC capability only; no health or room purification outcome inferred. Illustration alt text PM2.5 differs from PM1.0 primary claim.",
+      "promotion_candidate": false
+    },
+    {
+      "id": "haier-hsu-18vrwa05bf",
+      "brand": "Haier",
+      "model": "HSU-18VRWA05BF",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "HSU-18VRWA05BF",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18000,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 21.94,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "phase": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "1",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "voltage": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "220V",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "frequency_hz": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 50,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "current",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_low_dba": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 39,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_mode": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "Lo (indoor fan); So reported separately",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "indoor_modes": [
+              "Hi",
+              "Mid",
+              "Lo",
+              "So"
+            ],
+            "indoor_dba": [
+              47,
+              45,
+              39,
+              35
+            ]
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 21.94,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_label": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "number": 5,
+            "star_count": 3
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "comfort_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "feature_tags": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC",
+            "Self Cleaning",
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "lifecycle",
+        "wifi",
+        "noise_low_dba",
+        "noise_mode",
+        "noise",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "energy_label",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "comfort_features",
+        "feature_tags"
+      ],
+      "conflicts": [
+        {
+          "field": "energy_metric_unit",
+          "status": "pending_review",
+          "official_headline": "BTU/h/W",
+          "official_spec_table": "W/W",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-18vrwa05bf.shtml"
+        }
+      ],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p21-t1-r03"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 27490.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [
+        "PM1.0 filter",
+        "UVC",
+        "Self Cleaning",
+        "I Feel"
+      ],
+      "air_quality_capabilities": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "air_quality_features": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "comfort_features": [
+        "I Feel"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 18000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 21.94,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": 39,
+      "noise_mode": "Lo (indoor fan); So reported separately",
+      "type": "wall",
+      "lifecycle": "current",
+      "noise": {
+        "indoor_modes": [
+          "Hi",
+          "Mid",
+          "Lo",
+          "So"
+        ],
+        "indoor_dba": [
+          47,
+          45,
+          39,
+          35
+        ]
+      },
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 21.94,
+      "energy_metric_unit": "BTU/h/W",
+      "energy_label": {
+        "number": 5,
+        "star_count": 3
+      },
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "unresolved_conflict"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "energy_units_note": "Headline specifies BTU/h/W; lower table labels same number W/W. Preserve reported headline unit; metric unit discrepancy needs review.",
+      "air_quality_note": "Named PM1.0 filter/UVC capability only; no health or room purification outcome inferred. Illustration alt text PM2.5 differs from PM1.0 primary claim.",
+      "promotion_candidate": false
+    },
+    {
+      "id": "haier-hsu-24vrwa05bf",
+      "brand": "Haier",
+      "model": "HSU-24VRWA05BF",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "HSU-24VRWA05BF",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 24000,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 20.13,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "phase": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "1",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "voltage": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "220V",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "frequency_hz": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 50,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "current",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_low_dba": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 42,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_mode": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "Lo (indoor fan); So reported separately",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "indoor_modes": [
+              "Hi",
+              "Mid",
+              "Lo",
+              "So"
+            ],
+            "indoor_dba": [
+              49,
+              47,
+              42,
+              37
+            ]
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 20.13,
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_label": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "number": 5,
+            "star_count": 2
+          },
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "comfort_features": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "feature_tags": {
+          "tier": "A",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM1.0 filter",
+            "UVC",
+            "Self Cleaning",
+            "I Feel"
+          ],
+          "locator": "Exact model headline; Model, Power supply (Ph/V/Hz), Indoor noise (Hi/Mid/Lo/So), SEER headline; feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "lifecycle",
+        "wifi",
+        "noise_low_dba",
+        "noise_mode",
+        "noise",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "energy_label",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "comfort_features",
+        "feature_tags"
+      ],
+      "conflicts": [
+        {
+          "field": "energy_metric_unit",
+          "status": "pending_review",
+          "official_headline": "BTU/h/W",
+          "official_spec_table": "W/W",
+          "source": "https://www.haier.com/th/air-conditioners/hsu-24vrwa05bf.shtml"
+        }
+      ],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p21-t1-r04"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 38990.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [
+        "PM1.0 filter",
+        "UVC",
+        "Self Cleaning",
+        "I Feel"
+      ],
+      "air_quality_capabilities": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "air_quality_features": [
+        "PM1.0 filter",
+        "UVC"
+      ],
+      "comfort_features": [
+        "I Feel"
+      ],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 24000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 20.13,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": 42,
+      "noise_mode": "Lo (indoor fan); So reported separately",
+      "type": "wall",
+      "lifecycle": "current",
+      "noise": {
+        "indoor_modes": [
+          "Hi",
+          "Mid",
+          "Lo",
+          "So"
+        ],
+        "indoor_dba": [
+          49,
+          47,
+          42,
+          37
+        ]
+      },
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 20.13,
+      "energy_metric_unit": "BTU/h/W",
+      "energy_label": {
+        "number": 5,
+        "star_count": 2
+      },
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "unresolved_conflict"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "energy_units_note": "Headline specifies BTU/h/W; lower table labels same number W/W. Preserve reported headline unit; metric unit discrepancy needs review.",
+      "air_quality_note": "Named PM1.0 filter/UVC capability only; no health or room purification outcome inferred. Illustration alt text PM2.5 differs from PM1.0 primary claim.",
+      "promotion_candidate": false
+    },
+    {
+      "id": "samsung-f-ar70f12d1dwn",
+      "brand": "Samsung",
+      "model": "F-AR70F12D1DWN",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "F-AR70F12D1DWN",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 12000,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "min_btu": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 3000,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "max_btu": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 14000,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18.6,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "phase": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "1",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "voltage": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "220-240V",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "frequency_hz": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 50,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi_status": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "built_in",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_low_dba": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 19,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "noise_mode": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "Indoor Low per High/Low specification",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18.6,
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_label": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": {
+            "number": 5,
+            "star_count": 1
+          },
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "4-in-1 Care Filter",
+            "Copper Anti-bacterial Filter"
+          ],
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "4-in-1 Care Filter",
+            "Copper Anti-bacterial Filter"
+          ],
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "comfort_features": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "WindFree"
+          ],
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Auto Clean",
+            "Freeze Wash"
+          ],
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "feature_tags": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "WindFree",
+            "Auto Clean",
+            "Freeze Wash"
+          ],
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "price_scope": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "unclear",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "price_status": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "live",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "price_source_type": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "official_thailand",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "price_source": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "price_url": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "locator": "Exact F- package model; specs Capacity/Energy Efficiency/Noise/Electrical/Technical/Air purification/Smart; displayed selling price",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "current",
+          "locator": "Rendered browser exact F-AR70F12D1DWN selected 12000 BTU; visible enabled ซื้อ action; stock and price not verified",
+          "confidence_scope": "manual_exact_model_field_review"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "min_btu",
+        "max_btu",
+        "seer",
+        "phase",
+        "voltage",
+        "frequency_hz",
+        "inverter",
+        "refrigerant",
+        "wifi",
+        "wifi_status",
+        "noise_low_dba",
+        "noise_mode",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "energy_label",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "comfort_features",
+        "cleaning_features",
+        "feature_tags",
+        "price_scope",
+        "price_status",
+        "price_source_type",
+        "price_source",
+        "price_url",
+        "lifecycle"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p15-t2-r08"
+      ],
+      "discovery_relation": "related_report_code_not_merged",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": true,
+      "wifi_status": "built_in",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": "official_thailand",
+      "price_source": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+      "price_url": "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1d-ai-windfree-f-ar70f12d1dwn/",
+      "price_checked_at": null,
+      "price_history": [],
+      "feature_tags": [
+        "WindFree",
+        "Auto Clean",
+        "Freeze Wash"
+      ],
+      "air_quality_capabilities": [
+        "4-in-1 Care Filter",
+        "Copper Anti-bacterial Filter"
+      ],
+      "air_quality_features": [
+        "4-in-1 Care Filter",
+        "Copper Anti-bacterial Filter"
+      ],
+      "comfort_features": [
+        "WindFree"
+      ],
+      "cleaning_features": [
+        "Auto Clean",
+        "Freeze Wash"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 12000,
+      "min_btu": 3000,
+      "max_btu": 14000,
+      "seer": 18.6,
+      "eer": null,
+      "cspf": null,
+      "phase": "1",
+      "voltage": "220-240V",
+      "frequency_hz": 50,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": 19,
+      "noise_mode": "Indoor Low per High/Low specification",
+      "type": "wall",
+      "lifecycle": "current",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18.6,
+      "energy_metric_unit": "BTU/h/W",
+      "energy_label": {
+        "number": 5,
+        "star_count": 1
+      },
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [],
+      "verification_status": "record_verified",
+      "lifecycle_note": "Exact Thailand product actively listed with enabled purchase action in rendered browser; stock and live price unknown.",
+      "price_note": "ราคาบน Samsung Thailand ที่ตรวจอ่าน 7 ต.ค. 2026 · ยังไม่ยืนยัน scope การติดตั้ง จึงไม่ใช้เป็นราคาเครื่องใน Budget Reality Check",
+      "promotion_candidate": true
+    },
+    {
+      "id": "carrier-42tveb010",
+      "brand": "Carrier",
+      "model": "42TVEB010",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://carrierthailand.com/copper-ion/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB010",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 9200,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "indoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB010",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "outdoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "38TVEB010",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "indoor_model",
+        "outdoor_model",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "wifi"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p13-t1-r03"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": "42TVEB010",
+      "outdoor_model": "38TVEB010",
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 18275.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "air_quality_features": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 9200,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": null,
+      "refrigerant": null,
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18,
+      "energy_metric_unit": "BTU/h/W",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz",
+        "missing_official_refrigerant",
+        "missing_official_lifecycle"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "promotion_candidate": false,
+      "lifecycle": "unclear"
+    },
+    {
+      "id": "carrier-42tveb013",
+      "brand": "Carrier",
+      "model": "42TVEB013",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://carrierthailand.com/copper-ion/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB013",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 12000,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "indoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB013",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "outdoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "38TVEB013",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "indoor_model",
+        "outdoor_model",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "wifi"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p13-t1-r04"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": "42TVEB013",
+      "outdoor_model": "38TVEB013",
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 19125.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "air_quality_features": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 12000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": null,
+      "refrigerant": null,
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18,
+      "energy_metric_unit": "BTU/h/W",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz",
+        "missing_official_refrigerant",
+        "missing_official_lifecycle"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "promotion_candidate": false,
+      "lifecycle": "unclear"
+    },
+    {
+      "id": "carrier-42tveb016",
+      "brand": "Carrier",
+      "model": "42TVEB016",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://carrierthailand.com/copper-ion/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB016",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 15000,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "indoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB016",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "outdoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "38TVEB016",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "indoor_model",
+        "outdoor_model",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "wifi"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p13-t1-r05"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": "42TVEB016",
+      "outdoor_model": "38TVEB016",
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 23375.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "air_quality_features": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 15000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": null,
+      "refrigerant": null,
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18,
+      "energy_metric_unit": "BTU/h/W",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz",
+        "missing_official_refrigerant",
+        "missing_official_lifecycle"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "promotion_candidate": false,
+      "lifecycle": "unclear"
+    },
+    {
+      "id": "carrier-42tveb018",
+      "brand": "Carrier",
+      "model": "42TVEB018",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://carrierthailand.com/copper-ion/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB018",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18000,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "indoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB018",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "outdoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "38TVEB018",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "indoor_model",
+        "outdoor_model",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "wifi"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p13-t1-r06"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": "42TVEB018",
+      "outdoor_model": "38TVEB018",
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 25925.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "air_quality_features": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 18000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": null,
+      "refrigerant": null,
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18,
+      "energy_metric_unit": "BTU/h/W",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz",
+        "missing_official_refrigerant",
+        "missing_official_lifecycle"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "promotion_candidate": false,
+      "lifecycle": "unclear"
+    },
+    {
+      "id": "carrier-42tveb022",
+      "brand": "Carrier",
+      "model": "42TVEB022",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://carrierthailand.com/copper-ion/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB022",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 21000,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "indoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB022",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "outdoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "38TVEB022",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "indoor_model",
+        "outdoor_model",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "wifi"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p13-t1-r07"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": "42TVEB022",
+      "outdoor_model": "38TVEB022",
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 30175.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "air_quality_features": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 21000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": null,
+      "refrigerant": null,
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18,
+      "energy_metric_unit": "BTU/h/W",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz",
+        "missing_official_refrigerant",
+        "missing_official_lifecycle"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "promotion_candidate": false,
+      "lifecycle": "unclear"
+    },
+    {
+      "id": "carrier-42tveb026",
+      "brand": "Carrier",
+      "model": "42TVEB026",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://carrierthailand.com/copper-ion/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB026",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 24000,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "seer": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "indoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "42TVEB026",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "outdoor_model": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "38TVEB026",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_type": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "SEER",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_value": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 18,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "energy_metric_unit": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "BTU/h/W",
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_capabilities": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "air_quality_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "PM2.5 filter",
+            "X-IONIZER"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "cleaning_features": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": [
+            "Self Cleaning"
+          ],
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "wifi": {
+          "tier": "A",
+          "source": "https://carrierthailand.com/copper-ion/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Copper ION six-column exact indoor/outdoor capacity/SEER table and named feature sections",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "seer",
+        "indoor_model",
+        "outdoor_model",
+        "energy_metric_type",
+        "energy_metric_value",
+        "energy_metric_unit",
+        "air_quality_capabilities",
+        "air_quality_features",
+        "cleaning_features",
+        "wifi"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p13-t1-r08"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": "42TVEB026",
+      "outdoor_model": "38TVEB026",
+      "wifi": true,
+      "wifi_status": "unknown",
+      "warranty_summary": null,
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 36975.0,
+          "price_source": "HomePro",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "air_quality_features": [
+        "PM2.5 filter",
+        "X-IONIZER"
+      ],
+      "comfort_features": [],
+      "cleaning_features": [
+        "Self Cleaning"
+      ],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 24000,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": 18,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": null,
+      "refrigerant": null,
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "energy_metric_type": "SEER",
+      "energy_metric_value": 18,
+      "energy_metric_unit": "BTU/h/W",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz",
+        "missing_official_refrigerant",
+        "missing_official_lifecycle"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Listed on official Thailand product page at review; retailer stock not guaranteed",
+      "promotion_candidate": false,
+      "lifecycle": "unclear"
+    },
+    {
+      "id": "electrolux-esv127c1sa",
+      "brand": "Electrolux",
+      "model": "ESV127C1SA",
+      "identity_status": "exact_code_reported",
+      "source_type": "official_thailand",
+      "source_tier": "A",
+      "official_source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+      "checked_at": "2026-10-07",
+      "evidence": {
+        "model": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "ESV127C1SA",
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "type": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "wall",
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "nominal_btu": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": 11997,
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "inverter": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": true,
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "refrigerant": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "R32",
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "lifecycle": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "discontinued",
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        },
+        "warranty_summary": {
+          "tier": "A",
+          "source": "https://www.electrolux.co.th/appliances/air-conditioners/esv127c1sa/",
+          "checked_at": "2026-10-07",
+          "verification_status": "verified",
+          "value": "คอมเพรสเซอร์ 10 ปี · คอยล์ 5 ปี · อะไหล่ไฟฟ้าและค่าแรง 2 ปี",
+          "locator": "Exact model title; stopped-production button; warranty section",
+          "confidence_scope": "manual_exact_model_field_review",
+          "review_method": "official_source_read"
+        }
+      },
+      "verified_fields": [
+        "model",
+        "type",
+        "nominal_btu",
+        "inverter",
+        "refrigerant",
+        "lifecycle",
+        "warranty_summary"
+      ],
+      "conflicts": [],
+      "bundle": false,
+      "sponsored": false,
+      "data_confidence": null,
+      "recommendation_ready": false,
+      "verification_basis": "fresh_manual_official_review",
+      "discovery_row_ids": [
+        "pdf2026-p26-t2-r04"
+      ],
+      "discovery_relation": "exact_report_code",
+      "family": null,
+      "family_id": null,
+      "indoor_model": null,
+      "outdoor_model": null,
+      "wifi": null,
+      "wifi_status": "unknown",
+      "warranty_summary": "คอมเพรสเซอร์ 10 ปี · คอยล์ 5 ปี · อะไหล่ไฟฟ้าและค่าแรง 2 ปี",
+      "warranty_scopes": [],
+      "price_value": null,
+      "price_thb": null,
+      "price_scope": "unclear",
+      "price_status": "no_price",
+      "price_source_type": null,
+      "price_source": null,
+      "price_url": null,
+      "price_checked_at": null,
+      "price_history": [
+        {
+          "price_value": 19990.0,
+          "price_source": "Power Buy",
+          "price_source_type": "user_supplied_report",
+          "price_scope": "unclear",
+          "price_status": "historical",
+          "price_checked_at": null,
+          "reported_at": "2026-10-07",
+          "tier": "C"
+        }
+      ],
+      "feature_tags": [],
+      "air_quality_capabilities": [],
+      "air_quality_features": [],
+      "comfort_features": [],
+      "cleaning_features": [],
+      "availability_status": "unknown",
+      "image_url": null,
+      "nominal_btu": 11997,
+      "min_btu": null,
+      "max_btu": null,
+      "seer": null,
+      "eer": null,
+      "cspf": null,
+      "phase": null,
+      "voltage": null,
+      "frequency_hz": null,
+      "inverter": true,
+      "refrigerant": "R32",
+      "noise_low_dba": null,
+      "noise_mode": null,
+      "type": "wall",
+      "lifecycle": "discontinued",
+      "promotion_review": {
+        "reviewer": "Codex manual field review",
+        "approval_authority": "User-authorized safe Batch A release in this sprint",
+        "reviewed_at": "2026-10-07",
+        "scope": "Exact listed fields; unknown fields not certified"
+      },
+      "promotion_blockers": [
+        "lifecycle_not_current",
+        "missing_official_phase",
+        "missing_official_voltage",
+        "missing_official_frequency_hz"
+      ],
+      "verification_status": "field_verified",
+      "lifecycle_note": "Official Thailand page explicitly says หยุดการผลิต; report price retained as historical only.",
+      "promotion_candidate": false
+    }
+  ],
+  "complete_brands": [],
+  "checked_at": "2026-10-07",
+  "automatic_promotion": false,
+  "method": "manual_exact_model_official_field_review"
+}

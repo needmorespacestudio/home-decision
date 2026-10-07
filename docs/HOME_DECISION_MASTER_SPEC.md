@@ -104,3 +104,6 @@ Not a marketplace pretending to be independent; not a full HVAC engineering tool
 | 2026-10-07 | Result hierarchy Setup → zone capacity → products | One setup plus ≤2 alternatives; disclose survey/uncertainty | Product-first result hierarchy |
 | 2026-10-07 | Exact zone coverage uses nominal ≥ upper preliminary load | Do not promote undersized products using peak inverter output | Original loose boundary classifier for configuration matching |
 | 2026-10-07 | Setup budget is verified equipment samples only | No fabricated installed costs or numeric energy savings | Per-unit price mistaken for multi-unit total |
+
+| 2026-10-07 | User-supplied 362-entry PDF is Tier C discovery/enrichment; field-level tiers A/B/C govern promotion | Breadth must not imply verification; preserve unknowns, conflicts, lifecycle and price scope | Any assumption that importing a report certifies recommendations |
+| 2026-10-07 | Exclude unclear lifecycle and Tier C from recommendations; fresh scoped price samples only | Keep legacy uncertain records and price history without promoting unknowns; two fresh exact-model Batch A additions | Unclear lifecycle was allowed; dated price presence alone qualified as budget sample |

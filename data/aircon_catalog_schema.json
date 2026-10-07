@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Home Decision evidence-backed catalog candidate",
+  "type": "object",
+  "required": [
+    "id",
+    "brand",
+    "model",
+    "source_tier",
+    "verification_status",
+    "recommendation_ready",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "source_tier": {
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "discovered",
+        "ingested",
+        "field_verified",
+        "record_verified",
+        "recommendation_ready"
+      ]
+    },
+    "recommendation_ready": {
+      "type": "boolean"
+    },
+    "lifecycle": {
+      "enum": [
+        "current",
+        "historical",
+        "discontinued",
+        "unclear"
+      ]
+    },
+    "price_scope": {
+      "enum": [
+        "unit_only",
+        "includes_standard_installation",
+        "includes_pipe",
+        "unclear"
+      ]
+    },
+    "price_status": {
+      "enum": [
+        "live",
+        "historical",
+        "out_of_stock",
+        "no_price",
+        "stale"
+      ]
+    },
+    "wifi_status": {
+      "enum": [
+        "built_in",
+        "optional",
+        "unavailable",
+        "unknown"
+      ]
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "conflicts": {
+      "type": "array"
+    },
+    "price_history": {
+      "type": "array"
+    },
+    "air_quality_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "source_tier": {
+            "const": "C"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "recommendation_ready": {
+            "const": false
+          }
+        }
+      }
+    }
+  ],
+  "description": "Structural contract only; catalog_ingestion.promotion_errors enforces fresh value-matched exact-model official receipts and explicit review. Schema is not an automatic promotion mechanism."
+}
