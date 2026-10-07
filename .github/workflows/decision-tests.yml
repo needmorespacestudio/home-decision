@@ -13,17 +13,25 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
-      - name: Configuration runtime mirror and representative scenarios
+      - name: Runtime mirrors
         run: |
           node scripts/sync-cooling-layer.cjs --check
           node scripts/sync-analytics-layer.cjs --check
-          node tests/test_beta_analytics.cjs
-          node tests/test_beta_actions.cjs
-          node tests/test_beta_scenarios.cjs
-          node tests/test_configuration.cjs
-          node tests/test_recommendation.cjs
-          node tests/test_pwa.cjs
-      - name: Catalog evidence and mirror regression
-        run: |
-          python3 -m unittest discover -s tests -p 'test_catalog*.py'
-          python3 scripts/catalog_watcher.py --check-mirror --output-dir reports/run
+      - name: Beta analytics
+        run: node tests/test_beta_analytics.cjs
+      - name: Beta actions
+        run: node tests/test_beta_actions.cjs
+      - name: Beta scenarios
+        run: node tests/test_beta_scenarios.cjs
+      - name: Cooling Load V2
+        run: node tests/test_cooling_load_v2.cjs
+      - name: Configuration
+        run: node tests/test_configuration.cjs
+      - name: Recommendation
+        run: node tests/test_recommendation.cjs
+      - name: PWA
+        run: node tests/test_pwa.cjs
+      - name: Catalog evidence regression
+        run: python3 -m unittest discover -s tests -p 'test_catalog*.py'
+      - name: Catalog mirror
+        run: python3 scripts/catalog_watcher.py --check-mirror --output-dir reports/run

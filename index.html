@@ -1283,4 +1283,6 @@ async function installApp(){
  else alert('ถ้าเบราว์เซอร์รองรับ ให้เปิดเมนูของ Chrome/Edge แล้วเลือก Install app หรือ Add to Home screen');
 }
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).catch(()=>{}));}
-</script></body></html>
+</script>
+<script src="scripts/cooling-load-v2.js"></script>
+</body></html>

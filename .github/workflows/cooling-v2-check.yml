@@ -1,0 +1,19 @@
+name: Cooling Load V2 focused checks
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  cooling-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Syntax
+        run: node --check scripts/cooling-load-v2.js
+      - name: Cooling Load V2 regression
+        run: node tests/test_cooling_load_v2.cjs
+      - name: PWA regression
+        run: node tests/test_pwa.cjs
