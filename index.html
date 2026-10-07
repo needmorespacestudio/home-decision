@@ -616,4 +616,82 @@ function quoteConfidence(q){
  let score=15;
  if(q.total>0)score+=20;
  if(q.installIncluded!=="unknown")score+=10;
- i
+ if(q.written==="yes")score+=15;
+ if(q.vat!=="unknown")score+=8;
+ if(q.copper!=="unknown")score+=8;
+ if(q.breaker!=="unknown")score+=6;
+ if(q.core!=="unknown")score+=5;
+ if(q.ceiling!=="unknown")score+=4;
+ if(q.workWarranty>0)score+=5;
+ if(q.identity==="yes")score+=4;
+ return Math.min(100,score);
+}
+function analyzeQuickQuotes(){
+ const valid=quickQuoteState.filter(q=>q.total>0);
+ quickQuoteState.forEach((q,i)=>{
+   const el=document.getElementById("qqsum"+i); if(!el)return;
+   if(!q.total){el.innerHTML=`<span class="muted">กรอกราคารวมที่ร้านบอกก็เริ่มได้</span>`;return}
+   const miss=quoteMissing(q),conf=quoteConfidence(q);
+   el.innerHTML=`<b>${q.total.toLocaleString("th-TH")} บาท</b> • ความครบของข้อมูล ${conf}%
+   <div class="quoteRisk">${miss.length?`ยังควรถามเพิ่ม ${miss.length} เรื่อง: ${miss.slice(0,3).join(" • ")}${miss.length>3?" …":""}`:"ข้อมูลหลักค่อนข้างครบแล้ว"}</div>`;
+ });
+ const final=document.getElementById("finalDecision"); if(!final)return;
+ if(!valid.length){
+   final.innerHTML=`<div class="notice">ใส่ราคารวมจากอย่างน้อย 1 ร้านก่อน ไม่ต้องกรอกรายละเอียดอื่นก็ได้</div>`;
+   return;
+ }
+ const priced=[...valid].sort((a,b)=>a.total-b.total);
+ const cheapest=priced[0];
+ const complete=[...valid].sort((a,b)=>quoteConfidence(b)-quoteConfidence(a))[0];
+ const allQuestions=[];
+ valid.forEach(q=>quoteMissing(q).forEach(x=>allQuestions.push(`${q.name}: ${x}?`)));
+ final.innerHTML=`
+  <div class="flowsteps"><span class="flowstep">ข้อมูลห้อง</span><span class="flowstep">BTU</span><span class="flowstep">สินค้า</span><span class="flowstep">ร้าน / Quote</span><span class="flowstep on">เช็กก่อนจ่าย</span></div>
+  <h3>สรุปแบบง่าย</h3>
+  <div class="finalgrid">
+    <div class="finalcard"><div class="winner">ราคาที่บอกต่ำสุด</div><h3>${cheapest.name}</h3><div>${cheapest.total.toLocaleString("th-TH")} บาท</div><p class="disclaimer">ยังไม่ถือว่าถูกสุดจริง ถ้ารายการติดตั้งยังไม่ครบ</p></div>
+    <div class="finalcard"><div class="winner">ข้อมูลชัดที่สุดตอนนี้</div><h3>${complete.name}</h3><div>ความครบ ${quoteConfidence(complete)}%</div><p class="disclaimer">ยิ่งข้อมูลครบ ความเสี่ยงเจอค่าใช้จ่ายเพิ่มยิ่งลดลง</p></div>
+    <div class="finalcard"><div class="winner">หลักของ Home Decision</div><h3>อย่าเทียบแค่ราคา</h3><div>เทียบ “ราคารวม + สิ่งที่รวม + Warranty”</div><p class="disclaimer">ระบบจะถามเฉพาะข้อมูลที่ยังขาด</p></div>
+  </div>
+  <div class="copybox">
+    <b>คำถามที่ควรส่งให้ร้าน</b>
+    <p>${allQuestions.length?`ระบบพบ ${[...new Set(allQuestions)].length} คำถามที่ยังต้องยืนยัน ไม่ต้องกรอกเองทั้งหมด`:"ข้อมูลหลักครบพอสำหรับเปรียบเทียบเบื้องต้นแล้ว"}</p>
+    ${allQuestions.length?`<button class="btn" style="background:#fff;color:#111" onclick="copyQuoteQuestions()">คัดลอกคำถามส่งร้าน</button>`:""}
+  </div>`;
+}
+function copyQuoteQuestions(){
+ const qs=[];
+ quickQuoteState.filter(q=>q.total>0).forEach(q=>quoteMissing(q).forEach(x=>qs.push(`${q.name}: ${x}?`)));
+ const text=[...new Set(qs)].join("\n");
+ if(!text)return;
+ navigator.clipboard?.writeText(text).then(()=>alert("คัดลอกคำถามแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));
+}
+function quoteRequestText(){
+ const p=PRODUCTS.find(x=>x.id===selectedProductId);
+ return `สวัสดีครับ สนใจ ${p?p.brand+" "+p.model:"แอร์รุ่นนี้"} ขอราคารวมติดตั้งและรายละเอียดก่อนตัดสินใจครับ\n\nรบกวนแจ้ง:\n1) ราคารวมสุทธิ\n2) รวมค่าติดตั้งมาตรฐานหรือยัง\n3) ท่อรวมกี่เมตร / เกินคิดกี่บาทต่อเมตร\n4) รวม Breaker และงานไฟหรือไม่\n5) ค่าเจาะผนัง/Core รวมไหม\n${p&&p.type==="cassette"?"6) งานเปิด/เก็บฝ้ารวมไหม\n":""}7) VAT รวมแล้วหรือยัง\n8) รับประกันงานติดตั้งกี่เดือน\n\nขอเป็นข้อความหรือใบเสนอราคาก็ได้ครับ ขอบคุณครับ`;
+}
+function copyQuoteRequest(){
+ const text=quoteRequestText();
+ navigator.clipboard?.writeText(text).then(()=>alert("คัดลอกข้อความถามร้านแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));
+}
+function handleQuoteUpload(input){
+ const out=document.getElementById("uploadStatus");
+ if(!out)return;
+ if(!input.files||!input.files.length){out.textContent="";return}
+ out.innerHTML=`เลือกแล้ว: <b>${input.files[0].name}</b><br><span class="muted">Prototype นี้ยังไม่อ่านข้อความจากไฟล์อัตโนมัติ ใน Private Beta จริงไฟล์จะถูกอ่านแล้วเติม Quote ให้ก่อนผู้ใช้ตรวจทาน</span>`;
+}
+function openQuoteCompare(id){
+ const p=PRODUCTS.find(x=>x.id===id); if(!p)return;
+ selectedProductId=id;
+ quickQuoteState=[newQuickQuote("ร้าน 1"),newQuickQuote("ร้าน 2")];
+ quote.innerHTML=`
+  <button class="navbtn backhome" onclick="finish()">← กลับผลลัพธ์</button>
+  <button class="navbtn backhome" onclick="goHome()">หน้าแรก</button>
+  <div class="flowsteps"><span class="flowstep">ข้อมูลห้อง</span><span class="flowstep">BTU</span><span class="flowstep">สินค้า</span><span class="flowstep on">ร้าน / Quote</span><span class="flowstep">เช็กก่อนจ่าย</span></div>
+  <div class="card">
+   <div class="kicker">SELECTED PRODUCT</div>
+   <h2>${p.brand} ${p.model}</h2>
+   <p class="muted">ขั้นนี้ไม่ควรเป็นแบบฟอร์มยาว ๆ — Home Decision จะให้คุณใส่เท่าที่รู้ แล้วบอกเองว่าต้องถามร้านอะไรเพิ่ม</p>
+  </div>
+
+  <div class="quote
