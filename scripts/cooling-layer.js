@@ -1,11 +1,7 @@
 // Cooling configuration layer. Synchronous, evidence-gated; no engineering design claim.
 let selectedSetupId=null, setupProductsOpen=false, activeZoneIndex=0, lastSetup=null;
 function decisionEvent(name, data={}){
- const allowed=['configuration_result_shown','recommended_setup_type','alternative_setup_opened','setup_selected','product_clicked','site_check_flagged'];
- if(!allowed.includes(name))return;
- // Only enumerated setup metadata; no room dimensions, quote, identity, or persistent log.
- const detail={event:name,setup_type:data.setup_type,unit_count:data.unit_count,flag_count:data.flag_count};
- if(typeof CustomEvent==='function'&&typeof window.dispatchEvent==='function')window.dispatchEvent(new CustomEvent('home-decision', {detail}));
+ trackHD(name,data,['configuration_result_shown','recommended_setup_type','site_check_flagged'].includes(name)?'flow':undefined);
 }
 function configurationQuestions(){
  const multi=s.area>=40||(s.area>=30&&s.room!=='bed')||s.room==='ld'||s.open==='open';

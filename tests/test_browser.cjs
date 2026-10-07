@@ -7,6 +7,7 @@ let browser;
  browser=await chromium.launch({headless:true,channel:process.env.BROWSER_CHANNEL||'chrome'});let checks=0;const errors=[];
  async function exercise(width,mode,room,area,install){
   const context=await browser.newContext({viewport:{width,height:844}}),page=await context.newPage();
+  await context.addInitScript(()=>{window.qaHDEvents=[];window.addEventListener('home-decision',e=>window.qaHDEvents.push(e.detail))});
   page.on('pageerror',e=>errors.push(e.message));
   page.on('dialog',d=>d.accept());
   const response=await page.goto(baseURL);
@@ -27,6 +28,11 @@ let browser;
   }
   assert(await page.locator('#result').isVisible());checks++;
   assert(await page.locator('#result h1').innerText());checks++;
+  const initialEvents=await page.evaluate(()=>window.qaHDEvents);for(const name of ['flow_started','flow_mode_selected','step_viewed','step_answered','flow_completed','result_shown','recommended_setup_type']){assert(initialEvents.some(e=>e.event===name),name);checks++}
+  await page.locator('#hdFeedback').getByRole('button',{name:'😐 พอใช้',exact:true}).click();assert(await page.locator('#hdFeedback').getByRole('button',{name:'ข้อมูลเยอะไป',exact:true}).isVisible());checks++;
+  assert(!(await page.locator('#hdFeedback textarea').count()));checks++;
+  await page.locator('#hdFeedback').getByRole('button',{name:'อื่น ๆ',exact:true}).click();await page.locator('#hdFeedback textarea').fill('synthetic optional note');checks++;
+  assert(!(await page.evaluate(()=>JSON.stringify(window.qaHDEvents))).includes('synthetic optional note'));checks++;
   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>window.innerWidth);assert(!overflow,'horizontal overflow');checks++;
   if(width>600){const rect=await page.locator('#result').boundingBox();assert(rect.width<600&&Math.abs((rect.x+rect.width/2)-width/2)<5);checks++}
   await page.screenshot({path:artifact+'/'+mode+'-'+width+'-'+area+'-setup.png',fullPage:false});

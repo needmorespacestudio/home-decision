@@ -1,7 +1,7 @@
 name: Cooling configuration and regression tests
 on:
   push:
-    branches: [main, sprint/cooling-configuration-zoning]
+    branches: [main, sprint/**]
   pull_request:
 permissions:
   contents: read
@@ -16,6 +16,10 @@ jobs:
       - name: Configuration runtime mirror and representative scenarios
         run: |
           node scripts/sync-cooling-layer.cjs --check
+          node scripts/sync-analytics-layer.cjs --check
+          node tests/test_beta_analytics.cjs
+          node tests/test_beta_actions.cjs
+          node tests/test_beta_scenarios.cjs
           node tests/test_configuration.cjs
           node tests/test_recommendation.cjs
           node tests/test_pwa.cjs

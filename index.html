@@ -351,9 +351,82 @@ function productImage(p){
  return u?`<img src="${u}" alt="${p.brand} ${p.model}" referrerpolicy="no-referrer" onerror="this.onerror=null;if(this.parentElement)this.parentElement.innerHTML=imagePlaceholder()">`:imagePlaceholder();
 }
 function productLinks(p,detail=false){
- return `<div class="productLinks">${detail?'':`<button class="outlinebtn" onclick="showProductDetail('${p.id}')">ดูรุ่นนี้</button>`}<a class="outlinebtn" href="${p.official_source}" target="_blank" rel="noopener noreferrer">ดูเว็บทางการ</a>${verifiedPrice(p)?`<a class="outlinebtn" href="${p.price_url}" target="_blank" rel="noopener noreferrer">ดูแหล่งราคา</a>`:''}</div>`;
+ return `<div class="productLinks">${detail?'':`<button class="outlinebtn" onclick="showProductDetail('${p.id}')">ดูรุ่นนี้</button>`}<a class="outlinebtn" href="${p.official_source}" onclick="trackHD('official_link_clicked',{},'${p.id}')" target="_blank" rel="noopener noreferrer">ดูเว็บทางการ</a>${verifiedPrice(p)?`<a class="outlinebtn" href="${p.price_url}" onclick="trackHD('price_link_clicked',{},'${p.id}')" target="_blank" rel="noopener noreferrer">ดูแหล่งราคา</a>`:''}</div>`;
 }
 
+// BEGIN ANALYTICS LAYER
+// Vendor-free, memory-only beta measurement. Never forward room/quote/contact data.
+const HD_EVENTS=new Set(['flow_started','flow_mode_selected','step_viewed','step_answered','flow_abandoned','flow_completed','result_shown','recommended_setup_type','alternative_setup_opened','setup_selected','product_card_viewed','product_detail_opened','official_link_clicked','price_link_clicked','quote_started','quote_message_copied','decision_brief_copied','decision_brief_downloaded','site_check_flagged','catalog_gap_shown','feedback_submitted','feedback_reason_selected','configuration_result_shown','product_clicked']);
+const HD_STEPS=new Set(['room','area','sun','usage','specialNeeds','install','budget','priorities','height','glass','roof','open','people','phase','zoneUsage','shape','zoneControl','ceiling','outdoorSpace']);
+const HD_REASONS=[['overload','ข้อมูลเยอะไป'],['fit','ยังไม่มั่นใจว่ารุ่นนี้เหมาะจริง'],['catalog','ไม่มีรุ่น/แบรนด์ที่อยากดู'],['budget','ราคา/งบยังไม่ชัด'],['quote','อยากให้เทียบร้าน/ช่างมากกว่านี้'],['readability','ผลลัพธ์อ่านยาก'],['other','อื่น ๆ']];
+const hdDebug={counts:{},steps:{},setups:{},feedback:{},fits:{},times:[],started:0,completed:0,results:0,successful:0,siteChecks:0,detailFlows:0,officialFlows:0,quoteFlows:0};
+let hdFlow=null,hdSeen=new Set(),hdFeedback={rating:null,reason:null},hdCardsObserver=null;
+function trackHD(name,payload={},onceKey){
+ if(!HD_EVENTS.has(name))return false;
+ if(hdFlow&&onceKey&&hdSeen.has(name+':'+onceKey))return false;
+ const detail={event:name};
+ const enums={flow_mode:['quick','detailed'],setup_type:['wall','cassette','mixed','ducted'],fit_status:['exact','near','catalog_gap','site_check','infeasible'],budget_status:['suitable','tight','below-market','unknown'],rating:['positive','neutral','negative'],reason:HD_REASONS.map(x=>x[0]),btu_bucket:['under_18k','18k_30k','30k_48k','over_48k','unknown']};
+ for(const [key,values] of Object.entries(enums))if(values.includes(payload[key]))detail[key]=payload[key];
+ if(HD_STEPS.has(payload.step_key))detail.step_key=payload.step_key;
+ for(const key of ['unit_count','flag_count','alternative_count'])if(Number.isInteger(payload[key])&&payload[key]>=0&&payload[key]<=20)detail[key]=payload[key];
+ if(typeof payload.has_site_check==='boolean')detail.has_site_check=payload.has_site_check;
+ if(hdFlow&&onceKey)hdSeen.add(name+':'+onceKey);
+ hdDebug.counts[name]=(hdDebug.counts[name]||0)+1;
+ if(name==='step_viewed'||name==='step_answered'){
+  const row=hdDebug.steps[detail.step_key]||(hdDebug.steps[detail.step_key]={viewed:0,answered:0,abandoned:0});row[name==='step_viewed'?'viewed':'answered']++;
+ }
+ if(name==='flow_abandoned'&&detail.step_key){const row=hdDebug.steps[detail.step_key]||(hdDebug.steps[detail.step_key]={viewed:0,answered:0,abandoned:0});row.abandoned++}
+ if(name==='recommended_setup_type'){const key=detail.unit_count+' '+detail.setup_type;hdDebug.setups[key]=(hdDebug.setups[key]||0)+1}
+ if(name==='result_shown'){hdDebug.results++;hdDebug.fits[detail.fit_status]=(hdDebug.fits[detail.fit_status]||0)+1;if(detail.has_site_check)hdDebug.siteChecks++}
+ if(name==='feedback_submitted'){if(hdFeedback.rating)hdDebug.feedback[hdFeedback.rating]--;hdDebug.feedback[detail.rating]=(hdDebug.feedback[detail.rating]||0)+1}
+ const meaningful=['product_detail_opened','official_link_clicked','quote_message_copied','decision_brief_copied','decision_brief_downloaded','alternative_setup_opened'];
+ if(hdFlow){
+  for(const [event,field] of [['product_detail_opened','detailFlows'],['official_link_clicked','officialFlows'],['quote_message_copied','quoteFlows']])if(name===event&&!hdFlow[field]){hdFlow[field]=true;hdDebug[field]++}
+  if(meaningful.includes(name)||(name==='feedback_submitted'&&detail.rating==='positive'))hdFlow.meaningful=true;
+  if(hdFlow.completed&&hdFlow.result&&hdFlow.meaningful&&!hdFlow.success){hdFlow.success=true;hdDebug.successful++}
+ }
+ // Listener/vendor errors must never break decisions. No storage or network in this module.
+ try{if(typeof CustomEvent==='function'&&typeof window.dispatchEvent==='function')window.dispatchEvent(new CustomEvent('home-decision',{detail}))}catch(e){}
+ return true;
+}
+function hdBegin(){
+ hdAbandon();hdSeen=new Set();hdFeedback={rating:null,reason:null};
+ hdFlow={start:Date.now(),completed:false,result:false,meaningful:false,success:false,abandoned:false};hdDebug.started++;
+ trackHD('flow_started',{flow_mode:flowMode});trackHD('flow_mode_selected',{flow_mode:flowMode});
+}
+function hdAbandon(){if(hdFlow&&!hdFlow.completed&&!hdFlow.abandoned){hdFlow.abandoned=true;trackHD('flow_abandoned',{flow_mode:flowMode,step_key:getQs()[i]?.[0]})}}
+function hdAnswer(key){trackHD('step_answered',{flow_mode:flowMode,step_key:key},key)}
+function hdComplete(){if(hdFlow&&!hdFlow.completed){hdFlow.completed=true;hdDebug.completed++;trackHD('flow_completed',{flow_mode:flowMode},'flow')}}
+function hdResult(){
+ const c=selectedConfiguration(),e=coolingConfigurations();
+ const fit=!c?'infeasible':c.fit_status==='catalog_gap'?'catalog_gap':c.product_matches.some(l=>!l.some(p=>p.match_type==='exact')&&l.some(p=>p.match_type==='near'))?'near':c.fit_status==='fit'?'exact':'site_check';
+ const target=c?.zone_plan[0]?.capacity_per_unit_target;
+ const meta={flow_mode:flowMode,setup_type:c?.unit_type,unit_count:c?.unit_count,fit_status:fit,has_site_check:!c||Boolean(c.site_check_flags.length),alternative_count:e.alternatives.length,budget_status:c?.estimated_cost_scope.min_sample_thb==null?'unknown':s.budgetAmount==null?'suitable':s.budgetAmount<c.estimated_cost_scope.min_sample_thb*.8?'below-market':s.budgetAmount<c.estimated_cost_scope.min_sample_thb?'tight':'suitable',btu_bucket:!target?'unknown':target<18000?'under_18k':target<=30000?'18k_30k':target<=48000?'30k_48k':'over_48k'};
+ if(hdFlow&&!hdFlow.result){hdFlow.result=true;hdDebug.times.push(Date.now()-hdFlow.start);if(hdDebug.times.length>500)hdDebug.times.shift()}
+ trackHD('result_shown',meta,'flow');
+ if(!c||fit==='catalog_gap')trackHD('catalog_gap_shown',meta,'flow');
+ if(!c)trackHD('site_check_flagged',{flag_count:1},'flow');
+ result.innerHTML+=hdFeedbackHTML();
+ hdObserveCards();
+}
+function hdObserveCards(){
+ hdCardsObserver?.disconnect();
+ if(typeof IntersectionObserver!=='function')return;
+ hdCardsObserver=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){const id=entry.target.dataset.hdProduct;trackHD('product_card_viewed',{},id);hdCardsObserver.unobserve(entry.target)}},{threshold:.5});
+ document.querySelectorAll('#setupProducts [data-hd-product]').forEach(el=>hdCardsObserver.observe(el));
+}
+function hdFeedbackHTML(){return `<section id="hdFeedback" class="card" aria-label="ความคิดเห็นต่อคำแนะนำ"><h3>คำแนะนำนี้ช่วยให้ตัดสินใจง่ายขึ้นไหม?</h3><div class="opts">${[['positive','👍 ช่วยมาก'],['neutral','😐 พอใช้'],['negative','👎 ยังไม่ช่วย']].map(([key,label])=>`<button class="opt ${hdFeedback.rating===key?'selected':''}" aria-pressed="${hdFeedback.rating===key}" onclick="hdRate('${key}')">${label}</button>`).join('')}</div>${hdFeedback.rating&&hdFeedback.rating!=='positive'?`<p>เพราะอะไร? <span class="muted">(ไม่บังคับ)</span></p><div class="opts">${HD_REASONS.map(([key,label])=>`<button class="opt ${hdFeedback.reason===key?'selected':''}" aria-pressed="${hdFeedback.reason===key}" onclick="hdReason('${key}')">${label}</button>`).join('')}</div>${hdFeedback.reason==='other'?'<p class="muted">คำอธิบายเพิ่มเติมเป็นทางเลือก เก็บไว้เฉพาะหน้านี้และไม่ส่งเป็น analytics กรุณาไม่ใส่ข้อมูลส่วนตัว</p><textarea aria-label="คำอธิบายเพิ่มเติม" maxlength="500" placeholder="อยากให้ปรับอะไรเพิ่มเติม?"></textarea>':''}`:''}${hdFeedback.rating?'<p role="status">ขอบคุณสำหรับความคิดเห็น</p>':''}<p class="muted">การวัดผลครั้งนี้อยู่ในหน่วยความจำของหน้านี้เท่านั้น ไม่เก็บคำตอบห้องหรือข้อมูล Quote</p><details class="disclosure"><summary>ข้อจำกัดก่อนใช้คำแนะนำ</summary><p>เป็นการประเมินเบื้องต้น ยังรอผู้เชี่ยวชาญ HVAC ตรวจ ระบบและรุ่นยังไม่ครอบคลุมตลาด ราคาและข้อมูลเสียง / PM2.5 / Wi-Fi / รับประกันบางรายการยังไม่มีข้อมูลยืนยัน ใบเสนอราคายังอ่านอัตโนมัติไม่ได้ งานซับซ้อนต้องสำรวจหน้างานก่อนซื้อ</p></details></section>`}
+function hdRefreshFeedback(){const el=document.getElementById('hdFeedback');if(el)el.outerHTML=hdFeedbackHTML()}
+function hdRate(rating){if(!['positive','neutral','negative'].includes(rating)||hdFeedback.rating===rating)return;trackHD('feedback_submitted',{rating});hdFeedback={rating,reason:null};hdRefreshFeedback()}
+function hdReason(reason){if(!HD_REASONS.some(x=>x[0]===reason)||hdFeedback.reason===reason)return;hdFeedback.reason=reason;trackHD('feedback_reason_selected',{reason});hdRefreshFeedback()}
+function hdReport(){
+ const sorted=[...hdDebug.times].sort((a,b)=>a-b),n=sorted.length;
+ const rate=v=>hdDebug.results?Math.round(v/hdDebug.results*1000)/10:null;
+ return JSON.parse(JSON.stringify({...hdDebug,fit_pct:Object.fromEntries(Object.entries(hdDebug.fits).map(([k,v])=>[k,rate(v)])),step_dropoff:Object.fromEntries(Object.entries(hdDebug.steps).map(([k,v])=>[k,Math.max(0,v.viewed-v.answered)])),scope:'memory-only page lifetime; not monthly or cross-device evidence',completion_rate:hdDebug.started?hdDebug.completed/hdDebug.started:null,median_time_to_result_ms:n?(sorted[Math.floor((n-1)/2)]+sorted[Math.floor(n/2)])/2:null,site_check_pct:rate(hdDebug.siteChecks),product_detail_click_pct:rate(hdDebug.detailFlows),official_link_click_pct:rate(hdDebug.officialFlows),quote_action_pct:rate(hdDebug.quoteFlows)}));
+}
+window.hdAnalytics={report:hdReport};
+window.addEventListener('pagehide',()=>hdAbandon());
+// END ANALYTICS LAYER
 const quickQs=[
  ["room","ห้องนี้ใช้ทำอะไร?",[["bed","ห้องนอน"],["living","ห้องนั่งเล่น"],["ld","Living + Dining"],["office","ห้องทำงาน"]]],
  ["area","พื้นที่ห้องประมาณเท่าไร?",null],
@@ -388,6 +461,7 @@ function startMode(mode){
  flowMode=mode==="detailed"?"detailed":"quick";
  resultView="requirements";
  i=0;
+ hdBegin();
  home.classList.add("hidden");advanced.classList.add("hidden");result.classList.add("hidden");quote.classList.add("hidden");wiz.classList.remove("hidden");
  render();scrollTo(0,0);
 }
@@ -401,7 +475,7 @@ function render(){
  ${flowMode==="quick"?`<div class="quickmeta"><span>Quick Flow • 8 คำถามหลัก • ถามเพิ่มเฉพาะที่มีผล • ไม่ต้องสมัคร</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>`:`<div class="quickmeta"><span>Detailed Flow • 14 คำถามหลัก • ไม่ต้องสมัคร</span><span>ตอบ “ไม่แน่ใจ” ได้</span></div>`}
  ขั้นตอน ${i+1}/${qs.length}`;
  bar.style.width=((i+1)/qs.length*100)+"%";
- const [key,title,opts]=qs[i]; let h=`<h2>${title}</h2>`;
+ const [key,title,opts]=qs[i]; trackHD('step_viewed',{flow_mode:flowMode,step_key:key},key); let h=`<h2>${title}</h2>`;
  if(key==="area") h+=`<p class="muted">กรอกพื้นที่รวมที่ต้องการให้เย็น ถ้าไม่แน่ใจใส่ค่าประมาณได้</p><label>พื้นที่ (ตร.ม.)</label><input type=number min=5 max=250 step=.5 value="${s.area||""}" oninput="s.area=+this.value"><div class=opts><div class=grid2>${[12,15,20,30,40,50].map(v=>`<button class=opt onclick="s.area=${v};render()"><b>${v} ตร.ม.</b></button>`).join("")}</div></div>`;
  else if(key==="people") h+=`<p class="muted">ใส่จำนวนคนที่อยู่ในห้องเป็นปกติ</p><label>จำนวนคน</label><input type=number min=1 max=20 step=1 value="${s.people||2}" oninput="s.people=+this.value">`;
  else if(key==="specialNeeds") h+=needsForm();
@@ -449,18 +523,20 @@ function switchFlowMode(mode){
  const old=getQs();
  const oldKey=old[Math.min(i,old.length-1)]?.[0];
  flowMode=mode==="detailed"?"detailed":"quick";
+ trackHD('flow_mode_selected',{flow_mode:flowMode});
  const qs=getQs();
  const newIndex=qs.findIndex(x=>x[0]===oldKey);
  i=newIndex>=0?newIndex:Math.min(i,qs.length-1);
  render();
 }
 function pick(k,v){
+ hdAnswer(k);
  if(k==='height')s[k]=Number(v);else s[k]=v;selectedSetupId=null;setupProductsOpen=false;
  const qs=getQs();
  if(i<qs.length-1){i++;render()}
 }
 function toggleP(p){let a=s.priorities,ix=a.indexOf(p);if(ix>=0)a.splice(ix,1);else if(a.length<3)a.push(p);else alert('เลือกได้ 3 ข้อ กรุณาเอาข้อเดิมออกก่อน');render()}
-function prev(){if(i>0){i--;render()}else{wiz.classList.add("hidden");home.classList.remove("hidden")}}
+function prev(){if(i>0){i--;render()}else{hdAbandon();wiz.classList.add("hidden");home.classList.remove("hidden")}}
 function next(){
  const qs=getQs();
  const k=qs[i][0];
@@ -469,7 +545,8 @@ function next(){
  if(k==="budget"&&["target","ceiling"].includes(s.budgetMode)&&(!Number.isFinite(s.budgetAmount)||s.budgetAmount<=0))return alert("กรุณาระบุงบมากกว่า 0 บาท");
  if(k==="priorities"&&s.priorities.length!==3)return alert("กรุณาจัดอันดับให้ครบ Top 3");
  if(k==="people"&&(!s.people||s.people<1))return alert("กรุณาระบุจำนวนคน");
- if(i===qs.length-1){selectedSetupId=null;setupProductsOpen=false;return finish();}
+ hdAnswer(k);
+ if(i===qs.length-1){hdComplete();selectedSetupId=null;setupProductsOpen=false;return finish();}
  i++;render();
 }
 function load(){
@@ -573,17 +650,13 @@ function recommendationCard(p,primary=false){
  const reasons=productReasons(p);
  const evidence=[...s.specialNeeds.map(k=>needEvidence(p,k)),...s.priorities.map(k=>featureEvidence(p,k))];
  const label=p.match_type!=='exact'||over?'มีข้อแลกเปลี่ยน':evidence.some(e=>e.value==null)?'เหมาะ':'เหมาะมาก';
- return `<article class="recommendation ${primary?'mainRecommendation':''}"><div class="recommendationHeader"><div><span class="badge ${label==='มีข้อแลกเปลี่ยน'?'med':'high'}">${label}</span><h2>${p.brand}</h2><p class="model">${p.model}</p></div><div class="productimg">${productImage(p)}</div></div><ul class="keyReasons">${reasons.slice(0,4).map(r=>'<li>'+r+'</li>').join('')}</ul><p class="warning">${productWarning(p)}</p><div class="price">${verifiedPrice(p)?baht(p.price_thb):'ยังไม่มีราคายืนยัน'}</div><small class="muted">ค่าเครื่อง · ${p.nominal_btu.toLocaleString('th-TH')} BTU</small>${primary?`<button class="btn" onclick="openQuoteCompare('${p.id}')">${over?'ขอราคาเพื่อเช็กเพดาน':'ใช้รุ่นนี้ไปถามราคา'} →</button>`:`<button class="outlinebtn" onclick="openQuoteCompare('${p.id}')">ถามราคารุ่นนี้</button>`}${productLinks(p)}<details class="disclosure"><summary>สเปก ข้อมูลที่ยังไม่ยืนยัน และแหล่งอ้างอิง</summary>${productSpecsHTML(p)}${recommendationWhy(p,0)}<p>Data Confidence: ${p.data_confidence==null?'ยังไม่มีคะแนนที่สอบเทียบ':p.data_confidence+'% · คะแนนเดิม ยังไม่ใช่ความครบถ้วนทุกสเปก'}</p><a href="${p.official_source}" target="_blank" rel="noopener">ข้อมูลผู้ผลิต</a>${p.price_url?` · <a href="${p.price_url}" target="_blank" rel="noopener">แหล่งราคา · ${p.price_checked_at||''}</a>`:''}<p class="disclaimer">${p.price_note||'ยังไม่มีราคายืนยัน'}</p></details></article>`;
+ return `<article data-hd-product="${p.id}" class="recommendation ${primary?'mainRecommendation':''}"><div class="recommendationHeader"><div><span class="badge ${label==='มีข้อแลกเปลี่ยน'?'med':'high'}">${label}</span><h2>${p.brand}</h2><p class="model">${p.model}</p></div><div class="productimg">${productImage(p)}</div></div><ul class="keyReasons">${reasons.slice(0,4).map(r=>'<li>'+r+'</li>').join('')}</ul><p class="warning">${productWarning(p)}</p><div class="price">${verifiedPrice(p)?baht(p.price_thb):'ยังไม่มีราคายืนยัน'}</div><small class="muted">ค่าเครื่อง · ${p.nominal_btu.toLocaleString('th-TH')} BTU</small>${primary?`<button class="btn" onclick="openQuoteCompare('${p.id}')">${over?'ขอราคาเพื่อเช็กเพดาน':'ใช้รุ่นนี้ไปถามราคา'} →</button>`:`<button class="outlinebtn" onclick="openQuoteCompare('${p.id}')">ถามราคารุ่นนี้</button>`}${productLinks(p)}<details class="disclosure"><summary>สเปก ข้อมูลที่ยังไม่ยืนยัน และแหล่งอ้างอิง</summary>${productSpecsHTML(p)}${recommendationWhy(p,0)}<p>Data Confidence: ${p.data_confidence==null?'ยังไม่มีคะแนนที่สอบเทียบ':p.data_confidence+'% · คะแนนเดิม ยังไม่ใช่ความครบถ้วนทุกสเปก'}</p><a href="${p.official_source}" onclick="trackHD('official_link_clicked',{},'${p.id}')" target="_blank" rel="noopener">ข้อมูลผู้ผลิต</a>${p.price_url?` · <a href="${p.price_url}" onclick="trackHD('price_link_clicked',{},'${p.id}')" target="_blank" rel="noopener">แหล่งราคา · ${p.price_checked_at||''}</a>`:''}<p class="disclaimer">${p.price_note||'ยังไม่มีราคายืนยัน'}</p></details></article>`;
 }
 // BEGIN COOLING LAYER
 // Cooling configuration layer. Synchronous, evidence-gated; no engineering design claim.
 let selectedSetupId=null, setupProductsOpen=false, activeZoneIndex=0, lastSetup=null;
 function decisionEvent(name, data={}){
- const allowed=['configuration_result_shown','recommended_setup_type','alternative_setup_opened','setup_selected','product_clicked','site_check_flagged'];
- if(!allowed.includes(name))return;
- // Only enumerated setup metadata; no room dimensions, quote, identity, or persistent log.
- const detail={event:name,setup_type:data.setup_type,unit_count:data.unit_count,flag_count:data.flag_count};
- if(typeof CustomEvent==='function'&&typeof window.dispatchEvent==='function')window.dispatchEvent(new CustomEvent('home-decision', {detail}));
+ trackHD(name,data,['configuration_result_shown','recommended_setup_type','site_check_flagged'].includes(name)?'flow':undefined);
 }
 function configurationQuestions(){
  const multi=s.area>=40||(s.area>=30&&s.room!=='bed')||s.room==='ld'||s.open==='open';
@@ -716,10 +789,12 @@ function configurationResult(){
 // END COOLING LAYER
 function finish(){
  configurationResult();
+ hdResult();
  home.classList.add('hidden');advanced.classList.add('hidden');quote.classList.add('hidden');wiz.classList.add('hidden');result.classList.remove('hidden');scrollTo(0,0);
 }
 
 function goHome(){
+  hdAbandon();
   wiz.classList.add("hidden");advanced.classList.add("hidden");result.classList.add("hidden");quote.classList.add("hidden");home.classList.remove("hidden");
   scrollTo(0,0);
 }
@@ -730,7 +805,7 @@ function showProductDetail(id){
  return renderProductDetail(id);
 }
 function renderProductDetail(id){
- const seed=PRODUCTS.find(x=>x.id===id);if(!seed)return;
+ const seed=PRODUCTS.find(x=>x.id===id);if(!seed)return;trackHD('product_detail_opened',{},id);
  const p=lastTop.find(x=>x.id===id)||{...seed,match_type:capacityFitStatus(seed,load())};
  result.innerHTML=`<button class="navbtn backhome" onclick="finish()">← กลับผลลัพธ์</button><article class="card productDetail"><div class="kicker">${p.brand}</div><h2 class="model">${p.model}</h2><div class="productimg detailImage">${productImage(p)}</div><ul class="keyReasons">${productReasons(p).map(r=>'<li>'+r+'</li>').join('')}</ul><p class="warning">${productWarning(p)}</p>${productLinks(p,true)}<button class="btn" onclick="openQuoteCompare('${p.id}')">ใช้รุ่นนี้ไปถามราคา →</button><details class="disclosure"><summary>สเปกและข้อมูลที่ยังไม่ยืนยัน</summary><p>${typeName(p.type)} · ${p.nominal_btu.toLocaleString('th-TH')} BTU</p><p>ราคาเครื่อง: ${verifiedPrice(p)?baht(p.price_thb):'ยังไม่มีราคายืนยัน'}</p>${productSpecsHTML(p)}${recommendationWhy(p,Math.max(0,lastTop.findIndex(x=>x.id===id)))}</details></article>`;
  wiz.classList.add('hidden');advanced.classList.add('hidden');home.classList.add('hidden');quote.classList.add('hidden');result.classList.remove('hidden');scrollTo(0,0);
@@ -866,7 +941,7 @@ function legacyQuoteRequestText(){
 function quoteRequestText(){return legacyQuoteRequestText()+'\n\nแบบติดตั้งที่เลือก (ค่าเครื่องต่อรุ่นไม่ใช่ยอดทั้งชุด):\n'+briefText().split('ข้อมูลห้อง')[0]}
 function copyQuoteRequest(){
  const text=quoteRequestText();
- if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>alert("คัดลอกข้อความถามร้านแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));else prompt("คัดลอกข้อความนี้",text);
+ if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>{trackHD('quote_message_copied');alert("คัดลอกข้อความถามร้านแล้ว")}).catch(()=>prompt("คัดลอกข้อความนี้",text));else prompt("คัดลอกข้อความนี้",text);
 }
 function handleQuoteUpload(input){
  const out=document.getElementById("uploadStatus");
@@ -875,7 +950,7 @@ function handleQuoteUpload(input){
  out.textContent="เลือกไฟล์แล้ว: "+input.files[0].name+" — ขณะนี้ยังอ่านไฟล์อัตโนมัติไม่ได้ กรอกราคารวมด้านล่างเพื่อให้ช่วยเช็กได้"; document.getElementById("manualCompare").open=true;
 }
 function openQuoteCompare(id){
- const p=PRODUCTS.find(x=>x.id===id);if(!p)return;selectedProductId=id;
+ const p=PRODUCTS.find(x=>x.id===id);if(!p)return;trackHD('quote_started');selectedProductId=id;
  if(!quickQuoteState.length||quickQuoteState.productId!==id){quickQuoteState=[newQuickQuote('ร้าน 1')];quickQuoteState.productId=id}
  quote.innerHTML=`<button class="navbtn backhome" onclick="finish()">← กลับคำแนะนำ</button><header class="answerHero"><span class="kicker">${p.brand} · ${p.model}</span><h1>มีใบเสนอราคาแล้วไหม?</h1><p class="muted">เราช่วยเช็กสิ่งที่ควรถามก่อนจ่าย</p></header><div class="quoteHero"><div class="quoteChoice"><h2>มี Quote แล้ว</h2><label class="btn uploadLabel" for="quoteFile">อัปโหลดรูป / PDF</label><input class="hidden" id="quoteFile" type="file" accept="image/*,.pdf" onchange="handleQuoteUpload(this)"><label class="outlinebtn uploadLabel" for="quoteCamera">ถ่ายรูปใบเสนอราคา</label><input class="hidden" id="quoteCamera" type="file" accept="image/*" capture="environment" onchange="handleQuoteUpload(this)"><div id="uploadStatus" class="quoteRisk" role="status"></div></div><div class="quoteChoice"><h2>ยังไม่มี Quote</h2><p class="muted">เตรียมคำถามให้แล้ว ส่งให้ร้านได้เลย</p><button class="outlinebtn" onclick="copyQuoteRequest()">คัดลอกข้อความถามร้าน</button></div></div><details class="disclosure" id="manualCompare"><summary>มีราคาแล้ว / กรอกเพื่อเทียบร้าน</summary><p class="muted">ชื่อร้าน ราคารวม และรวมติดตั้งหรือยัง</p><div id="quickQuotes" class="quickQuotes"></div><div class="actions"><button class="outlinebtn" onclick="addQuickQuote()">+ เพิ่มร้าน</button><button class="btn" onclick="analyzeQuickQuotes()">เช็ก Quote นี้</button></div><div id="finalDecision"></div></details>`;
  home.classList.add('hidden');wiz.classList.add('hidden');result.classList.add('hidden');quote.classList.remove('hidden');renderQuickQuotes();scrollTo(0,0);
@@ -1000,7 +1075,7 @@ Home Decision Thailand
 }
 async function copyBrief(statusOverride){
  const t=briefText(statusOverride);
- try{await navigator.clipboard.writeText(t);alert("คัดลอก Decision Brief แล้ว")}
+ try{await navigator.clipboard.writeText(t);trackHD('decision_brief_copied');alert("คัดลอก Decision Brief แล้ว")}
  catch(e){prompt("คัดลอกข้อความนี้",t)}
 }
 async function shareBrief(statusOverride){
@@ -1015,7 +1090,7 @@ function downloadBrief(statusOverride){
  const blob=new Blob([t],{type:"text/plain;charset=utf-8"});
  const u=URL.createObjectURL(blob);
  const a=document.createElement("a");
- a.href=u;a.download="home-decision-aircon-brief.txt";a.click();
+ a.href=u;a.download="home-decision-aircon-brief.txt";a.click();trackHD('decision_brief_downloaded');
  setTimeout(()=>URL.revokeObjectURL(u),1000);
 }
 function printBrief(statusOverride){
@@ -1185,6 +1260,7 @@ function decisionBriefHTML(statusOverride){
 
 function restart(){restartToWizard()}
 function restartToWizard(){
+ hdBegin();
  selectedSetupId=null;setupProductsOpen=false;activeZoneIndex=0;lastSetup=null;
  i=0;resultView="requirements";lastTop=[];selectedProductId=null;
  s={room:null,area:null,height:2.7,sun:null,glass:"unknown",roof:"unknown",open:"unknown",people:2,usage:null,install:"any",phase:"unknown",specialNeeds:[],needsAnswered:false,budgetMode:"unset",budgetAmount:null,priorities:[]};

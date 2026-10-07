@@ -1,0 +1,28 @@
+const assert=require('node:assert/strict');
+const {reset,run,events,ctx}=require('./configuration-harness.cjs');
+for(const id of ['stepmeta','bar','box'])ctx[id]=ctx.document.getElementById(id);
+let checks=0;
+function test(name,fn){fn();checks++;console.log('PASS '+name)}
+reset();run("flowMode='quick';hdBegin();i=0;render()");
+test('flow and view events fire',()=>assert(['flow_started','flow_mode_selected','step_viewed'].every(k=>events.some(e=>e.detail.event===k))));
+test('rerender does not inflate step views',()=>{const n=events.length;run('render();render()');assert.equal(events.length,n)});
+test('payload drops arbitrary PII and enum injection',()=>{run("trackHD('step_answered',{step_key:'area',area:18,email:'secret',quote:'raw',setup_type:'secret',unit_count:999})");assert.deepEqual(Object.keys(events.at(-1).detail).sort(),['event','step_key'])});
+test('unknown event rejected',()=>{const n=events.length;run("trackHD('email_sent',{email:'private'})");assert.equal(events.length,n)});
+test('auto advanced choices answer event',()=>{run("pick('room','bed')");assert(events.some(e=>e.detail.event==='step_answered'&&e.detail.step_key==='room'))});
+test('invalid area does not record answer',()=>{run("i=1;s.area=0;next()");assert(!events.some(e=>e.detail.event==='step_answered'&&e.detail.flow_mode==='quick'&&e.detail.step_key==='area'))});
+test('mode change logged without new flow',()=>{run("switchFlowMode('detailed')");assert.equal(events.filter(e=>e.detail.event==='flow_started').length,1);assert(events.some(e=>e.detail.event==='flow_mode_selected'&&e.detail.flow_mode==='detailed'))});
+reset();run("hdBegin();hdComplete();finish()");
+test('completion and result dedup on redraw',()=>{const n=events.filter(e=>['flow_completed','result_shown'].includes(e.detail.event)).length;run('finish();openSetupProducts();finish()');assert.equal(events.filter(e=>['flow_completed','result_shown'].includes(e.detail.event)).length,n)});
+test('neutral feedback alone is not success',()=>{run("hdRate('neutral')");assert.equal(run('hdFlow.success'),false)});
+test('feedback text not requested before other',()=>assert(!run('hdFeedbackHTML()').includes('<textarea')));
+test('other text is optional and never tracked',()=>{run("hdReason('other')");assert(run('hdFeedbackHTML()').includes('<textarea'));assert.deepEqual(Object.keys(events.at(-1).detail).sort(),['event','reason'])});
+test('positive feedback counts one success',()=>{run("hdRate('positive')");assert.equal(run('hdFlow.success'),true);const n=run('hdReport().successful');run("hdRate('positive');finish()");assert.equal(run('hdReport().successful'),n)});
+test('feedback changes do not inflate distribution',()=>assert.equal(run('hdReport().feedback.neutral'),0));
+test('feedback retains across result redraw',()=>assert(run('hdFeedbackHTML()').includes('aria-pressed="true"')));
+test('meaningful detail action counts success',()=>{reset();run("hdBegin();hdComplete();finish();showProductDetail(lastTop[0].id)");assert.equal(run('hdFlow.success'),true);assert(events.some(e=>e.detail.event==='product_detail_opened'))});
+test('abandon only incomplete flow once',()=>{reset();run('hdBegin();hdAbandon();hdAbandon()');assert.equal(events.filter(e=>e.detail.event==='flow_abandoned').length,1)});
+test('completed flow never marked abandoned',()=>{run('hdBegin();hdComplete();hdAbandon()');assert.equal(events.filter(e=>e.detail.event==='flow_abandoned').length,1)});
+test('infeasible fallback emits result and gap',()=>{reset({install:'cassette',ceiling:'no',area:60});run('hdBegin();hdComplete();finish()');assert(events.some(e=>e.detail.event==='catalog_gap_shown'));assert(run('result.innerHTML').includes('hdFeedback'))});
+test('report has all KPI aggregates without raw event log',()=>{const report=run('hdReport()');for(const key of ['steps','setups','fits','feedback','completion_rate','median_time_to_result_ms','site_check_pct','product_detail_click_pct','official_link_click_pct','quote_action_pct','successful'])assert(key in report);assert(!('events' in report))});
+test('card visibility hook only in product surface',()=>assert(require('node:fs').readFileSync('index.html','utf8').includes('data-hd-product="${p.id}"')));
+console.log(checks+' beta analytics checks passed');
