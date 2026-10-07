@@ -2390,10 +2390,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "wifi_optional": true,
     "noise": {
@@ -2591,10 +2593,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "wifi_optional": true,
     "noise": {
@@ -2792,10 +2796,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "wifi_optional": true,
     "noise": {
@@ -2993,10 +2999,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.daikin.co.th/th/product/FTKQ-X",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "wifi_optional": true,
     "noise": {
@@ -3200,10 +3208,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=123",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -3435,10 +3445,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=124",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -3670,10 +3682,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=125",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -3905,10 +3919,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=126",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -4140,10 +4156,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.mitsuheavythai.com/en/residential-products-details.php?Id=127",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -4356,10 +4374,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -4533,10 +4553,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -4710,10 +4732,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -4887,10 +4911,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -5064,10 +5090,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.carrier.com/commercial/th/th/products/chiller/splittypeairconditioner/42tvab/",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -5246,10 +5274,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-9200-btu-wall-air-conditioner-ras-10tkcv2g-t",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "raw_lowest_dba": 23,
@@ -5397,10 +5427,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-12000-btu-wall-air-conditioner-ras-13tkcv2g-t",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "raw_lowest_dba": 24,
@@ -5548,10 +5580,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-15000-btu-wall-air-conditioner-ras-16tkcv2g-t",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "raw_lowest_dba": 25,
@@ -5699,10 +5733,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-18000-btu-wall-air-conditioner-ras-18tkcv2g-t",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "raw_lowest_dba": 25,
@@ -5850,10 +5886,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.toshiba-lifestyle.com/th/air-conditioner/wall-air-conditioner/toshiba-24000-btu-wall-air-conditioner-ras-24tkcv2g-t",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "raw_lowest_dba": 35,
@@ -6001,10 +6039,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-09vqac05.shtml",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -6149,10 +6189,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-12vqac05.shtml",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -6297,10 +6339,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-18vqac05.shtml",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -6445,10 +6489,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.haier.com/th/air-conditioners/hsu-24vqac05.shtml",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -6600,10 +6646,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -6782,10 +6830,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -6964,10 +7014,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -7146,10 +7198,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -7332,10 +7386,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://th.sharp/sites/default/files/uploads/2025-05/Air%20Conditioner%20Catalogue%202025%20revised7.pdf",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "noise": {
       "unit": "dBA",
@@ -7511,10 +7567,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu28zkt.html",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "verified_fields": [
       "model",
@@ -7642,10 +7700,12 @@
     "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้",
     "image_source_url": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu36zkt.html",
     "promotion_review": {
-      "status": "awaiting_human_release",
+      "status": "human_approved",
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "authorization": "User requested Sprint 1; exact release awaits human promotion gate"
+      "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
+      "approved_by": "user",
+      "approved_at": "2026-10-07"
     },
     "verified_fields": [
       "model",

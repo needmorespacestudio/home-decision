@@ -10,7 +10,7 @@
       "brand": "Panasonic",
       "model": "CS-YU9ZKT/CU-YU9ZKT",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -32,7 +32,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "16578e9ad3a49ed0953b",
@@ -41,7 +42,7 @@
       "brand": "Panasonic",
       "model": "CS-YU13ZKT/CU-YU13ZKT",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -63,7 +64,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "e7eb5e2bb89cda151a59",
@@ -72,7 +74,7 @@
       "brand": "Panasonic",
       "model": "CS-YU18ZKT/CU-YU18ZKT",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -94,7 +96,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "c663c86d940e9602fa62",
@@ -103,7 +106,7 @@
       "brand": "Panasonic",
       "model": "CS-YU24ZKT/CU-YU24ZKT",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -125,7 +128,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "b25a1dc94f3990d2f5bc",
@@ -134,7 +138,7 @@
       "brand": "Mitsubishi Electric",
       "model": "MSY-KA09VF",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -191,7 +195,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "64990677581d4b6c3508",
@@ -200,7 +205,7 @@
       "brand": "Mitsubishi Electric",
       "model": "MSY-KA13VF",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -257,7 +262,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "9f4b92562f6f52cbadfd",
@@ -266,7 +272,7 @@
       "brand": "Mitsubishi Electric",
       "model": "MSY-KA18VF",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -323,7 +329,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "3eb3df3dcb9995d1a824",
@@ -332,7 +339,7 @@
       "brand": "Mitsubishi Electric",
       "model": "MSY-KA24VF",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -389,7 +396,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "452a2bd1476e910f79eb",
@@ -398,7 +406,7 @@
       "brand": "Samsung",
       "model": "F-AR60H09D1DWN",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_shop_active",
@@ -420,7 +428,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "5ea5d7282b955234b2d4",
@@ -429,7 +438,7 @@
       "brand": "Samsung",
       "model": "F-AR60H12D1DWN",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_shop_active",
@@ -451,7 +460,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "b46661487375e85b5746",
@@ -460,7 +470,7 @@
       "brand": "Samsung",
       "model": "F-AR70F24D1BWN",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_shop_active",
@@ -482,7 +492,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "7e61988bfc9bf47ef9d7",
@@ -491,7 +502,7 @@
       "brand": "LG",
       "model": "IZ10R",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -513,7 +524,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "46effcc5b0d363373797",
@@ -522,7 +534,7 @@
       "brand": "LG",
       "model": "IHQ18R",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -544,7 +556,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "ad74510854b6460c63d8",
@@ -553,7 +566,7 @@
       "brand": "Samsung",
       "model": "F-AC100-4W1PMD",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live_notify_stock",
@@ -575,7 +588,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "b19f6ced32afdfdc2ec4",
@@ -584,7 +598,7 @@
       "brand": "Samsung",
       "model": "F-AC140-4W1PMD",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live_notify_stock",
@@ -606,7 +620,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "e7f1ebb53e2273d52c5d",
@@ -615,7 +630,7 @@
       "brand": "Mitsubishi Electric",
       "model": "PLY-SM36EA4 (1 phase)",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -670,7 +685,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "87bd825bad968bb55127",
@@ -679,7 +695,7 @@
       "brand": "Mitsubishi Electric",
       "model": "PLY-SM42EA4 (1 phase)",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -733,7 +749,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "be455603c1130b349d45",
@@ -742,7 +759,7 @@
       "brand": "Mitsubishi Electric",
       "model": "PLY-M48EA2 (1 phase)",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -797,7 +814,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "b0e8124f19589274852b",
@@ -806,7 +824,7 @@
       "brand": "Mitsubishi Electric",
       "model": "PLY-SM48EA4 (3 phase)",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "verified_fields": {
           "before": [
@@ -861,7 +879,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "58b97e064b79918d0ee4",
@@ -870,7 +889,7 @@
       "brand": "LG",
       "model": "ZT-Q36GNLA0",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -892,7 +911,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "5b2a41c84ecca5e5c775",
@@ -901,7 +921,7 @@
       "brand": "LG",
       "model": "ZT-Q48LMLA0",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "lifecycle": {
           "before": "official_page_live",
@@ -923,7 +943,8 @@
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "6454348554da2c6e2c64",
@@ -932,14 +953,15 @@
       "brand": "Daikin",
       "model": "FTKQ12XV2S/RKQ12XV2S",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "135a7971943d72eb9fcc",
@@ -948,14 +970,15 @@
       "brand": "Daikin",
       "model": "FTKQ15XV2S/RKQ15XV2S",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "e0758d37567ee1633bda",
@@ -964,14 +987,15 @@
       "brand": "Daikin",
       "model": "FTKQ18XV2S/RKQ18XV2S",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "7602988a7fcf96c500f4",
@@ -980,14 +1004,15 @@
       "brand": "Daikin",
       "model": "FTKQ24XV2S/RKQ24XV2S",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "24a572198dbb4f6c6110",
@@ -996,14 +1021,15 @@
       "brand": "Mitsubishi Heavy Duty",
       "model": "SRK10YYS-W1/SRC10YYS-W1",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "c9ec846f9462673dc87c",
@@ -1012,14 +1038,15 @@
       "brand": "Mitsubishi Heavy Duty",
       "model": "SRK13YYS-W1/SRC13YYS-W1",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "9eba7a6053b4de6217db",
@@ -1028,14 +1055,15 @@
       "brand": "Mitsubishi Heavy Duty",
       "model": "SRK15YYS-W1/SRC15YYS-W1",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "6f63e41fae85b20c054f",
@@ -1044,14 +1072,15 @@
       "brand": "Mitsubishi Heavy Duty",
       "model": "SRK18YYS-W1/SRC18YYS-W1",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "614d8f47ddd8371ae6c6",
@@ -1060,14 +1089,15 @@
       "brand": "Mitsubishi Heavy Duty",
       "model": "SRK24YYS-W1/SRC24YYS-W1",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "68a5bd41948f55d64d42",
@@ -1076,14 +1106,15 @@
       "brand": "Carrier",
       "model": "42TVAB010-W-I/38TVAB010-I",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "9abd916a4ebb2d5fa955",
@@ -1092,14 +1123,15 @@
       "brand": "Carrier",
       "model": "42TVAB013-W-I/38TVAB013-I",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "06bdbacdac5349e78321",
@@ -1108,14 +1140,15 @@
       "brand": "Carrier",
       "model": "42TVAB016-W-I/38TVAB016-I",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "a5e0aa3de58b7adf79b6",
@@ -1124,14 +1157,15 @@
       "brand": "Carrier",
       "model": "42TVAB018-W-I/38TVAB018-I",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "2c0e85576e93974f2198",
@@ -1140,14 +1174,15 @@
       "brand": "Carrier",
       "model": "42TVAB024-W-I/38TVAB024-I",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "a2edd600aa47d7183037",
@@ -1156,14 +1191,15 @@
       "brand": "Toshiba",
       "model": "RAS-10TKCV2G-T/RAS-10TACV2G-T",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "a2d944fb90f2951183aa",
@@ -1172,14 +1208,15 @@
       "brand": "Toshiba",
       "model": "RAS-13TKCV2G-T/RAS-13TACV2G-T",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "8a0912d5e8bd03a6e144",
@@ -1188,14 +1225,15 @@
       "brand": "Toshiba",
       "model": "RAS-16TKCV2G-T/RAS-16TACV2G-T",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "18887d60da09c69c90d3",
@@ -1204,14 +1242,15 @@
       "brand": "Toshiba",
       "model": "RAS-18TKCV2G-T/RAS-18TACV2G-T",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "609a1ca75142da1995c5",
@@ -1220,14 +1259,15 @@
       "brand": "Toshiba",
       "model": "RAS-24TKCV2G-T/RAS-24TACV2G-T",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "6f7c2e8add844e970ef9",
@@ -1236,14 +1276,15 @@
       "brand": "Haier",
       "model": "HSU-09VQAC05",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "5f84d9cdd016f2cc4ce2",
@@ -1252,14 +1293,15 @@
       "brand": "Haier",
       "model": "HSU-12VQAC05",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "ff3c023aa6301a727029",
@@ -1268,14 +1310,15 @@
       "brand": "Haier",
       "model": "HSU-18VQAC05",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "0607a75244c92e25a39f",
@@ -1284,14 +1327,15 @@
       "brand": "Haier",
       "model": "HSU-24VQAC05",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "5a65284455a3125f9ec9",
@@ -1300,14 +1344,15 @@
       "brand": "Sharp",
       "model": "AH-XP10YMB",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "ff6f7849b8c58af52c74",
@@ -1316,14 +1361,15 @@
       "brand": "Sharp",
       "model": "AH-XP13YMB",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "35a2ff92b17dee769f85",
@@ -1332,14 +1378,15 @@
       "brand": "Sharp",
       "model": "AH-XP18YMB",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "4a1874fe06988c8b1a98",
@@ -1348,14 +1395,15 @@
       "brand": "Sharp",
       "model": "AH-XP24YMB",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "20e709dcc9aaf5a4129e",
@@ -1364,14 +1412,15 @@
       "brand": "Sharp",
       "model": "AH-XP13CPB",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "aab61e5a4e0e4dcd6020",
@@ -1380,14 +1429,15 @@
       "brand": "Panasonic",
       "model": "CS-YU28ZKT/CU-YU28ZKT",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     },
     {
       "event_id": "fdde0bf2218d265acdfa",
@@ -1396,14 +1446,15 @@
       "brand": "Panasonic",
       "model": "CS-YU36ZKT/CU-YU36ZKT",
       "detected_at": "2026-10-07",
-      "status": "pending_review",
+      "status": "reviewed",
       "detail": {
         "stage": "discovered"
       },
       "auto_promoted": false,
       "reviewer": "Codex",
       "reviewed_at": "2026-10-07",
-      "review_stage": "awaiting_human_release"
+      "review_stage": "human_approved_release",
+      "human_approved": true
     }
   ],
   "automatic_promotion": false
