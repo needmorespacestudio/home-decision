@@ -982,4 +982,52 @@ function decisionBriefHTML(statusOverride){
    <button class="dark" onclick="copyBrief('${unresolved?"unresolved":"available"}')">คัดลอก Brief</button>
    <button onclick="shareBrief('${unresolved?"unresolved":"available"}')">แชร์ให้ร้าน</button>
    <button onclick="downloadBrief('${unresolved?"unresolved":"available"}')">ดาวน์โหลด .txt</button>
-   <button onclick="printBrief('${unresolved?"unresolved":"available"}')">พิมพ์ / Save PDF</bu
+   <button onclick="printBrief('${unresolved?"unresolved":"available"}')">พิมพ์ / Save PDF</button>
+  </div>
+ </div>
+ ${unresolved?`
+ <div class="unresolved">
+   <span class="demandtag">CATALOG GAP / NEEDS HELP</span>
+   <h3 style="margin-top:8px">ต้องการให้ Home Decision ช่วยหาตัวเลือกให้ไหม?</h3>
+   <p class="muted">กดแล้ว Prototype จะบันทึก Requirement แบบไม่ระบุตัวตนไว้เป็น Demand Gap ก่อน หากคุณต้องการให้ติดต่อกลับค่อยกรอกข้อมูลติดต่อแยกอีกขั้น</p>
+   <button class="btn" onclick="requestHelp('unresolved')">บันทึก Requirement + ขอความช่วยเหลือ</button>
+   <div id="savedDemandMsg" class="privacyline"></div>
+ </div>
+ <div id="helpOptin" class="optin hidden">
+   <h3>ให้ติดต่อกลับเพื่อช่วยหารุ่น/ร้าน</h3>
+   <p class="muted">ส่วนนี้เป็น Optional Opt-in ไม่จำเป็นต้องกรอกเพื่อรับ Decision Brief</p>
+   <div class="contactgrid">
+    <input id="leadName" placeholder="ชื่อ (ไม่บังคับ)">
+    <input id="leadPhone" placeholder="เบอร์โทร">
+    <input id="leadLine" placeholder="LINE ID">
+    <input id="leadArea" placeholder="พื้นที่ติดตั้ง เช่น กรุงเทพฯ ฝั่งตะวันตก">
+    <textarea id="leadNote" placeholder="ข้อมูลเพิ่มเติมที่อยากให้ร้านทราบ"></textarea>
+   </div>
+   <label style="display:flex;gap:8px;align-items:flex-start;margin-top:10px">
+    <input id="leadConsent" type="checkbox" style="width:auto;margin-top:3px">
+    <span class="privacyline">ฉันต้องการให้ Home Decision ใช้ข้อมูลติดต่อและ Requirement นี้เพื่อช่วยหาตัวเลือก/ร้านที่เกี่ยวข้องให้ฉันเท่านั้น</span>
+   </label>
+   <button class="btn" style="margin-top:10px" onclick="submitLead()">ส่งคำขอ (Prototype)</button>
+   <div id="leadResult"></div>
+ </div>`:""}
+ `;
+}
+
+function restart(){restartToWizard()}
+function restartToWizard(){
+ i=0;
+ s={room:null,area:null,height:2.7,sun:null,glass:"unknown",roof:"unknown",open:"unknown",people:2,usage:null,install:"any",phase:"unknown",priorities:[]};
+ home.classList.add("hidden");advanced.classList.add("hidden");result.classList.add("hidden");quote.classList.add("hidden");wiz.classList.remove("hidden");render();scrollTo(0,0);
+}
+
+
+let deferredInstallPrompt=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;const b=document.getElementById('installBtn');if(b)b.style.display='inline-block'});
+async function installApp(){
+ if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return}
+ const ua=navigator.userAgent||'';
+ if(/iphone|ipad|ipod/i.test(ua)) alert('บน iPhone/iPad: เปิดด้วย Safari → กด Share → Add to Home Screen (เพิ่มไปยังหน้าจอโฮม)');
+ else alert('ถ้าเบราว์เซอร์รองรับ ให้เปิดเมนูของ Chrome/Edge แล้วเลือก Install app หรือ Add to Home screen');
+}
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js',{updateViaCache:'none'}).catch(()=>{}));}
+</script></body></html>
