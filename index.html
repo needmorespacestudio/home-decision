@@ -120,10 +120,16 @@ details.quoteAdvanced summary{cursor:pointer;font-size:11px;font-weight:850}
 @media(max-width:600px){.trustgrid{grid-template-columns:1fr 1fr}}
 .ranked li{margin:10px 0}.recommendationWhy{font-size:12px;line-height:1.6;margin:12px 0;padding:12px;background:var(--soft);border-radius:12px}.recommendationWhy p{margin:7px 0}button:disabled{opacity:.4;cursor:default}.row span{max-width:65%;overflow-wrap:anywhere}
 </style>
+<style>
+/* Answer first: calm surfaces, readable type, one main action. */
+.wrap{max-width:820px;padding:28px 24px 80px}.card{border:0;box-shadow:none;padding:28px;margin-bottom:24px}.navin{max-width:820px}.top{padding-bottom:24px}h1{line-height:1.3}h2{line-height:1.4}button{font:inherit;min-height:44px}.opt{padding:18px}.opt.selected{padding:17px;border-color:#176239;background:#f2f8f3}.opt small{display:block;margin-top:4px}.disclaimer,small{font-size:13px;line-height:1.6}.answerHero{margin:12px 0 28px}.answerHero h1{font-size:34px}.answerHero strong{display:block;font-size:48px;letter-spacing:-1.5px;color:#176239}.marketContext{padding:22px 0;margin-bottom:20px;border-bottom:1px solid var(--line)}.marketPrice{font-size:30px}.recommendation{padding:24px 0}.mainRecommendation{padding:28px;background:white;border-radius:24px;margin-bottom:32px}.recommendationHeader{display:flex;justify-content:space-between;align-items:center;gap:16px}.recommendationHeader h2{margin:12px 0 0}.model{margin:4px 0;overflow-wrap:anywhere}.keyReasons{padding-left:22px;line-height:1.8;margin:24px 0}.keyReasons li{margin:8px 0}.warning{padding:14px 16px;border-left:3px solid #bd8b32;background:#fff7e7;border-radius:0 10px 10px 0;font-size:14px;line-height:1.6}.mainRecommendation>.btn{margin-top:24px}.disclosure{border-top:1px solid var(--line);padding:20px 0}.disclosure>summary{cursor:pointer;font-weight:700;line-height:1.5;min-height:28px}.disclosure[open]>summary{margin-bottom:20px}.budgetSummary{margin-bottom:28px}.budgetSummary .row{font-size:14px}.budgetSummary .actionrow{display:grid;grid-template-columns:1fr 1fr}.actionrow button,.outlinebtn{font-size:14px}.ranked{list-style:none;padding:0;margin-top:24px}.ranked li{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}.ranked li span{flex:1}.ranked small,.ranked b{display:block}.ranked small{color:var(--muted)}.pchip{padding:12px 16px}.quoteChoice{border:0;padding:24px;background:white;border-radius:20px}.quoteHero{gap:20px}.uploadLabel{display:block;text-align:center;margin-top:16px;cursor:pointer}.quickQuote label{font-size:14px}.quickQuote{border:0;padding:16px 0}.briefitem span{font-size:13px}.modeSwitch button{font-size:13px}.quickmeta span{font-size:13px}.modecard small{font-size:14px}.modecard.recommended{background:#176239;color:white;border-color:#176239}.modecard.recommended small{color:#e3eee5}.modebadge{background:#fff;color:#176239}.row{align-items:baseline}.row span{text-align:right}.navbrand{font-size:14px}.navbtn{font-size:12px}
+@media(max-width:600px){.wrap{padding:20px 18px 64px}.card{padding:24px 0;background:transparent}.mainRecommendation{padding:22px 18px}.answerHero h1{font-size:28px}.answerHero strong{font-size:42px}.recommendationHeader .productimg{width:80px;height:80px;flex-shrink:0}.recommendationHeader h2{font-size:22px}.model{font-size:14px}.quoteHero{grid-template-columns:1fr}.actions{grid-template-columns:1fr 1.5fr}.briefhero{padding:16px}.budgetSummary .row{gap:8px}.modegrid{gap:16px}.navin{padding:0 18px}.navbtns .navbtn:first-child{display:none}}
+button:focus-visible,summary:focus-visible,label:focus-visible,a:focus-visible{outline:3px solid #176239;outline-offset:4px}
+</style>
 </head>
 <body>
 <div class="nav"><div class="navin">
-  <div class="navbrand" onclick="goHome()">● HOME DECISION</div>
+  <button class="navbrand" style="border:0;background:transparent" onclick="goHome()" aria-label="กลับหน้าแรก">● HOME DECISION</button>
   <div class="navbtns"><button id="installBtn" class="navbtn" onclick="installApp()">ติดตั้งแอป</button>
     <button class="navbtn" onclick="goHome()">หน้าแรก</button>
     <button class="navbtn" onclick="restartToWizard()">เริ่มเลือกแอร์ใหม่</button>
@@ -135,8 +141,7 @@ details.quoteAdvanced summary{cursor:pointer;font-size:11px;font-weight:850}
 <div class="kicker">INDEPENDENT HOME DECISION PLATFORM</div>
 <h1>ก่อนซื้อแอร์<br>เช็กให้รู้ว่าห้องคุณต้องการอะไร</h1>
 <p class="muted">ตอบคำถามหลักไม่กี่ข้อ → ได้ช่วง BTU และตัวเลือกที่เหมาะ → ถ้าต้องการค่อยดูรายละเอียด/เทียบร้านต่อ</p>
-<div class="notice"><b>Private Beta mode:</b> <span id="runtimeMode"></span><br><b>No dead end:</b> ถ้าฐานข้อมูลยังไม่พอ ระบบจะสร้าง <b>Decision Brief</b> ให้เอาไปถามร้านต่อ และสามารถบันทึก Requirement เป็น Demand Gap เพื่อให้ Home Decision เติมข้อมูลในจุดที่คนต้องการจริงก่อน</div>
-<div class="flowsteps"><span class="flowstep on">ข้อมูลห้อง</span><span class="flowstep">BTU</span><span class="flowstep">สินค้า</span><span class="flowstep">ร้าน / Quote</span><span class="flowstep">Final Decision</span></div><div class="modegrid">
+<span id="runtimeMode" class="hidden"></span><div class="modegrid">
   <button class="modecard recommended" onclick="startMode('quick')">
     <span class="modebadge">แนะนำสำหรับคนทั่วไป</span>
     <b>แบบง่าย</b>
@@ -266,9 +271,23 @@ function toggleNeed(k){
 }
 function selectBudget(mode){s.budgetMode=mode;render()}
 function movePriority(ix,delta){const to=ix+delta;if(to<0||to>=s.priorities.length)return;[s.priorities[ix],s.priorities[to]]=[s.priorities[to],s.priorities[ix]];render()}
-function needsForm(){return `<p class="muted">เลือกได้หลายข้อ แยกจากสิ่งที่คุณอยากจัดอันดับ</p><div class="opts">${SPECIAL_NEEDS.map(([k,t])=>`<button class="opt ${s.specialNeeds.includes(k)?'selected':''}" aria-pressed="${s.specialNeeds.includes(k)}" onclick="toggleNeed('${k}')">${t}</button>`).join('')}<button class="opt ${s.needsAnswered&&!s.specialNeeds.length?'selected':''}" aria-pressed="${s.needsAnswered&&!s.specialNeeds.length}" onclick="toggleNeed('none')">ไม่มีเป็นพิเศษ</button></div>`}
-function budgetForm(){return `<p class="muted">งบค่าเครื่องแอร์ก่อนค่าติดตั้ง กรอกเพียงยอดเดียว ไม่ต้องระบุ Min–Max</p><div class="opts">${BUDGET_MODES.map(([k,t])=>`<button class="opt ${s.budgetMode===k?'selected':''}" aria-pressed="${s.budgetMode===k}" onclick="selectBudget('${k}')">${t}</button>`).join('')}</div>${['target','ceiling'].includes(s.budgetMode)?`<label for="budgetAmount">${s.budgetMode==='ceiling'?'ห้ามเกิน':'งบประมาณ'} (บาท)</label><input id="budgetAmount" type="number" min="1" step="1" inputmode="numeric" value="${s.budgetAmount??''}" oninput="s.budgetAmount=Number(this.value)">`:''}<div class="assumption">ถ้างบไม่สอดคล้องกับตัวเลือกที่เหมาะ เราจะบอกให้ก่อน ไม่ลดคุณภาพคำแนะนำเพื่อให้เข้ากับงบ ค่าติดตั้ง / VAT ที่ไม่รวมในราคา ต้องยืนยันกับร้านอีกครั้ง</div>`}
-function prioritiesForm(){return `<p class="muted">แตะเลือกตามลำดับ Top 3: 1 สำคัญที่สุด → 2 รองลงมา → 3 อยากได้ถ้าเป็นไปได้</p><div class="priority">${PRIORITIES.map(([k,t])=>{const ix=s.priorities.indexOf(k);return `<button class="pchip ${ix>=0?'on':''}" aria-pressed="${ix>=0}" onclick="toggleP('${k}')">${ix>=0?'อันดับ '+(ix+1)+' · ':''}${t}</button>`}).join('')}</div><ol class="ranked">${s.priorities.map((k,ix)=>`<li>${priorityLabel(k)} <button class="outlinebtn" ${ix===0?'disabled':''} onclick="movePriority(${ix},-1)" aria-label="เลื่อน ${priorityLabel(k)} ขึ้น">↑</button> <button class="outlinebtn" ${ix===s.priorities.length-1?'disabled':''} onclick="movePriority(${ix},1)" aria-label="เลื่อน ${priorityLabel(k)} ลง">↓</button></li>`).join('')}</ol><p class="disclaimer">เลือกแล้ว ${s.priorities.length}/3 • แตะข้อเดิมเพื่อเอาออก หรือใช้ลูกศรเปลี่ยนลำดับ</p>${flowMode==='quick'?'<div class="assumption">ค่าตั้งต้น: ฝ้า 2.7 ม., ผู้ใช้งาน 2 คน, กระจก/หลังคา/พื้นที่เปิด/ระบบไฟ = ไม่แน่ใจ ปรับเพิ่มได้ใน “ปรับละเอียดเพิ่มเติม”</div>':''}`}
+function needsForm(){return `<p class="muted">เลือกได้หลายข้อ</p><div class="opts">${SPECIAL_NEEDS.map(([k,t])=>`<button class="opt ${s.specialNeeds.includes(k)?'selected':''}" aria-pressed="${s.specialNeeds.includes(k)}" onclick="toggleNeed('${k}')">${t}</button>`).join('')}<button class="opt ${s.needsAnswered&&!s.specialNeeds.length?'selected':''}" aria-pressed="${s.needsAnswered&&!s.specialNeeds.length}" onclick="toggleNeed('none')">ไม่มีเป็นพิเศษ</button></div>`}
+function marketContext(){
+ const L=load(), priced=rankCandidates(L).filter(p=>p.match_type==='exact'&&verifiedPrice(p)).sort((a,b)=>a.price_thb-b.price_thb);
+ const min=priced.length?priced[0].price_thb:null;
+ return {L,priced,min,ceiling:min==null?null:Math.ceil(min/1000)*1000};
+}
+function chooseCeiling(amount){s.budgetMode='ceiling';s.budgetAmount=amount;render()}
+function budgetForm(){
+ const c=marketContext();
+ return `<div class="marketContext"><span class="kicker">จากข้อมูลห้องของคุณ</span><h3>ขนาดประมาณ ${capacityAnswer(c.L)} BTU · ${s.install==='any'?'ประเภทที่ติดตั้งได้':typeName(s.install)}</h3>${c.min!=null?`<p>ตัวเลือกที่เหมาะและมีราคายืนยัน เริ่มที่<br><strong class="marketPrice">${baht(c.min)}</strong></p>`:'<p>ยังไม่มีราคายืนยันของตัวเลือกที่เหมาะ<br>ขอราคาจากร้านก่อนกำหนดเพดานได้</p>'}<small>เฉพาะรุ่นในฐานข้อมูล · ค่าเครื่องก่อนติดตั้ง</small></div><div class="opts"><button class="opt ${s.budgetMode==='unset'?'selected':''}" onclick="selectBudget('unset')"><b>ไม่ล็อกงบ</b><small>ขอรุ่นที่เหมาะที่สุดก่อน</small></button><button class="opt ${s.budgetMode==='value'?'selected':''}" onclick="selectBudget('value')"><b>เน้นคุ้มที่สุด</b><small>ไม่อยากจ่ายเกินจำเป็น</small></button>${c.ceiling!=null?`<button class="opt ${s.budgetMode==='ceiling'&&s.budgetAmount===c.ceiling?'selected':''}" onclick="chooseCeiling(${c.ceiling})"><b>อยากไม่เกิน ${baht(c.ceiling)}</b><small>เพดานเริ่มต้นจากราคาที่เหมาะกับห้องนี้</small></button>`:''}<button class="opt ${s.budgetMode==='ceiling'&&s.budgetAmount!==c.ceiling?'selected':''}" onclick="chooseCeiling(null)"><b>กำหนดเพดานเอง</b></button></div>${s.budgetMode==='ceiling'?`<label for="budgetAmount">เพดานค่าเครื่อง (บาท)</label><input id="budgetAmount" type="number" min="1" inputmode="numeric" value="${s.budgetAmount??''}" placeholder="ใส่ยอดเดียว" oninput="s.budgetAmount=Number(this.value)">`:''}`;
+}
+
+function prioritiesForm(){
+ const count=s.priorities.length;
+ return `<p class="muted">${count===0?'แตะสิ่งที่สำคัญที่สุด':count===1?'แล้วรองลงมาล่ะ?':count===2?'อีกหนึ่งอย่างที่อยากได้':'ครบแล้ว เปลี่ยนลำดับได้ด้านล่าง'}</p><div class="priority">${PRIORITIES.map(([k,t])=>{const ix=s.priorities.indexOf(k);return `<button class="pchip ${ix>=0?'on':''}" aria-pressed="${ix>=0}" onclick="toggleP('${k}')">${ix>=0?(ix+1)+' · ':''}${t}</button>`}).join('')}</div>${count?`<ol class="ranked">${s.priorities.map((k,ix)=>`<li><span><small>${['สำคัญที่สุด','รองลงมา','อยากได้ถ้าเป็นไปได้'][ix]}</small><b>${priorityLabel(k)}</b></span><button class="outlinebtn" ${ix===0?'disabled':''} onclick="movePriority(${ix},-1)" aria-label="เลื่อน ${priorityLabel(k)} ขึ้น">↑</button><button class="outlinebtn" ${ix===count-1?'disabled':''} onclick="movePriority(${ix},1)" aria-label="เลื่อน ${priorityLabel(k)} ลง">↓</button></li>`).join('')}</ol>`:''}<p class="disclaimer">${count}/3 · แตะข้อเดิมเพื่อเอาออก</p>`;
+}
+
 let resultView='requirements';
 function setResultView(view){resultView=view==='closest'?'closest':'requirements';finish()}
 function budgetReality(list){
@@ -281,9 +300,11 @@ function budgetReality(list){
  return {status,exact,priced,inBudget,min,extra:constrained&&min!=null?Math.max(0,min-s.budgetAmount):null,unknownPrices:exact.length-priced.length};
 }
 function budgetRealityHTML(list){
- const b=budgetReality(list);
- return `<div class="card" id="budgetReality"><div class="kicker">BUDGET REALITY CHECK</div><h2>${b.status}</h2><p>${budgetText()}</p>${b.min!=null?`<p>ตัวเลือกที่ผ่านเกณฑ์ BTU แบบ Exact และมีราคาเครื่องยืนยันในชุด Beta เริ่มที่ <b>${baht(b.min)}</b></p>${b.extra>0?`<div class="unresolved">ต้องเพิ่มงบค่าเครื่องอย่างน้อย <b>${baht(b.extra)}</b> เพื่อถึงตัวเลือกที่มีราคายืนยันนี้ ไม่ลด BTU หรือเปลี่ยนประเภทติดตั้งเพื่อฝืนงบ</div>`:''}<p class="disclaimer">พบราคาเครื่องยืนยัน ${b.priced.length} รุ่น${['target','ceiling'].includes(s.budgetMode)?' • อยู่ในงบ '+b.inBudget.length+' รุ่น':''} • ยังไม่มีราคายืนยัน ${b.unknownPrices} รุ่น ตัวเลขนี้เป็นข้อมูลชุด Beta ไม่ใช่ราคาต่ำสุดทั้งตลาด และยังไม่ยืนยันราคารวมติดตั้ง</p>`:'<div class="notice">ยังไม่มีราคายืนยันของรุ่นที่ผ่านเกณฑ์นี้ จึงยังคำนวณเงินที่ต้องเพิ่มไม่ได้ ขอ Quote จากร้านก่อน ห้ามใช้ราคาของรุ่นที่ BTU ไม่เหมาะแทน</div>'}${b.status==='งบตึง'?'<p>ตัวเลือกที่มีราคายืนยันในงบมีจำกัด หรือรุ่นที่ตรงลำดับความสำคัญมากที่สุดยังไม่ยืนยันราคา / เกินงบ ตรวจ Trade-off ของแต่ละรุ่นก่อนตัดสินใจ</p>':''}${s.budgetMode==='ceiling'?'<p class="notice">เพดานห้ามเกิน: รุ่นเกินงบหรือไม่มีราคาแสดงเพื่ออ้างอิง / ขอราคาเท่านั้น ต้องยืนยันว่าราคารวมที่คุณตกลงไม่เกินเพดานก่อนซื้อ</p>':''}<div class="actionrow"><button onclick="setResultView('closest')">ดูตัวเลือกที่ใกล้งบที่สุด</button><button onclick="setResultView('requirements')">ดูเฉพาะตัวเลือกที่ตรง Requirement</button></div><p class="disclaimer">ทั้งสองมุมมองยังตรวจประเภทติดตั้ง ระบบไฟ และ BTU เหมือนเดิม ความต้องการพิเศษที่ยังไม่มีข้อมูลยืนยันต้องสอบถามต่อ</p>${upgradeHTML(b)}</div>`;
+ const b=budgetReality(list),base=b.priced[0], higher=b.priced.find(p=>base&&p.price_thb>base.price_thb&&s.priorities.some(k=>{const a=featureEvidence(base,k),c=featureEvidence(p,k);return a.value!=null&&c.value!=null&&c.value>a.value}));
+ const gain=higher?s.priorities.filter(k=>{const a=featureEvidence(base,k),c=featureEvidence(higher,k);return a.value!=null&&c.value!=null&&c.value>a.value}).map(k=>priorityLabel(k)+': '+featureEvidence(higher,k).text).slice(0,2).join(' · '):'ยังไม่มีข้อดีเพิ่มที่ยืนยันได้ตรง Top 3';
+ return `<section class="budgetSummary" id="budgetReality"><h3>งบนี้ไปได้แค่ไหน?</h3><div class="row"><b>งบค่าเครื่อง</b><span>${budgetText()}</span></div><div class="row"><b>ตัวเลือกที่เหมาะเริ่ม</b><span>${b.min!=null?baht(b.min):'ยังไม่มีราคายืนยัน'}</span></div><div class="row"><b>ต้องเพิ่มอย่างน้อย</b><span>${b.extra==null?'ยังประเมินไม่ได้':b.extra>0?baht(b.extra):'ไม่ต้องเพิ่มจากราคาเริ่ม'}</span></div><p>${b.extra>0?'เพิ่มถึงราคาเริ่ม จะได้ตัวเลือกที่ผ่านเกณฑ์ขนาดและการติดตั้งของห้องนี้':higher?`เพิ่ม ${baht(higher.price_thb-base.price_thb)} จากรุ่นเริ่ม: ${gain}`:'ได้อะไรเพิ่ม: '+gain}</p><small class="muted">ราคาเครื่องที่ยืนยันในฐานข้อมูล ยังไม่รวมติดตั้ง · ไม่ใช่ราคาต่ำสุดทั้งตลาด</small><div class="actionrow"><button onclick="setResultView('closest')">ดูตัวเลือกใกล้งบ</button><button onclick="setResultView('requirements')">ดูตัวเลือกตรงโจทย์</button></div></section>`;
 }
+
 function upgradeHTML(b){
  if(!b.priced.length)return '<h3>เพิ่มเงินแล้วได้อะไร?</h3><p>ยังไม่มีข้อมูลราคาเพียงพอให้เปรียบเทียบอย่างยืนยันได้</p>';
  const base=b.priced[0];const higher=b.priced.filter(p=>p.price_thb>base.price_thb);
@@ -313,7 +334,7 @@ const PRODUCT_IMAGES={
 function productImage(p){
  const u=PRODUCT_IMAGES[p.id];
  if(u) return `<img src="${u}" alt="${p.brand} ${p.model}" onerror="this.parentElement.innerHTML='<div class=&quot;imgph&quot;><div class=&quot;cassetteicon&quot;></div>Official image unavailable<br>ดูจาก Source แทน</div>'">`;
- return `<div class="imgph">${p.type==="cassette"?'<div class="cassetteicon"></div>':""}<b>Official image pending</b><br>ไม่ใช้ภาพที่ยืนยันรุ่นไม่ได้</div>`;
+ return `<div class="imgph">${p.type==="cassette"?'<div class="cassetteicon"></div>':""}ยังไม่มีภาพรุ่นนี้</div>`;
 }
 
 const quickQs=[
@@ -324,7 +345,7 @@ const quickQs=[
  ["specialNeeds","มีเรื่องอะไรให้คำนึงเป็นพิเศษ?",null],
  ["install","อยากติดตั้งแบบไหน?",[["wall","ติดผนัง"],["cassette","ฝังฝ้า 4 ทิศทาง"],["any","ยังไม่แน่ใจ / ให้ระบบช่วยเปรียบเทียบ"]]],
  ["budget","งบประมาณของคุณ",null],
- ["priorities","จัดอันดับ Top 3 สิ่งที่สำคัญที่สุด",null]
+ ["priorities","สำหรับคุณ อะไรสำคัญที่สุด?",null]
 ];
 
 const detailedQs=[
@@ -341,7 +362,7 @@ const detailedQs=[
  ["specialNeeds","มีเรื่องอะไรให้คำนึงเป็นพิเศษ?",null],
  ["install","อยากติดตั้งแบบไหน?",[["wall","ติดผนัง"],["cassette","ฝังฝ้า 4 ทิศทาง"],["any","ยังไม่แน่ใจ / ให้ระบบช่วยเปรียบเทียบ"]]],
  ["budget","งบประมาณของคุณ",null],
- ["priorities","จัดอันดับ Top 3 สิ่งที่สำคัญที่สุด",null]
+ ["priorities","สำหรับคุณ อะไรสำคัญที่สุด?",null]
 ];
 let flowMode="quick";
 function getQs(){return flowMode==="detailed"?detailedQs:quickQs}
@@ -501,69 +522,32 @@ function capacityFitStatus(p,L){
 function score(p,L){return Math.round(priorityScore(p))}
 function baht(n){return n?new Intl.NumberFormat("th-TH").format(n)+" บาท":"ยังไม่มีราคายืนยัน"}
 function typeName(t){return t==="wall"?"ติดผนัง":t==="cassette"?"ฝังฝ้า 4 ทิศทาง":t}
+function capacityAnswer(L){
+ const classes=[9000,12000,18000,24000,30000,36000,42000,48000,60000];
+ return (L.mid>60000?Math.ceil(L.mid/1000)*1000:classes.reduce((a,b)=>Math.abs(a-L.mid)<Math.abs(b-L.mid)?a:b)).toLocaleString('th-TH');
+}
+function productWarning(p){
+ if(p.match_type!=='exact')return 'ต้องให้ช่างตรวจหน้างานก่อน รุ่นนี้ยังไม่ครอบคลุมช่วงความเย็นตามเกณฑ์';
+ if(s.budgetMode==='ceiling'&&(!verifiedPrice(p)||p.price_thb>s.budgetAmount))return verifiedPrice(p)?'เกินเพดาน '+baht(p.price_thb-s.budgetAmount)+' ใช้ขอราคาอ้างอิงก่อน ยังไม่ใช่ตัวเลือกในงบ':'ยังไม่มีราคายืนยัน จึงยังยืนยันว่าอยู่ในเพดานไม่ได้';
+ if(s.specialNeeds.some(k=>needEvidence(p,k).value==null))return 'ความต้องการพิเศษบางข้อยังไม่มีข้อมูลยืนยัน ควรถามร้านก่อนซื้อ';
+ if(s.phase==='unknown'||!verified(p,'phase'))return 'ให้ช่างยืนยันระบบไฟและค่าติดตั้งก่อนซื้อ';
+ return 'ราคาเครื่องยังไม่ใช่ยอดรวม ต้องยืนยันติดตั้ง VAT และรับประกันกับร้าน';
+}
+function recommendationCard(p,primary=false){
+ const over=s.budgetMode==='ceiling'&&(!verifiedPrice(p)||p.price_thb>s.budgetAmount);
+ const reasons=[p.match_type==='exact'?'ขนาดครอบคลุมช่วงความเย็นของห้อง':'ขนาดใกล้เคียง ต้องตรวจหน้างาน',typeName(p.type)+' · '+(verified(p,'phase')?p.phase+' เฟส':'ระบบไฟยังต้องยืนยัน')];
+ const evidence=[...s.specialNeeds.map(k=>({label:SPECIAL_NEEDS.find(x=>x[0]===k)?.[1],...needEvidence(p,k)})),...s.priorities.map(k=>({label:priorityLabel(k),...featureEvidence(p,k)}))];
+ evidence.filter(e=>e.value!=null).slice(0,2).forEach(e=>reasons.push(e.label+': '+e.text));
+ const label=p.match_type!=='exact'||over?'มีข้อแลกเปลี่ยน':evidence.some(e=>e.value==null)?'เหมาะ':'เหมาะมาก';
+ return `<article class="recommendation ${primary?'mainRecommendation':''}"><div class="recommendationHeader"><div><span class="badge ${label==='มีข้อแลกเปลี่ยน'?'med':'high'}">${label}</span><h2>${p.brand}</h2><p class="model">${p.model}</p></div><div class="productimg">${productImage(p)}</div></div><ul class="keyReasons">${reasons.slice(0,4).map(r=>'<li>'+r+'</li>').join('')}</ul><p class="warning">${productWarning(p)}</p><div class="price">${verifiedPrice(p)?baht(p.price_thb):'ยังไม่มีราคายืนยัน'}</div><small class="muted">ค่าเครื่อง · ${p.nominal_btu.toLocaleString('th-TH')} BTU</small>${primary?`<button class="btn" onclick="openQuoteCompare('${p.id}')">${over?'ขอราคาเพื่อเช็กเพดาน':'ใช้รุ่นนี้ไปถามราคา'} →</button>`:`<button class="outlinebtn" onclick="openQuoteCompare('${p.id}')">ถามราคารุ่นนี้</button>`}<details class="disclosure"><summary>สเปก ข้อมูลที่ยังไม่ยืนยัน และแหล่งอ้างอิง</summary>${recommendationWhy(p,0)}<p>Data Confidence: ${p.data_confidence||'—'}%</p><a href="${p.official_source}" target="_blank" rel="noopener">ข้อมูลผู้ผลิต</a>${p.price_url?` · <a href="${p.price_url}" target="_blank" rel="noopener">แหล่งราคา · ${p.price_checked_at||''}</a>`:''}<p class="disclaimer">${p.price_note||'ยังไม่มีราคายืนยัน'}</p></details></article>`;
+}
 function finish(){
- let L=load(),unknown=[s.sun,s.glass,s.roof,s.open,s.phase].filter(x=>!x||x==="unknown").length;
- let conf=(unknown>=3||s.open==="open"||s.height>3.5)?"ปานกลาง":"สูง";
- let list=rankCandidates(L);
- let exactCount=list.filter(p=>p.match_type==="exact").length;
- let usedFallback=exactCount===0;
- let shown=resultView==='closest'?list.filter(p=>p.match_type==='exact'&&verifiedPrice(p)).sort((a,b)=>a.price_thb-b.price_thb):list.filter(p=>p.match_type==='exact');
- if(!exactCount)shown=list;
- const top=shown.slice(0,5); lastTop=top;
- const lo=Math.round(L.low/100)*100,hi=Math.round(L.high/100)*100;
- result.innerHTML=`
- <button class="navbtn backhome" onclick="goHome()">← กลับหน้าแรก</button><button class="navbtn backhome" onclick="restartToWizard()">เริ่มใหม่</button><div class=card><div class=kicker>ผลประเมิน Beta • ${flowMode==="detailed"?"DETAILED":"QUICK"}</div><h2>ห้องนี้ต้องการความเย็นประมาณ</h2>
- <div class=big>${lo.toLocaleString("th-TH")}–${hi.toLocaleString("th-TH")}</div><b>BTU/h</b>
- <p><span class="badge ${conf==="สูง"?"high":"med"}">Confidence: ${conf}</span></p>
- <div class=notice>ระบบคำนวณ “ภาระความเย็น” ก่อน แล้วจึงคัดสินค้าที่ติดตั้งได้จริง ไม่เอาสินค้ามากำหนดคำตอบย้อนกลับ</div></div>
- <div class=card><h3>เงื่อนไขการคัดสินค้า</h3>
- <div class=row><b>ประเภท</b><span>${s.install==="any"?"ยังไม่ล็อกประเภท":typeName(s.install)}</span></div>
- <div class=row><b>ระบบไฟ</b><span>${s.phase==="unknown"?"ยังไม่แน่ใจ":s.phase+" เฟส"}</span></div>
- <div class=row><b>Special Needs</b><span>${needsText()}</span></div>
- <div class=row><b>งบค่าเครื่อง</b><span>${budgetText()}</span></div>
- <div class=row><b>สิ่งที่ให้ความสำคัญ</b><span>${priorityText()}</span></div></div>
- <div class=card>
- <div class=kicker>WHY TRUST THIS RESULT</div><h3>เราไม่ได้สุ่มเลือก 3 รุ่นให้คุณ</h3>
- <div class=trustgrid>
-   <div class=truststat><b>${CATALOG_META.verifiedRecords}</b><span>Product records ที่อยู่ในชุดเปรียบเทียบ Beta</span></div>
-   <div class=truststat><b>${CATALOG_META.brands.length} แบรนด์</b><span>ใน Verified Beta Set ปัจจุบัน</span></div>
-   <div class=truststat><b>${exactCount}</b><span>รุ่นที่ผ่าน Exact capacity criteria ในโจทย์นี้</span></div>
- </div>
- <div class=trustflow><span>1 Safety / Installation / BTU / Electrical</span><span>2 Special Needs</span><span>3 Top 3 ตามลำดับ</span><span>4 Budget / Trade-off</span></div>
- <div class=coveragewarn><b>Coverage ตอนนี้:</b> ${CATALOG_META.scope}<br>${CATALOG_META.coverageStatus} — ดังนั้นเราใช้คำว่า “เหมาะที่สุดในกลุ่มที่ตรวจสอบแล้ว” ไม่ใช่ “ดีที่สุดในประเทศไทย”</div>
- <details class=trustdetails><summary>ดูหลักการคัดเลือกและข้อจำกัด</summary>
-   <p class=disclaimer>รุ่นที่ระบบแนะนำต้องผ่าน Hard Filter ก่อน เช่น ประเภทติดตั้ง ระบบไฟเมื่อมีข้อมูลยืนยัน และ Capacity จากนั้นจึงเรียงตามสิ่งที่คุณให้ความสำคัญ ข้อมูลที่ไม่มีหลักฐานจะเป็น “ยังไม่ยืนยัน” ไม่เติมค่าด้วย AI และ Sponsor ไม่สามารถซื้อ Match Score หรืออันดับ Organic ได้</p>
-   <p class=disclaimer>ข้อมูลชุดนี้ตรวจ/ปรับล่าสุด ${CATALOG_META.checkedAt} โดยแต่ละรุ่นมีลิงก์ Official source ให้ตรวจสอบต่อได้</p>
- </details>
- </div>
- ${budgetRealityHTML(list)}
- <div class=card><div class=kicker>PRODUCT MATCHING — VERIFIED + CATALOG SEED</div>
- <h3>${usedFallback?"ยังไม่มีรุ่นที่ครอบคลุมช่วงโหลดได้มั่นใจ — แสดง Borderline / Near Match":"รุ่นที่ครอบคลุมช่วงความเย็นได้เหมาะสม"}</h3>
- ${usedFallback?`<div class=notice><b>ต้องยืนยันเพิ่ม:</b> ยังไม่มี Candidate ที่ครอบคลุมช่วง Cooling Load ตามเกณฑ์ Exact ของระบบ ตัวเลือกด้านล่างจึงเป็น Borderline/Near Match และไม่ควรใช้เป็นคำสั่งซื้อทันที โดยเฉพาะพื้นที่ใหญ่/Open plan ควร Site Check</div>`:""}
- ${top.length?top.map((p,idx)=>`<div class=product>
-   <div class=productimg>${productImage(p)}</div>
-   <div>
-     <div class=phead><div><b>${p.brand}</b><div>${p.model}</div></div><div class=score>#${idx+1}</div></div><div class=chips><span class=chip>${p.match_type==="exact"?"Exact-range candidate":p.match_type==="borderline"?"Borderline • Site Check":"Near Match"}</span><span class=chip>Data ${p.data_confidence||"—"}%</span></div>
-     <div class=chips><span class=chip>${typeName(p.type)}</span><span class=chip>${p.nominal_btu.toLocaleString("th-TH")} BTU</span><span class=chip>${p.phase?p.phase+" เฟส":"Phase ยังไม่ยืนยัน"}</span>${p.seer?`<span class=chip>SEER ${p.seer}</span>`:""}${p.wifi?`<span class=chip>Wi‑Fi</span>`:""}</div>
-     <div class=price>${baht(p.price_thb)}</div><div class=disclaimer>${p.price_note||"ยังไม่มีราคายืนยัน"}${p.price_checked_at?` • ตรวจข้อมูล ${p.price_checked_at}`:""}</div>
-     ${recommendationWhy(p,idx)}
-     <a href="${p.official_source}" target=_blank>Official spec</a>
-     ${p.price_url?` · <a href="${p.price_url}" target=_blank>แหล่งราคา</a>`:""}
-     <br><button class="detailbtn" onclick="showProductDetail('${p.id}',${p.match})">ดูรายละเอียดรุ่น + รูป</button> <button class="selectproduct" onclick="openQuoteCompare('${p.id}')">ขอราคา / เทียบร้านรุ่นนี้</button>
-   </div>
- </div>`).join(""):`<div class=notice>ยังไม่มีรุ่นใน Seed Database ที่ผ่านเงื่อนไขนี้ ไม่ได้แปลว่าไม่มีสินค้าในตลาดจริง — ฐานข้อมูล Beta ยังเล็กอยู่</div>`}
- </div>
- <div class="card sponsor"><div class=sponsorlabel>SPONSORED AREA — DEMO ONLY</div><h3>ตำแหน่งเชิงพาณิชย์ต้องอยู่แยกจาก Ranking</h3>
- <p class=muted>แบรนด์สามารถซื้อ Visibility ได้ แต่ไม่สามารถซื้อ Match Score, Hard Filter หรือป้าย “เหมาะที่สุด” ได้</p></div>
- <div class=card><h3>หลักฐานและความโปร่งใส</h3><p class=muted>ระบบแยกข้อมูลสินค้า ราคา และ Source ออกจากกัน แต่ละราคามีเวลาตรวจล่าสุด และข้อมูลที่ขาดจะไม่ถูก AI เดา</p>
- <p class=disclaimer>v6.2 เพิ่มรุ่นห้องนอนช่วงประมาณ 9,000–13,000 BTU พร้อม Nominal Oversize Guard เพื่อกันแอร์ใหญ่เกิน แม้ Inverter จะลดรอบได้</p></div>
- ${decisionBriefHTML(usedFallback||!top.length?"unresolved":"available")}
-
- <div class=card><div class=kicker>NEXT DECISION</div><h3>เลือกรุ่นที่สนใจ แล้วไปเทียบร้าน/Quote ต่อ</h3>
-    <p class=muted>ระบบจะไม่ดูแค่ราคาเครื่อง แต่จะ Normalize ค่าติดตั้ง, ท่อ, Breaker, งานฝ้า, VAT, Warranty งานติดตั้ง และข้อมูลร้านก่อนสรุป Final Decision</p>
-    ${top.length?`<button class="btn" onclick="openQuoteCompare('${top[0].id}')">ใช้รุ่นอันดับแรกไปทดลองเทียบร้าน →</button>`:""}</div>
- <button class="btn back" onclick=restart()>เริ่มกรอกใหม่</button>`;
- wiz.classList.add("hidden");result.classList.remove("hidden");scrollTo(0,0);
+ const L=load(),list=rankCandidates(L),exact=list.filter(p=>p.match_type==='exact');
+ let shown=resultView==='closest'?exact.filter(verifiedPrice).sort((a,b)=>a.price_thb-b.price_thb):exact;
+ if(!exact.length)shown=list;
+ const top=shown.slice(0,5);lastTop=top;
+ result.innerHTML=`<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button><header class="answerHero"><span class="kicker">คำตอบสำหรับห้องของคุณ</span><h1>${top.length&&top[0].match_type==='exact'?'ขนาดแอร์ที่แนะนำ':'ความเย็นที่ต้องการประมาณ'} <strong>${capacityAnswer(top.length&&top[0].match_type==='exact'?{mid:top[0].nominal_btu}:L)} BTU</strong></h1><p class="muted">${top.length?'รุ่นที่เหมาะที่สุดในกลุ่มที่ตรวจสอบแล้ว':'ยังไม่มีรุ่นที่ผ่านเงื่อนไขนี้ในฐานข้อมูล'}</p>${!exact.length?'<p class="warning">ต้องตรวจหน้างานก่อนเลือกซื้อ ยังไม่มีรุ่นที่ครอบคลุมช่วงความเย็นตามเกณฑ์</p>':''}</header>${top.length?recommendationCard(top[0],true):'<p>เก็บโจทย์นี้ไว้ส่งให้ร้านช่วยตรวจขนาดและการติดตั้งได้</p><button class="btn" onclick="copyBrief(&quot;unresolved&quot;)">คัดลอกโจทย์ไปถามร้าน</button>'}${budgetRealityHTML(list)}${top.length>1?`<details class="disclosure alternatives"><summary>ดูตัวเลือกอื่นอีก ${top.length-1} รุ่น</summary>${top.slice(1).map(p=>recommendationCard(p)).join('')}</details>`:''}<details class="disclosure"><summary>ข้อมูลห้อง สมมติฐาน และความมั่นใจ</summary><p>ช่วงภาระความเย็น ${Math.round(L.low/100)*100}–${Math.round(L.high/100)*100} BTU/h</p><p>${needsText()} · ${priorityText()}</p><p>ฝ้าสูง ${s.height} ม. · ผู้ใช้ ${s.people} คน · ระบบไฟ ${s.phase==='unknown'?'ยังไม่แน่ใจ':s.phase+' เฟส'}</p><p>แดด กระจก หลังคา และพื้นที่เปิดที่ตอบไม่แน่ใจใช้ค่ากลางเผื่อความร้อน ควรตรวจหน้างานเพื่อยืนยัน</p><button class="outlinebtn" onclick="openAdvancedFromResult()">ปรับรายละเอียดห้อง</button></details><details class="disclosure"><summary>ฐานข้อมูลและหลักการคัดเลือก</summary><p>${CATALOG_META.scope} · ${CATALOG_META.coverageStatus}</p><p>ตรวจล่าสุด ${CATALOG_META.checkedAt} · ${CATALOG_META.verifiedRecords} รุ่น · ผ่านเกณฑ์ขนาด ${exact.length} รุ่น</p><p>คัดประเภทติดตั้ง ระบบไฟ และ BTU ก่อน แล้วจึงเรียงตามความต้องการพิเศษและ Top 3 ข้อมูลที่ไม่มีหลักฐานจะแสดงว่ายังไม่ยืนยัน Sponsor ไม่มีผลต่ออันดับ</p><p>ผลนี้เป็นการประเมินเบื้องต้น ไม่ใช่การคำนวณภาระความเย็นทางวิศวกรรมเต็มรูปแบบ</p></details><details class="disclosure"><summary>สรุปโจทย์เก็บไว้ / ส่งให้ร้าน (Decision Brief)</summary>${decisionBriefHTML(exact.length?'available':'unresolved')}</details>`;
+ home.classList.add('hidden');advanced.classList.add('hidden');quote.classList.add('hidden');wiz.classList.add('hidden');result.classList.remove('hidden');scrollTo(0,0);
 }
 
 function goHome(){
@@ -712,26 +696,14 @@ function analyzeQuickQuotes(){
  const complete=[...valid].sort((a,b)=>quoteConfidence(b)-quoteConfidence(a))[0];
  const allQuestions=[];
  valid.forEach(q=>quoteMissing(q).forEach(x=>allQuestions.push(`${q.name}: ${x}?`)));
- final.innerHTML=`
-  <div class="flowsteps"><span class="flowstep">ข้อมูลห้อง</span><span class="flowstep">BTU</span><span class="flowstep">สินค้า</span><span class="flowstep">ร้าน / Quote</span><span class="flowstep on">เช็กก่อนจ่าย</span></div>
-  <h3>สรุปแบบง่าย</h3><div class=notice>งบค่าเครื่องของคุณ: ${budgetText()} • Quote นี้เป็นราคารวม จึงต้องขอแยกค่าเครื่องก่อนตรวจเพดานงบ และยืนยัน Special Needs: ${needsText()}</div>
-  <div class="finalgrid">
-    <div class="finalcard"><div class="winner">ราคาที่บอกต่ำสุด</div><h3>${cheapest.name}</h3><div>${cheapest.total.toLocaleString("th-TH")} บาท</div><p class="disclaimer">ยังไม่ถือว่าถูกสุดจริง ถ้ารายการติดตั้งยังไม่ครบ</p></div>
-    <div class="finalcard"><div class="winner">ข้อมูลชัดที่สุดตอนนี้</div><h3>${complete.name}</h3><div>ความครบ ${quoteConfidence(complete)}%</div><p class="disclaimer">ยิ่งข้อมูลครบ ความเสี่ยงเจอค่าใช้จ่ายเพิ่มยิ่งลดลง</p></div>
-    <div class="finalcard"><div class="winner">หลักของ Home Decision</div><h3>อย่าเทียบแค่ราคา</h3><div>เทียบ “ราคารวม + สิ่งที่รวม + Warranty”</div><p class="disclaimer">ระบบจะถามเฉพาะข้อมูลที่ยังขาด</p></div>
-  </div>
-  <div class="copybox">
-    <b>คำถามที่ควรส่งให้ร้าน</b>
-    <p>${allQuestions.length?`ระบบพบ ${[...new Set(allQuestions)].length} คำถามที่ยังต้องยืนยัน ไม่ต้องกรอกเองทั้งหมด`:"ข้อมูลหลักครบพอสำหรับเปรียบเทียบเบื้องต้นแล้ว"}</p>
-    ${allQuestions.length?`<button class="btn" style="background:#fff;color:#111" onclick="copyQuoteQuestions()">คัดลอกคำถามส่งร้าน</button>`:""}
-  </div>`;
+ final.innerHTML=`<section class="budgetSummary"><h3>${cheapest.name} เสนอ ${qMoney(cheapest.total)}</h3><p class="warning">${allQuestions.length?'ยังมีรายการที่ต้องยืนยันก่อนสรุปว่าคุ้มที่สุด':'ข้อมูลหลักครบสำหรับเทียบเบื้องต้น ยืนยันกับร้านก่อนจ่าย'}</p><ul class="keyReasons">${quoteMissing(cheapest).slice(0,3).map(x=>'<li>'+x+'</li>').join('')}</ul><p class="muted">เป็นราคารวม ต้องขอแยกค่าเครื่องเพื่อตรวจเพดาน ${budgetText()}</p>${allQuestions.length?'<button class="btn" onclick="copyQuoteQuestions()">คัดลอกคำถามที่ยังขาด</button>':''}<details class="disclosure"><summary>ดูรายการที่ต้องถามทั้งหมด</summary><ul>${allQuestions.map(x=>'<li>'+x+'</li>').join('')}</ul><p>ข้อมูลชัดที่สุดตอนนี้: ${complete.name} · ความครบ ${quoteConfidence(complete)}%</p></details></section>`;
 }
 function copyQuoteQuestions(){
  const qs=[];
  quickQuoteState.filter(q=>q.total>0).forEach(q=>quoteMissing(q).forEach(x=>qs.push(`${q.name}: ${x}?`)));
  const text=[...new Set(qs)].join("\n");
  if(!text)return;
- navigator.clipboard?.writeText(text).then(()=>alert("คัดลอกคำถามแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));
+ if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>alert("คัดลอกคำถามแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));else prompt("คัดลอกข้อความนี้",text);
 }
 function quoteRequestText(){
  const p=PRODUCTS.find(x=>x.id===selectedProductId);
@@ -739,56 +711,19 @@ function quoteRequestText(){
 }
 function copyQuoteRequest(){
  const text=quoteRequestText();
- navigator.clipboard?.writeText(text).then(()=>alert("คัดลอกข้อความถามร้านแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));
+ if(navigator.clipboard)navigator.clipboard.writeText(text).then(()=>alert("คัดลอกข้อความถามร้านแล้ว")).catch(()=>prompt("คัดลอกข้อความนี้",text));else prompt("คัดลอกข้อความนี้",text);
 }
 function handleQuoteUpload(input){
  const out=document.getElementById("uploadStatus");
  if(!out)return;
  if(!input.files||!input.files.length){out.textContent="";return}
- out.innerHTML=`เลือกแล้ว: <b>${input.files[0].name}</b><br><span class="muted">Prototype นี้ยังไม่อ่านข้อความจากไฟล์อัตโนมัติ ใน Private Beta จริงไฟล์จะถูกอ่านแล้วเติม Quote ให้ก่อนผู้ใช้ตรวจทาน</span>`;
+ out.textContent="เลือกไฟล์แล้ว: "+input.files[0].name+" — ขณะนี้ยังอ่านไฟล์อัตโนมัติไม่ได้ กรอกราคารวมด้านล่างเพื่อให้ช่วยเช็กได้"; document.getElementById("manualCompare").open=true;
 }
 function openQuoteCompare(id){
- const p=PRODUCTS.find(x=>x.id===id); if(!p)return;
- selectedProductId=id;
- quickQuoteState=[newQuickQuote("ร้าน 1"),newQuickQuote("ร้าน 2")];
- quote.innerHTML=`
-  <button class="navbtn backhome" onclick="finish()">← กลับผลลัพธ์</button>
-  <button class="navbtn backhome" onclick="goHome()">หน้าแรก</button>
-  <div class="flowsteps"><span class="flowstep">ข้อมูลห้อง</span><span class="flowstep">BTU</span><span class="flowstep">สินค้า</span><span class="flowstep on">ร้าน / Quote</span><span class="flowstep">เช็กก่อนจ่าย</span></div>
-  <div class="card">
-   <div class="kicker">SELECTED PRODUCT</div>
-   <h2>${p.brand} ${p.model}</h2>
-   <p class="muted">ขั้นนี้ไม่ควรเป็นแบบฟอร์มยาว ๆ — Home Decision จะให้คุณใส่เท่าที่รู้ แล้วบอกเองว่าต้องถามร้านอะไรเพิ่ม</p>
-  </div>
-
-  <div class="quoteHero">
-   <div class="quoteChoice">
-    <b>📎 มีใบเสนอราคา / รูป / PDF</b>
-    <small>นี่คือวิธีที่ควรง่ายที่สุดใน Product จริง: ส่งไฟล์มา แล้วระบบอ่านรายการให้ก่อน คุณแค่ตรวจว่าถูกไหม</small>
-    <div class="uploadbox"><input type="file" accept="image/*,.pdf" onchange="handleQuoteUpload(this)"><div id="uploadStatus" class="quoteRisk"></div></div>
-   </div>
-   <div class="quoteChoice">
-    <b>💬 ยังไม่มี Quote</b>
-    <small>ไม่ต้องรู้ว่าต้องถามอะไร กดครั้งเดียวแล้วส่งข้อความมาตรฐานให้ร้านได้เลย</small>
-    <button class="btn" style="margin-top:10px" onclick="copyQuoteRequest()">คัดลอกข้อความถามร้าน</button>
-   </div>
-  </div>
-
-  <div class="card">
-   <div class="kicker">QUICK COMPARE</div>
-   <h2>ถ้ารู้ราคาแล้ว กรอกแค่นี้ก็พอ</h2>
-   <p class="muted">ชื่อร้าน + ราคารวม + รวมติดตั้งหรือยัง ส่วนข้อมูลอื่นกดเพิ่มเฉพาะเมื่อรู้</p>
-   <div id="quickQuotes" class="quickQuotes"></div>
-   <div class="actions">
-    <button class="outlinebtn" onclick="addQuickQuote()">+ เพิ่มร้าน</button>
-    <button class="btn" onclick="analyzeQuickQuotes()">วิเคราะห์ร้านที่กรอก</button>
-   </div>
-   <div id="finalDecision" style="margin-top:14px"></div>
-  </div>`;
- home.classList.add("hidden");wiz.classList.add("hidden");result.classList.add("hidden");quote.classList.remove("hidden");
- renderQuickQuotes();
- analyzeQuickQuotes();
- scrollTo(0,0);
+ const p=PRODUCTS.find(x=>x.id===id);if(!p)return;selectedProductId=id;
+ if(!quickQuoteState.length||quickQuoteState.productId!==id){quickQuoteState=[newQuickQuote('ร้าน 1')];quickQuoteState.productId=id}
+ quote.innerHTML=`<button class="navbtn backhome" onclick="finish()">← กลับคำแนะนำ</button><header class="answerHero"><span class="kicker">${p.brand} · ${p.model}</span><h1>มีใบเสนอราคาแล้วไหม?</h1><p class="muted">เราช่วยเช็กสิ่งที่ควรถามก่อนจ่าย</p></header><div class="quoteHero"><div class="quoteChoice"><h2>มี Quote แล้ว</h2><label class="btn uploadLabel" for="quoteFile">อัปโหลดรูป / PDF</label><input class="hidden" id="quoteFile" type="file" accept="image/*,.pdf" onchange="handleQuoteUpload(this)"><label class="outlinebtn uploadLabel" for="quoteCamera">ถ่ายรูปใบเสนอราคา</label><input class="hidden" id="quoteCamera" type="file" accept="image/*" capture="environment" onchange="handleQuoteUpload(this)"><div id="uploadStatus" class="quoteRisk" role="status"></div></div><div class="quoteChoice"><h2>ยังไม่มี Quote</h2><p class="muted">เตรียมคำถามให้แล้ว ส่งให้ร้านได้เลย</p><button class="outlinebtn" onclick="copyQuoteRequest()">คัดลอกข้อความถามร้าน</button></div></div><details class="disclosure" id="manualCompare"><summary>มีราคาแล้ว / กรอกเพื่อเทียบร้าน</summary><p class="muted">ชื่อร้าน ราคารวม และรวมติดตั้งหรือยัง</p><div id="quickQuotes" class="quickQuotes"></div><div class="actions"><button class="outlinebtn" onclick="addQuickQuote()">+ เพิ่มร้าน</button><button class="btn" onclick="analyzeQuickQuotes()">เช็ก Quote นี้</button></div><div id="finalDecision"></div></details>`;
+ home.classList.add('hidden');wiz.classList.add('hidden');result.classList.add('hidden');quote.classList.remove('hidden');renderQuickQuotes();scrollTo(0,0);
 }
 
 function roomLabel(v){
