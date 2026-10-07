@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+reports/run/
+.env
+.env.*
+.vercel/

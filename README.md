@@ -2,6 +2,12 @@
 
 Canonical web/PWA repository for Home Decision.
 
+## Read first — canonical Product Constitution
+
+Every Work session MUST read [docs/HOME_DECISION_MASTER_SPEC.md](docs/HOME_DECISION_MASTER_SPEC.md) before changing production. It is the canonical Single Source of Truth for UX, decision logic, trust, privacy and deployment. Record deliberate product changes in its Decision Log.
+
+Catalog maintenance: [CATALOG_OPERATIONS](docs/CATALOG_OPERATIONS.md). Current structured catalog is a runtime-compatible mirror in `data/aircon_catalog.json`; scheduled watchers generate review-only artifacts and never promote recommendations. [Catalog health baseline](reports/latest/CATALOG_HEALTH.md) records measured completeness and unknown market denominators.
+
 ## Deployment policy
 - `main` is production.
 - Vercel Git integration should deploy every push to `main` to the same production alias.

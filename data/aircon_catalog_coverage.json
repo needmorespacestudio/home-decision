@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-07",
+  "coverage_status": "beta/incomplete",
+  "verification_basis": "Inherited field evidence, not a new independent source audit",
+  "global": {
+    "records": 21,
+    "brands_ingested": 4,
+    "verified_records": 21,
+    "recommendation_ready": 21,
+    "types": {
+      "wall": 13,
+      "cassette": 8
+    },
+    "nominal_btu_min": 9000,
+    "nominal_btu_max": 48109,
+    "missing_price": 16,
+    "missing_min_max": 7,
+    "stale_specs": 0,
+    "link_health_unknown": 21,
+    "missing_phase": 9,
+    "missing_seer": 8,
+    "missing_voltage": 9,
+    "missing_wifi": 15,
+    "missing_noise_low_dba": 18,
+    "missing_warranty_summary": 12
+  },
+  "brands": [
+    {
+      "brand": "Daikin",
+      "official_catalog_urls": [
+        "https://www.daikin.co.th/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    },
+    {
+      "brand": "Mitsubishi Electric",
+      "official_catalog_urls": [
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5528.aspx",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530.aspx?lang=TH",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5530-%281%29.aspx?NodeID=5579&ProductType=1",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4158.aspx",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4160.aspx?NodeID=4160&ProductType=1",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4162-%281%29.aspx?NodeID=6513&ProductType=1",
+        "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/PLY-Series/4163.aspx?lang=TH"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 8,
+      "verified_count": 8,
+      "recommendation_ready_count": 8,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
+    },
+    {
+      "brand": "Mitsubishi Heavy Duty",
+      "official_catalog_urls": [
+        "https://www.mitsuheavythai.com/en/products-main.php"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    },
+    {
+      "brand": "Panasonic",
+      "official_catalog_urls": [
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html",
+        "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 4,
+      "verified_count": 4,
+      "recommendation_ready_count": 4,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
+    },
+    {
+      "brand": "Carrier",
+      "official_catalog_urls": [
+        "https://www.toshiba-carrier.co.th/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    },
+    {
+      "brand": "Samsung",
+      "official_catalog_urls": [
+        "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h09d1dwn/",
+        "https://www.samsung.com/th/air-conditioners/wall-mount/ar60h-ai-windfree-eco-f-ar60h12d1dwn/",
+        "https://www.samsung.com/th/air-conditioners/wall-mount/ar70-d1b-ai-windfree-energy-f-ar70f24d1bwn/",
+        "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac100-4w1pmd/",
+        "https://www.samsung.com/th/business/system-air-conditioners/ceiling-air-conditioner/ac5000b-ac140nn4dkh-f-ac140-4w1pmd/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 5,
+      "verified_count": 5,
+      "recommendation_ready_count": 5,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
+    },
+    {
+      "brand": "LG",
+      "official_catalog_urls": [
+        "https://www.lg.com/th/air-conditioner-inverter/iz10r/",
+        "https://www.lg.com/th/air-conditioner-inverter/energy-saving-air-conditioner/ihq18r/",
+        "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q36gnla0/",
+        "https://www.lg.com/th/business/hvac/commercial-solutions/single-split/ceiling-mounted-cassette/zt-q48lmla0/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 4,
+      "verified_count": 4,
+      "recommendation_ready_count": 4,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": "2026-10-07",
+      "status": "beta_incomplete"
+    },
+    {
+      "brand": "Toshiba",
+      "official_catalog_urls": [
+        "https://www.carrier.com/commercial/en/th/products/toshiba/split-type-air-conditioner/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    },
+    {
+      "brand": "Haier",
+      "official_catalog_urls": [
+        "https://www.haier.com/th/air-conditioners/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    },
+    {
+      "brand": "Sharp",
+      "official_catalog_urls": [
+        "https://www.th.sharp/th/aircare/airconditioner/pci"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    },
+    {
+      "brand": "Hisense",
+      "official_catalog_urls": [
+        "https://hisense.co.th/products/product_detail/27/"
+      ],
+      "discovered_count": null,
+      "denominator_scope": null,
+      "ingested_count": 0,
+      "verified_count": 0,
+      "recommendation_ready_count": 0,
+      "coverage_pct": null,
+      "last_discovery_at": null,
+      "last_verified_at": null,
+      "status": "not_ingested"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+name: Catalog watch reports
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 1' # weekly Monday 09:00 Bangkok
+    - cron: '0 3 1 * *' # monthly first day 10:00 Bangkok
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/catalog_*.py'
+      - '.github/workflows/catalog-watch.yml'
+permissions:
+  contents: read
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Watcher event and immutability tests
+        run: python3 -m unittest discover -s tests -p 'test_catalog*.py'
+      - name: Generate review-only reports (offline discovery foundation)
+        run: python3 scripts/catalog_watcher.py --check-mirror --output-dir reports/run
+      - name: Publish catalog health artifacts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: catalog-health-${{ github.run_id }}
+          path: reports/run/
+          retention-days: 90
