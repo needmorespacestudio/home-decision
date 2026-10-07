@@ -4,6 +4,8 @@ Read [Product Constitution](HOME_DECISION_MASTER_SPEC.md) first. Production stay
 
 ## Current architecture
 
+Cooling/Zoning sprint retains the 51-record runtime and exact catalog mirror. `scripts/cooling-layer.js` is the maintainable configuration source embedded synchronously in `index.html` for offline/PWA compatibility; run `node scripts/sync-cooling-layer.cjs` after changing it, and `node scripts/sync-cooling-layer.cjs --check` before release. Configuration product matching operates per zone; conservative nominal ≥ upper-load coverage may reveal gaps previously hidden by whole-room near matches. Run `node tests/test_configuration.cjs`, `node tests/test_recommendation.cjs` and `node tests/test_pwa.cjs` plus the catalog tests below. Browser regression uses `tests/test_browser.cjs` with a local Playwright module and optional BASE_URL/BROWSER_CHANNEL/QA_DIR. No catalog readiness or field evidence is changed by this layer.
+
 `index.html` PRODUCTS remains runtime source for this compatibility phase. `data/aircon_catalog.json` is an exact structured mirror (no image/link logic removed). `scripts/catalog_export.py` is an explicit maintainer export. After a reviewed runtime catalog change, export again and review the diff; `--check-mirror` fails if they diverge. Do not hand-edit the mirror alone and assume production changed. Future migration requires a tested synchronous build/export or resilient loading strategy.
 
 Coverage metadata is in `data/aircon_catalog_coverage.json`; official Thai sources and access policy are in `data/source_registry.json`. The checked-in health report is a dated baseline, not a live status promise. Generated reports distinguish inherited evidence from fresh verification, and unknown link health from confirmed broken links.

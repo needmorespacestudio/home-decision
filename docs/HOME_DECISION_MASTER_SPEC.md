@@ -12,7 +12,7 @@ Independent Home Decision Platform: ช่วยเจ้าของบ้า�
 
 ## Aircon input contract
 
-Quick Flow has eight decisions, in order: room → area → sun → usage → special needs → install type → budget → ranked top-3 priorities. Keep back navigation and answers. Detailed Flow optionally adds ceiling height, glazing, top floor/roof, open plan, occupants, electrical phase/voltage and installation constraints. Unknown answers must stay unknown; explain conservative assumptions and site-check requirements.
+Quick Flow has eight core decisions, in order: room → area → sun → usage → special needs → installation constraints/preferences (system-guided by default) → budget → ranked top-3 priorities. Keep back navigation and answers. Adaptive zoning/ceiling questions appear before budget only when they can affect a configuration decision. Detailed Flow adds ceiling height, glazing, top floor/roof, open plan, occupants, electrical phase and installation constraints. Unknown answers must stay unknown; explain conservative assumptions and site-check requirements.
 
 Special Needs are distinct from Priority and can be multiple: PM2.5/ฝุ่น, ภูมิแพ้, ไวต่อเสียง, ไม่ชอบลมปะทะ, เด็ก/ผู้สูงอายุ, ความชื้น/กลิ่นอับ, or none (clears selections). Do not infer a medical benefit.
 
@@ -20,7 +20,23 @@ Top 3 Priority is ordered 1/2/3: energy (`saving`), quiet, comfort, air quality 
 
 ## Decision engine and safety
 
-Decision order: Safety → Installation compatibility → Capacity/BTU → Electrical compatibility → Special Needs → Top 3 Priority. Budget and design never override hard filters. Known incompatible electrical phase must be excluded. Unknown electrical/spec data requires disclosure and site confirmation, not a claim of compatibility. Never represent preliminary thermal estimates as full engineering calculations. Capacity boundary alternatives must carry warnings and cannot masquerade as exact fits.
+Decision order: Safety → Installation feasibility → Cooling load coverage → Electrical compatibility → Air distribution/zoning suitability → Special Needs → Top 3 Priority → Budget/value. Budget and design never override hard filters. Known incompatible electrical phase must be excluded. Unknown electrical/spec data requires disclosure and site confirmation, not a claim of compatibility. Never represent preliminary thermal estimates as full engineering calculations. Capacity boundary alternatives must carry warnings and cannot masquerade as exact fits.
+
+## Cooling configuration and zoning
+
+Home Decision recommends cooling configuration before product: Room/Area → Cooling Load → Configuration/Zoning → Number of units → Type → Capacity per zone → Product Matching → Budget/Quote. Users need not know unit count or type. Recommend one primary setup and at most two alternatives; technical detail stays in disclosures.
+
+Supported candidates: one wall, two independent wall units, one 4-way cassette; two cassette units when zoning/ceiling preference justifies them; mixed wall/cassette only when distribution benefits and ceiling feasibility exist. Concealed/ducted is an advanced survey consideration with no product or price claim. Multi-split (outdoor constraint) and VRF/VRV (large/connected areas) are future survey considerations, never interchangeable with independent split products.
+
+Adaptive questions: simultaneous vs partial-zone use and compact vs long/connected shape for ≥40m², living/non-bedroom ≥30m², Living+Dining or known open plan; independent control only for partial/long/connected use; ceiling availability only for potential cassette/hidden configurations; outdoor space only when installation constraints are selected. Unknown answers stay conditional. Optional details let users adjust two-zone load share 50:50, 60:40 or 40:60; this is preliminary, not a zone-by-zone heat calculation.
+
+Structured output includes configuration_id, count/type, zone_plan, low/high/target per zone, total target, fit_status, reasons, tradeoffs, site flags, equipment-price sample scope and qualitative confidence. Safety/feasibility/coverage/electrical/distribution are ordered criteria, not a hidden blended match percentage. Unknown installation/electrical facts cannot yield an unconditional fit. Exact zone products conservatively require verified nominal capacity to cover the upper estimated load; peak inverter capacity alone cannot prove sustained coverage. Near matches remain flagged and a zone gap makes the whole setup incomplete.
+
+Large ≥80m² areas, ceilings >3.5m, heavy sun plus glazing, connected rooms, unclear open-plan airflow, kitchen uncertainty, hidden systems and unknown electrical conditions require survey. All multi-unit splits require checking actual zone loads and placement. Show “ระบบช่วย shortlist configuration ได้ แต่ควรให้ช่าง/วิศวกรตรวจหน้างานก่อนซื้อ”. No fabricated installation totals or numeric energy savings; partial operation benefits assume zones can meaningfully separate heat and usage.
+
+Equipment budget sums only verified price samples for every zone; if any zone lacks a sample, whole-setup estimate is unknown. Label sparse/inherited samples; do not claim current market minima. Initial equipment cost, installation scope, partial operation, airflow, comfort, noise, redundancy, upkeep, outdoor space, interior and electrical scope are qualitative comparison dimensions. Per-zone ceiling allocation is equal as a disclosed preliminary allocation, never proof that chosen products fit the total ceiling. Product shortlists diversify brand representation after hard fit, without awarding points for SKU count. Preserve original image/link/detail/quote behavior and include setup plus zone shortlists in Decision Brief v3.
+
+Privacy-safe analytics foundation dispatches the `home-decision` browser CustomEvent with an allowlisted event name and setup type/unit count/flag count only. No vendor, persistent event log, identity, quote or room dimensions. Existing optional local demand/lead fallback is separate and unchanged.
 
 Air quality: never invent PM2.5, filtration or purification capability. Claims need a verified structured field, source, checked date and scope; verified feature tags count as structured evidence only for the exact named capability. Auto-clean, inverter, brand reputation and generic marketing do not imply purification. Filters are not verified room-performance or health outcomes.
 
@@ -30,7 +46,7 @@ Modes: no budget, best value, suggested ceiling, custom ceiling. Present market 
 
 ## Results and product detail
 
-Answer first: recommended BTU and one primary recommendation. Use เหมาะมาก / เหมาะ / มีข้อแลกเปลี่ยน rather than prominent raw percentages. Give 3–4 reasons plus one key warning when applicable. Put deep specs, assumptions and evidence in accordions. Product Match and Data Confidence are separate. Missing fields say ยังไม่มีข้อมูลยืนยัน.
+Answer first: Setup → Capacity per zone → Product. One primary setup, up to two alternatives, a CTA revealing zone product shortlists. Use เหมาะมาก / เหมาะ / มีข้อแลกเปลี่ยน rather than prominent raw percentages. Give 3–4 reasons plus a key tradeoff and explicit survey gate when applicable. Put deep specs, assumptions and evidence in accordions. Product Match and Data Confidence are separate. Missing fields say ยังไม่มีข้อมูลยืนยัน.
 
 Every recommendation and detail has a product image or clean placeholder; broken/hotlinked images must fall back. Exact model imagery needs evidence. Visible card actions: ดูรุ่นนี้, ดูเว็บทางการ, and ดูแหล่งราคา when verified. Do not hide these only in sources. Detail repeats image, 2–4 concise reasons, warning and official/price actions.
 
@@ -38,7 +54,7 @@ Every recommendation and detail has a product image or clean placeholder; broken
 
 Disclose official source, checked_at, Data Confidence, missing fields, and catalog scope. Never claim best in Thailand or whole-market comparison without an audited denominator. Distinguish family, model and capacity/electrical variant. Coverage is ingested in-scope records divided by a meaningful discovered in-scope official denominator; do not invent percentages from an arbitrary sample.
 
-Current baseline (2026-10-07, main b8a5571): 21 records, 4 brands: Mitsubishi Electric 8, Samsung 5, Panasonic 4, LG 4; wall 13, cassette 8. All have inherited official references/checked dates and recommendation_ready=true. This is an existing Beta set, not fresh independent re-verification of every field. Source presence does not verify every specification. See generated coverage/health for measured completeness. Target brands additionally include Daikin, Mitsubishi Heavy Duty, Carrier, Toshiba, Haier, Sharp and Hisense. Market denominators remain unknown.
+Verified repository baseline for this sprint (2026-10-07, main 36d0922): 51 records / 10 brands: Mitsubishi Electric 8, Panasonic 6, Mitsubishi Heavy Duty 5, Carrier 5, Samsung 5, Toshiba 5, Sharp 5, Daikin 4, LG 4, Haier 4; wall 43 / cassette 8. Hisense exact models, cassette 24K/30K, fresh prices and sustained min/max/electrical/noise/air-quality evidence remain gaps. Fresh manual evidence and inherited assertions must remain distinguished; source presence does not verify every field. Market denominators remain unknown. Catalog contents are unchanged by the zoning sprint.
 
 Sponsors cannot buy hard-filter passage, organic rank, Product Match, or recommended badges. Paid placements must be clearly separate. Affiliate/lead/quote revenue must not distort recommendations; disclose commercial relationships.
 
@@ -83,3 +99,8 @@ Not a marketplace pretending to be independent; not a full HVAC engineering tool
 | 2026-10-07 | Watchers emit review artifacts only | Human verification before recommendation eligibility | Any assumed automatic promotion |
 | 2026-10-07 | Denominators unknown, coverage beta/incomplete | 21 records do not prove whole-market coverage | Model count interpreted as market coverage |
 | 2026-10-07 | Preserve mobile centered layout and upload fallback | Avoid regressions; document actual extraction limit | Any assumption of working automatic OCR |
+| 2026-10-07 | Recommend cooling configuration before products | Decide single vs multi-unit and zoning with transparent reasons | Whole-room BTU directly selects one unit |
+| 2026-10-07 | System-guided installation by default; conditional questions | Users need not know HVAC types or counts; keep common-room flow short | Mandatory early install type choice |
+| 2026-10-07 | Result hierarchy Setup → zone capacity → products | One setup plus ≤2 alternatives; disclose survey/uncertainty | Product-first result hierarchy |
+| 2026-10-07 | Exact zone coverage uses nominal ≥ upper preliminary load | Do not promote undersized products using peak inverter output | Original loose boundary classifier for configuration matching |
+| 2026-10-07 | Setup budget is verified equipment samples only | No fabricated installed costs or numeric energy savings | Per-unit price mistaken for multi-unit total |

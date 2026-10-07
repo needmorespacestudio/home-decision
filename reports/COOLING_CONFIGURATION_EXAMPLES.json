@@ -1,0 +1,558 @@
+[
+  {
+    "scenario": "Bedroom 12m²",
+    "input": {
+      "area": 12
+    },
+    "recommended": {
+      "id": "wall_1",
+      "type": "wall",
+      "count": 1,
+      "targets": [
+        8000
+      ],
+      "status": "fit",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 15990,
+        "priced_models_per_zone": [
+          2
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [],
+      "zone_products": [
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk13yys-w1-src13yys-w1",
+            "model": "SRK13YYS-W1/SRC13YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk10yys-w1-src10yys-w1",
+            "model": "SRK10YYS-W1/SRC10YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "samsung-ar60h12",
+            "model": "F-AR60H12D1DWN",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [],
+    "advanced": []
+  },
+  {
+    "scenario": "Bedroom 20m²",
+    "input": {
+      "area": 20
+    },
+    "recommended": {
+      "id": "wall_1",
+      "type": "wall",
+      "count": 1,
+      "targets": [
+        14000
+      ],
+      "status": "fit",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 42990,
+        "priced_models_per_zone": [
+          1
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [],
+      "zone_products": [
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk15yys-w1-src15yys-w1",
+            "model": "SRK15YYS-W1/SRC15YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+            "model": "SRK18YYS-W1/SRC18YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "daikin-ftkq15xv2s-rkq15xv2s",
+            "model": "FTKQ15XV2S/RKQ15XV2S",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [],
+    "advanced": []
+  },
+  {
+    "scenario": "Living compact 30m²",
+    "input": {
+      "room": "living",
+      "area": 30
+    },
+    "recommended": {
+      "id": "wall_1",
+      "type": "wall",
+      "count": 1,
+      "targets": [
+        21000
+      ],
+      "status": "fit",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 42990,
+        "priced_models_per_zone": [
+          1
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [],
+      "zone_products": [
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+            "model": "SRK24YYS-W1/SRC24YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "haier-hsu-24vqac05",
+            "model": "HSU-24VQAC05",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-ka24",
+            "model": "MSY-KA24VF",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [],
+    "advanced": []
+  },
+  {
+    "scenario": "Living+Dining 50m² partial use",
+    "input": {
+      "room": "ld",
+      "area": 50,
+      "shape": "long",
+      "zoneUsage": "partial"
+    },
+    "recommended": {
+      "id": "wall_wall_2",
+      "type": "wall",
+      "count": 2,
+      "targets": [
+        18000,
+        18000
+      ],
+      "status": "site_check",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 85980,
+        "priced_models_per_zone": [
+          1,
+          1
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [
+        "สมมติ pantry ไม่มีการปรุงอาหารหนัก หากมีครัวหรือแหล่งความร้อนต้องตรวจเพิ่ม",
+        "แบ่งภาระความเย็นตามสัดส่วนเบื้องต้น 50:50 ต้องให้ช่างยืนยันขนาดและภาระของแต่ละโซน"
+      ],
+      "zone_products": [
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+            "model": "SRK24YYS-W1/SRC24YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+            "model": "SRK18YYS-W1/SRC18YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "daikin-ftkq18xv2s-rkq18xv2s",
+            "model": "FTKQ18XV2S/RKQ18XV2S",
+            "match_type": "exact"
+          }
+        ],
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+            "model": "SRK24YYS-W1/SRC24YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+            "model": "SRK18YYS-W1/SRC18YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "daikin-ftkq18xv2s-rkq18xv2s",
+            "model": "FTKQ18XV2S/RKQ18XV2S",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [
+      {
+        "id": "wall_1",
+        "targets": [
+          36000
+        ],
+        "status": "site_check"
+      }
+    ],
+    "advanced": []
+  },
+  {
+    "scenario": "Open plan 60m² together",
+    "input": {
+      "room": "living",
+      "area": 60,
+      "open": "open",
+      "ceiling": "yes"
+    },
+    "recommended": {
+      "id": "cassette_1",
+      "type": "cassette",
+      "count": 1,
+      "targets": [
+        46000
+      ],
+      "status": "site_check",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 98000,
+        "priced_models_per_zone": [
+          1
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [
+        "ตรวจพื้นที่เหนือฝ้า โครงยึด ท่อน้ำทิ้ง และการเข้าถึงเพื่อบำรุงรักษา"
+      ],
+      "zone_products": [
+        [
+          {
+            "id": "samsung-fac140-4w1pmd",
+            "model": "F-AC140-4W1PMD",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-plym48-1p",
+            "model": "PLY-M48EA2 (1 phase)",
+            "match_type": "exact"
+          },
+          {
+            "id": "lg-ztq48lmla0",
+            "model": "ZT-Q48LMLA0",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [
+      {
+        "id": "wall_wall_2",
+        "targets": [
+          23000,
+          23000
+        ],
+        "status": "site_check"
+      },
+      {
+        "id": "wall_1",
+        "targets": [
+          46000
+        ],
+        "status": "catalog_gap"
+      }
+    ],
+    "advanced": []
+  },
+  {
+    "scenario": "Long living 45m²",
+    "input": {
+      "room": "living",
+      "area": 45,
+      "shape": "long"
+    },
+    "recommended": {
+      "id": "wall_wall_2",
+      "type": "wall",
+      "count": 2,
+      "targets": [
+        16000,
+        16000
+      ],
+      "status": "site_check",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 85980,
+        "priced_models_per_zone": [
+          1,
+          1
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [
+        "แบ่งภาระความเย็นตามสัดส่วนเบื้องต้น 50:50 ต้องให้ช่างยืนยันขนาดและภาระของแต่ละโซน"
+      ],
+      "zone_products": [
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk15yys-w1-src15yys-w1",
+            "model": "SRK15YYS-W1/SRC15YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+            "model": "SRK24YYS-W1/SRC24YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+            "model": "SRK18YYS-W1/SRC18YYS-W1",
+            "match_type": "exact"
+          }
+        ],
+        [
+          {
+            "id": "mitsubishi-heavy-duty-srk15yys-w1-src15yys-w1",
+            "model": "SRK15YYS-W1/SRC15YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk24yys-w1-src24yys-w1",
+            "model": "SRK24YYS-W1/SRC24YYS-W1",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-heavy-duty-srk18yys-w1-src18yys-w1",
+            "model": "SRK18YYS-W1/SRC18YYS-W1",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [
+      {
+        "id": "wall_1",
+        "targets": [
+          32000
+        ],
+        "status": "site_check"
+      }
+    ],
+    "advanced": []
+  },
+  {
+    "scenario": "Cassette 65m² single-phase",
+    "input": {
+      "room": "living",
+      "area": 65,
+      "install": "cassette",
+      "ceiling": "yes"
+    },
+    "recommended": {
+      "id": "cassette_1",
+      "type": "cassette",
+      "count": 1,
+      "targets": [
+        45000
+      ],
+      "status": "site_check",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": 98000,
+        "priced_models_per_zone": [
+          1
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [
+        "ตรวจพื้นที่เหนือฝ้า โครงยึด ท่อน้ำทิ้ง และการเข้าถึงเพื่อบำรุงรักษา"
+      ],
+      "zone_products": [
+        [
+          {
+            "id": "samsung-fac140-4w1pmd",
+            "model": "F-AC140-4W1PMD",
+            "match_type": "exact"
+          },
+          {
+            "id": "mitsubishi-plym48-1p",
+            "model": "PLY-M48EA2 (1 phase)",
+            "match_type": "exact"
+          },
+          {
+            "id": "lg-ztq48lmla0",
+            "model": "ZT-Q48LMLA0",
+            "match_type": "exact"
+          }
+        ]
+      ]
+    },
+    "alternatives": [
+      {
+        "id": "cassette_cassette_2",
+        "targets": [
+          23000,
+          23000
+        ],
+        "status": "site_check"
+      }
+    ],
+    "advanced": []
+  },
+  {
+    "scenario": "Cassette 65m² three-phase",
+    "input": {
+      "room": "living",
+      "area": 65,
+      "install": "cassette",
+      "ceiling": "yes",
+      "phase": "3"
+    },
+    "recommended": {
+      "id": "cassette_1",
+      "type": "cassette",
+      "count": 1,
+      "targets": [
+        45000
+      ],
+      "status": "site_check",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": null,
+        "priced_models_per_zone": [
+          0
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [
+        "ตรวจพื้นที่เหนือฝ้า โครงยึด ท่อน้ำทิ้ง และการเข้าถึงเพื่อบำรุงรักษา"
+      ],
+      "zone_products": [
+        [
+          {
+            "id": "mitsubishi-plysm48-3p",
+            "model": "PLY-SM48EA4 (3 phase)",
+            "match_type": "exact"
+          },
+          {
+            "id": "lg-ztq48lmla0",
+            "model": "ZT-Q48LMLA0",
+            "match_type": "exact"
+          },
+          {
+            "id": "lg-ztq36gnla0",
+            "model": "ZT-Q36GNLA0",
+            "match_type": "near"
+          }
+        ]
+      ]
+    },
+    "alternatives": [
+      {
+        "id": "cassette_cassette_2",
+        "targets": [
+          23000,
+          23000
+        ],
+        "status": "catalog_gap"
+      }
+    ],
+    "advanced": []
+  },
+  {
+    "scenario": "Hidden design request",
+    "input": {
+      "install": "hidden",
+      "ceiling": "yes"
+    },
+    "recommended": {
+      "id": "ducted_consideration",
+      "type": "ducted",
+      "count": null,
+      "targets": [],
+      "status": "advanced",
+      "cost": {
+        "min_sample_thb": null
+      },
+      "flags": [
+        "ให้ช่าง/วิศวกรตรวจฝ้า ท่อลม แรงดันลม และระบบไฟก่อนซื้อ"
+      ],
+      "zone_products": []
+    },
+    "alternatives": [],
+    "advanced": [
+      "ducted"
+    ]
+  },
+  {
+    "scenario": "Large double-volume glazing",
+    "input": {
+      "room": "ld",
+      "area": 100,
+      "height": 3.8,
+      "glass": "high",
+      "sun": "afternoon",
+      "shape": "connected",
+      "phase": "unknown"
+    },
+    "recommended": {
+      "id": "wall_wall_2",
+      "type": "wall",
+      "count": 2,
+      "targets": [
+        66000,
+        66000
+      ],
+      "status": "catalog_gap",
+      "cost": {
+        "scope": "verified_equipment_only_excluding_installation",
+        "min_sample_thb": null,
+        "priced_models_per_zone": [
+          0,
+          0
+        ],
+        "note": "ในตัวเลือกที่เราตรวจสอบราคาแล้ว ไม่ใช่ราคาตลาดทั้งหมด"
+      },
+      "flags": [
+        "พื้นที่ใหญ่ ต้องตรวจภาระความเย็นและตำแหน่งเครื่อง",
+        "เพดานสูง / double volume ต้องประเมินหน้างาน",
+        "กระจกมากและแดดแรง ต้องประเมินความร้อนจริง",
+        "สมมติ pantry ไม่มีการปรุงอาหารหนัก หากมีครัวหรือแหล่งความร้อนต้องตรวจเพิ่ม",
+        "หลายห้องเชื่อมกัน อาจต้องมากกว่า 2 โซน",
+        "ระบบไฟยังไม่ยืนยัน ต้องตรวจเฟส แรงดัน เบรกเกอร์ และโหลดรวม",
+        "แบ่งภาระความเย็นตามสัดส่วนเบื้องต้น 50:50 ต้องให้ช่างยืนยันขนาดและภาระของแต่ละโซน"
+      ],
+      "zone_products": [
+        [],
+        []
+      ]
+    },
+    "alternatives": [
+      {
+        "id": "wall_1",
+        "targets": [
+          132000
+        ],
+        "status": "catalog_gap"
+      }
+    ],
+    "advanced": [
+      "VRF/VRV"
+    ]
+  }
+]
