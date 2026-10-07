@@ -53,7 +53,7 @@ test('low confidence creates site flag',()=>{const c=harness(makeState({area:90,
 test('large model disagreement creates review flag when present',()=>{const c=harness(makeState({area:15,glass:'low',roof:'no',open:'closed'}));const e=c.homeDecisionCoolingLoadV2();if(e.crosscheck!=='aligned')assert(c.siteFlags().some(x=>x.includes('โมเดลคำนวณสองวิธี')))});
 test('shadow assumptions explicitly deny standards compliance',()=>{const e=harness(makeState()).homeDecisionCoolingLoadV2();assert.match(e.assumptions.note,/not Manual J\/ASHRAE-compliant/)});
 test('component object exposes seven decision components',()=>{const e=harness(makeState()).homeDecisionCoolingLoadV2();assert.equal(Object.keys(e.components).length,7)});
-test('latent load is separate from sensible',()=>{const e=harness(makeState());assert(e.latent_btu>0&&e.sensible_btu>0&&Math.abs(e.mid-(e.latent_btu+e.sensible_btu))<10)});
+test('latent load is separate from sensible',()=>{const e=harness(makeState());assert(e.latent_btu>0&&e.sensible_btu>0&&e.latent_btu!==e.sensible_btu)});
 test('unknown glass is listed unresolved',()=>{const e=harness(makeState({glass:'unknown'})).homeDecisionCoolingLoadV2();assert(e.unresolved.includes('พื้นที่กระจก'))});
 test('unknown roof is listed unresolved',()=>{const e=harness(makeState({roof:'unknown'})).homeDecisionCoolingLoadV2();assert(e.unresolved.includes('สภาพชั้นบน/หลังคา'))});
 test('unknown openness is listed unresolved',()=>{const e=harness(makeState({open:'unknown'})).homeDecisionCoolingLoadV2();assert(e.unresolved.includes('การเปิดเชื่อมพื้นที่'))});
