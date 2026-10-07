@@ -474,4 +474,58 @@ function finish(){
  <div class=card><div class=kicker>PRODUCT MATCHING — VERIFIED + CATALOG SEED</div>
  <h3>${usedFallback?"ยังไม่มีรุ่นที่ครอบคลุมช่วงโหลดได้มั่นใจ — แสดง Borderline / Near Match":"รุ่นที่ครอบคลุมช่วงความเย็นได้เหมาะสม"}</h3>
  ${usedFallback?`<div class=notice><b>ต้องยืนยันเพิ่ม:</b> ยังไม่มี Candidate ที่ครอบคลุมช่วง Cooling Load ตามเกณฑ์ Exact ของระบบ ตัวเลือกด้านล่างจึงเป็น Borderline/Near Match และไม่ควรใช้เป็นคำสั่งซื้อทันที โดยเฉพาะพื้นที่ใหญ่/Open plan ควร Site Check</div>`:""}
- ${top.length?top.map((p,idx)=>
+ ${top.length?top.map((p,idx)=>>`<div class=product>
+   <div class=productimg>${productImage(p)}</div>
+   <div>
+     <div class=phead><div><b>${p.brand}</b><div>${p.model}</div></div><div class=score>${p.match}%</div></div><div class=chips><span class=chip>${p.match_type==="exact"?"Exact-range candidate":p.match_type==="borderline"?"Borderline • Site Check":"Near Match"}</span><span class=chip>Data ${p.data_confidence||"—"}%</span></div>
+     <div class=chips><span class=chip>${typeName(p.type)}</span><span class=chip>${p.nominal_btu.toLocaleString("th-TH")} BTU</span><span class=chip>${p.phase?p.phase+" เฟส":"Phase ยังไม่ยืนยัน"}</span>${p.seer?`<span class=chip>SEER ${p.seer}</span>`:""}${p.wifi?`<span class=chip>Wi‑Fi</span>`:""}</div>
+     <div class=price>${baht(p.price_thb)}</div><div class=disclaimer>${p.price_note||"ยังไม่มีราคายืนยัน"}${p.price_checked_at?` • ตรวจข้อมูล ${p.price_checked_at}`:""}</div>
+     <p class=disclaimer>Match Score มาจาก Capacity + Efficiency + Preferences + Comfort + Service + Smart เท่านั้น และไม่ได้รับผลจาก Sponsor</p>
+     <a href="${p.official_source}" target=_blank>Official spec</a>
+     ${p.price_url?` · <a href="${p.price_url}" target=_blank>แหล่งราคา</a>`:""}
+     <br><button class="detailbtn" onclick="showProductDetail('${p.id}',${p.match})">ดูรายละเอียดรุ่น + รูป</button> <button class="selectproduct" onclick="openQuoteCompare('${p.id}')">เลือกรุ่นนี้ → เทียบร้าน</button>
+   </div>
+ </div>`).join(""):`<div class=notice>ยังไม่มีรุ่นใน Seed Database ที่ผ่านเงื่อนไขนี้ ไม่ได้แปลว่าไม่มีสินค้าในตลาดจริง — ฐานข้อมูล Beta ยังเล็กอยู่</div>`}
+ </div>
+ <div class="card sponsor"><div class=sponsorlabel>SPONSORED AREA — DEMO ONLY</div><h3>ตำแหน่งเชิงพาณิชย์ต้องอยู่แยกจาก Ranking</h3>
+ <p class=muted>แบรนด์สามารถซื้อ Visibility ได้ แต่ไม่สามารถซื้อ Match Score, Hard Filter หรือป้าย “เหมาะที่สุด” ได้</p></div>
+ <div class=card><h3>หลักฐานและความโปร่งใส</h3><p class=muted>ระบบแยกข้อมูลสินค้า ราคา และ Source ออกจากกัน แต่ละราคามีเวลาตรวจล่าสุด และข้อมูลที่ขาดจะไม่ถูก AI เดา</p>
+ <p class=disclaimer>v6.2 เพิ่มรุ่นห้องนอนช่วงประมาณ 9,000–13,000 BTU พร้อม Nominal Oversize Guard เพื่อกันแอร์ใหญ่เกิน แม้ Inverter จะลดรอบได้</p></div>
+ ${decisionBriefHTML(usedFallback||!top.length?"unresolved":"available")}
+
+ <div class=card><div class=kicker>NEXT DECISION</div><h3>เลือกรุ่นที่สนใจ แล้วไปเทียบร้าน/Quote ต่อ</h3>
+    <p class=muted>ระบบจะไม่ดูแค่ราคาเครื่อง แต่จะ Normalize ค่าติดตั้ง, ท่อ, Breaker, งานฝ้า, VAT, Warranty งานติดตั้ง และข้อมูลร้านก่อนสรุป Final Decision</p>
+    ${top.length?`<button class="btn" onclick="openQuoteCompare('${top[0].id}')">ใช้รุ่นอันดับแรกไปทดลองเทียบร้าน →</button>`:""}</div>
+ <button class="btn back" onclick=restart()>เริ่มกรอกใหม่</button>`;
+ wiz.classList.add("hidden");result.classList.remove("hidden");scrollTo(0,0);
+}
+
+function goHome(){
+  wiz.classList.add("hidden");advanced.classList.add("hidden");result.classList.add("hidden");quote.classList.add("hidden");home.classList.remove("hidden");
+  scrollTo(0,0);
+}
+
+function showProductDetail(id,match){
+  const p=PRODUCTS.find(x=>x.id===id); if(!p)return;
+  result.innerHTML=`
+   <button class="navbtn backhome" onclick="finish()">← กลับผลลัพธ์</button>
+   <button class="navbtn backhome" onclick="goHome()">หน้าแรก</button>
+   <div class=card>
+     <div class=kicker>${p.brand.toUpperCase()}</div><h2>${p.model}</h2>
+     <div style="height:280px;border:1px solid var(--line);border-radius:17px;background:#fafaf7;display:flex;align-items:center;justify-content:center;overflow:hidden">
+       <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center">${productImage(p)}</div>
+     </div>
+     <div class=chips style="margin-top:14px">
+       <span class=chip>${typeName(p.type)}</span><span class=chip>${p.nominal_btu.toLocaleString("th-TH")} BTU</span>
+       ${p.seer?`<span class=chip>SEER ${p.seer}</span>`:""}<span class=chip>${p.voltage||"Voltage ยังไม่ยืนยัน"}</span>${p.wifi?`<span class=chip>Wi‑Fi</span>`:""}
+     </div>
+     <div class=row><b>Match กับโจทย์คุณ</b><span>${match}%</span></div><div class=row><b>Data Confidence</b><span>${p.data_confidence||"—"}%</span></div>
+     <div class=row><b>ช่วง Inverter</b><span>${p.min_btu&&p.max_btu?`${p.min_btu.toLocaleString("th-TH")}–${p.max_btu.toLocaleString("th-TH")} BTU`:"ยังไม่ยืนยัน"}</span></div>
+     <div class=row><b>ฟีเจอร์</b><span>${p.feature_tags.join(", ")}</span></div>
+     <div class=row><b>ราคาที่พบล่าสุด</b><span>${baht(p.price_thb)}</span></div>
+     <p class=disclaimer>รูปในระบบต้องผูกกับรุ่น/ตระกูลที่ตรวจสอบแล้ว ถ้ายังไม่ยืนยัน เราจะแสดง placeholder แทน ไม่ใช้ภาพคล้ายกันเพื่อความสวยงามอย่างเดียว</p>
+     <a href="${p.official_source}" target=_blank>ดู Official source</a>${p.price_url?` · <a href="${p.price_url}" target=_blank>ดูแหล่งราคา</a>`:""}
+     <br><button class="selectproduct" onclick="openQuoteCompare('${p.id}')">เลือกรุ่นนี้ → เทียบร้าน/Quote</button>
+   </div>
+   ${decisionBriefHTML(p.match_type!=="exact"?"unresolved":"available")}`;
+  
