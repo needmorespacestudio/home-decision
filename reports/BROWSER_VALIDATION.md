@@ -23,3 +23,11 @@ Date 2026-10-07. Tested the static local app at http://127.0.0.1:8765 using the 
 The first browser attempt hit an area-validation alert after an extra Next action; a fresh tab completed both flows. This was not counted as a passing flow. Source/runtime compatibility is checked separately with the exact-mirror test.
 
 Vercel project discovery identified home-decision / prj_eBJq4YuuGiqSueFCmJAN06jhvY8F / team_aVJ9CiefWYcwQoaqgB44MCfJ. Deployment listing returned HTTP 403: connected credentials lack the team's scope (panupongtr4-1388). No installed authenticated Vercel CLI fallback was available. READY and deployed SHA are unverified. Reconnect an account with access to this same team before claiming release success.
+
+## Production verification after human approval
+
+The user explicitly approved the concrete 51-record release. Main release commit: c5ec124191a3d92abe9cb89c41d95c47a36983c1. GitHub Vercel status is success, target https://vercel.com/panupongtr4-1388/home-decision/8ACYYSDVhiw1DpG1qVuNzv3EPZzD.
+
+The public live catalog JSON was read through its rendered document and compared with the approved local catalog: 51 records, 10 brands, exact JSON equality; 30 newly added records include human approval. The live recommendation displayed MHI SRK13YYS-W1/SRC13YYS-W1. Quick8, Detailed14, three-phase cassette/50,000 ceiling, Budget/Top3, Result, Product Detail, manual Quote 25,000 and Decision Brief completed on the production alias. Live console error logs were empty. The local 390px and 1280px checks above remain the responsive evidence; no unsupported claim of a real device install is made.
+
+Direct READY API state remains unverified: team-scoped list/get APIs returned 403 and the referenced dashboard required login. GitHub success and the matching live release are independent positive evidence; they are not mislabelled as an observed READY API response.

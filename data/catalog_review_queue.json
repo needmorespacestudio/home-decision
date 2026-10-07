@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated_at": "2026-10-07",
   "automatic_promotion": false,
-  "release_status": "human_approved_awaiting_deployment",
+  "release_status": "deployed_live_verified_ready_api_unverified",
   "events": [
     {
       "event_id": "ccd1c94d0f4310b455ed",
@@ -1463,5 +1463,32 @@
     "approved_at": "2026-10-07",
     "authorization": "อนุมัติชุดนี้ให้ push main แล้วตรวจ deployment ต่อ",
     "scope": "51 records / 10 brands, current 28 / unclear 23 and five inherited prices disclosed"
+  },
+  "deployment_verification": {
+    "verified_at": "2026-10-07",
+    "release_commit": "c5ec124191a3d92abe9cb89c41d95c47a36983c1",
+    "production_url": "https://home-decision-eight.vercel.app",
+    "github_vercel_check": "success",
+    "deployment_dashboard": "https://vercel.com/panupongtr4-1388/home-decision/8ACYYSDVhiw1DpG1qVuNzv3EPZzD",
+    "vercel_ready_api": "unverified_403_team_scope",
+    "live_catalog_exact_mirror": true,
+    "live_records": 51,
+    "live_brands": 10,
+    "human_approved_new_records": 30,
+    "live_flows_passed": [
+      "Quick8",
+      "Detailed14",
+      "Budget/Top3",
+      "Result",
+      "ProductDetail",
+      "QuoteManual",
+      "DecisionBrief"
+    ],
+    "console_errors": 0,
+    "limitations": [
+      "Real device PWA install/offline not tested",
+      "Actual upload file selection not tested",
+      "Direct Vercel READY state unavailable due team-scope authorization"
+    ]
   }
 }

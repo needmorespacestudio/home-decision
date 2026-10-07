@@ -1,6 +1,6 @@
 # Catalog Expansion Sprint 1 — QA / release candidate
 
-Date: 2026-10-07. Status: local candidate, not deployed. Explicit human promotion gate remains pending.
+Date: 2026-10-07. Release status: deployed_live_verified_ready_api_unverified. Human approval recorded in canonical review queue.
 
 ## Counts
 
@@ -99,6 +99,6 @@ Browser and release checks are recorded separately in BROWSER_VALIDATION.md; aut
 
 ## Before Private Beta
 
-Human approval of this concrete release; renew five baseline price samples and remaining inherited lifecycle evidence; add official residential cassette 24K/30K variants, Hisense exact-model evidence, consistent noise test conditions, actual warranty terms, HVAC expert review and launch analytics. Keep adapters disabled until source policy and parser fixtures are audited.
+Human approval and live release checks are complete (direct READY API remains inaccessible); renew five baseline price samples and remaining inherited lifecycle evidence; add official residential cassette 24K/30K variants, Hisense exact-model evidence, consistent noise test conditions, actual warranty terms, HVAC expert review and launch analytics. Keep adapters disabled until source policy and parser fixtures are audited.
 
 Newly discovered products do not become recommendations through the watcher.
