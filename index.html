@@ -103,4 +103,112 @@ a{color:inherit}.sponsor{border-style:dashed;background:#fffdf5}.sponsorlabel{fo
 .quoteChoice b{display:block;font-size:15px;margin-bottom:5px}.quoteChoice small{color:var(--muted);line-height:1.45}
 .quickQuotes{display:grid;gap:10px}.quickQuote{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px}
 .quickQuoteHead{display:flex;justify-content:space-between;gap:10px;align-items:center}
-.quickQuo
+.quickQuote input,.quickQuote select,.quickQuote textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.quickQuote label{display:block;font-size:10px;font-weight:850;margin:8px 0 4px}
+.quick3{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:7px}
+.quoteResult{background:#f7f7f4;border-radius:13px;padding:11px;margin-top:10px}
+.quoteRisk{font-size:11px;color:var(--muted);line-height:1.55;margin-top:7px}
+details.quoteAdvanced{margin-top:10px;border-top:1px dashed var(--line);padding-top:9px}
+details.quoteAdvanced summary{cursor:pointer;font-size:11px;font-weight:850}
+.uploadbox{border:1px dashed #aaa;border-radius:14px;padding:14px;margin-top:9px;background:#fafaf7}
+.uploadbox input{width:100%}
+.copybox{background:#111;color:#fff;border-radius:15px;padding:14px;margin-top:10px}
+.copybox p{color:#ddd;font-size:12px;line-height:1.5}
+@media(max-width:700px){.quoteHero,.quick3{grid-template-columns:1fr}}
+
+.trustgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.truststat{background:#f7f7f4;border-radius:12px;padding:10px}.truststat b{display:block;font-size:17px}.truststat span{font-size:10px;color:var(--muted)}.trustflow{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0}.trustflow span{font-size:10px;border:1px solid var(--line);background:#fff;border-radius:99px;padding:5px 7px}.coveragewarn{background:#fff2d1;border-radius:12px;padding:10px;font-size:11px;line-height:1.55}.trustdetails summary{cursor:pointer;font-size:11px;font-weight:850}.trustdetails{margin-top:10px}.installHelp{font-size:10px;color:var(--muted)}
+@media(max-width:600px){.trustgrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="navin">
+  <div class="navbrand" onclick="goHome()">● HOME DECISION</div>
+  <div class="navbtns"><button id="installBtn" class="navbtn" onclick="installApp()">ติดตั้งแอป</button>
+    <button class="navbtn" onclick="goHome()">หน้าแรก</button>
+    <button class="navbtn" onclick="restartToWizard()">เริ่มเลือกแอร์ใหม่</button>
+  </div>
+</div></div>
+<div class="wrap">
+<div class="top"><div class="brand">Aircon Decision</div><div class="tag">Aircon Beta • PWA</div></div>
+<section id="home" class="card">
+<div class="kicker">INDEPENDENT HOME DECISION PLATFORM</div>
+<h1>ก่อนซื้อแอร์<br>เช็กให้รู้ว่าห้องคุณต้องการอะไร</h1>
+<p class="muted">ตอบคำถามหลักไม่กี่ข้อ → ได้ช่วง BTU และตัวเลือกที่เหมาะ → ถ้าต้องการค่อยดูรายละเอียด/เทียบร้านต่อ</p>
+<div class="notice"><b>Private Beta mode:</b> <span id="runtimeMode"></span><br><b>No dead end:</b> ถ้าฐานข้อมูลยังไม่พอ ระบบจะสร้าง <b>Decision Brief</b> ให้เอาไปถามร้านต่อ และสามารถบันทึก Requirement เป็น Demand Gap เพื่อให้ Home Decision เติมข้อมูลในจุดที่คนต้องการจริงก่อน</div>
+<div class="flowsteps"><span class="flowstep on">ข้อมูลห้อง</span><span class="flowstep">BTU</span><span class="flowstep">สินค้า</span><span class="flowstep">ร้าน / Quote</span><span class="flowstep">Final Decision</span></div><div class="modegrid">
+  <button class="modecard recommended" onclick="startMode('quick')">
+    <span class="modebadge">แนะนำสำหรับคนทั่วไป</span>
+    <b>แบบง่าย</b>
+    <small>6 คำถามหลัก • ประมาณ 1 นาที • ถ้าไม่รู้รายละเอียด ระบบใช้ค่ากลางและบอกสมมติฐานให้</small>
+  </button>
+  <button class="modecard" onclick="startMode('detailed')">
+    <b>แบบละเอียด</b>
+    <small>11 คำถาม • เหมาะกับคนที่รู้ข้อมูลห้องและอยากให้ระบบคัดให้ละเอียดขึ้น</small>
+  </button>
+</div>
+<p class="disclaimer">Beta สำหรับทดสอบ Product/UX • ไม่ใช่การคำนวณ Cooling Load ทางวิศวกรรมเต็มรูปแบบ</p>
+</section>
+<section id="wiz" class="hidden"><div id="stepmeta" class="muted"></div><div class="progress"><div id="bar" class="bar"></div></div><div id="box" class="card"></div></section>
+<section id="advanced" class="hidden">
+  <button class="navbtn backhome" onclick="closeAdvanced()">← กลับ Quick Flow</button>
+  <div class="card">
+    <div class="kicker">OPTIONAL DETAILS</div>
+    <h2>ปรับละเอียดเพิ่มเติม</h2>
+    <p class="muted">ไม่จำเป็นต้องกรอก ถ้าไม่แน่ใจระบบจะใช้ค่ากลางแบบเผื่อความปลอดภัยและบอกสมมติฐานในผลลัพธ์</p>
+    <div class="advgrid">
+      <div><label>ฝ้าสูง</label>
+        <select id="advHeight">
+          <option value="2.5">2.4–2.6 ม.</option>
+          <option value="2.7">ประมาณ 2.7 ม.</option>
+          <option value="2.85">2.7–3.0 ม.</option>
+          <option value="3.25">3.0–3.5 ม.</option>
+          <option value="3.8">มากกว่า 3.5 ม.</option>
+        </select>
+      </div>
+      <div><label>กระจกฝั่งรับแดด</label>
+        <select id="advGlass">
+          <option value="unknown">ไม่แน่ใจ</option><option value="low">น้อย</option><option value="medium">ปานกลาง</option><option value="high">เยอะ</option>
+        </select>
+      </div>
+      <div><label>ชั้นบนสุด / ใต้หลังคาร้อน</label>
+        <select id="advRoof">
+          <option value="unknown">ไม่แน่ใจ</option><option value="no">ไม่</option><option value="yes">ใช่</option>
+        </select>
+      </div>
+      <div><label>เปิดเชื่อมพื้นที่อื่น</label>
+        <select id="advOpen">
+          <option value="unknown">ไม่แน่ใจ</option><option value="closed">ห้องปิด</option><option value="partial">เปิดบางส่วน</option><option value="open">Open plan</option>
+        </select>
+      </div>
+      <div><label>ระบบไฟ</label>
+        <select id="advPhase">
+          <option value="unknown">ไม่แน่ใจ</option><option value="1">1 เฟส 220V</option><option value="3">3 เฟส 380V</option>
+        </select>
+      </div>
+      <div><label>จำนวนผู้ใช้งานปกติ</label><input id="advPeople" type="number" min="1" max="20" value="2"></div>
+    </div>
+    <div class="actions"><button class="btn back" onclick="closeAdvanced()">ยกเลิก</button><button class="btn" onclick="saveAdvanced()">บันทึกและกลับ</button></div>
+  </div>
+</section>
+<section id="result" class="hidden"></section>
+<section id="quote" class="hidden"></section>
+</div>
+<script src="config.js"></script>
+<script>
+const HD_CONFIG = {
+  apiBase: window.HOME_DECISION_API_BASE || "",
+  mode: window.HOME_DECISION_API_BASE ? "production-api" : "local-demo"
+};
+async function hdPost(path, payload){
+  if(!HD_CONFIG.apiBase) return {ok:false, demo:true};
+  const res = await fetch(HD_CONFIG.apiBase.replace(/\/$/,"") + path,{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify(payload)
+  });
+  const data = await res.json().catch(()=>({}));
+  if(!res.ok) throw new Error(data.error||("HTTP "+res.status));
+  return data;
+}
+
+const PRODUCTS=[{"id": "panasonic-yu9zkt", "brand": "Panasonic", "model": "CS-YU9ZKT/CU-YU9ZKT", "type": "wall", "nominal_btu": 9080, "min_btu": null, "max_btu": null, "seer": null, "phase": null, "voltage": null, "inverter": true, "wifi": null, "noise_low_dba": null, "warranty_summary": null, "refrigerant": "R32", "feature_tags": ["Avoid me", "Gear Mode", "i-Clean", "Inverter"], "lifecycle": "official_page_live", "recommendation_ready": true, "data_confidence": 80, "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu9zkt.html", "checked_at": "2026-10-07", "verified_fields": ["model", "nominal_btu", "type", "inverter", "refrigerant", "feature_tags"], "quiet_score": 7, "service_score": 7, "sponsored": false, "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้", "price_url": null}, {"id": "panasonic-yu13zkt", "brand": "Panasonic", "model": "CS-YU13ZKT/CU-YU13ZKT", "type": "wall", "nominal_btu": 12297, "min_btu": null, "max_btu": null, "seer": null, "phase": null, "voltage": null, "inverter": true, "wifi": null, "noise_low_dba": null, "warranty_summary": null, "refrigerant": "R32", "feature_tags": ["Avoid me", "Gear Mode", "i-Clean", "Inverter"], "lifecycle": "official_page_live", "recommendation_ready": true, "data_confidence": 80, "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu13zkt.html", "checked_at": "2026-10-07", "verified_fields": ["model", "nominal_btu", "type", "inverter", "refrigerant", "feature_tags"], "quiet_score": 7, "service_score": 7, "sponsored": false, "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้", "price_url": null}, {"id": "panasonic-yu18zkt", "brand": "Panasonic", "model": "CS-YU18ZKT/CU-YU18ZKT", "type": "wall", "nominal_btu": 18097, "min_btu": null, "max_btu": null, "seer": null, "phase": null, "voltage": null, "inverter": true, "wifi": null, "noise_low_dba": null, "warranty_summary": null, "refrigerant": "R32", "feature_tags": ["Avoid me", "Gear Mode", "i-Clean", "Inverter"], "lifecycle": "official_page_live", "recommendation_ready": true, "data_confidence": 80, "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu18zkt.html", "checked_at": "2026-10-07", "verified_fields": ["model", "nominal_btu", "type", "inverter", "refrigerant", "feature_tags"], "quiet_score": 7, "service_score": 7, "sponsored": false, "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้", "price_url": null}, {"id": "panasonic-yu24zkt", "brand": "Panasonic", "model": "CS-YU24ZKT/CU-YU24ZKT", "type": "wall", "nominal_btu": 24322, "min_btu": null, "max_btu": null, "seer": null, "phase": null, "voltage": null, "inverter": true, "wifi": null, "noise_low_dba": null, "warranty_summary": null, "refrigerant": "R32", "feature_tags": ["Avoid me", "Gear Mode", "i-Clean", "Inverter"], "lifecycle": "official_page_live", "recommendation_ready": true, "data_confidence": 80, "official_source": "https://www.panasonic.com/th/air-solutions/products/air-conditioner/rac/yu-zkt/cu-cs-yu24zkt.html", "checked_at": "2026-10-07", "verified_fields": ["model", "nominal_btu", "type", "inverter", "refrigerant", "feature_tags"], "quiet_score": 7, "service_score": 7, "sponsored": false, "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้", "price_url": null}, {"id": "mitsubishi-ka09", "brand": "Mitsubishi Electric", "model": "MSY-KA09VF", "type": "wall", "nominal_btu": 9212, "min_btu": 2730, "max_btu": 9895, "seer": 18.5, "phase": "1", "voltage": "220V", "inverter": true, "wifi": false, "noise_low_dba": null, "warranty_summary": "Heat exchangers 3y / compressor 5y / parts 1y", "refrigerant": "R32", "feature_tags": ["Fast Cooling", "Sleep Mode", "R32"], "lifecycle": "official_page_live", "recommendation_ready": true, "data_confidence": 97, "official_source": "https://www.mitsubishi-kyw.co.th/Product/For-Home/conditioner/KT-Series/5527.aspx?lang=TH", "checked_at": "2026-10-07", "verified_fields": ["model", "nominal_btu", "min_btu", "max_btu", "seer", "phase", "voltage", "type", "inverter", "warranty", "refrigerant"], "quiet_score": 7, "service_score": 8, "sponsored": false, "price_note": "ยังไม่มีราคาที่ตรวจยืนยันในชุดนี้", "price_url": null}, {"id": "mits
