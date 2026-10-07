@@ -1,9 +1,9 @@
 const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
 const events={},deleted=[],cached=[],put=[];let fail=false,skipped=false,claimed=false;
-const ctx=vm.createContext({URL,location:{origin:'http://localhost'},self:{addEventListener(k,f){events[k]=f},skipWaiting(){skipped=true},clients:{claim(){claimed=true}}},caches:{open:async()=>({addAll:async x=>cached.push(...x),put:async(...x)=>put.push(x)}),keys:async()=>['old-release','home-decision-v8-beta-validation'],delete:async k=>deleted.push(k),match:async()=>({offline:true})},fetch:async()=>{if(fail)throw Error('offline');return {network:true,clone(){return{}}}}});
+const ctx=vm.createContext({URL,location:{origin:'http://localhost'},self:{addEventListener(k,f){events[k]=f},skipWaiting(){skipped=true},clients:{claim(){claimed=true}}},caches:{open:async()=>({addAll:async x=>cached.push(...x),put:async(...x)=>put.push(x)}),keys:async()=>['old-release','home-decision-v9-cooling-load-v2'],delete:async k=>deleted.push(k),match:async()=>({offline:true})},fetch:async()=>{if(fail)throw Error('offline');return {network:true,clone(){return{}}}}});
 vm.runInContext(fs.readFileSync('sw.js','utf8'),ctx);
 (async()=>{
- let wait;events.install({waitUntil(p){wait=p}});await wait;assert(skipped);assert.deepEqual(cached,['/','/manifest.webmanifest','/icons/icon.svg']);
+ let wait;events.install({waitUntil(p){wait=p}});await wait;assert(skipped);assert.deepEqual(cached,['/','/manifest.webmanifest','/icons/icon.svg','/scripts/cooling-load-v2.js']);
  events.activate({waitUntil(p){wait=p}});await wait;assert(claimed);assert.deepEqual(deleted,['old-release']);
  let response;const request={method:'GET',mode:'navigate',url:'http://localhost/'};events.fetch({request,respondWith(p){response=p}});assert((await response).network);
  fail=true;events.fetch({request,respondWith(p){response=p}});assert((await response).offline);
