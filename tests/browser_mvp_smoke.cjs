@@ -53,7 +53,7 @@ async function run(){
   await expr("hdCorePick('room','ld');hdCorePick('openDetail','open');next();s.dimensionMode='area';s.area=50;hdCorePick('ceilingClass','normal');next()");
   await completeBase();
   await expr("next();next()");
-  assert.equal(await expr("result.textContent.includes('ตรวจรูปแบบติดตั้ง')"),true,'50sqm connected room handoff');
+  assert.equal(await expr("result.textContent.includes('เริ่มเปรียบเทียบจากรูปแบบติดตั้ง')"),true,'50sqm connected room handoff');
   assert.equal(await expr("result.querySelectorAll('.hdV6Product').length"),0,'no product shortlist for connected area');
   assert.equal(await expr("!!result.querySelector('details')"),true,'complex area retains decision brief');
 
