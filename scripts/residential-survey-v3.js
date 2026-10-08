@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='3.1-residential-quick9';
+const V='3.2-residential-four-pages';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -17,7 +17,7 @@ const baseConfigurationQuestions=configurationQuestions;
 const ROOM_OPTS=[
  ['bed','ห้องนอน'],
  ['living','ห้องนั่งเล่น'],
- ['ld','ห้องนั่งเล่น + กินข้าว / Open plan ในบ้าน'],
+ ['ld','ห้องนั่งเล่นและห้องกินข้าวที่เปิดถึงกัน'],
  ['other','ห้องอื่นในบ้าน — ระบบจะบอกว่าต้องตรวจอะไรเพิ่ม']
 ];
 const SUN_OPTS=[
@@ -43,7 +43,7 @@ const OVERHEAD_OPTS=[
 const OPEN_OPTS=[
  ['closed','ปิดประตูได้ เป็นห้องเดี่ยว'],
  ['partial','มีประตู แต่บางครั้งเปิดเชื่อมพื้นที่อื่น'],
- ['open','เปิดโล่งต่อกับ Living / Dining / ทางเดิน'],
+ ['open','เปิดโล่งต่อกับห้องอื่นหรือทางเดิน'],
  ['stair','เปิดโล่งถึงบันไดหรือโถงสูง'],
  ['outdoor','มีประตูออกนอกบ้านที่เปิดบ่อย'],
  ['unknown','ไม่แน่ใจ']
@@ -51,7 +51,7 @@ const OPEN_OPTS=[
 const HEIGHT_OPTS=[
  ['normal','ปกติ ประมาณ 2.4–3.0 ม.'],
  ['high','สูงกว่าปกติ ประมาณ 3.0–4.0 ม.'],
- ['double','สูงมาก / Double volume / มองเห็นชั้นสอง'],
+ ['double','สูงมาก หรือมองขึ้นไปเห็นชั้นสอง'],
  ['unknown','ไม่แน่ใจ']
 ];
 const STAGE2=[
@@ -79,7 +79,7 @@ function derive(){
   s.area=Math.round(Number(s.width)*Number(s.length)*10)/10;
   const a=Math.max(Number(s.width),Number(s.length)),b=Math.min(Number(s.width),Number(s.length));
   if(b>0&&a>=7&&a/b>=2){s.shape='long';s.shapeDetail='long'}
-  else if(!s.shapeDetail){s.shape='compact';s.shapeDetail='compact'}
+  else if(!s.shapeDetail){s.shape='compact'}
  }
  const o=s.openDetail;
  s.open=o==='closed'?'closed':o==='partial'?'partial':['open','stair','outdoor'].includes(o)?'open':o==='unknown'?'unknown':(s.open||'unknown');
@@ -94,20 +94,23 @@ function derive(){
  if(s.glass==='full'){s.glazingExtent='full';s.glass='high'}
 }
 
-function coreQuestions(){
- return [
-  ['room','ห้องนี้ใช้ทำอะไรเป็นหลัก?',ROOM_OPTS],
-  ['dimensions','ห้องกว้าง × ยาวประมาณเท่าไร?',null],
-  ['openDetail','เวลาเปิดแอร์ ปิดห้องได้มิดไหม?',OPEN_OPTS],
-  ['sun','ช่วงบ่าย แดดส่องโดนห้องนี้ไหม?',SUN_OPTS],
-  ['glass','ผนังฝั่งที่โดนแดด มีกระจกมากแค่ไหน?',GLASS_OPTS],
-  ['overhead','เหนือเพดานห้องนี้เป็นอะไร?',OVERHEAD_OPTS],
-  ['ceilingClass','เพดานห้องนี้สูงแค่ไหน?',HEIGHT_OPTS],
-  ['people','ปกติมีคนอยู่ในห้องพร้อมกันกี่คน?',null],
-  ['usage','ส่วนใหญ่เปิดแอร์ห้องนี้ช่วงไหน?',null]
- ];
-}
-
+function coreQuestions(){return [
+['room','ห้องนี้ใช้ทำอะไรเป็นหลัก?',ROOM_OPTS],
+['openDetail','เวลาเปิดแอร์ ปิดห้องได้มิดไหม?',OPEN_OPTS],
+['ceilingClass','เพดานห้องนี้สูงแค่ไหน?',HEIGHT_OPTS],
+['dimensions','ห้องกว้าง × ยาวประมาณเท่าไร?',null],
+['sun','ห้องนี้โดนแดดช่วงไหน?',SUN_OPTS],
+['glass','ห้องนี้มีกระจกหรือหน้าต่างมากแค่ไหน?',GLASS_OPTS],
+['overhead','เหนือเพดานห้องนี้เป็นอะไร?',OVERHEAD_OPTS],
+['people','ปกติมีคนอยู่ในห้องพร้อมกันกี่คน?',null],
+['usage','ส่วนใหญ่เปิดแอร์ห้องนี้ช่วงไหน?',null]
+];}
+const CORE_PAGES=[
+ ['homePage1','พื้นที่นี้เป็นแบบไหน?',['room','openDetail','ceilingClass']],
+ ['homePage2','ห้องใหญ่แค่ไหน?',['dimensions']],
+ ['homePage3','แดดและความร้อน',['sun','glass','overhead']],
+ ['homePage4','ใช้ห้องนี้อย่างไร?',['people','usage']]
+];
 function adaptiveQuestions(){
  derive();
  const all=[];
@@ -170,7 +173,7 @@ function configQs(){
  return q;
 }
 
-function quickQuestions(){return [...coreQuestions(),...adaptiveQuestions(),...configQs(),...STAGE2]}
+function quickQuestions(){return [...CORE_PAGES.map(p=>[p[0],p[1],null]),...adaptiveQuestions(),...configQs(),...STAGE2]}
 
 getQs=function(){
  ensure();
@@ -200,21 +203,40 @@ function peopleHTML(){
 function usageHTML(){
  ensure();
  const opts=[['night','กลางคืน / ตอนนอน'],['day','กลางวัน'],['afternoon','บ่ายถึงค่ำ'],['long','เกือบทั้งวัน'],['occasional','ใช้เป็นครั้งคราว']];
- return '<p class="muted">เลือกช่วงที่เปิดแอร์บ่อยที่สุด หากบางวันเปิดช่วงอื่น ระบบยังต้องตรวจภาระสูงสุดด้วย</p><div class="opts">'+opts.map(([v,t])=>'<button class="opt '+(s.usage===v?'selected':'')+'" onclick="pick(\'usage\',\''+v+'\')">'+t+'</button>').join('')+'</div>';
+ return '<p class="muted">เลือกช่วงที่เปิดแอร์บ่อยที่สุด หากบางวันเปิดช่วงอื่น ระบบยังต้องตรวจภาระสูงสุดด้วย</p><div class="opts">'+opts.map(([v,t])=>'<button class="opt '+(s.usage===v?'selected':'')+'" onclick="hdCorePick(\'usage\',\''+v+'\')">'+t+'</button>').join('')+'</div>';
 }
 function connectedAreaHTML(){
  return `<p class="muted">ไม่ต้องวัดเป๊ะ ใส่พื้นที่คร่าว ๆ ของส่วนที่เปิดถึงกันนอกห้องหลัก</p><label>พื้นที่เปิดเชื่อมเพิ่ม (ตร.ม.)</label><input type="number" min="0" max="200" step="1" value="${s.connectedArea??''}" oninput="s.connectedArea=this.value===''?null:Number(this.value)">`;
 }
 
+function hdCorePick(k,v){applyPick(k,v);render()}
+window.hdCorePick=hdCorePick;
+function corePageHTML(page){
+ const group=CORE_PAGES.find(p=>p[0]===page), all=coreQuestions();
+ return '<p class="muted">หน้า '+(CORE_PAGES.indexOf(group)+1)+' จาก 4 · เรื่องห้อง</p>'+group[2].map((key,j)=>{
+  const q=all.find(x=>x[0]===key);
+  const body=key==='dimensions'?dimensionsHTML():key==='people'?peopleHTML():key==='usage'?usageHTML():
+  '<div class="opts">'+q[2].map(o=>'<button type="button" class="opt '+(String(s[key])===String(o[0])?'selected':'')+'" onclick=\'hdCorePick('+JSON.stringify(key)+','+JSON.stringify(o[0])+')\'><b>'+o[1]+'</b></button>').join('')+'</div>';
+  return '<section class="coreField"><h3>'+(j+1)+'. '+q[1]+'</h3>'+body+'</section>';
+ }).join('');
+}
+function validCorePage(page){
+ if(page==='homePage1')return !!(s.room&&s.openDetail&&s.ceilingClass);
+ if(page==='homePage2'){derive();return (s.dimensionMode==='dimensions'?Number(s.width)>0&&Number(s.length)>0:true)&&Number(s.area)>=5&&Number(s.area)<=250;}
+ if(page==='homePage3')return !!(s.sun&&s.glass&&s.overhead);
+ if(page==='homePage4')return Number(s.people)>0&&!!s.usage;
+ return true;
+}
 render=function(){
  if(flowMode!=='quick')return baseRender();
  ensure();derive();
  const qs=getQs();
- stepmeta.innerHTML=`<button class="navbtn backhome" onclick="goHome()">← หน้าแรก</button><div class="quickmeta"><span>สำหรับบ้านพักอาศัย • ถามหลัก 9 ข้อ • ถามเพิ่มเฉพาะที่มีผล</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>ขั้นตอน ${i+1}/${qs.length}`;
+ stepmeta.innerHTML=`<button class="navbtn backhome" onclick="goHome()">← หน้าแรก</button><div class="quickmeta"><span>สำหรับบ้านพักอาศัย • 9 คำถามใน 4 หน้า • ถามเพิ่มเฉพาะที่จำเป็น</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>ขั้นตอน ${i+1}/${qs.length}`;
  bar.style.width=((i+1)/qs.length*100)+'%';
- const [key,title,opts]=qs[i];trackHD('step_viewed',{flow_mode:flowMode,step_key:key},key);
+ const [key,title,opts]=qs[i];const isCore=CORE_PAGES.some(p=>p[0]===key);trackHD('step_viewed',{flow_mode:flowMode,step_key:isCore?CORE_PAGES.find(p=>p[0]===key)[2][0]:key},key);
  let h=`<div class="kicker">${STAGE2.some(x=>x[0]===key)?'STAGE 2 · ความชอบของคุณ':'STAGE 1 · ความเหมาะสมของห้อง'}</div><h2>${title}</h2>`;
- if(key==='dimensions')h+=dimensionsHTML();
+ if(isCore)h+=corePageHTML(key);
+ else if(key==='dimensions')h+=dimensionsHTML();
  else if(key==='people')h+=peopleHTML();
   else if(key==='usage')h+=usageHTML();
  else if(key==='connectedArea')h+=connectedAreaHTML();
@@ -247,6 +269,7 @@ pick=function(k,v){
 next=function(){
  if(flowMode!=='quick')return baseNext();
  const qs=getQs(),k=qs[i][0];
+ if(CORE_PAGES.some(p=>p[0]===k)&&!validCorePage(k))return alert('กรุณาตอบคำถามหน้านี้ให้ครบก่อนดำเนินการต่อ');
  if(k==='dimensions'){
   derive();
   if(s.dimensionMode==='dimensions'&&(!(Number(s.width)>0)||!(Number(s.length)>0)))return alert('กรุณาระบุกว้างและยาวโดยประมาณ หรือเลือกกรอกพื้นที่ ตร.ม.');
@@ -258,7 +281,7 @@ next=function(){
  if(k==='specialNeeds'&&!s.needsAnswered)return alert('เลือกความต้องการพิเศษ หรือไม่มีเป็นพิเศษ');
  if(k==='budget'&&['target','ceiling'].includes(s.budgetMode)&&(!Number.isFinite(s.budgetAmount)||s.budgetAmount<=0))return alert('กรุณาระบุงบมากกว่า 0 บาท');
  if(k==='priorities'&&s.priorities.length!==3)return alert('กรุณาจัดอันดับให้ครบ Top 3');
- hdAnswer(k);
+ hdAnswer(CORE_PAGES.some(p=>p[0]===k)?CORE_PAGES.find(p=>p[0]===k)[2][0]:k);
  if(i===qs.length-1){hdComplete();selectedSetupId=null;setupProductsOpen=false;return finish()}
  i++;render();
 };
@@ -377,9 +400,9 @@ restartToWizard=function(){
 
 // Replace the old marketing promise with the current residential contract.
 try{
- const quickSmall=document.querySelector('#home .modecard.recommended small');if(quickSmall)quickSmall.textContent='ตอบเรื่องห้อง 9 ข้อ แล้วเลือกความต้องการและงบ • ถามเพิ่มเฉพาะที่จำเป็น';
+ const quickSmall=document.querySelector('#home .modecard.recommended small');if(quickSmall)quickSmall.textContent='ตอบคำถามห้อง 9 ข้อ ใน 4 หน้า แล้วเลือกความต้องการและงบ • ถามเพิ่มเฉพาะที่จำเป็น';
 }catch(e){}
 
-window.hdResidentialV3={version:V,coreQuestions,adaptiveQuestions,hardGateReasons,softGateReasons,socialProofLabel,cohortKey,derive};
+window.hdResidentialV3={version:V,coreQuestions,corePages:CORE_PAGES,quickQuestions,adaptiveQuestions,hardGateReasons,softGateReasons,socialProofLabel,cohortKey,derive};
 ensure();derive();
 })();
