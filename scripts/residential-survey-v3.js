@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='5.1-survey-and-shortlist';
+const V='6.0-aircon-mvp';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -173,7 +173,13 @@ function configQs(){
  return q;
 }
 
-function quickQuestions(){return [...CORE_PAGES.map(p=>[p[0],p[1],null]),...adaptiveQuestions(),...configQs(),...STAGE2]}
+function quickRequiresSurvey(){
+ ensure();derive();
+ return s.room==='other'||s.room==='ld'||['partial','open','stair','outdoor','unknown'].includes(s.openDetail)||['high','double','unknown'].includes(s.ceilingClass)||Number(s.area)>=40||['long','lshape','connected'].includes(s.shapeDetail);
+}
+// Aircon 1.0: four short groups, then preferences only for straightforward enclosed rooms.
+// Advanced engineering and installation questions remain available in Detailed mode.
+function quickQuestions(){const pages=CORE_PAGES.map(p=>[p[0],p[1],null]);return quickRequiresSurvey()?pages:[...pages,STAGE2[1],STAGE2[2]]}
 
 getQs=function(){
  ensure();
@@ -252,7 +258,7 @@ render=function(){
  if(flowMode!=='quick')return baseRender();
  ensure();derive();
  const qs=getQs();
- stepmeta.innerHTML=`<button class="navbtn backhome" onclick="goHome()">← หน้าแรก</button><div class="quickmeta"><span>สำหรับบ้านพักอาศัย • 9 คำถามใน 4 หน้า • ถามเพิ่มเฉพาะที่จำเป็น</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>ขั้นตอน ${i+1}/${qs.length}`;
+ stepmeta.innerHTML=`<button class="navbtn backhome" onclick="goHome()">← หน้าแรก</button><div class="quickmeta"><span>แบบง่าย · 4 หน้าสั้น ๆ · ห้องซับซ้อนมีขั้นตอนต่อให้</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>ขั้นตอน ${i+1}/${qs.length}`;
  bar.style.width=((i+1)/qs.length*100)+'%';
  const [key,title,opts]=qs[i];const isCore=CORE_PAGES.some(p=>p[0]===key);trackHD('step_viewed',{flow_mode:flowMode,step_key:isCore?CORE_PAGES.find(p=>p[0]===key)[2][0]:key},key);
  let h=`<div class="kicker">${STAGE2.some(x=>x[0]===key)?'STAGE 2 · ความชอบของคุณ':'STAGE 1 · ความเหมาะสมของห้อง'}</div><h2>${title}</h2>`;
@@ -346,6 +352,19 @@ siteFlags=function(){
  return [...new Set([...base,...softGateReasons(),...hardGateReasons()])];
 };
 
+function hdMvpSurveyHTML(){
+ const n=Number(s.area)||0;
+ const escaped=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const reason=s.room==='other'?'พื้นที่ลักษณะพิเศษต้องตรวจภาระจากการใช้งาน':s.ceilingClass==='double'?'โถงสูงต้องตรวจทางเดินลมจริง':s.openDetail==='open'||s.room==='ld'?'หลายพื้นที่เปิดเชื่อมกัน ต้องตรวจตำแหน่งจ่ายลมและขนาดรายส่วน':'ต้องดูรูปทรงและข้อจำกัดก่อนเลือกจำนวนเครื่อง';
+ let l=null;try{l=load()}catch(e){}
+ return '<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button>'+
+ '<header class="answerHero hdMvpSurvey"><p class="kicker">HOME DECISION · ขั้นตอนต่อไป</p>'+
+ '<h1>พื้นที่นี้ควรตรวจรูปแบบติดตั้งก่อน</h1><p>'+escaped(n.toLocaleString('th-TH'))+' ตร.ม. · '+escaped(reason)+'</p>'+
+ '<div class="hdV4Answer"><strong>ยังไม่ควรฟันธงว่าใช้แอร์กี่เครื่อง</strong><span>เราจะไม่แบ่ง BTU เป็นรายโซนหรือเลือกชนิดเครื่องให้ทันทีโดยไม่มีแปลน</span></div>'+
+ '<p><b>สิ่งที่ควรทำต่อ</b> ส่งขนาดพื้นที่และแปลนให้ร้านหรือช่างตรวจว่าจุดจ่ายลมครอบคลุมทุกส่วนหรือไม่</p>'+
+ '<p class="muted">'+(l?'ช่วงประมาณการเบื้องต้น '+Math.round(l.low).toLocaleString('th-TH')+'–'+Math.round(l.high).toLocaleString('th-TH')+' BTU/h · ยังไม่ยืนยัน':'ยังไม่มีภาระความเย็นที่ยืนยันได้')+'</p></header>'+
+ '<details class="disclosure"><summary>ดูสรุปโจทย์สำหรับส่งให้ช่าง / รายละเอียดเพิ่มเติม</summary>'+decisionBriefHTML('unresolved')+'</details>';
+}
 function gateHTML(reasons){
  let L=null;try{L=load()}catch(e){}
  return `<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button><header class="answerHero"><span class="kicker">RESIDENTIAL SAFETY GATE</span><h1>ควรสำรวจหน้างานก่อนเลือกเครื่องจริง</h1><p>เรายังช่วยสรุปช่วงความต้องการได้ แต่จะไม่แสดงรุ่นพร้อมซื้อเมื่อข้อมูลหรือพื้นที่ซับซ้อนเกินเกณฑ์</p>${L?`<p><b>ช่วงประเมินเบื้องต้น:</b> ${Math.round(L.low).toLocaleString('th-TH')}–${Math.round(L.high).toLocaleString('th-TH')} BTU/h</p>`:''}<ul class="keyReasons">${reasons.map(x=>'<li>'+x+'</li>').join('')}</ul><p class="warning">นี่ไม่ใช่ความล้มเหลวของแบบสอบถาม แต่เป็นการหยุดฟันธงเมื่อความไม่แน่นอนสูง</p></header>${decisionBriefHTML('unresolved')}`;
@@ -450,6 +469,7 @@ window.hdOpenResultSection=hdOpenResultSection;
 
 configurationResult=function(){
  const hard=hardGateReasons();
+ if(flowMode==='quick'&&quickRequiresSurvey()){lastTop=[];lastSetup=null;result.innerHTML=hdMvpSurveyHTML();trackHD('site_check_flagged',{flag_count:Math.max(hard.length,1)},'aircon-mvp-complex');return}
  if(hard.length){lastTop=[];lastSetup=null;result.innerHTML=gateHTML(hard);trackHD('site_check_flagged',{flag_count:hard.length},'residential-hard-gate');return}
  baseConfigurationResult();
  hdResultRedesign();
