@@ -474,6 +474,48 @@ function hdResultV4(){
  const st=document.getElementById('hd-v4-styles')||document.createElement('style');
  if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';st.textContent+=' .hdMvpTop3{margin:12px 0;padding:15px}.hdMvpTop3 h2{font-size:19px;margin:0 0 6px}.hdMvpModel{width:100%;display:flex;flex-direction:column;align-items:start;gap:3px;text-align:left;padding:13px 10px;margin:5px 0;border:1px solid #dbe4de;border-radius:12px;background:#fff;color:#193730}.hdMvpModel b{font-size:14px}.hdMvpModel span{font-size:12px;color:#587063}.hdMvpSurvey{border-radius:20px}.hdMvpSurvey h1{font-size:clamp(24px,6vw,32px)} .hdV5More{background:#f8faf8;border:1px solid #d7e1db;margin-top:12px}.hdV5More>summary{font-size:14px;color:#1d4637}.hdV5More .hdV4Section{margin:7px 12px;background:#fff}.hdV4Section summary{font-size:14px}.hdResultV4Hero h1{font-size:clamp(23px,5vw,29px)}';document.head.appendChild(st)}
 }
+// A purpose-built homeowner result: an answer, three product options when safe,
+// and one quiet disclosure for original brief, specifications and quotation actions.
+function hdResultV6(){
+ if(!result||typeof document==='undefined'||!document.createElement||!lastSetup)return;
+ const oldHero=result.querySelector('.answerHero'),c=lastSetup;if(!oldHero)return;
+ const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const complex=s.room==='ld'||c.unit_count>1||['partial','open','stair','outdoor','unknown'].includes(s.openDetail);
+ const supported=c.fit_status==='fit'&&!complex;
+ const units={wall:'ติดผนัง',cassette:'ฝังฝ้า',mixed:'ติดผนังร่วมกับฝังฝ้า'};
+ const catalog=(Array.isArray(c.product_matches)?c.product_matches.flatMap(a=>a||[]):[]).filter(p=>p&&p.match_type==='exact');
+ const unique=[];for(const p of catalog){if(!unique.some(x=>x.id===p.id))unique.push(p)}
+ const top=unique.slice(0,3);
+ const oldNodes=Array.from(result.children);
+ const details=document.createElement('details');details.className='hdV6Details';details.id='hdV6Details';
+ details.innerHTML='<summary>ดูข้อมูลเพิ่มเติมและเอกสารสำหรับร้าน <span aria-hidden="true">⌄</span></summary><p>ข้อมูลทางเทคนิค ข้อจำกัด รูปแบบติดตั้งเพิ่มเติม และเอกสารสรุปของคุณ</p>';
+ const preserved=document.createElement('div');preserved.className='hdV6Preserved';
+ for(const node of oldNodes){if(node.classList?.contains('backhome')||node.classList?.contains('navbtn')||node===oldHero)continue;preserved.appendChild(node)}
+ details.appendChild(preserved);
+ oldHero.className='hdV6Hero';
+ oldHero.innerHTML='<span class="hdV6Overline">คำแนะนำเบื้องต้น · HOME DECISION</span>'+
+ '<h1>'+(complex?'ยังต้องตรวจรูปแบบติดตั้ง':'แนวทางแอร์สำหรับห้องของคุณ')+'</h1>'+
+ '<p class="hdV6Room">'+esc((s.room==='bed'?'ห้องนอน':s.room==='living'?'ห้องนั่งเล่น':s.room==='ld'?'ห้องนั่งเล่นและกินข้าว':'พื้นที่ในบ้าน')+' · '+(Number(s.area)||0).toLocaleString('th-TH')+' ตร.ม.')+'</p>'+
+ '<div class="hdV6Verdict"><span>สิ่งที่ควรพิจารณา</span><strong>'+(complex?'ตรวจแปลนก่อนเลือกจำนวนเครื่อง':esc(c.unit_count+' เครื่อง · แอร์'+(units[c.unit_type]||'ระบบปรับอากาศ')))+'</strong>'+
+ '<small>'+(complex?'การแบ่งขนาดและทางเดินลมต้องอาศัยตำแหน่งหน้างานจริง':'ขนาดและการติดตั้งต้องยืนยันกับร้านก่อนซื้อ')+'</small></div>'+
+ '<div class="hdV6Why"><b>ทำไมจึงได้คำตอบนี้?</b><p>'+esc((c.key_reasons||[])[0]||'คัดกรองจากข้อมูลห้องและเงื่อนไขการติดตั้งที่ให้มา')+'</p></div>';
+ const lead=document.createElement('div');lead.className='hdV6Content';
+ if(top.length&&!complex){
+  const el=document.createElement('section');el.className='hdV6List';
+  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>3 ตัวเลือกที่ควรดูต่อ</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
+  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="hdOpenResultSection(\\'hdV4Products\\')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกที่ตรวจสอบได้</small></span><span>↗</span></button>').join('')+
+  '<p class="hdV6Disclaimer">ยังต้องตรวจราคา สต็อก และค่าติดตั้งกับร้านก่อนตัดสินใจ</p>';
+  lead.appendChild(el);
+ }else{
+  const el=document.createElement('section');el.className='hdV6Next';
+  el.innerHTML='<div class="hdV6SectionHead"><span>ขั้นตอนต่อไป</span><h2>'+(complex?'ให้ช่างตรวจตำแหน่งจ่ายลม':'ตรวจรุ่นและข้อจำกัดเพิ่มเติม')+'</h2></div>'+
+  '<p>'+(complex?'อย่าเพิ่งซื้อจากขนาด BTU รวมอย่างเดียว ให้ร้านตรวจแปลน ขอบเขตพื้นที่ และการกระจายลมก่อน':'ยังไม่มีรุ่นที่ยืนยันตรงโจทย์ครบทุกเงื่อนไข ใช้สรุปข้อมูลเพื่อขอคำแนะนำจากร้าน')+'</p>'+
+  '<button class="hdV6LinkButton" onclick="document.getElementById(\\'hdV6Details\\').open=true;document.getElementById(\\'hdV6Details\\').scrollIntoView({behavior: \\'smooth\\'})">ดูข้อมูลสำหรับส่งร้าน ↗</button>';
+  lead.appendChild(el);
+ }
+ result.appendChild(lead);result.appendChild(details);
+ const goBack=result.querySelector('button.backhome');if(goBack)goBack.textContent='← แก้ข้อมูลห้อง';
+}
 function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;const parent=document.getElementById('hdV5More');if(parent)parent.open=true;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
 window.hdOpenResultSection=hdOpenResultSection;
 
@@ -484,6 +526,7 @@ configurationResult=function(){
  baseConfigurationResult();
  hdResultRedesign();
  hdResultV4();
+ hdResultV6();
  const hero=result.querySelector('.answerHero');
  if(hero&&!hero.querySelector('.resScope')){
   hero.insertAdjacentHTML('afterbegin','<div class="resScope badge high">สำหรับบ้านพักอาศัย</div>');
