@@ -35,6 +35,10 @@ jobs:
         run: node tests/test_configuration.cjs
       - name: Configuration V2 shadow screening
         run: node tests/test_configuration_v2_shadow.cjs
+      - name: Configuration V2 comparison and validation gates
+        run: |
+          node tests/test_configuration_v2_comparison.cjs
+          node scripts/compare-configuration-v2.cjs
       - name: Engineering calibration fixtures (non-certified)
         run: node tests/test_engineering_cases.cjs
       - name: Recommendation
