@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "status": "synthetic_for_regression_not_hvac_validated",
+  "cases": [
+    {
+      "id": "bedroom_16_closed",
+      "label": "ห้องนอนปิด 16 ตร.ม.",
+      "inputs": {
+        "area": 16,
+        "room": "bed",
+        "height": 2.7,
+        "sun": "morning",
+        "glass": "low",
+        "roof": "no",
+        "open": "closed",
+        "shape": "compact",
+        "people": 2,
+        "usage": "night",
+        "phase": "1"
+      },
+      "expect": {
+        "single_wall_candidate": true,
+        "open_plan_site_check": false
+      },
+      "expert_review": "pending"
+    },
+    {
+      "id": "living_30_compact",
+      "label": "ห้องนั่งเล่นปิด 30 ตร.ม.",
+      "inputs": {
+        "area": 30,
+        "room": "living",
+        "height": 2.7,
+        "sun": "morning",
+        "glass": "medium",
+        "roof": "no",
+        "open": "closed",
+        "shape": "compact",
+        "people": 2,
+        "usage": "day",
+        "phase": "1"
+      },
+      "expect": {
+        "single_wall_candidate": true,
+        "open_plan_site_check": false
+      },
+      "expert_review": "pending"
+    },
+    {
+      "id": "ld_50_total_open",
+      "label": "Living+Dining+Pantry รวม 50 ตร.ม. ผู้ใช้ยืนยันว่าพื้นที่รวมทั้งหมดแล้ว",
+      "inputs": {
+        "area": 50,
+        "room": "ld",
+        "height": 2.7,
+        "sun": "afternoon",
+        "glass": "medium",
+        "open": "open",
+        "shape": "connected",
+        "people": 2,
+        "usage": "afternoon",
+        "phase": "1",
+        "zoneUsage": "together",
+        "ceiling": "unknown"
+      },
+      "unknown_fields": [
+        "roof",
+        "zone_area_breakdown",
+        "airflow_layout",
+        "wall_exposure",
+        "glazing_area_m2",
+        "glass_orientation",
+        "kitchen_heat",
+        "ceiling_clearance",
+        "main_breaker_capacity"
+      ],
+      "expect": {
+        "must_site_check": true,
+        "never_claim_independent_zone_calculation": true,
+        "full_area_used_once": true
+      },
+      "user_observation": {
+        "brief_load_low_btu": 37730,
+        "brief_load_high_btu": 53183,
+        "provisional_zone_targets_btu": [
+          27000,
+          27000
+        ],
+        "note": "Actual prior user export; input values omitted from brief must remain unknown"
+      },
+      "expert_review": "pending"
+    },
+    {
+      "id": "ld_50_sunny_glazing",
+      "label": "50 ตร.ม. เปิดเชื่อม กระจกมาก แดดบ่าย (synthetic)",
+      "inputs": {
+        "area": 50,
+        "room": "ld",
+        "height": 2.7,
+        "sun": "afternoon",
+        "glass": "high",
+        "roof": "yes",
+        "open": "open",
+        "shape": "long",
+        "people": 4,
+        "usage": "afternoon",
+        "phase": "unknown",
+        "ceiling": "unknown"
+      },
+      "expect": {
+        "must_site_check": true,
+        "never_claim_independent_zone_calculation": true,
+        "full_area_used_once": true
+      },
+      "expert_review": "pending"
+    },
+    {
+      "id": "hall_90_high",
+      "label": "โถงสูง 90 ตร.ม. (synthetic)",
+      "inputs": {
+        "area": 90,
+        "room": "living",
+        "height": 4.2,
+        "sun": "afternoon",
+        "glass": "medium",
+        "roof": "yes",
+        "open": "open",
+        "shape": "connected",
+        "people": 6,
+        "usage": "long",
+        "phase": "unknown",
+        "ceiling": "unknown"
+      },
+      "expect": {
+        "must_site_check": true,
+        "never_claim_independent_zone_calculation": true,
+        "full_area_used_once": true
+      },
+      "expert_review": "pending"
+    }
+  ]
+}
