@@ -74,7 +74,7 @@ function ensure(){
 
 function derive(){
  ensure();
- if(Number(s.width)>0&&Number(s.length)>0){
+ if(s.dimensionMode==='dimensions'&&Number(s.width)>0&&Number(s.length)>0){
   s.area=Math.round(Number(s.width)*Number(s.length)*10)/10;
   const a=Math.max(Number(s.width),Number(s.length)),b=Math.min(Number(s.width),Number(s.length));
   if(b>0&&a>=7&&a/b>=2){s.shape='long';s.shapeDetail='long'}
@@ -128,7 +128,7 @@ function adaptiveQuestions(){
   ['heavy','ผัด–ทอด / ทำอาหารไทยเป็นประจำ'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- const ratio=(Number(s.width)>0&&Number(s.length)>0)?Math.max(s.width,s.length)/Math.min(s.width,s.length):0;
+ const ratio=(s.dimensionMode==='dimensions'&&Number(s.width)>0&&Number(s.length)>0)?Math.max(s.width,s.length)/Math.min(s.width,s.length):0;
  if((Number(s.area)>=30||ratio>=1.7)&&!s.shapeDetail)all.push(['shapeDetail','รูปทรงห้องเป็นแบบไหน?',[
   ['compact','สี่เหลี่ยมทั่วไป มองเห็นทั่วถึง'],
   ['long','ยาวและลึกมาก'],
