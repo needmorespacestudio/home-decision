@@ -24,7 +24,7 @@ jobs:
       - name: Beta scenarios
         run: node tests/test_beta_scenarios.cjs
       - name: Cooling Load V2
-        run: node tests/test_cooling_load_v2.cjs
+        run: node tests/test_cooling_load_v2.cjs\n      - name: Residential survey V3\n        run: node tests/test_residential_v3.cjs
       - name: Configuration
         run: node tests/test_configuration.cjs
       - name: Recommendation
