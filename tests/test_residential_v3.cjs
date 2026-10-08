@@ -10,7 +10,7 @@ function state(overrides={}){
 }
 function harness(overrides={},social={}){
  const ctx={
-  console,window:{HD_SOCIAL_PROOF:social},document:{querySelector(){return null}},
+  console,HD_SOCIAL_PROOF:social,window:{},document:{querySelector(){return null}},
   CustomEvent:function(name,o){this.name=name;this.detail=o.detail},
   s:state(overrides),i:0,flowMode:'quick',selectedSetupId:null,setupProductsOpen:false,lastTop:[],lastSetup:null,
   getQs(){return[]},render(){},pick(){},next(){},restartToWizard(){},siteFlags(){return[]},
