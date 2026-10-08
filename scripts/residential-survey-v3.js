@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='5.1-survey-and-shortlist';
+const V='6.0-aircon-mvp';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -106,8 +106,8 @@ function coreQuestions(){return [
 ['usage','ปกติเปิดแอร์ช่วงเวลาไหน?',null]
 ];}
 const CORE_PAGES=[
- ['homePage1','พื้นที่นี้เป็นแบบไหน?',['room','openDetail','ceilingClass']],
- ['homePage2','ห้องใหญ่แค่ไหน?',['dimensions']],
+ ['homePage1','พื้นที่นี้เป็นแบบไหน?',['room','openDetail']],
+ ['homePage2','ขนาดห้องและเพดาน',['dimensions','ceilingClass']],
  ['homePage3','แดดและความร้อน',['sun','glass','overhead']],
  ['homePage4','ใช้ห้องนี้อย่างไร?',['people','usage']]
 ];
@@ -173,7 +173,13 @@ function configQs(){
  return q;
 }
 
-function quickQuestions(){return [...CORE_PAGES.map(p=>[p[0],p[1],null]),...adaptiveQuestions(),...configQs(),...STAGE2]}
+function quickRequiresSurvey(){
+ ensure();derive();
+ return s.room==='other'||s.room==='ld'||['partial','open','stair','outdoor','unknown'].includes(s.openDetail)||['high','double','unknown'].includes(s.ceilingClass)||Number(s.area)>=40||['long','lshape','connected'].includes(s.shapeDetail);
+}
+// Aircon 1.0: four short groups, then preferences only for straightforward enclosed rooms.
+// Advanced engineering and installation questions remain available in Detailed mode.
+function quickQuestions(){const pages=CORE_PAGES.map(p=>[p[0],p[1],null]);return quickRequiresSurvey()?pages:[...pages,STAGE2[1],STAGE2[2]]}
 
 getQs=function(){
  ensure();
@@ -252,7 +258,7 @@ render=function(){
  if(flowMode!=='quick')return baseRender();
  ensure();derive();
  const qs=getQs();
- stepmeta.innerHTML=`<button class="navbtn backhome" onclick="goHome()">← หน้าแรก</button><div class="quickmeta"><span>สำหรับบ้านพักอาศัย • 9 คำถามใน 4 หน้า • ถามเพิ่มเฉพาะที่จำเป็น</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>ขั้นตอน ${i+1}/${qs.length}`;
+ stepmeta.innerHTML=`<button class="navbtn backhome" onclick="goHome()">← หน้าแรก</button><div class="quickmeta"><span>แบบง่าย · 4 หน้าสั้น ๆ · ห้องซับซ้อนมีขั้นตอนต่อให้</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>ขั้นตอน ${i+1}/${qs.length}`;
  bar.style.width=((i+1)/qs.length*100)+'%';
  const [key,title,opts]=qs[i];const isCore=CORE_PAGES.some(p=>p[0]===key);trackHD('step_viewed',{flow_mode:flowMode,step_key:isCore?CORE_PAGES.find(p=>p[0]===key)[2][0]:key},key);
  let h=`<div class="kicker">${STAGE2.some(x=>x[0]===key)?'STAGE 2 · ความชอบของคุณ':'STAGE 1 · ความเหมาะสมของห้อง'}</div><h2>${title}</h2>`;
@@ -346,6 +352,19 @@ siteFlags=function(){
  return [...new Set([...base,...softGateReasons(),...hardGateReasons()])];
 };
 
+function hdMvpSurveyHTML(){
+ const n=Number(s.area)||0;
+ const escaped=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const reason=s.room==='other'?'พื้นที่ลักษณะพิเศษต้องตรวจภาระจากการใช้งาน':s.ceilingClass==='double'?'โถงสูงต้องตรวจทางเดินลมจริง':s.openDetail==='open'||s.room==='ld'?'หลายพื้นที่เปิดเชื่อมกัน ต้องตรวจตำแหน่งจ่ายลมและขนาดรายส่วน':'ต้องดูรูปทรงและข้อจำกัดก่อนเลือกจำนวนเครื่อง';
+ let l=null;try{l=load()}catch(e){}
+ return '<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button>'+
+ '<header class="answerHero hdMvpSurvey"><p class="kicker">HOME DECISION · ขั้นตอนต่อไป</p>'+
+ '<h1>พื้นที่นี้ควรตรวจรูปแบบติดตั้งก่อน</h1><p>'+escaped(n.toLocaleString('th-TH'))+' ตร.ม. · '+escaped(reason)+'</p>'+
+ '<div class="hdV4Answer"><strong>ยังไม่ควรฟันธงว่าใช้แอร์กี่เครื่อง</strong><span>เราจะไม่แบ่ง BTU เป็นรายโซนหรือเลือกชนิดเครื่องให้ทันทีโดยไม่มีแปลน</span></div>'+
+ '<p><b>สิ่งที่ควรทำต่อ</b> ส่งขนาดพื้นที่และแปลนให้ร้านหรือช่างตรวจว่าจุดจ่ายลมครอบคลุมทุกส่วนหรือไม่</p>'+
+ '<p class="muted">'+(l?'ช่วงประมาณการเบื้องต้น '+Math.round(l.low).toLocaleString('th-TH')+'–'+Math.round(l.high).toLocaleString('th-TH')+' BTU/h · ยังไม่ยืนยัน':'ยังไม่มีภาระความเย็นที่ยืนยันได้')+'</p></header>'+
+ '<details class="disclosure"><summary>ดูสรุปโจทย์สำหรับส่งให้ช่าง / รายละเอียดเพิ่มเติม</summary>'+decisionBriefHTML('unresolved')+'</details>';
+}
 function gateHTML(reasons){
  let L=null;try{L=load()}catch(e){}
  return `<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button><header class="answerHero"><span class="kicker">RESIDENTIAL SAFETY GATE</span><h1>ควรสำรวจหน้างานก่อนเลือกเครื่องจริง</h1><p>เรายังช่วยสรุปช่วงความต้องการได้ แต่จะไม่แสดงรุ่นพร้อมซื้อเมื่อข้อมูลหรือพื้นที่ซับซ้อนเกินเกณฑ์</p>${L?`<p><b>ช่วงประเมินเบื้องต้น:</b> ${Math.round(L.low).toLocaleString('th-TH')}–${Math.round(L.high).toLocaleString('th-TH')} BTU/h</p>`:''}<ul class="keyReasons">${reasons.map(x=>'<li>'+x+'</li>').join('')}</ul><p class="warning">นี่ไม่ใช่ความล้มเหลวของแบบสอบถาม แต่เป็นการหยุดฟันธงเมื่อความไม่แน่นอนสูง</p></header>${decisionBriefHTML('unresolved')}`;
@@ -411,6 +430,16 @@ function hdResultV4(){
   '<div class="hdV4Answer"><strong>'+(complex?'ยังต้องตรวจจำนวนและตำแหน่งเครื่อง':esc(c.unit_count+' เครื่อง · '+type))+'</strong><span>'+(complex?'ระบบยังไม่ยืนยันว่าหนึ่งหรือหลายเครื่องเหมาะที่สุด':'ผลคัดเลือกเบื้องต้น ต้องตรวจการติดตั้งและไฟฟ้าก่อนซื้อ')+'</span></div>'+
   '<div class="hdV4Actions"><button class="btn hdV4Primary" onclick="hdOpenResultSection(\'hdV4Choices\')">'+(complex?'เปรียบเทียบทางเลือก':'ดูรูปแบบที่แนะนำ')+' ↓</button><button class="outlinebtn hdV4Secondary" onclick="hdOpenResultSection(\'hdV4Products\')">ดูรุ่นแอร์</button></div>'+
   '<p class="hdV4Foot">ข้อมูลวิศวกรรมและข้อจำกัดทั้งหมดอยู่ในส่วน “รายละเอียดเพิ่มเติม”</p>';
+ if(!complex){
+  const shortlisted=(Array.isArray(c.product_matches)?c.product_matches.flatMap(x=>x||[]):[]).filter(p=>p&&p.match_type==='exact');
+  const distinct=[];for(const p of shortlisted){if(!distinct.some(x=>x.id===p.id))distinct.push(p)}
+  if(distinct.length){
+   const spotlight=document.createElement('section');spotlight.className='hdMvpTop3 card';
+   spotlight.innerHTML='<h2>3 รุ่นที่ควรเปรียบเทียบ</h2><p class="muted">คัดจากสเปกที่ยืนยันได้ตามข้อมูลห้อง ไม่ใช่เปอร์เซ็นต์ความแม่นยำ</p>'+
+    distinct.slice(0,3).map((p,j)=>'<button type="button" class="hdMvpModel" onclick="hdOpenResultSection(\'hdV4Products\')"><b>'+(j+1)+'. '+esc(p.brand+' '+p.model)+'</b><span>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกและรายละเอียด →</span></button>').join('');
+   hero.insertAdjacentElement('afterend',spotlight);
+  }
+ }
  const ids=['hdV4Choices','hdV4Products','hdV4Details'];
  const labels=['รูปแบบติดตั้งและทางเลือก','รุ่นแอร์ที่ผ่านการคัดกรอง','รายละเอียดการประเมินและเอกสาร'];
  const groups=ids.map((id,i)=>{const d=document.createElement('details');d.id=id;d.className='hdV4Section';const summary=document.createElement('summary');summary.textContent=labels[i];d.appendChild(summary);return d});
@@ -431,7 +460,7 @@ function hdResultV4(){
  groups[0].appendChild(overview);
  const children=Array.from(result.children);
  for(const node of children){
-  if(node===hero||node.classList?.contains('backhome')||node.classList?.contains('navbtn'))continue;
+  if(node===hero||node.classList?.contains('hdMvpTop3')||node.classList?.contains('backhome')||node.classList?.contains('navbtn'))continue;
   if(node.id==='setupProducts')groups[1].appendChild(node);
   else if(node.id==='setupCompare'||node.classList?.contains('hdSetupVariants')||(node.matches&&node.matches('article.card')))groups[0].appendChild(node);
   else groups[2].appendChild(node);
@@ -443,13 +472,14 @@ function hdResultV4(){
  for(const group of groups)master.appendChild(group);
  result.appendChild(master);
  const st=document.getElementById('hd-v4-styles')||document.createElement('style');
- if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';st.textContent+=' .hdV5More{background:#f8faf8;border:1px solid #d7e1db;margin-top:12px}.hdV5More>summary{font-size:14px;color:#1d4637}.hdV5More .hdV4Section{margin:7px 12px;background:#fff}.hdV4Section summary{font-size:14px}.hdResultV4Hero h1{font-size:clamp(23px,5vw,29px)}';document.head.appendChild(st)}
+ if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';st.textContent+=' .hdMvpTop3{margin:12px 0;padding:15px}.hdMvpTop3 h2{font-size:19px;margin:0 0 6px}.hdMvpModel{width:100%;display:flex;flex-direction:column;align-items:start;gap:3px;text-align:left;padding:13px 10px;margin:5px 0;border:1px solid #dbe4de;border-radius:12px;background:#fff;color:#193730}.hdMvpModel b{font-size:14px}.hdMvpModel span{font-size:12px;color:#587063}.hdMvpSurvey{border-radius:20px}.hdMvpSurvey h1{font-size:clamp(24px,6vw,32px)} .hdV5More{background:#f8faf8;border:1px solid #d7e1db;margin-top:12px}.hdV5More>summary{font-size:14px;color:#1d4637}.hdV5More .hdV4Section{margin:7px 12px;background:#fff}.hdV4Section summary{font-size:14px}.hdResultV4Hero h1{font-size:clamp(23px,5vw,29px)}';document.head.appendChild(st)}
 }
 function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;const parent=document.getElementById('hdV5More');if(parent)parent.open=true;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
 window.hdOpenResultSection=hdOpenResultSection;
 
 configurationResult=function(){
  const hard=hardGateReasons();
+ if(flowMode==='quick'&&quickRequiresSurvey()){lastTop=[];lastSetup=null;result.innerHTML=hdMvpSurveyHTML();trackHD('site_check_flagged',{flag_count:Math.max(hard.length,1)},'aircon-mvp-complex');return}
  if(hard.length){lastTop=[];lastSetup=null;result.innerHTML=gateHTML(hard);trackHD('site_check_flagged',{flag_count:hard.length},'residential-hard-gate');return}
  baseConfigurationResult();
  hdResultRedesign();

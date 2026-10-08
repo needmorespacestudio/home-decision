@@ -20,11 +20,13 @@ run('hdBegin()');assert.equal(ctx.window.hdBetaStudy.report().questionnaire.comp
 reset({...room,ceilingClass:'double'});run('hdBegin();hdComplete();finish()');
 assert.equal(run('hdReport().fits.exact||0'),1,'hard gate must not add a second exact result');
 assert.equal(run('hdReport().fits.infeasible'),1);
-assert.equal(run('result.innerHTML.includes("ควรสำรวจหน้างาน")'),true);
+assert.equal(run('result.innerHTML.includes("ควรตรวจรูปแบบติดตั้งก่อน")'),true);
 reset({...room,area:30,height:2.7,width:3,length:4});run("flowMode='detailed'");
 ctx.window.hdResidentialV3.derive();assert.equal(run('s.area'),30,'Detailed area must not be overwritten by stale quick dimensions');
 assert.equal(ctx.window.hdResidentialV3.hardGateReasons().length,0,'fully answered Detailed room must not fail due to missing quick-only fields');
-reset({...room,connectedArea:null,openDetail:'partial'});run("flowMode='quick';hdBegin();i=getQs().findIndex(q=>q[0]==='connectedArea')");
-const step=run('i');run('next()');assert.equal(run('i'),step,'empty connected area cannot be silently interpreted as zero');
-run('s.connectedArea=0;next()');assert.equal(run('i'),step+1);
-console.log('14 beta study checks passed: private export, dedup, questionnaire, V3 steps, gated metrics, Detailed compatibility, connected area validation');
+reset({...room,connectedArea:null,openDetail:'partial'});run("flowMode='quick';hdBegin()");
+assert.equal(run("getQs().some(q=>q[0]==='connectedArea')"),false,'MVP avoids redundant connected-area question');
+assert.equal(run('getQs().length'),4,'complex room uses four grouped room pages before expert handoff');
+run("i=3;next()");
+assert.equal(run('result.innerHTML.includes("ควรตรวจรูปแบบติดตั้งก่อน")'),true,'complex room reaches actionable handoff without inventing extra area');
+console.log('14 beta study checks passed: private export, dedup, questionnaire, MVP steps, gated metrics, Detailed compatibility, complex handoff');
