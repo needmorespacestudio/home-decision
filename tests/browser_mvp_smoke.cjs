@@ -39,11 +39,24 @@ async function run(){
   await expr("next();next()");
   assert.equal(await expr("!result.classList.contains('hidden')"),true,'simple room shows result');
   assert.equal(await expr("!!result.querySelector('.hdV6Hero')||!!result.querySelector('.answerHero')"),true,'simple room result visible');
+  const productCount=await expr("result.querySelectorAll('.hdV6Product').length");
+  if(productCount){
+   await expr("result.querySelector('.hdV6Product').click()");
+   assert.equal(await expr("!!result.querySelector('.productDetail')"),true,'shortlist item opens its own product');
+   await expr("finish()");
+   assert.equal(await expr("!!result.querySelector('.hdV6Hero')"),true,'back from product restores result');
+  }else{
+   assert.equal(await expr("!!result.querySelector('.hdV6Next')||result.textContent.includes('ตรวจ')"),true,'no products yields honest next steps');
+  }
+
   await reset();
   await expr("hdCorePick('room','ld');hdCorePick('openDetail','open');next();s.dimensionMode='area';s.area=50;hdCorePick('ceilingClass','normal');next()");
   await completeBase();
   await expr("next();next()");
   assert.equal(await expr("result.textContent.includes('ตรวจรูปแบบติดตั้ง')"),true,'50sqm connected room handoff');
+  assert.equal(await expr("result.querySelectorAll('.hdV6Product').length"),0,'no product shortlist for connected area');
+  assert.equal(await expr("!!result.querySelector('details')"),true,'complex area retains decision brief');
+
   await expr("hdReturnToSurvey()");
   assert.equal(await expr("i===0 && s.area===50 && s.room==='ld' && !wiz.classList.contains('hidden')"),true,'edit restores answers');
   console.log('PASS chromium viewport '+width+'px: simple room result, connected-area gate, edit flow, no overflow');
