@@ -248,8 +248,8 @@ function corePageHTML(page){
  }).join('');
 }
 function validCorePage(page){
- if(page==='homePage1')return !!(s.room&&s.openDetail&&s.ceilingClass);
- if(page==='homePage2'){derive();return (s.dimensionMode==='dimensions'?Number(s.width)>0&&Number(s.length)>0:true)&&Number(s.area)>=5&&Number(s.area)<=250;}
+ if(page==='homePage1')return !!(s.room&&s.openDetail);
+ if(page==='homePage2'){derive();return !!s.ceilingClass&&(s.dimensionMode==='dimensions'?Number(s.width)>0&&Number(s.length)>0:true)&&Number(s.area)>=5&&Number(s.area)<=250;}
  if(page==='homePage3')return !!(s.sun&&s.glass&&s.overhead);
  if(page==='homePage4')return Number(s.people)>0&&!!s.usage;
  return true;
