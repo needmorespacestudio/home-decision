@@ -357,15 +357,22 @@ window.hdReturnToSurvey=hdReturnToSurvey;
 function hdMvpSurveyHTML(){
  const n=Number(s.area)||0;
  const escaped=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
- const reason=s.room==='other'?'พื้นที่ลักษณะพิเศษต้องตรวจภาระจากการใช้งาน':s.ceilingClass==='double'?'โถงสูงต้องตรวจทางเดินลมจริง':s.openDetail==='open'||s.room==='ld'?'หลายพื้นที่เปิดเชื่อมกัน ต้องตรวจตำแหน่งจ่ายลมและขนาดรายส่วน':'ต้องดูรูปทรงและข้อจำกัดก่อนเลือกจำนวนเครื่อง';
+ const connected=s.room==='ld'||['partial','open','stair','outdoor'].includes(s.openDetail);
+ const reason=s.room==='other'?'ต้องตรวจแหล่งความร้อนตามการใช้งาน':s.ceilingClass==='double'?'โถงสูงต้องตรวจการกระจายลม':connected?'หลายพื้นที่เชื่อมกัน ลมจากเครื่องเดียวอาจไปไม่ทั่ว':'ข้อมูลห้องยังไม่พอจะเลือกรุ่นอย่างรับผิดชอบ';
  let l=null;try{l=load()}catch(e){}
+ const range=l&&Number.isFinite(l.low)&&Number.isFinite(l.high)?Math.round(l.low).toLocaleString('th-TH')+'–'+Math.round(l.high).toLocaleString('th-TH')+' BTU/h':null;
  return '<button class="navbtn backhome" onclick="hdReturnToSurvey()">← แก้ข้อมูลห้อง</button>'+
- '<header class="answerHero hdMvpSurvey"><p class="kicker">HOME DECISION · ขั้นตอนต่อไป</p>'+
- '<h1>พื้นที่นี้ควรตรวจรูปแบบติดตั้งก่อน</h1><p>'+escaped(n.toLocaleString('th-TH'))+' ตร.ม. · '+escaped(reason)+'</p>'+
- '<div class="hdV4Answer"><strong>ยังไม่ควรฟันธงว่าใช้แอร์กี่เครื่อง</strong><span>เราจะไม่แบ่ง BTU เป็นรายโซนหรือเลือกชนิดเครื่องให้ทันทีโดยไม่มีแปลน</span></div>'+
- '<p><b>สิ่งที่ควรทำต่อ</b> ส่งขนาดพื้นที่และแปลนให้ร้านหรือช่างตรวจว่าจุดจ่ายลมครอบคลุมทุกส่วนหรือไม่</p>'+
- '<p class="muted">'+(l?'ช่วงประมาณการเบื้องต้น '+Math.round(l.low).toLocaleString('th-TH')+'–'+Math.round(l.high).toLocaleString('th-TH')+' BTU/h · ยังไม่ยืนยัน':'ยังไม่มีภาระความเย็นที่ยืนยันได้')+'</p></header>'+
- '<details class="disclosure"><summary>ดูสรุปโจทย์สำหรับส่งให้ช่าง / รายละเอียดเพิ่มเติม</summary>'+decisionBriefHTML('unresolved')+'</details>';
+ '<header class="answerHero hdMvpSurvey"><p class="kicker">HOME DECISION · ผลสำหรับพื้นที่ของคุณ</p>'+
+ '<h1>มีแนวทางให้เปรียบเทียบ แต่ยังไม่ควรเลือกรุ่นทันที</h1>'+
+ '<p>'+escaped(n.toLocaleString('th-TH'))+' ตร.ม. · '+escaped(reason)+'</p>'+
+ '<div class="hdV4Answer"><strong>ต้องตรวจจำนวนเครื่องและตำแหน่งลมก่อนซื้อ</strong><span>การคำนวณพื้นที่รวมอย่างเดียวไม่สามารถยืนยันขนาดรายเครื่องได้</span></div>'+
+ '<p class="muted">'+(range?'ช่วงภาระความเย็นรวมเบื้องต้น '+range+' · ไม่ใช่ BTU ที่ควรซื้อทันที':'ข้อมูลยังไม่เพียงพอให้ยืนยัน BTU')+'</p></header>'+
+ '<section class="hdV6Content hdMvpCompare"><div class="hdV6SectionHead"><span>ทางเลือกที่ควรถามร้าน</span><h2>เริ่มเปรียบเทียบจากรูปแบบติดตั้ง</h2><p>นี่คือทางเลือกสำหรับให้ช่างตรวจ ไม่ใช่รุ่นแอร์ที่ผ่านการรับรองว่าเหมาะแล้ว</p></div>'+
+ '<div class="hdMvpOption"><strong>เครื่องเดียว · ตรวจระยะส่งลม</strong><small>ควรถามว่าลมเย็นครอบคลุมทุกส่วนหรือไม่ และมีจุดที่อับลมหรือไม่</small></div>'+
+ '<div class="hdMvpOption"><strong>มากกว่าหนึ่งจุดจ่ายลม · ตรวจการแบ่งพื้นที่</strong><small>ควรถามตำแหน่งเครื่องและภาระความร้อนของแต่ละส่วนก่อนเลือก BTU</small></div>'+
+ '<div class="hdMvpOption"><strong>แบบฝังฝ้า · ตรวจข้อจำกัดหน้างาน</strong><small>ต้องตรวจช่องฝ้า ทางเดินท่อ น้ำทิ้ง และระบบไฟก่อนประเมินความเป็นไปได้</small></div>'+
+ '<button type="button" class="hdV6LinkButton" onclick="document.getElementById(\'hdMvpBrief\').open=true;document.getElementById(\'hdMvpBrief\').scrollIntoView({behavior: \'smooth\'})">ดูข้อมูลสำหรับส่งให้ร้าน ↗</button></section>'+
+ '<details id="hdMvpBrief" class="disclosure"><summary>สรุปข้อมูลห้องและข้อควรตรวจเพิ่มเติม</summary>'+decisionBriefHTML('unresolved')+'</details>';
 }
 function gateHTML(reasons){
  let L=null;try{L=load()}catch(e){}
