@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='3.3-clear-answer-choices';
+const V='3.4-open-area-safety';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -21,17 +21,17 @@ const ROOM_OPTS=[
  ['other','พื้นที่อื่นในบ้าน (ช่วยสรุปให้ตรวจเพิ่มเติม)']
 ];
 const SUN_OPTS=[
- ['shade','แทบไม่มีแดดส่องเข้าห้อง'],
+ ['shade','แทบไม่โดนแดดโดยตรง หรือมีอาคารบัง'],
  ['morning','แดดช่วงเช้าเป็นหลัก'],
  ['afternoon','แดดช่วงบ่ายถึงเย็นเป็นหลัก'],
  ['all','โดนแดดทั้งเช้าและบ่าย'],
  ['unknown','ไม่แน่ใจ']
 ];
 const GLASS_OPTS=[
- ['low','กระจกน้อย เช่น หน้าต่างเล็ก 1–2 บาน'],
- ['medium','กระจกขนาดกลาง รวมกันประมาณ 1/4–1/2 ผนัง'],
- ['high','กระจกเยอะ รวมกันเกินครึ่งผนัง'],
- ['full','กระจกเกือบเต็มผนัง'],
+ ['low','มีหน้าต่างเล็กน้อย (น้อยกว่า 1/4 ของผนัง)'],
+ ['medium','กระจกรวมประมาณ 1/4–1/2 ของผนัง'],
+ ['high','กระจกรวมเกินครึ่งผนัง แต่ยังไม่เต็มผนัง'],
+ ['full','เป็นกระจกเกือบเต็มผนังหรือผนังกระจก'],
  ['unknown','ไม่แน่ใจ']
 ];
 const OVERHEAD_OPTS=[
@@ -41,17 +41,17 @@ const OVERHEAD_OPTS=[
  ['unknown','ไม่แน่ใจ']
 ];
 const OPEN_OPTS=[
- ['closed','ปิดประตูแยกจากห้องอื่นได้'],
- ['partial','มีประตู แต่ปกติเปิดทิ้งไว้บ่อย'],
- ['open','ไม่มีประตูกั้น เปิดต่อกับห้องอื่น'],
- ['stair','เปิดต่อกับบันไดหรือโถงสูง'],
- ['outdoor','เปิดประตูสู่ภายนอกบ่อย'],
+ ['closed','มีผนังและประตูปิดแยกได้ตลอดเวลาที่เปิดแอร์'],
+ ['partial','มีประตูกั้น แต่จะเปิดค้างเชื่อมกับห้องอื่นบ่อย'],
+ ['open','ไม่มีประตูกั้น อากาศไหลถึงห้องอื่นตลอด'],
+ ['stair','เปิดโล่งถึงบันไดหรือโถงที่สูงถึงอีกชั้น'],
+ ['outdoor','มีประตูออกภายนอกที่เปิดค้างหรือเปิดบ่อย'],
  ['unknown','ไม่แน่ใจ']
 ];
 const HEIGHT_OPTS=[
- ['normal','สูงทั่วไป ประมาณ 2.4–3 เมตร'],
- ['high','สูงกว่าทั่วไป ประมาณ 3–4 เมตร'],
- ['double','โถงสูง เปิดถึงชั้นบน / มองเห็นชั้นสอง'],
+ ['normal','ประมาณ 2.4–3 เมตร (เพดานทั่วไป)'],
+ ['high','ประมาณ 3–4 เมตร (เพดานสูงกว่าปกติ)'],
+ ['double','ไม่มีเพดานกั้น เปิดโล่งสูงถึงชั้นถัดไป'],
  ['unknown','ไม่แน่ใจ']
 ];
 const STAGE2=[
@@ -95,13 +95,13 @@ function derive(){
 }
 
 function coreQuestions(){return [
-['room','ต้องการติดแอร์ให้พื้นที่แบบไหน?',ROOM_OPTS],
-['openDetail','พื้นที่นี้แยกปิดจากห้องอื่นได้ไหม?',OPEN_OPTS],
-['ceilingClass','เพดานสูงประมาณไหน?',HEIGHT_OPTS],
+['room','พื้นที่ที่ต้องการให้เย็น ใช้ทำอะไรเป็นหลัก?',ROOM_OPTS],
+['openDetail','ตอนเปิดแอร์ อากาศจากห้องนี้ไหลไปส่วนอื่นได้หรือไม่?',OPEN_OPTS],
+['ceilingClass','ความสูงจากพื้นถึงเพดานประมาณเท่าไร?',HEIGHT_OPTS],
 ['dimensions','ห้องกว้าง × ยาวประมาณเท่าไร?',null],
-['sun','แดดส่องเข้าห้องช่วงไหนมากที่สุด?',SUN_OPTS],
-['glass','ห้องนี้มีกระจกมากแค่ไหน?',GLASS_OPTS],
-['overhead','ถ้ามองขึ้นไปเหนือเพดาน จะเป็นอะไร?',OVERHEAD_OPTS],
+['sun','ช่วงไหนที่แดดส่องกระจกหรือผนังห้องนี้มากที่สุด?',SUN_OPTS],
+['glass','เมื่อมองผนังห้องโดยรวม กระจกมีมากแค่ไหน?',GLASS_OPTS],
+['overhead','เหนือห้องนี้เป็นชั้นอื่น หลังคา หรือดาดฟ้า?',OVERHEAD_OPTS],
 ['people','ปกติมีคนอยู่พร้อมกันกี่คน?',null],
 ['usage','ปกติเปิดแอร์ช่วงเวลาไหน?',null]
 ];}
@@ -127,7 +127,7 @@ function adaptiveQuestions(){
   ['none','แทบไม่มีอะไรช่วยบังแดด'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- if(['partial','open','stair','outdoor'].includes(s.openDetail))all.push(['connectedArea','พื้นที่ที่เปิดเชื่อมเพิ่มอีกประมาณกี่ ตร.ม.?',null]);
+ if(['partial','open','stair','outdoor'].includes(s.openDetail))all.push(['connectedArea','นอกจากพื้นที่หลัก ยังมีพื้นที่เปิดเชื่อมเพิ่มอีกกี่ ตร.ม.?',null]);
  if(s.room==='ld')all.push(['kitchenUse','พื้นที่นี้เชื่อมกับครัวที่ทำอาหารแบบไหน?',[
   ['none','ไม่มีครัว หรือมีแค่อ่างล้างจาน / เคาน์เตอร์'],
   ['light','อุ่นอาหารหรือต้มอาหารเล็กน้อย'],
@@ -155,17 +155,17 @@ function configQs(){
  derive();
  const q=[];
  const large=Number(s.area)>=35||s.room==='ld'||s.open==='open'||['long','lshape','connected'].includes(s.shapeDetail);
- if(large)q.push(['zoneUsage','ปกติใช้พื้นที่ทั้งหมดพร้อมกันไหม?',[
+ if(large)q.push(['zoneUsage','เวลาเปิดแอร์ ใช้ทุกส่วนของพื้นที่พร้อมกันไหม?',[
   ['together','เปิดแอร์ให้เย็นทุกส่วนพร้อมกัน'],
   ['partial','บางช่วงใช้เพียงบางส่วนของพื้นที่'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- if(Number(s.area)>=35&&s.ceilingClass!=='double')q.push(['ceiling','มีฝ้าเรียบที่เปิดตรวจพื้นที่เหนือฝ้าได้ไหม?',[
+ if(Number(s.area)>=35&&s.ceilingClass!=='double')q.push(['ceiling','ห้องนี้มีฝ้าเพดานที่ช่างสามารถเปิดตรวจด้านบนได้ไหม?',[
   ['yes','มีฝ้าเรียบ และให้ช่างเปิดตรวจได้'],
   ['no','ไม่มีฝ้า หรือเปิดตรวจฝ้าไม่ได้'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- if(safeLoadHigh()>=24000||Number(s.area)>=35)q.push(['phase','ทราบระบบไฟของบ้านไหม?',[
+ if(safeLoadHigh()>=24000||Number(s.area)>=35)q.push(['phase','ทราบไหมว่าไฟฟ้าบ้านเป็น 1 เฟสหรือ 3 เฟส?',[
   ['unknown','ไม่ทราบ ให้ช่างตรวจ'],
   ['1','1 เฟส 220V'],
   ['3','3 เฟส']
@@ -320,6 +320,8 @@ function softGateReasons(){
 siteFlags=function(){
  // Avoid making every ordinary room a site-check only because phase is unknown.
  const base=baseSiteFlags().filter(x=>!String(x).startsWith('ระบบไฟยังไม่ยืนยัน')&&!String(x).startsWith('สมมติ pantry'));
+ const connected=['partial','open','stair','outdoor'].includes(s.openDetail)||s.room==='ld'||['long','lshape','connected'].includes(s.shapeDetail);
+ if(connected)base.push('พื้นที่เปิดเชื่อม/รูปทรงซับซ้อน: จำนวนเครื่อง ชนิดเครื่อง และระยะส่งลมเป็นเพียงทางเลือกให้ตรวจแปลนจริงก่อนซื้อ');
  return [...new Set([...base,...softGateReasons(),...hardGateReasons()])];
 };
 
@@ -348,6 +350,7 @@ function hdResultRedesign(){
  }
  const check=document.createElement('section');check.className='card hdBeforeBuy';
  const flags=(c.site_check_flags||[]).slice(0,3);
+ if(c.unit_count>1)flags.unshift('การแบ่ง BTU แต่ละโซนยังใช้สัดส่วนเบื้องต้น ไม่ใช่ผลคำนวณรายโซน ต้องตรวจขนาดและตำแหน่งจริง');
  check.innerHTML='<p class="hdEyebrow">ก่อนตัดสินใจ</p><h2>เรื่องที่ควรเช็กก่อนซื้อ</h2><ul>'+(flags.length?flags.map(x=>'<li>'+esc(x)+'</li>').join(''):'<li>ให้ช่างตรวจตำแหน่งติดตั้ง ทางเดินลม และระบบไฟ</li>')+'</ul><p class="muted">ผลนี้เป็นการคัดเลือกเบื้องต้น ไม่ใช่แบบคำนวณวิศวกรรม</p>';
  (products||hero).insertAdjacentElement('afterend',check);
  const oldDetail=result.querySelectorAll('details.disclosure');oldDetail.forEach(d=>{const t=d.querySelector('summary');if(t&&t.textContent.includes('ทำไมแนะนำแบบนี้'))t.textContent='ดูหลักการประเมินและข้อมูลทางเทคนิค'});
