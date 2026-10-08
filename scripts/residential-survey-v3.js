@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='3.4-open-area-safety';
+const V='4.0-result-focus';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -372,11 +372,55 @@ function hdResultRedesign(){
   document.head.appendChild(st);
  }
 }
+// V4 progressive disclosure: keep the full result DOM and its existing actions,
+// but place secondary reports behind three clearly named sections.
+function hdResultV4(){
+ if(!result||typeof document==='undefined'||!document.createElement)return;
+ const hero=result.querySelector('.hdDecisionHero');if(!hero)return;
+ const c=lastSetup;
+ const complex=Boolean(c&&(c.unit_count>1||s.room==='ld'||['partial','open','stair','outdoor'].includes(s.openDetail)));
+ const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const type={wall:'ติดผนัง',cassette:'ฝังฝ้า 4 ทิศทาง',mixed:'ติดผนังร่วมกับฝังฝ้า'}[c.unit_type]||'รูปแบบติดตั้ง';
+ const alternatives=coolingConfigurations().candidates||[];
+ const viable=alternatives.filter(x=>x.configuration_id!==c.configuration_id).slice(0,2);
+ hero.classList.add('hdResultV4Hero');
+ hero.innerHTML='<div class="hdV4Eyebrow">ผลประเมินแอร์สำหรับบ้าน</div>'+
+  '<h1>'+(complex?'ควรเปรียบเทียบรูปแบบติดตั้งก่อน':'แนวทางแอร์สำหรับห้องนี้')+'</h1>'+
+  '<p class="hdV4Room">'+esc((s.room==='ld'?'ห้องนั่งเล่น + กินข้าว':s.room==='bed'?'ห้องนอน':'พื้นที่ที่เลือก')+' · '+(Number(s.area)||0).toLocaleString('th-TH')+' ตร.ม.')+'</p>'+
+  '<div class="hdV4Answer"><strong>'+(complex?'ยังต้องตรวจจำนวนและตำแหน่งเครื่อง':esc(c.unit_count+' เครื่อง · '+type))+'</strong><span>'+(complex?'ระบบยังไม่ยืนยันว่าหนึ่งหรือหลายเครื่องเหมาะที่สุด':'ผลคัดเลือกเบื้องต้น ต้องตรวจการติดตั้งและไฟฟ้าก่อนซื้อ')+'</span></div>'+
+  '<div class="hdV4Actions"><button class="btn hdV4Primary" onclick="hdOpenResultSection(\'hdV4Choices\')">'+(complex?'เปรียบเทียบทางเลือก':'ดูรูปแบบที่แนะนำ')+' ↓</button><button class="outlinebtn hdV4Secondary" onclick="hdOpenResultSection(\'hdV4Products\')">ดูรุ่นแอร์</button></div>'+
+  '<p class="hdV4Foot">ข้อมูลวิศวกรรมและข้อจำกัดทั้งหมดอยู่ในส่วน “รายละเอียดเพิ่มเติม”</p>';
+ const ids=['hdV4Choices','hdV4Products','hdV4Details'];
+ const labels=['รูปแบบติดตั้งและทางเลือก','รุ่นแอร์ที่ผ่านการคัดกรอง','รายละเอียดการประเมินและเอกสาร'];
+ const groups=ids.map((id,i)=>{const d=document.createElement('details');d.id=id;d.className='hdV4Section';const summary=document.createElement('summary');summary.textContent=labels[i];d.appendChild(summary);return d});
+ const choiceIntro=document.createElement('p');choiceIntro.className='hdV4SectionIntro';
+ choiceIntro.textContent=complex?'รูปแบบต่อไปนี้เป็นทางเลือกเพื่อเปรียบเทียบ ยังไม่ใช่การรับรองว่าแอร์แต่ละแบบรองรับพื้นที่จริง':'ดูเหตุผลและทางเลือกอื่นที่ระบบประเมินไว้';
+ groups[0].appendChild(choiceIntro);
+ const overview=document.createElement('div');overview.className='hdV4CompactOptions';
+ const picks=[c,...viable].slice(0,3);
+ overview.innerHTML=picks.map((x,i)=>'<div class="hdV4Choice"><span class="hdV4ChoiceNumber">'+(i+1)+'</span><div><strong>'+esc(x.unit_count+' เครื่อง · '+({wall:'ติดผนัง',cassette:'ฝังฝ้า 4 ทิศทาง',mixed:'ผสมติดผนังและฝังฝ้า'}[x.unit_type]||x.unit_type))+'</strong><small>'+(i===0?(complex?'แบบที่ระบบเดิมคัดไว้ — ยังต้องตรวจ':'แบบที่ระบบคัดไว้'):'อีกทางเลือกเพื่อเปรียบเทียบ')+'</small></div></div>').join('');
+ groups[0].appendChild(overview);
+ const children=Array.from(result.children);
+ for(const node of children){
+  if(node===hero||node.classList?.contains('backhome')||node.classList?.contains('navbtn'))continue;
+  if(node.id==='setupProducts')groups[1].appendChild(node);
+  else if(node.id==='setupCompare'||node.classList?.contains('hdSetupVariants')||(node.matches&&node.matches('article.card')))groups[0].appendChild(node);
+  else groups[2].appendChild(node);
+ }
+ const products=groups[1].querySelector('#setupProducts');if(products){products.classList.remove('hidden');products.removeAttribute('hidden')}
+ for(const group of groups)result.appendChild(group);
+ const st=document.getElementById('hd-v4-styles')||document.createElement('style');
+ if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';document.head.appendChild(st)}
+}
+function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
+window.hdOpenResultSection=hdOpenResultSection;
+
 configurationResult=function(){
  const hard=hardGateReasons();
  if(hard.length){lastTop=[];lastSetup=null;result.innerHTML=gateHTML(hard);trackHD('site_check_flagged',{flag_count:hard.length},'residential-hard-gate');return}
  baseConfigurationResult();
  hdResultRedesign();
+ hdResultV4();
  const hero=result.querySelector('.answerHero');
  if(hero&&!hero.querySelector('.resScope')){
   hero.insertAdjacentHTML('afterbegin','<div class="resScope badge high">สำหรับบ้านพักอาศัย</div>');
