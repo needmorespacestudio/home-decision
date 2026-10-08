@@ -353,6 +353,17 @@ function hdResultRedesign(){
  if(c.unit_count>1)flags.unshift('การแบ่ง BTU แต่ละโซนยังใช้สัดส่วนเบื้องต้น ไม่ใช่ผลคำนวณรายโซน ต้องตรวจขนาดและตำแหน่งจริง');
  check.innerHTML='<p class="hdEyebrow">ก่อนตัดสินใจ</p><h2>เรื่องที่ควรเช็กก่อนซื้อ</h2><ul>'+(flags.length?flags.map(x=>'<li>'+esc(x)+'</li>').join(''):'<li>ให้ช่างตรวจตำแหน่งติดตั้ง ทางเดินลม และระบบไฟ</li>')+'</ul><p class="muted">ผลนี้เป็นการคัดเลือกเบื้องต้น ไม่ใช่แบบคำนวณวิศวกรรม</p>';
  (products||hero).insertAdjacentElement('afterend',check);
+ if(c.unit_count>1||['partial','open','stair','outdoor'].includes(s.openDetail)||s.room==='ld'){
+  const variants=coolingConfigurations().candidates||[];
+  const distinct=[];for(const v of variants){const key=v.unit_count+'-'+v.unit_type;if(!distinct.some(x=>x.key===key))distinct.push({key,v})}
+  if(distinct.length>1){
+   const types={wall:'ติดผนัง',cassette:'ฝังฝ้า 4 ทิศทาง',mixed:'ผสมติดผนังและฝังฝ้า'};
+   const more=document.createElement('details');more.className='disclosure hdSetupVariants';
+   more.innerHTML='<summary>เปรียบเทียบรูปแบบแอร์อื่นที่เป็นไปได้ ('+distinct.length+' แบบ)</summary><p>เป็นรูปแบบสำหรับเปรียบเทียบ ไม่ใช่การรับรองว่าติดตั้งได้ทุกแบบ ข้อมูลฝ้า ทางเดินลม และขนาดรายโซนต้องยืนยันก่อน</p>'+distinct.map(x=>'<article class="card"><strong>'+esc(x.v.unit_count)+' เครื่อง · '+esc(types[x.v.unit_type]||x.v.unit_type)+'</strong><p>'+esc((x.v.tradeoffs||[])[0]||'ต้องสำรวจหน้างาน')+'</p><button class="outlinebtn" onclick="compareSetup('+JSON.stringify(x.v.configuration_id).replace(/"/g,'&quot;')+')">ดูข้อดีข้อจำกัด</button></article>').join('');
+   check.insertAdjacentElement('afterend',more);
+  }
+ }
+
  const oldDetail=result.querySelectorAll('details.disclosure');oldDetail.forEach(d=>{const t=d.querySelector('summary');if(t&&t.textContent.includes('ทำไมแนะนำแบบนี้'))t.textContent='ดูหลักการประเมินและข้อมูลทางเทคนิค'});
  if(!document.getElementById('hd-result-style')){
   const st=document.createElement('style');st.id='hd-result-style';
