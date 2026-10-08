@@ -1,5 +1,5 @@
-const CACHE="home-decision-v9-cooling-load-v2";
-const SHELL=["/","/manifest.webmanifest","/icons/icon.svg","/scripts/cooling-load-v2.js"];
+const CACHE="home-decision-v10-residential-survey";
+const SHELL=["/","/manifest.webmanifest","/icons/icon.svg","/scripts/cooling-load-v2.js","/scripts/residential-survey-v3.js"];
 self.addEventListener("install",e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).catch(()=>{}))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{
