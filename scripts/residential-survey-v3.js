@@ -485,7 +485,7 @@ function hdResultV6(){
  const units={wall:'ติดผนัง',cassette:'ฝังฝ้า',mixed:'ติดผนังร่วมกับฝังฝ้า'};
  const catalog=(Array.isArray(c.product_matches)?c.product_matches.flatMap(a=>a||[]):[]).filter(p=>p&&p.match_type==='exact');
  const unique=[];for(const p of catalog){if(!unique.some(x=>x.id===p.id))unique.push(p)}
- const top=unique.slice(0,3);
+ const top=(supported?unique:[]).slice(0,3);
  const oldNodes=Array.from(result.children);
  const details=document.createElement('details');details.className='hdV6Details';details.id='hdV6Details';
  details.innerHTML='<summary>ดูข้อมูลเพิ่มเติมและเอกสารสำหรับร้าน <span aria-hidden="true">⌄</span></summary><p>ข้อมูลทางเทคนิค ข้อจำกัด รูปแบบติดตั้งเพิ่มเติม และเอกสารสรุปของคุณ</p>';
@@ -494,9 +494,9 @@ function hdResultV6(){
  details.appendChild(preserved);
  oldHero.className='hdV6Hero';
  oldHero.innerHTML='<span class="hdV6Overline">คำแนะนำเบื้องต้น · HOME DECISION</span>'+
- '<h1>'+(complex?'ยังต้องตรวจรูปแบบติดตั้ง':'แนวทางแอร์สำหรับห้องของคุณ')+'</h1>'+
+ '<h1>'+(complex?'ยังต้องตรวจรูปแบบติดตั้ง':!supported?'ยังต้องตรวจความเหมาะสม':'แนวทางแอร์สำหรับห้องของคุณ')+'</h1>'+
  '<p class="hdV6Room">'+esc((s.room==='bed'?'ห้องนอน':s.room==='living'?'ห้องนั่งเล่น':s.room==='ld'?'ห้องนั่งเล่นและกินข้าว':'พื้นที่ในบ้าน')+' · '+(Number(s.area)||0).toLocaleString('th-TH')+' ตร.ม.')+'</p>'+
- '<div class="hdV6Verdict"><span>สิ่งที่ควรพิจารณา</span><strong>'+(complex?'ตรวจแปลนก่อนเลือกจำนวนเครื่อง':esc(c.unit_count+' เครื่อง · แอร์'+(units[c.unit_type]||'ระบบปรับอากาศ')))+'</strong>'+
+ '<div class="hdV6Verdict"><span>สิ่งที่ควรพิจารณา</span><strong>'+(complex?'ตรวจแปลนก่อนเลือกจำนวนเครื่อง':!supported?'ให้ร้านตรวจสเปกก่อนเลือกรุ่น':esc(c.unit_count+' เครื่อง · แอร์'+(units[c.unit_type]||'ระบบปรับอากาศ')))+'</strong>'+
  '<small>'+(complex?'การแบ่งขนาดและทางเดินลมต้องอาศัยตำแหน่งหน้างานจริง':'ขนาดและการติดตั้งต้องยืนยันกับร้านก่อนซื้อ')+'</small></div>'+
  '<div class="hdV6Why"><b>ทำไมจึงได้คำตอบนี้?</b><p>'+esc((c.key_reasons||[])[0]||'คัดกรองจากข้อมูลห้องและเงื่อนไขการติดตั้งที่ให้มา')+'</p></div>';
  const lead=document.createElement('div');lead.className='hdV6Content';
