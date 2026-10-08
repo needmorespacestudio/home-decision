@@ -33,6 +33,7 @@ function harness(overrides={},social={}){
 }
 let n=0;function test(name,fn){fn();n++;console.log('ok',n,'-',name)}
 
+test('Result V4 keeps only a concise primary answer and three expandable sections',()=>{const src=fs.readFileSync('scripts/residential-survey-v3.js','utf8');assert.match(src,/function hdResultV4\(\)/);assert.match(src,/hdV4Choices/);assert.match(src,/hdV4Products/);assert.match(src,/hdV4Details/);assert.match(src,/hdResultRedesign\(\);\s*hdResultV4\(\)/);assert.match(src,/complex\?'ควรเปรียบเทียบรูปแบบติดตั้งก่อน'/);assert.match(src,/กลุ่ม|ข้อมูลวิศวกรรมและข้อจำกัดทั้งหมด/)});
 test('core survey has nine residential questions',()=>{const c=harness();assert.equal(c.hdResidentialV3.coreQuestions().length,9)});
 test('occupancy and usage are distinct simple decisions',()=>{const c=harness();const keys=c.hdResidentialV3.coreQuestions().map(x=>x[0]);assert(keys.includes('people')&&keys.includes('usage'));assert(keys.indexOf('usage')===keys.indexOf('people')+1)});
 test('full glazing is retained as separate visual detail after derivation',()=>{const c=harness({glass:'full',glazingExtent:'full'});c.hdResidentialV3.derive();assert.equal(c.s.glass,'high');assert.equal(c.s.glazingExtent,'full')});
