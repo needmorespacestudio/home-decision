@@ -1,6 +1,6 @@
 # Residential Survey V3 — Aircon Decision
 
-Status: implementation candidate / private-beta validation
+Status: implemented incremental Quick Flow v3.1; private-beta HVAC validation pending
 Scope: **residential homes only**
 
 ## Product goal
@@ -40,9 +40,10 @@ Runs only after the technical envelope is known:
 5. Amount of glazing on the exposed side
 6. What is above the ceiling: room / roof / concrete deck / unknown
 7. Ceiling height category
-8. Normal occupancy + main time of use
+8. Normal occupancy (1 / 2 / 3–4 / 5–6 / 6+)
+9. Main time of use (night / day / afternoon-evening / nearly all day / occasional)
 
-The UI remains one decision per screen except occupancy + time, intentionally combined because both are simple one-tap lifestyle observations and reduce total friction.
+The UI keeps occupancy and time as distinct observable decisions (nine total). The primary form remains one question at a time on mobile; both values feed the existing evidence and ranking process. Existing Special Needs, Budget, and ranked Top 3 remain a separate stage. The engineering model is unchanged and requires independent HVAC validation.
 
 ## Adaptive questions
 
