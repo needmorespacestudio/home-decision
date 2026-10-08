@@ -503,14 +503,14 @@ function hdResultV6(){
  if(top.length&&!complex){
   const el=document.createElement('section');el.className='hdV6List';
   el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>3 ตัวเลือกที่ควรดูต่อ</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
-  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="hdOpenResultSection(\\'hdV4Products\\')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกที่ตรวจสอบได้</small></span><span>↗</span></button>').join('')+
+  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="hdOpenResultSection(\'hdV4Products\')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกที่ตรวจสอบได้</small></span><span>↗</span></button>').join('')+
   '<p class="hdV6Disclaimer">ยังต้องตรวจราคา สต็อก และค่าติดตั้งกับร้านก่อนตัดสินใจ</p>';
   lead.appendChild(el);
  }else{
   const el=document.createElement('section');el.className='hdV6Next';
   el.innerHTML='<div class="hdV6SectionHead"><span>ขั้นตอนต่อไป</span><h2>'+(complex?'ให้ช่างตรวจตำแหน่งจ่ายลม':'ตรวจรุ่นและข้อจำกัดเพิ่มเติม')+'</h2></div>'+
   '<p>'+(complex?'อย่าเพิ่งซื้อจากขนาด BTU รวมอย่างเดียว ให้ร้านตรวจแปลน ขอบเขตพื้นที่ และการกระจายลมก่อน':'ยังไม่มีรุ่นที่ยืนยันตรงโจทย์ครบทุกเงื่อนไข ใช้สรุปข้อมูลเพื่อขอคำแนะนำจากร้าน')+'</p>'+
-  '<button class="hdV6LinkButton" onclick="document.getElementById(\\'hdV6Details\\').open=true;document.getElementById(\\'hdV6Details\\').scrollIntoView({behavior: \\'smooth\\'})">ดูข้อมูลสำหรับส่งร้าน ↗</button>';
+  '<button class="hdV6LinkButton" onclick="document.getElementById(\'hdV6Details\').open=true;document.getElementById(\'hdV6Details\').scrollIntoView({behavior: \'smooth\'})">ดูข้อมูลสำหรับส่งร้าน ↗</button>';
   lead.appendChild(el);
  }
  result.appendChild(lead);result.appendChild(details);
