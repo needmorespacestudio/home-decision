@@ -502,8 +502,8 @@ function hdResultV6(){
  const lead=document.createElement('div');lead.className='hdV6Content';
  if(top.length&&!complex){
   const el=document.createElement('section');el.className='hdV6List';
-  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>3 ตัวเลือกที่ควรดูต่อ</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
-  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="hdOpenResultSection(\'hdV4Products\')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกที่ตรวจสอบได้</small></span><span>↗</span></button>').join('')+
+  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>'+top.length+' รุ่นที่ควรดูต่อ</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
+  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="showProductDetail('+esc(JSON.stringify(p.id))+')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกที่ตรวจสอบได้</small></span><span>↗</span></button>').join('')+
   '<p class="hdV6Disclaimer">ยังต้องตรวจราคา สต็อก และค่าติดตั้งกับร้านก่อนตัดสินใจ</p>';
   lead.appendChild(el);
  }else{
