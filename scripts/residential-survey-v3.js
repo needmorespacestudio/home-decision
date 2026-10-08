@@ -328,10 +328,40 @@ function gateHTML(reasons){
  return `<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button><header class="answerHero"><span class="kicker">RESIDENTIAL SAFETY GATE</span><h1>ควรสำรวจหน้างานก่อนเลือกเครื่องจริง</h1><p>เรายังช่วยสรุปช่วงความต้องการได้ แต่จะไม่แสดงรุ่นพร้อมซื้อเมื่อข้อมูลหรือพื้นที่ซับซ้อนเกินเกณฑ์</p>${L?`<p><b>ช่วงประเมินเบื้องต้น:</b> ${Math.round(L.low).toLocaleString('th-TH')}–${Math.round(L.high).toLocaleString('th-TH')} BTU/h</p>`:''}<ul class="keyReasons">${reasons.map(x=>'<li>'+x+'</li>').join('')}</ul><p class="warning">นี่ไม่ใช่ความล้มเหลวของแบบสอบถาม แต่เป็นการหยุดฟันธงเมื่อความไม่แน่นอนสูง</p></header>${decisionBriefHTML('unresolved')}`;
 }
 
+function hdResultRedesign(){
+ if(!result||!result.querySelector||!lastSetup||typeof document==='undefined'||!document.createElement)return;
+ const c=lastSetup,hero=result.querySelector('.answerHero'),products=result.querySelector('#setupProducts');
+ if(!hero)return;
+ const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const type={wall:'แอร์ติดผนัง',cassette:'แอร์ฝังฝ้า',mixed:'แอร์ติดผนัง + ฝังฝ้า'}[c.unit_type]||'ระบบแอร์';
+ const allZones=Array.isArray(c.zone_plan)?c.zone_plan:[];
+ const complete=Array.isArray(c.product_matches)&&c.product_matches.length===allZones.length&&c.product_matches.every(x=>Array.isArray(x)&&x.some(p=>p.match_type==='exact'));
+ const ready=c.fit_status==='fit'&&complete;
+ const metrics=allZones.map(z=>'<div class="hdrMetric"><span>'+esc(z.name)+'</span><strong>'+Number(z.capacity_per_unit_target||0).toLocaleString('th-TH')+'</strong><small>BTU โดยประมาณ</small></div>').join('');
+ const why=(c.key_reasons||[]).slice(0,3).map(x=>'<li>'+esc(x)+'</li>').join('');
+ hero.classList.add('hdDecisionHero');
+ hero.innerHTML='<p class="hdEyebrow">HOME DECISION · ผลแนะนำสำหรับห้องของคุณ</p><p class="hdEyebrow">'+(ready?'รูปแบบที่เหมาะกับห้องนี้':'แนวทางเบื้องต้น — ต้องตรวจเพิ่ม')+'</p><h1>'+esc(c.unit_count)+' เครื่อง <span>· '+esc(type)+'</span></h1><div class="hdMetricGrid">'+metrics+'</div><div class="hdReason"><strong>ทำไมเราแนะนำแบบนี้</strong><ul>'+why+'</ul></div>'+(ready?'<button class="btn hdCTA" onclick="document.getElementById(\'setupProducts\')?.scrollIntoView({behavior:\'smooth\'})">ดูรุ่นแอร์ที่เหมาะกับคุณ ↓</button>':'<p class="hdWarning">ข้อมูลยังไม่พอจะยืนยันรุ่นพร้อมซื้อ ควรตรวจหน้างานก่อน</p>')+'<p class="hdFineprint">ประเมินเบื้องต้น · ต้องยืนยันจุดติดตั้งและระบบไฟก่อนซื้อ</p>';
+ if(products){
+  products.classList.remove('hidden');setupProductsOpen=true;
+  hero.insertAdjacentElement('afterend',products);
+  const h=products.querySelector('h2');if(h)h.textContent=ready?'รุ่นที่เหมาะกับห้องของคุณ':'รุ่นสำหรับประกอบการตรวจสอบ';
+ }
+ const check=document.createElement('section');check.className='card hdBeforeBuy';
+ const flags=(c.site_check_flags||[]).slice(0,3);
+ check.innerHTML='<p class="hdEyebrow">ก่อนตัดสินใจ</p><h2>เรื่องที่ควรเช็กก่อนซื้อ</h2><ul>'+(flags.length?flags.map(x=>'<li>'+esc(x)+'</li>').join(''):'<li>ให้ช่างตรวจตำแหน่งติดตั้ง ทางเดินลม และระบบไฟ</li>')+'</ul><p class="muted">ผลนี้เป็นการคัดเลือกเบื้องต้น ไม่ใช่แบบคำนวณวิศวกรรม</p>';
+ (products||hero).insertAdjacentElement('afterend',check);
+ const oldDetail=result.querySelectorAll('details.disclosure');oldDetail.forEach(d=>{const t=d.querySelector('summary');if(t&&t.textContent.includes('ทำไมแนะนำแบบนี้'))t.textContent='ดูหลักการประเมินและข้อมูลทางเทคนิค'});
+ if(!document.getElementById('hd-result-style')){
+  const st=document.createElement('style');st.id='hd-result-style';
+  st.textContent='.hdDecisionHero{border-radius:22px;background:#193730;color:#fff;padding:23px 19px;margin-bottom:14px;box-shadow:0 12px 25px #19373019}.hdDecisionHero h1{font-size:clamp(30px,8vw,42px);line-height:1.1;color:#fff;margin:12px 0}.hdDecisionHero h1 span{font-size:.58em;font-weight:600}.hdEyebrow{font-size:12px;font-weight:800;letter-spacing:.2px;opacity:.85}.hdMetricGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:8px;margin:17px 0}.hdrMetric{border:1px solid #ffffff3d;background:#ffffff15;padding:12px;border-radius:13px}.hdrMetric span,.hdrMetric small{display:block;font-size:11px}.hdrMetric strong{display:block;font-size:23px;font-variant-numeric:tabular-nums}.hdReason{border-radius:14px;background:#fff;color:#193730;padding:15px;margin:16px 0}.hdReason strong{font-size:14px}.hdReason ul,.hdBeforeBuy ul{padding-left:19px;margin:9px 0}.hdReason li,.hdBeforeBuy li{font-size:13px;line-height:1.6;margin:5px 0}.hdCTA{background:#f1daa4;color:#193730;min-height:49px}.hdFineprint{color:#d5e5e0;font-size:11px}.hdWarning{background:#fff2cf;color:#5a420e;padding:13px;border-radius:12px}.hdBeforeBuy{background:#fffdf7;border-color:#e9dfc2;margin-top:12px}.hdBeforeBuy h2{font-size:19px;margin-top:5px}#setupProducts{padding:18px;background:#fff;border:1px solid var(--line);border-radius:20px;margin:14px 0;scroll-margin-top:75px}#setupProducts>h2{font-size:21px}@media(max-width:390px){.hdDecisionHero{padding:18px 15px}#setupProducts{padding:13px}}';
+  document.head.appendChild(st);
+ }
+}
 configurationResult=function(){
  const hard=hardGateReasons();
  if(hard.length){lastTop=[];lastSetup=null;result.innerHTML=gateHTML(hard);trackHD('site_check_flagged',{flag_count:hard.length},'residential-hard-gate');return}
  baseConfigurationResult();
+ hdResultRedesign();
  const hero=result.querySelector('.answerHero');
  if(hero&&!hero.querySelector('.resScope')){
   hero.insertAdjacentHTML('afterbegin','<div class="resScope badge high">สำหรับบ้านพักอาศัย</div>');
