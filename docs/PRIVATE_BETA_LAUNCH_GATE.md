@@ -2,6 +2,8 @@
 
 Status: **Private Beta candidate; supervised internal QA ready. Unattended 20–50-person rollout pending.** Automated pass is not HVAC expert sign-off or real-user validation. See PRIVATE_BETA_METRICS.md and reports/validation/SPRINT_A_QA.md for evidence.
 
+2026-10-08 update: supervised sessions now have a voluntary local aggregate export, two-question outcome/retailer comparison and an offline batch summary tool. Follow PRIVATE_BETA_RUNBOOK.md. Owner recruitment, real-device sign-off and independent HVAC review remain unchecked; this release does not manufacture those approvals. A small facilitated usability pilot can measure clarity without presenting recommendations as engineering certification.
+
 ## Product readiness
 - [x] Quick and Detailed runtime preserved; regression suite passes.
 - [x] Configuration/zoning, Special Needs, ranked Top3 and all budget modes covered by automated checks.

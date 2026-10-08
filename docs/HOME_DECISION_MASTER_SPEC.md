@@ -115,6 +115,12 @@ GitHub needmorespacestudio/home-decision `main` → Vercel production → https:
 
 ## Anti-goals
 
+## 2026-10-08 — Current beta completion contract
+
+Positioning is decision support before spending, not a BTU/filter headline. Freeze additional load-engine complexity and category expansion until supervised beta validates value against retailer filtering. The current implementation adds an optional last-flow comparison questionnaire and voluntary local aggregate JSON export; nothing is sent automatically or saved in browser storage. Free text, room answers, quote contents, contact and actual budget stay out of the export. Same-page re-exports use a stable in-memory export ID and are replaced by the latest file in offline batch summaries. This is supervised research evidence, not monthly KPI, purchase proof or Popular Choice data. Follow PRIVATE_BETA_RUNBOOK.md; recruitment and HVAC sign-off remain real-world tasks.
+
+Quick room survey has eight room questions plus preferences/budget/priorities and conditional follow-ups; do not promise eight total clicks or a measured completion time. Detailed uses its own original answer fields, never stale Quick dimensions. Safety-gated results must not enter exact-product analytics. Network-first executable assets and a complete offline script shell prevent cached survey versions from hiding updates. Release 2026.10.08.1 is visibly labelled on the homepage.
+
 Not a marketplace pretending to be independent; not a full HVAC engineering tool; not health advice; not a claim to cover Thailand's entire market; not a score-driven desktop dashboard; not automatic recommendation ingestion; not mandatory lead collection; not invented specs, prices, denominators or installation costs.
 
 ## CHANGELOG / Decision Log
@@ -138,3 +144,4 @@ Not a marketplace pretending to be independent; not a full HVAC engineering tool
 | 2026-10-07 | Add Cooling Load V2 as a component-based shadow model with adaptive uncertainty questions | Improve sizing rigor without replacing a validated production method or adding false precision; expert calibration remains a hard promotion gate | Single heuristic estimator had no independent component cross-check or explicit load-confidence model |
 | 2026-10-08 | Make Aircon v1 residential-first; add Survey V3 two-stage funnel, conservative hard/soft gates, Best Choice and evidence-thresholded Popular/Purchased Choice | Reduce user burden while improving uncertainty handling; prevent popularity or AI-generated advisory numbers from contaminating technical compatibility | Mixed technical/lifestyle questions in one flow; no explicit social-proof evidence contract |
 | 2026-10-07 | Sprint A expands vendor-free allowlisted analytics, memory-only aggregates and optional result feedback | Validate funnel/action usefulness without private answers or persistent tracking; other text remains DOM-only; HVAC and real-user gates pending | Setup-only event foundation; no beta measurement contract |
+| 2026-10-08 | Complete supervised beta measurement and current release visibility; freeze extra sizing complexity | Validate actual decision usefulness, preserve voluntary evidence before reload, avoid stale scripts and invalid gated-result metrics | BTU-led copy, memory-only evidence with no user export, Quick-only gates applied to Detailed, cached scripts masking updates |
