@@ -16,16 +16,16 @@ async function reset(){await expr("restartToWizard();flowMode='quick';render()")
 async function completeBase(){await expr("s.sun='morning';s.glass='low';s.overhead='room_above';s.people=2;s.usage='night';s.budgetMode='unset';s.priorities=['saving','quiet','price'];")}
 async function run(){
  let targets;
- for(let n=0;n<55;n++){try{targets=await(await fetch('http://127.0.0.1:9229/json')).json();if(targets?.[0]?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
+ for(let n=0;n<55;n++){try{targets=await(await fetch('http://127.0.0.1:9229/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
  assert(targets?.[0]?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable');
- ws=new WebSocket(targets[0].webSocketDebuggerUrl);
+ ws=new WebSocket(targets.find(x=>x.type==='page').webSocketDebuggerUrl);
  await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject});
  ws.onmessage=event=>{const j=JSON.parse(event.data);if(j.id&&messages.has(j.id)){const x=messages.get(j.id);messages.delete(j.id);j.error?x.reject(new Error(j.error.message)):x.resolve(j)}};
  await send('Page.enable');await send('Runtime.enable');
  for(const width of [390,1280]){
   await send('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:width===390});
   await send('Page.navigate',{url:'file://'+path.resolve('index.html')});await sleep(1700);
-  assert.equal(await expr("document.querySelector('.hd-new-home')!==null"),true,'new home present');
+  assert.equal(await expr("document.querySelector('.hd-new-home')!==null"),true,'new home present '+JSON.stringify(await expr("({url:location.href,ready:document.readyState,title:document.title,body:document.body?.innerText?.slice(0,180)})")));
   assert.equal(await expr("document.documentElement.scrollWidth<=innerWidth+1"),true,'no horizontal overflow on '+width);
   await expr("startMode('quick')");
   await expr("hdCorePick('room','bed');hdCorePick('openDetail','closed');");
