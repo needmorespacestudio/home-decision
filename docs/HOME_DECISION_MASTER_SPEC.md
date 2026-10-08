@@ -67,6 +67,24 @@ Verified repository baseline for this sprint (2026-10-07, main 36d0922): 51 reco
 
 Sponsors cannot buy hard-filter passage, organic rank, Product Match, or recommended badges. Paid placements must be clearly separate. Affiliate/lead/quote revenue must not distort recommendations; disclose commercial relationships.
 
+
+## Residential Aircon V1 survey and social-proof contract
+
+Aircon v1 is residential-first. The user-facing Quick Flow asks about observable home conditions, not HVAC jargon. Stage 1 is engineering suitability; Stage 2 is lifestyle/value. Popularity, sponsor, brand preference and commercial factors never alter hard compatibility.
+
+Residential Survey V3 core inputs are: room use; approximate width × length with area-only fallback; ability to close the conditioned boundary; solar exposure; glazing amount; what is above the ceiling; ceiling-height category; occupancy + main time of use. Adaptive questions are limited to risk-reducing branches such as roof insulation/type, shading, connected area, kitchen intensity, room shape, zoning, ceiling feasibility and electrical supply. If risk branching would exceed four extra questions, prefer a site-survey gate over a long questionnaire.
+
+Hard gates stop purchase-ready product cards but may still show a preliminary range and Decision Brief. Hard-gate families include unsupported room scope, double volume, open stair/high void/exterior boundary, heavy active kitchen connected to the conditioned area, large connected open plan, severe solar-glazing uncertainty, several unresolved primary variables, excessive adaptive complexity and large-load cases with unverified electrical supply. Thresholds are conservative product-safety gates, not universal engineering claims, and require calibration from real field outcomes.
+
+Unknown answers remain unknown. They widen uncertainty and reduce confidence; do not silently convert them to verified midpoints. Cooling Load V2 remains an engineering-informed shadow/calibration layer. User-supplied AI advisory/review documents may inform UX and risk discovery, but their numeric load estimates are not ground truth and must not be averaged into production coefficients.
+
+Result product roles:
+- **Best Choice สำหรับคุณ** = highest-ranked technically eligible recommendation after needs, ranked priorities and budget.
+- **Popular Choice** = social proof from users with a comparable broad cohort; it never changes Best Choice ranking.
+- **Purchased Choice** = separately confirmed purchase/installation, never inferred from clicks.
+
+Social-proof display rules: sample <30 shows no percentage; 30–99 may show a qualitative popular label; >=100 may show percentage + denominator + time window. Never fabricate or seed production percentages without real aggregated data. Choice analytics use privacy-safe events `decision_selected` and `decision_purchased`, with broad cohort buckets only. Current browser analytics remain non-persistent until a real aggregation pipeline is deliberately added.
+
 ## Quote and no-dead-end contract
 
 Target Quote UX: upload/photo/PDF → extract → user confirms → ask only unresolved fields. Minimum manual fallback: store name + total + installation included. VAT, pipe length, breaker, core drilling, ceiling work and warranty are advanced, progressively disclosed. Do not treat quoted total as unit price or silently assume exclusions included.
@@ -118,4 +136,5 @@ Not a marketplace pretending to be independent; not a full HVAC engineering tool
 | 2026-10-07 | Exclude unclear lifecycle and Tier C from recommendations; fresh scoped price samples only | Keep legacy uncertain records and price history without promoting unknowns; two fresh exact-model Batch A additions | Unclear lifecycle was allowed; dated price presence alone qualified as budget sample |
 
 | 2026-10-07 | Add Cooling Load V2 as a component-based shadow model with adaptive uncertainty questions | Improve sizing rigor without replacing a validated production method or adding false precision; expert calibration remains a hard promotion gate | Single heuristic estimator had no independent component cross-check or explicit load-confidence model |
+| 2026-10-08 | Make Aircon v1 residential-first; add Survey V3 two-stage funnel, conservative hard/soft gates, Best Choice and evidence-thresholded Popular/Purchased Choice | Reduce user burden while improving uncertainty handling; prevent popularity or AI-generated advisory numbers from contaminating technical compatibility | Mixed technical/lifestyle questions in one flow; no explicit social-proof evidence contract |
 | 2026-10-07 | Sprint A expands vendor-free allowlisted analytics, memory-only aggregates and optional result feedback | Validate funnel/action usefulness without private answers or persistent tracking; other text remains DOM-only; HVAC and real-user gates pending | Setup-only event foundation; no beta measurement contract |
