@@ -151,3 +151,5 @@ Not a marketplace pretending to be independent; not a full HVAC engineering tool
 | 2026-10-08 | Group Residential Quick V3.2 into four room pages while preserving nine distinct core inputs and separate Stage 2 | Align implemented mobile UX with approved homeowner-facing question grouping, preserving Detailed/Quote/Brief and safety gates | One question per screen for all nine core questions |
 
 | 2026-10-08 | Result screen presents a strong setup hero, zone BTU, visible product shortlist and pre-purchase checks ahead of secondary options and technical disclosures | Make the primary homeowner decision legible on mobile while preserving ranking, site gates, product detail, Budget and Decision Brief | Results hid the product shortlist behind the primary CTA and scattered site verification beneath advanced sections |
+
+| 2026-10-08 | Refine homeowner-facing Quick and adaptive answer labels while preserving the exact machine-readable enum values | Reduce overlap and jargon in answer choices without changing load, safety, recommendation, or evidence semantics | Technical or overlapping labels for sun, glass, room closure, kitchen, zoning and electrical choices |
