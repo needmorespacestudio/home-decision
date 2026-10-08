@@ -494,7 +494,12 @@ function hdResultV6(){
  const units={wall:'ติดผนัง',cassette:'ฝังฝ้า',mixed:'ติดผนังร่วมกับฝังฝ้า'};
  const catalog=(Array.isArray(c.product_matches)?c.product_matches.flatMap(a=>a||[]):[]).filter(p=>p&&p.match_type==='exact');
  const unique=[];for(const p of catalog){if(!unique.some(x=>x.id===p.id))unique.push(p)}
- const top=(supported?unique:[]).slice(0,3);
+ const top=(supported?unique.filter(p=>p.recommendation_ready!==false):[]).slice(0,3);
+ const explainModel=p=>{
+  const reasons=typeof productReasons==='function'?productReasons(p):[];
+  const relevant=reasons.filter(x=>!String(x).includes('ยังต้องยืนยัน')).slice(1,3);
+  return relevant.length?relevant.join(' · '):'ข้อมูลคุณสมบัติตามความชอบยังไม่ครบ';
+ };
  const oldNodes=Array.from(result.children);
  const details=document.createElement('details');details.className='hdV6Details';details.id='hdV6Details';
  details.innerHTML='<summary>ดูข้อมูลเพิ่มเติมและเอกสารสำหรับร้าน <span aria-hidden="true">⌄</span></summary><p>ข้อมูลทางเทคนิค ข้อจำกัด รูปแบบติดตั้งเพิ่มเติม และเอกสารสรุปของคุณ</p>';
@@ -511,8 +516,8 @@ function hdResultV6(){
  const lead=document.createElement('div');lead.className='hdV6Content';
  if(top.length&&!complex){
   const el=document.createElement('section');el.className='hdV6List';
-  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>'+top.length+' รุ่นที่ควรดูต่อ</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
-  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="showProductDetail('+esc(JSON.stringify(p.id))+')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกที่ตรวจสอบได้</small></span><span>↗</span></button>').join('')+
+  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>'+top.length+' รุ่นที่ผ่านการคัดกรอง</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
+  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="showProductDetail('+esc(JSON.stringify(p.id))+')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · แตะดูรายละเอียด</small><small class="hdV6FitWhy">'+esc(explainModel(p))+'</small></span><span>↗</span></button>').join('')+
   '<p class="hdV6Disclaimer">ยังต้องตรวจราคา สต็อก และค่าติดตั้งกับร้านก่อนตัดสินใจ</p>';
   lead.appendChild(el);
  }else{
