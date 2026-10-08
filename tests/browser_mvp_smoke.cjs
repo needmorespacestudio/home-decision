@@ -49,4 +49,4 @@ async function run(){
   console.log('PASS chromium viewport '+width+'px: simple room result, connected-area gate, edit flow, no overflow');
  }
 }
-run().catch(e=>{console.error('FAIL browser MVP:',e);process.exitCode=1}).finally(()=>{ws?.close();proc.kill('SIGTERM');fs.rmSync(tmp,{recursive:true,force:true})});
+run().catch(e=>{console.error('FAIL browser MVP:',e);process.exitCode=1}).finally(()=>{ws?.close();proc.kill('SIGTERM');try{fs.rmSync(tmp,{recursive:true,force:true,maxRetries:5,retryDelay:200})}catch(e){console.warn('Chrome temporary profile cleanup deferred:',e.code)}});
