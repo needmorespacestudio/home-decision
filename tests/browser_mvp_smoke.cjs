@@ -8,16 +8,16 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'hd-chrome-'));
 const binary=process.env.CHROME_BIN||['/usr/bin/google-chrome','/usr/bin/chromium','/usr/bin/chromium-browser'].find(fs.existsSync);
 if(!binary)throw new Error('Chrome/Chromium required for real browser QA');
-const proc=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--remote-allow-origins=*','--remote-debugging-port=9229','--user-data-dir='+tmp,'about:blank'],{stdio:'ignore'});
-const messages=new Map();let next=1,ws;
+const proc=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--remote-allow-origins=*','--remote-debugging-port=0','--user-data-dir='+tmp,'about:blank'],{stdio:['ignore','ignore','pipe']});
+let browserStderr='';proc.stderr?.on('data',chunk=>{browserStderr=(browserStderr+chunk.toString()).slice(-5000)});const messages=new Map();let next=1,ws;
 function send(method,params={}){const id=next++;return new Promise((resolve,reject)=>{messages.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));setTimeout(()=>{if(messages.has(id)){messages.delete(id);reject(new Error('CDP timeout: '+method))}},12000).unref()})}
 async function expr(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.result?.exceptionDetails)throw new Error(r.result.exceptionDetails.text+': '+(r.result.exceptionDetails.exception?.description||expression));return r.result.result?.value}
 async function reset(){await expr("restartToWizard();flowMode='quick';render()")}
 async function completeBase(){await expr("s.sun='morning';s.glass='low';s.overhead='room_above';s.people=2;s.usage='night';s.budgetMode='unset';s.priorities=['saving','quiet','price'];")}
 async function run(){
  let targets;
- for(let n=0;n<55;n++){try{targets=await(await fetch('http://127.0.0.1:9229/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
- assert(targets?.[0]?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable');
+ for(let n=0;n<90;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split(String.fromCharCode(10))[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
+ assert(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable; exit='+proc.exitCode+'; stderr='+browserStderr+'; portFile='+fs.existsSync(path.join(tmp,'DevToolsActivePort')));
  ws=new WebSocket(targets.find(x=>x.type==='page').webSocketDebuggerUrl);
  await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject});
  ws.onmessage=event=>{const j=JSON.parse(event.data);if(j.id&&messages.has(j.id)){const x=messages.get(j.id);messages.delete(j.id);j.error?x.reject(new Error(j.error.message)):x.resolve(j)}};
@@ -28,6 +28,9 @@ async function run(){
   assert.equal(await expr("document.querySelector('.hd-new-home')!==null"),true,'new home present '+JSON.stringify(await expr("({url:location.href,ready:document.readyState,title:document.title,body:document.body?.innerText?.slice(0,180)})")));
   assert.equal(await expr("document.documentElement.scrollWidth<=innerWidth+1"),true,'no horizontal overflow on '+width);
   await expr("startMode('quick')");
+  assert.equal(await expr("getComputedStyle(document.getElementById('home')).display"),'none','landing must disappear in questionnaire');
+  assert.equal(await expr("getComputedStyle(document.querySelector('.navbtns')).display"),'none','navigation start-over action must not compete with questionnaire');
+
   await expr("hdCorePick('room','bed');hdCorePick('openDetail','closed');");
   await expr("next()");
   assert.equal(await expr("i"),1,'first quick page navigable');
@@ -38,6 +41,8 @@ async function run(){
   assert.equal(await expr("getQs()[i][0]"),'budget','simple room reaches preferences');
   await expr("next();next()");
   assert.equal(await expr("!result.classList.contains('hidden')"),true,'simple room shows result');
+  assert.equal(await expr("getComputedStyle(document.getElementById('home')).display"),'none','landing stays hidden on results');
+
   assert.equal(await expr("!!result.querySelector('.hdV6Hero')||!!result.querySelector('.answerHero')"),true,'simple room result visible');
   const productCount=await expr("result.querySelectorAll('.hdV6Product').length");
   if(productCount){

@@ -172,6 +172,25 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 #result .hdMvpSurvey .muted{color:#cadcd0}
 body .top{display:none!important} .wrap{padding-top:12px} .nav .navbtns .navbtn:last-child{background:#e4f3e4;color:#234d36;border-color:#cfe4d0} @media(max-width:650px){.navin{height:55px}.navbtns .navbtn:nth-child(2){display:none}.navbrand{font-size:12px}.navbtns .navbtn:last-child{font-size:11px;padding:9px 11px}}
 .hdMvpCompare .hdMvpOption{background:#f5f9f5;border:1px solid #e1e9e0;padding:14px 16px;border-radius:13px;margin:10px 0;display:grid;gap:6px}.hdMvpCompare .hdMvpOption strong{font-size:14px;color:#204833}.hdMvpCompare .hdMvpOption small{color:#587062;font-size:12px;line-height:1.6}.hdMvpCompare .hdV6LinkButton{margin-top:17px}
+
+/* Aircon 1.0 clean mobile shell: no repeated landing hero during the questionnaire. */
+#home.hidden,.hd-new-home.hidden{display:none!important}
+#home.hd-new-home{gap:12px;padding:0 0 24px}
+#home .hd-cover{padding:clamp(26px,6vw,42px);border-radius:24px}
+#home .hd-cover h1{font-size:clamp(35px,7vw,52px);margin:18px 0 12px;line-height:1.1}
+#home .hd-cover p{font-size:15px;line-height:1.65;margin:0 0 22px;max-width:490px}
+#home .hd-hero-cta{padding:15px 18px;font-size:16px}
+#home .hd-cover-small{margin-top:11px}
+#home .hd-home-footer{padding:9px 5px;display:grid;gap:12px;color:#708174;font-size:12px}
+#home .hd-home-footer details summary{font-size:12px;cursor:pointer}
+#home .hd-home-footer details p{max-width:580px;font-size:12px;line-height:1.65}
+#home .hd-secondary-link{padding:0;color:#235d3b}
+body:has(#home:not(.hidden)) .navbtns{display:none}
+body:has(#wiz:not(.hidden)) .navbtns,body:has(#result:not(.hidden)) .navbtns,body:has(#advanced:not(.hidden)) .navbtns{display:none}
+.nav{position:relative}
+.navin{height:54px}
+.wrap{padding-top:14px}
+@media(max-width:650px){#home .hd-cover{padding:30px 23px}#home .hd-cover h1{font-size:40px}#home .hd-cover p{font-size:15px}#home .hd-hero-cta{font-size:15px}}
 </style>
 </head>
 <body>
@@ -185,24 +204,17 @@ body .top{display:none!important} .wrap{padding-top:12px} .nav .navbtns .navbtn:
 <div class="wrap">
 
 <section id="home" class="hd-new-home">
-  <div class="hd-cover">
-    <span class="hd-overline"><span class="hd-live-dot"></span> HOME DECISION · AIRCON 1.0</span>
-    <h1>เลือกแอร์ให้เป็น<br><em>เรื่องง่ายกว่านี้</em></h1>
-    <p>แค่บอกลักษณะห้อง เราช่วยคัดทางเลือกที่น่าพิจารณาให้คุณ พร้อมบอกสิ่งที่ควรเช็กก่อนซื้อ</p>
-    <button class="btn hd-hero-cta" onclick="startMode('quick')">เริ่มเลือกแอร์สำหรับห้องของฉัน <span aria-hidden="true">↗</span></button>
-    <div class="hd-cover-small">ไม่ต้องรู้ BTU ล่วงหน้า · ไม่ต้องสมัครสมาชิก · ใช้ได้ฟรี</div>
-  </div>
-  <div class="hd-home-method">
-    <div class="hd-home-intro"><span class="hd-step-tag">HOW IT WORKS</span><h2>ตอบไม่กี่เรื่อง<br>แล้วไปต่อได้เลย</h2></div>
-    <div class="hd-method-grid">
-      <div><b>01</b><strong>เล่าเรื่องห้อง</strong><small>พื้นที่ แดด และรูปแบบห้อง</small></div>
-      <div><b>02</b><strong>บอกสิ่งที่สำคัญ</strong><small>ความต้องการและงบประมาณ</small></div>
-      <div><b>03</b><strong>ได้คำตอบที่ใช้ต่อได้</strong><small>รุ่นที่ควรดู หรือข้อมูลส่งให้ช่าง</small></div>
-    </div>
-  </div>
-  <div class="hd-home-note"><span>บ้านแต่ละหลังไม่เหมือนกัน</span><h3>พื้นที่เปิดโล่งก็เริ่มได้</h3><p>ถ้าห้องมีหลายส่วนเชื่อมกัน เราจะช่วยสรุปสิ่งที่ต้องตรวจหน้างาน แทนการฟันธงรุ่นหรือจำนวนเครื่องโดยไม่มีข้อมูลพอ</p></div>
-  <div class="hd-home-more"><button class="hd-secondary-link" onclick="startMode('detailed')">มีข้อมูลห้องอยู่แล้ว? ใช้แบบละเอียด <span>↗</span></button><details><summary>Home Decision คัดเลือกอย่างไร?</summary><p>เราใช้ข้อมูลห้องและสเปกที่ตรวจสอบได้มาคัดกรองเบื้องต้น ไม่รับรองความเหมาะสมเชิงวิศวกรรมโดยไม่มีการสำรวจหน้างาน และไม่ขายตำแหน่งคำแนะนำให้แบรนด์</p></details></div>
-  <span id="runtimeMode" class="hidden"></span>
+ <div class="hd-cover">
+  <span class="hd-overline"><span class="hd-live-dot"></span> HOME DECISION · AIRCON</span>
+  <h1>เลือกแอร์ให้<br><em>เหมาะกับห้อง</em></h1>
+  <p>บอกเรื่องห้องไม่กี่ข้อ แล้วดูรุ่นที่ควรเปรียบเทียบ หรือสิ่งที่ต้องตรวจเพิ่มเติมก่อนซื้อ</p>
+  <button class="btn hd-hero-cta" onclick="startMode('quick')">เริ่มเลือกแอร์ <span aria-hidden="true">↗</span></button>
+  <div class="hd-cover-small">ไม่ต้องรู้ BTU · ไม่ต้องสมัครสมาชิก · ฟรี</div>
+ </div>
+ <div class="hd-home-footer"><span>คัดกรองจากข้อมูลที่ตรวจสอบได้ ไม่ขายอันดับให้แบรนด์</span>
+ <button class="hd-secondary-link" onclick="startMode('detailed')">รู้ข้อมูลห้องแล้ว? ใช้แบบละเอียด ↗</button>
+ <details><summary>Home Decision ช่วยเรื่องอะไร?</summary><p>สำหรับห้องทั่วไป เราช่วยคัดกรองขนาดและรุ่นที่ควรดู ส่วนพื้นที่เปิดเชื่อมหรือซับซ้อน เราสรุปโจทย์ให้ช่างตรวจต่อก่อนเลือกรุ่นจริง</p></details></div>
+ <span id="runtimeMode" class="hidden"></span>
 </section>
 <section id="wiz" class="hidden"><div id="stepmeta" class="muted"></div><div class="progress"><div id="bar" class="bar"></div></div><div id="box" class="card"></div></section>
 <section id="advanced" class="hidden">
