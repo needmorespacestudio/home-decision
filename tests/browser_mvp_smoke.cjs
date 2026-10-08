@@ -28,6 +28,9 @@ async function run(){
   assert.equal(await expr("document.querySelector('.hd-new-home')!==null"),true,'new home present '+JSON.stringify(await expr("({url:location.href,ready:document.readyState,title:document.title,body:document.body?.innerText?.slice(0,180)})")));
   assert.equal(await expr("document.documentElement.scrollWidth<=innerWidth+1"),true,'no horizontal overflow on '+width);
   await expr("startMode('quick')");
+  assert.equal(await expr("getComputedStyle(document.getElementById('home')).display"),'none','landing must disappear in questionnaire');
+  assert.equal(await expr("getComputedStyle(document.querySelector('.navbtns')).display"),'none','navigation start-over action must not compete with questionnaire');
+
   await expr("hdCorePick('room','bed');hdCorePick('openDetail','closed');");
   await expr("next()");
   assert.equal(await expr("i"),1,'first quick page navigable');
@@ -38,6 +41,8 @@ async function run(){
   assert.equal(await expr("getQs()[i][0]"),'budget','simple room reaches preferences');
   await expr("next();next()");
   assert.equal(await expr("!result.classList.contains('hidden')"),true,'simple room shows result');
+  assert.equal(await expr("getComputedStyle(document.getElementById('home')).display"),'none','landing stays hidden on results');
+
   assert.equal(await expr("!!result.querySelector('.hdV6Hero')||!!result.querySelector('.answerHero')"),true,'simple room result visible');
   const productCount=await expr("result.querySelectorAll('.hdV6Product').length");
   if(productCount){
