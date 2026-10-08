@@ -42,7 +42,7 @@ test('double volume is a hard gate',()=>{const c=harness({ceilingClass:'double'}
 test('unsupported other room is a hard gate',()=>{const c=harness({room:'other'});assert(c.hdResidentialV3.hardGateReasons().length>0)});
 test('heavy connected kitchen is a hard gate',()=>{const c=harness({room:'ld',openDetail:'open',kitchenUse:'heavy'});assert(c.hdResidentialV3.hardGateReasons().some(x=>x.includes('ครัว')))});
 test('large open residential area is a hard gate',()=>{const c=harness({area:55,width:null,length:null,dimensionMode:'area',connectedArea:10,openDetail:'open'});assert(c.hdResidentialV3.hardGateReasons().some(x=>x.includes('60')))});
-test('west full glass without shade is a hard gate for larger room',()=>{const c=harness({area:35,sun:'afternoon',glass:'high',shading:'none'});assert(c.hdResidentialV3.hardGateReasons().some(x=>x.includes('กระจก')))});
+test('west full glass without shade is a hard gate for larger room',()=>{const c=harness({area:35,width:null,length:null,dimensionMode:'area',sun:'afternoon',glass:'high',shading:'none'});assert(c.hdResidentialV3.hardGateReasons().some(x=>x.includes('กระจก')))});
 test('two unknown core variables are soft rather than forced fake certainty',()=>{const c=harness({sun:'unknown',overhead:'unknown'});assert(c.hdResidentialV3.softGateReasons().some(x=>x.includes('2 ข้อ')))});
 test('adaptive survey is capped at four questions',()=>{const c=harness({room:'ld',overhead:'roof',roofInsulation:'unknown',sun:'afternoon',glass:'high',openDetail:'open',area:40,shapeDetail:null});assert(c.hdResidentialV3.adaptiveQuestions().length<=4)});
 test('roof creates insulation follow-up',()=>{const c=harness({overhead:'roof'});assert(c.hdResidentialV3.adaptiveQuestions().some(q=>q[0]==='roofInsulation'))});
