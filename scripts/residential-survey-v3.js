@@ -516,7 +516,7 @@ function hdResultV6(){
  result.appendChild(lead);result.appendChild(details);
  const goBack=result.querySelector('button.backhome');if(goBack)goBack.textContent='← แก้ข้อมูลห้อง';
 }
-function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;const parent=document.getElementById('hdV5More');if(parent)parent.open=true;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
+function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;const outer=document.getElementById('hdV6Details');if(outer)outer.open=true;const parent=document.getElementById('hdV5More');if(parent)parent.open=true;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
 window.hdOpenResultSection=hdOpenResultSection;
 
 configurationResult=function(){
