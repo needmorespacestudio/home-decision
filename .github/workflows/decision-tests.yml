@@ -31,6 +31,8 @@ jobs:
         run: node tests/test_cooling_load_v2.cjs
       - name: Residential survey V3
         run: node tests/test_residential_v3.cjs
+      - name: Chromium mobile and desktop MVP journeys
+        run: node tests/browser_mvp_smoke.cjs
       - name: Configuration
         run: node tests/test_configuration.cjs
       - name: Configuration V2 shadow screening
