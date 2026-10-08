@@ -10,7 +10,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
 <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
-<title>Home Decision Thailand — Aircon Beta</title>
+<title>Home Decision — เลือกแอร์ง่ายขึ้น</title>
 <style>
 :root{--bg:#f6f6f3;--card:#fff;--text:#151515;--muted:#70706b;--line:#e6e6df;--soft:#f1f1ec;--good:#176239;--amber:#805700;--bad:#8a3030}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;color:var(--text)}.nav{position:sticky;top:0;z-index:30;background:rgba(246,246,243,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navin{max-width:760px;margin:auto;height:58px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.navbrand{font-weight:950;cursor:pointer}.navbtns{display:flex;gap:7px}.navbtn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:800;cursor:pointer}
@@ -129,6 +129,48 @@ button:focus-visible,summary:focus-visible,label:focus-visible,a:focus-visible{o
 /* One centered mobile layout on every screen. */
 .wrap,.navin{max-width:460px}.wrap{padding:20px 18px 64px}.card{padding:24px 0;background:transparent}.mainRecommendation{padding:22px 18px}.answerHero h1{font-size:28px}.answerHero strong{font-size:42px}.recommendationHeader{align-items:flex-start;gap:12px}.recommendationHeader>div:first-child{min-width:0;flex:1}.recommendationHeader h2{font-size:22px}.recommendationHeader .productimg{width:96px;height:124px;flex-shrink:0}.imgph{font-size:11px;line-height:1.5;padding:8px}.imgph .cassetteicon{width:34px;height:34px;border-width:2px}.imgph .cassetteicon:before{top:14px;left:5px;right:5px}.imgph .cassetteicon:after{left:14px;top:5px;bottom:5px}.model{font-size:14px}.productLinks{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.productLinks .outlinebtn{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 12px;text-decoration:none;color:var(--text);flex:1 1 auto;margin:0}.detailImage{width:100%;height:220px}.detailImage img{max-width:100%;max-height:100%;object-fit:contain}.quoteHero,.modegrid{grid-template-columns:1fr}.actions{grid-template-columns:1fr 1.5fr}.navin{padding:0 18px}.navbtns .navbtn:first-child{display:none}
 </style>
+<style id="hd-aircon-redesign">
+:root{--bg:#f6f8f6;--card:#fff;--text:#19342a;--muted:#65756b;--line:#dde6df;--soft:#edf4ed}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif}
+.nav{background:rgba(250,252,249,.95);border-color:#e5ece5}.navin{height:66px;max-width:900px}.navbrand{letter-spacing:.01em;color:#193a2b}.navbtns #installBtn{display:none!important}.navbtns .navbtn:last-child{border-color:#e0e9e1;background:#f5faf6}
+.wrap{max-width:880px;padding:14px 18px 88px}.top{padding:9px 1px 17px}.top .brand{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#637668}.tag{background:#eaf3ed;color:#2c6045;border-color:#d8e8db}
+.hd-new-home{display:grid;gap:30px;padding:0 0 30px}.hd-cover{padding:48px clamp(23px,7vw,60px) 44px;background:#173d30;color:#fff;border-radius:30px;position:relative;overflow:hidden}.hd-cover:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #ffffff19;border-radius:50%;right:-118px;top:-75px;pointer-events:none}.hd-overline{display:flex;gap:9px;align-items:center;font-size:11px;letter-spacing:.12em;color:#d5e8d8;font-weight:750}.hd-live-dot{width:8px;height:8px;background:#b7e8a0;border-radius:50%}.hd-cover h1{font-size:clamp(39px,8vw,69px);line-height:1.11;letter-spacing:-.045em;margin:24px 0 18px;max-width:650px}.hd-cover h1 em{color:#b9e8aa;font-style:normal}.hd-cover p{font-size:clamp(15px,3vw,18px);line-height:1.8;color:#e3eee6;max-width:510px;margin:0 0 29px}.hd-hero-cta{background:#d4f2bc;color:#143a2a;max-width:480px;padding:18px 20px;border-radius:13px;display:flex;justify-content:space-between;align-items:center;font-size:15px}.hd-hero-cta span{font-size:22px}.hd-cover-small{font-size:11px;color:#c1d6c7;margin-top:15px}
+.hd-home-method{padding:5px 4px}.hd-home-intro{margin-bottom:20px}.hd-step-tag{font-size:11px;letter-spacing:.12em;font-weight:800;color:#46845d}.hd-home-intro h2{font-size:clamp(25px,5vw,34px);line-height:1.22;margin:8px 0 16px;letter-spacing:-.03em}.hd-method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.hd-method-grid>div{display:flex;flex-direction:column;align-items:start;gap:12px;border:1px solid #dbe6dd;background:#fff;border-radius:20px;padding:21px}.hd-method-grid b{font-size:13px;color:#689b78}.hd-method-grid strong{font-size:15px}.hd-method-grid small{font-size:12px;color:#7a867d;line-height:1.5}
+.hd-home-note{padding:25px 26px;border-radius:20px;background:#e6efe8}.hd-home-note span{font-size:11px;font-weight:750;color:#4b7958}.hd-home-note h3{font-size:23px;margin:10px 0}.hd-home-note p{font-size:14px;max-width:650px;color:#4d6556;margin:0;line-height:1.75}.hd-home-more{display:grid;gap:12px}.hd-secondary-link{background:transparent;border:0;font-size:13px;font-weight:700;color:#34684c;padding:9px 0;cursor:pointer;text-align:left}.hd-secondary-link span{margin-left:9px}.hd-home-more details{font-size:13px;color:#61746a}.hd-home-more details summary{cursor:pointer}.hd-home-more details p{font-size:12px;line-height:1.8}
+#wiz{max-width:690px;margin:6px auto}#wiz #box{border:1px solid #e0e8e1;box-shadow:0 22px 65px #223b2c0c;border-radius:25px;padding:clamp(22px,5vw,35px);min-height:360px}#wiz #box>h2{font-size:clamp(25px,5vw,34px);letter-spacing:-.035em;line-height:1.25;margin:12px 0 18px}#wiz .opt{border-radius:15px;background:#fbfdfb;border:1px solid #dee8df;padding:17px 18px;line-height:1.48;color:#264535}#wiz .opt b{font-size:14px;font-weight:650}#wiz .opt.selected{border:2px solid #397550;padding:16px 17px;background:#eaf5e9}#wiz .coreField{padding:13px 0;border-bottom:1px solid #eef1ed}#wiz .coreField:last-child{border:0}#wiz .coreField h3{font-size:17px;line-height:1.4}#wiz .btn:not(.back){background:#235e40}#wiz .progress{height:5px;background:#e6eee5}#wiz .bar{background:#43845d}#wiz #stepmeta{font-size:12px}#wiz .actions{gap:9px}
+#result{max-width:690px;margin:0 auto}#result .answerHero{box-shadow:none}#result .hdResultV4Hero{background:#173d30;border-radius:25px;padding:clamp(22px,5vw,33px)}#result .hdV4Answer{padding:21px;border-radius:17px}#result .hdV4Answer strong{font-size:19px}#result .hdV4Primary{background:#cbecb8}#result .hdV5More{margin-top:16px;border-radius:18px}#result .hdMvpTop3{box-shadow:none;border-radius:19px}#result .hdMvpModel{border-radius:13px;background:#f8fbf8}
+@media(max-width:650px){.wrap{padding:12px 14px 74px}.navbrand{font-size:12px}.navbtns .navbtn{font-size:10px;padding:7px}.hd-cover{padding:40px 22px;border-radius:24px}.hd-cover h1{font-size:39px}.hd-method-grid{grid-template-columns:1fr;gap:9px}.hd-method-grid>div{display:grid;grid-template-columns:32px 1fr;gap:4px 9px;padding:15px}.hd-method-grid b{grid-row:span 2}.hd-method-grid small{grid-column:2}.hd-home-note{padding:22px}.top{padding:6px 1px 13px}}
+#result .hdV6Hero{background:#163e2e;color:#fff;border:0;border-radius:26px;padding:clamp(23px,5vw,36px);box-shadow:none;margin:14px 0 16px}
+#result .hdV6Overline{font-size:11px;font-weight:800;color:#bbe4b6;letter-spacing:.08em}
+#result .hdV6Hero h1{font-size:clamp(28px,6vw,39px);color:#fff;line-height:1.17;margin:13px 0 8px;letter-spacing:-.03em}
+#result .hdV6Room{font-size:13px;color:#cce1d1;margin:0 0 20px}
+#result .hdV6Verdict{padding:21px 19px;background:#f6fbf4;border-radius:18px;color:#183c2b;display:grid;gap:6px}
+#result .hdV6Verdict span{font-size:12px;color:#5d7866}
+#result .hdV6Verdict strong{font-size:clamp(19px,4vw,23px);line-height:1.35}
+#result .hdV6Verdict small{font-size:12px;color:#60796a;line-height:1.5}
+#result .hdV6Why{margin-top:17px;color:#e5efe7;font-size:13px}
+#result .hdV6Why b{color:#bce7b8}
+#result .hdV6Why p{margin:7px 0 0;font-size:13px;color:#d9e7de;line-height:1.7}
+#result .hdV6Content{background:#fff;border:1px solid #e0e9e1;border-radius:23px;padding:clamp(17px,4vw,26px);margin:0 0 14px}
+#result .hdV6SectionHead span{font-size:11px;font-weight:800;color:#418055;letter-spacing:.08em;text-transform:uppercase}
+#result .hdV6SectionHead h2{font-size:clamp(20px,4vw,26px);letter-spacing:-.02em;margin:8px 0}
+#result .hdV6SectionHead p,#result .hdV6Disclaimer{font-size:12px;color:#677a6c;line-height:1.6}
+#result .hdV6Product{width:100%;display:flex;align-items:center;gap:13px;background:#f7faf7;border:1px solid #e5ede4;border-radius:14px;margin:10px 0;padding:16px 13px;text-align:left;color:#234633;cursor:pointer}
+#result .hdV6Rank{font-size:18px;font-weight:800;color:#70a481}
+#result .hdV6ProductText{flex:1;min-width:0;display:grid;gap:5px}
+#result .hdV6ProductText b{font-size:14px;overflow-wrap:anywhere}
+#result .hdV6ProductText small{font-size:11px;color:#718474;line-height:1.5}
+#result .hdV6Next p{color:#556b5d;font-size:14px;line-height:1.75}
+#result .hdV6LinkButton{background:#d1edbe;border:0;color:#214c34;padding:14px 17px;border-radius:12px;font-weight:800;cursor:pointer;width:100%;margin-top:10px}
+#result .hdV6Details{background:#f0f5ee;border:1px solid #d9e6d8;border-radius:19px;margin-bottom:25px;overflow:hidden}
+#result .hdV6Details>summary{cursor:pointer;padding:19px;font-size:13px;font-weight:800;display:flex;justify-content:space-between;color:#365942}
+#result .hdV6Details>p{font-size:12px;color:#6c7d70;margin:0 19px 12px}
+#result .hdV6Preserved{margin:10px;padding:12px;border-radius:15px;background:white}
+#result .hdV6Preserved>.hdV5More,#result .hdV6Preserved>.hdMvpTop3{margin:8px 0}
+#result .hdMvpSurvey{background:#173d30;color:#fff;box-shadow:none;border-radius:26px;padding:clamp(24px,5vw,34px)}
+#result .hdMvpSurvey h1,#result .hdMvpSurvey .kicker{color:#fff}
+#result .hdMvpSurvey .muted{color:#cadcd0}
+</style>
 </head>
 <body>
 <div class="nav"><div class="navin">
@@ -140,24 +182,25 @@ button:focus-visible,summary:focus-visible,label:focus-visible,a:focus-visible{o
 </div></div>
 <div class="wrap">
 <div class="top"><div class="brand">Home Decision</div><div class="tag">แอร์สำหรับบ้าน · Beta</div></div>
-<section id="home" class="card">
-<div class="kicker">INDEPENDENT HOME DECISION PLATFORM</div>
-<h1>ก่อนซื้อแอร์<br>ตัดสินใจให้ชัดก่อนจ่ายเงินจริง</h1>
-<p class="muted">ควรติดกี่เครื่อง แบบไหน และรุ่นใดเหมาะกับบ้านคุณ? เราช่วยสรุปเหตุผลและข้อแลกเปลี่ยน พร้อมสิ่งที่ต้องถามร้านก่อนซื้อ</p>
-<span id="runtimeMode" class="hidden"></span><div class="modegrid">
-  <button class="modecard recommended" onclick="startMode('quick')">
-    <span class="modebadge">แนะนำสำหรับคนทั่วไป</span>
-    <b>แบบง่าย</b>
-    <small>ตอบเรื่องห้อง 8 ข้อ แล้วเลือกความต้องการและงบ • ถามเพิ่มเฉพาะที่จำเป็น</small>
-  </button>
-  <button class="modecard" onclick="startMode('detailed')">
-    <b>แบบละเอียด</b>
-    <small>สำหรับคนที่รู้ข้อมูลห้อง ฝ้า กระจก และระบบไฟ • ปรับรายละเอียดก่อนดูคำแนะนำ</small>
-  </button>
-</div>
-<details class="disclosure"><summary>เราช่วยตัดสินใจอะไรบ้าง?</summary><p>จำนวนเครื่องและการแบ่งโซน → ขนาดและประเภท → รุ่นที่เหมาะกับความต้องการ → เตรียมคำถามและเทียบใบเสนอราคา</p><p>คำแนะนำเป็นกลาง ไม่มีแบรนด์ใดซื้ออันดับได้ รุ่นและราคายังไม่ครอบคลุมทั้งตลาด ใบเสนอราคายังกรอกเทียบเองหลังแนบไฟล์</p></details>
-<p class="disclaimer">รุ่นทดลองสำหรับบ้านพักอาศัย • ห้องซับซ้อนต้องให้ช่างตรวจหน้างานก่อนซื้อ</p>
-<p class="muted" style="font-size:12px">อัปเดต 8 ต.ค. 2026 · Beta 2026.10.08.1 <button class="navbtn" onclick="location.reload()">โหลดเวอร์ชันล่าสุด</button></p>
+<section id="home" class="hd-new-home">
+  <div class="hd-cover">
+    <span class="hd-overline"><span class="hd-live-dot"></span> HOME DECISION · AIRCON 1.0</span>
+    <h1>เลือกแอร์ให้เป็น<br><em>เรื่องง่ายกว่านี้</em></h1>
+    <p>แค่บอกลักษณะห้อง เราช่วยคัดทางเลือกที่น่าพิจารณาให้คุณ พร้อมบอกสิ่งที่ควรเช็กก่อนซื้อ</p>
+    <button class="btn hd-hero-cta" onclick="startMode('quick')">เริ่มเลือกแอร์สำหรับห้องของฉัน <span aria-hidden="true">↗</span></button>
+    <div class="hd-cover-small">ไม่ต้องรู้ BTU ล่วงหน้า · ไม่ต้องสมัครสมาชิก · ใช้ได้ฟรี</div>
+  </div>
+  <div class="hd-home-method">
+    <div class="hd-home-intro"><span class="hd-step-tag">HOW IT WORKS</span><h2>ตอบไม่กี่เรื่อง<br>แล้วไปต่อได้เลย</h2></div>
+    <div class="hd-method-grid">
+      <div><b>01</b><strong>เล่าเรื่องห้อง</strong><small>พื้นที่ แดด และรูปแบบห้อง</small></div>
+      <div><b>02</b><strong>บอกสิ่งที่สำคัญ</strong><small>ความต้องการและงบประมาณ</small></div>
+      <div><b>03</b><strong>ได้คำตอบที่ใช้ต่อได้</strong><small>รุ่นที่ควรดู หรือข้อมูลส่งให้ช่าง</small></div>
+    </div>
+  </div>
+  <div class="hd-home-note"><span>บ้านแต่ละหลังไม่เหมือนกัน</span><h3>พื้นที่เปิดโล่งก็เริ่มได้</h3><p>ถ้าห้องมีหลายส่วนเชื่อมกัน เราจะช่วยสรุปสิ่งที่ต้องตรวจหน้างาน แทนการฟันธงรุ่นหรือจำนวนเครื่องโดยไม่มีข้อมูลพอ</p></div>
+  <div class="hd-home-more"><button class="hd-secondary-link" onclick="startMode('detailed')">มีข้อมูลห้องอยู่แล้ว? ใช้แบบละเอียด <span>↗</span></button><details><summary>Home Decision คัดเลือกอย่างไร?</summary><p>เราใช้ข้อมูลห้องและสเปกที่ตรวจสอบได้มาคัดกรองเบื้องต้น ไม่รับรองความเหมาะสมเชิงวิศวกรรมโดยไม่มีการสำรวจหน้างาน และไม่ขายตำแหน่งคำแนะนำให้แบรนด์</p></details></div>
+  <span id="runtimeMode" class="hidden"></span>
 </section>
 <section id="wiz" class="hidden"><div id="stepmeta" class="muted"></div><div class="progress"><div id="bar" class="bar"></div></div><div id="box" class="card"></div></section>
 <section id="advanced" class="hidden">
