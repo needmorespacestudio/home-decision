@@ -352,12 +352,14 @@ siteFlags=function(){
  return [...new Set([...base,...softGateReasons(),...hardGateReasons()])];
 };
 
+function hdReturnToSurvey(){if(!wiz||!result)return;result.classList.add('hidden');wiz.classList.remove('hidden');i=0;render();scrollTo(0,0)}
+window.hdReturnToSurvey=hdReturnToSurvey;
 function hdMvpSurveyHTML(){
  const n=Number(s.area)||0;
  const escaped=v=>String(v==null?'':v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
  const reason=s.room==='other'?'พื้นที่ลักษณะพิเศษต้องตรวจภาระจากการใช้งาน':s.ceilingClass==='double'?'โถงสูงต้องตรวจทางเดินลมจริง':s.openDetail==='open'||s.room==='ld'?'หลายพื้นที่เปิดเชื่อมกัน ต้องตรวจตำแหน่งจ่ายลมและขนาดรายส่วน':'ต้องดูรูปทรงและข้อจำกัดก่อนเลือกจำนวนเครื่อง';
  let l=null;try{l=load()}catch(e){}
- return '<button class="navbtn backhome" onclick="openAdvancedFromResult()">← ปรับข้อมูลห้อง</button>'+
+ return '<button class="navbtn backhome" onclick="hdReturnToSurvey()">← แก้ข้อมูลห้อง</button>'+
  '<header class="answerHero hdMvpSurvey"><p class="kicker">HOME DECISION · ขั้นตอนต่อไป</p>'+
  '<h1>พื้นที่นี้ควรตรวจรูปแบบติดตั้งก่อน</h1><p>'+escaped(n.toLocaleString('th-TH'))+' ตร.ม. · '+escaped(reason)+'</p>'+
  '<div class="hdV4Answer"><strong>ยังไม่ควรฟันธงว่าใช้แอร์กี่เครื่อง</strong><span>เราจะไม่แบ่ง BTU เป็นรายโซนหรือเลือกชนิดเครื่องให้ทันทีโดยไม่มีแปลน</span></div>'+
