@@ -203,7 +203,7 @@ function peopleHTML(){
 function usageHTML(){
  ensure();
  const opts=[['night','กลางคืน / ตอนนอน'],['day','กลางวัน'],['afternoon','บ่ายถึงค่ำ'],['long','เกือบทั้งวัน'],['occasional','ใช้เป็นครั้งคราว']];
- return '<p class="muted">เลือกช่วงที่เปิดแอร์บ่อยที่สุด หากบางวันเปิดช่วงอื่น ระบบยังต้องตรวจภาระสูงสุดด้วย</p><div class="opts">'+opts.map(([v,t])=>'<button class="opt '+(s.usage===v?'selected':'')+'" onclick="pick(\'usage\',\''+v+'\')">'+t+'</button>').join('')+'</div>';
+ return '<p class="muted">เลือกช่วงที่เปิดแอร์บ่อยที่สุด หากบางวันเปิดช่วงอื่น ระบบยังต้องตรวจภาระสูงสุดด้วย</p><div class="opts">'+opts.map(([v,t])=>'<button class="opt '+(s.usage===v?'selected':'')+'" onclick="hdCorePick(\'usage\',\''+v+'\')">'+t+'</button>').join('')+'</div>';
 }
 function connectedAreaHTML(){
  return `<p class="muted">ไม่ต้องวัดเป๊ะ ใส่พื้นที่คร่าว ๆ ของส่วนที่เปิดถึงกันนอกห้องหลัก</p><label>พื้นที่เปิดเชื่อมเพิ่ม (ตร.ม.)</label><input type="number" min="0" max="200" step="1" value="${s.connectedArea??''}" oninput="s.connectedArea=this.value===''?null:Number(this.value)">`;
