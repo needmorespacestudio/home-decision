@@ -33,6 +33,17 @@ function harness(overrides={},social={}){
 }
 let n=0;function test(name,fn){fn();n++;console.log('ok',n,'-',name)}
 
+test('real navigation: page 1 does not demand a page 2 ceiling answer, and page 2 does',()=>{
+ const c=harness({room:'bed',openDetail:'closed',ceilingClass:null,area:16,width:4,length:4});
+ c.next();assert.equal(c.i,1,'page 1 should advance without ceiling answer');
+ c.next();assert.equal(c.i,1,'page 2 must wait for ceiling answer');
+ c.s.ceilingClass='normal';c.next();assert.equal(c.i,2,'page 2 advances after ceiling is selected');
+});
+test('MVP 50sqm connected room has four core pages and no premature multi-unit decision',()=>{
+ const c=harness({room:'ld',area:50,width:5,length:10,openDetail:'open',ceilingClass:'normal'});
+ const keys=Array.from(c.hdResidentialV3.quickQuestions(),x=>x[0]);
+ assert.deepEqual(keys,['homePage1','homePage2','homePage3','homePage4']);
+});
 test('new preview presents one result summary and keeps underlying detail actions accessible',()=>{const src=fs.readFileSync('scripts/residential-survey-v3.js','utf8');assert.match(src,/function hdResultV6\(\)/);assert.match(src,/hdResultV4\(\);\s*hdResultV6\(\)/);assert.match(src,/hdV6Details/);assert.match(src,/hdV6Product/);assert.match(src,/outer\.open=true/);assert.match(src,/oldNodes/);});
 test('Preview Top3 cards open corresponding product detail only for verified setups',()=>{const src=fs.readFileSync('scripts/residential-survey-v3.js','utf8');assert.match(src,/showProductDetail\('\+esc\(JSON\.stringify\(p\.id\)\)/);assert.match(src,/const top=\(supported\?unique:\[\]\)\.slice\(0,3\)/);assert.match(src,/top\.length\+' รุ่นที่ควรดูต่อ/);assert.match(src,/const outer=document\.getElementById\('hdV6Details'\)/)});
 test('Result V4 keeps only a concise primary answer and three expandable sections',()=>{const src=fs.readFileSync('scripts/residential-survey-v3.js','utf8');assert.match(src,/function hdResultV4\(\)/);assert.match(src,/hdV4Choices/);assert.match(src,/hdV4Products/);assert.match(src,/hdV4Details/);assert.match(src,/hdResultRedesign\(\);\s*hdResultV4\(\)/);assert.match(src,/complex\?'ควรเปรียบเทียบรูปแบบติดตั้งก่อน'/);assert.match(src,/กลุ่ม|ข้อมูลวิศวกรรมและข้อจำกัดทั้งหมด/)});
