@@ -74,6 +74,7 @@ function ensure(){
 
 function derive(){
  ensure();
+ if(flowMode!=='quick')return; // Detailed answers use their original numeric/technical fields.
  if(s.dimensionMode==='dimensions'&&Number(s.width)>0&&Number(s.length)>0){
   s.area=Math.round(Number(s.width)*Number(s.length)*10)/10;
   const a=Math.max(Number(s.width),Number(s.length)),b=Math.min(Number(s.width),Number(s.length));
@@ -196,7 +197,7 @@ function peopleUsageHTML(){
  return `<p class="muted">เลือกจำนวนคนช่วงที่คนเยอะตามปกติ และเวลาที่เปิดแอร์บ่อยที่สุด</p><label>จำนวนคน</label><div class="opts grid2">${peopleOpts.map(([v,t])=>`<button class="opt ${Number(s.people)===v?'selected':''}" onclick="s.people=${v};render()">${t}</button>`).join('')}</div><label>ช่วงใช้งาน</label><div class="opts">${usageOpts.map(([v,t])=>`<button class="opt ${s.usage===v?'selected':''}" onclick="s.usage='${v}';render()">${t}</button>`).join('')}</div>`;
 }
 function connectedAreaHTML(){
- return `<p class="muted">ไม่ต้องวัดเป๊ะ ใส่พื้นที่คร่าว ๆ ของส่วนที่เปิดถึงกันนอกห้องหลัก</p><label>พื้นที่เปิดเชื่อมเพิ่ม (ตร.ม.)</label><input type="number" min="0" max="200" step="1" value="${s.connectedArea||''}" oninput="s.connectedArea=Number(this.value)||null">`;
+ return `<p class="muted">ไม่ต้องวัดเป๊ะ ใส่พื้นที่คร่าว ๆ ของส่วนที่เปิดถึงกันนอกห้องหลัก</p><label>พื้นที่เปิดเชื่อมเพิ่ม (ตร.ม.)</label><input type="number" min="0" max="200" step="1" value="${s.connectedArea??''}" oninput="s.connectedArea=this.value===''?null:Number(this.value)">`;
 }
 
 render=function(){
@@ -245,7 +246,7 @@ next=function(){
   if(!(Number(s.area)>=5&&Number(s.area)<=250))return alert('กรุณาระบุพื้นที่ประมาณ 5–250 ตร.ม.');
  }
  if(k==='people'&&(!(Number(s.people)>0)||!s.usage))return alert('กรุณาเลือกจำนวนคนและช่วงเวลาที่เปิดแอร์');
- if(k==='connectedArea'&&!(Number(s.connectedArea)>=0))return alert('กรุณาระบุพื้นที่เปิดเชื่อมโดยประมาณ');
+ if(k==='connectedArea'&&(s.connectedArea==null||!Number.isFinite(Number(s.connectedArea))||Number(s.connectedArea)<0||Number(s.connectedArea)>200))return alert('กรุณาระบุพื้นที่เปิดเชื่อมโดยประมาณ 0–200 ตร.ม.');
  if(k==='specialNeeds'&&!s.needsAnswered)return alert('เลือกความต้องการพิเศษ หรือไม่มีเป็นพิเศษ');
  if(k==='budget'&&['target','ceiling'].includes(s.budgetMode)&&(!Number.isFinite(s.budgetAmount)||s.budgetAmount<=0))return alert('กรุณาระบุงบมากกว่า 0 บาท');
  if(k==='priorities'&&s.priorities.length!==3)return alert('กรุณาจัดอันดับให้ครบ Top 3');
@@ -258,13 +259,16 @@ configurationQuestions=function(){return flowMode==='quick'?configQs():baseConfi
 
 function hardGateReasons(){
  ensure();derive();const r=[];
+ const detailed=flowMode==='detailed';
+ const opening=detailed?s.open:s.openDetail;
+ const heightClass=detailed?(Number(s.height)>4?'double':Number(s.height)>3?'high':s.height==null?'unknown':'normal'):s.ceilingClass;
  if(s.room==='other')r.push('Aircon v1 รองรับห้องนอน ห้องนั่งเล่น และ Living + Dining ในบ้านก่อน');
- if(s.ceilingClass==='double')r.push('เพดานสูงมาก / Double volume ต้องดูตำแหน่งติดตั้งและการหมุนเวียนอากาศหน้างาน');
- if(['stair','outdoor'].includes(s.openDetail))r.push('พื้นที่เปิดถึงบันได โถงสูง หรือภายนอก ทำให้ขอบเขตภาระความเย็นไม่ชัด');
+ if(heightClass==='double')r.push('เพดานสูงมาก / Double volume ต้องดูตำแหน่งติดตั้งและการหมุนเวียนอากาศหน้างาน');
+ if(['stair','outdoor'].includes(opening))r.push('พื้นที่เปิดถึงบันได โถงสูง หรือภายนอก ทำให้ขอบเขตภาระความเย็นไม่ชัด');
  if(s.kitchenUse==='heavy'&&s.open!=='closed')r.push('ครัวผัด–ทอดที่เปิดเชื่อมกับพื้นที่แอร์ต้องประเมิน Hood และอากาศทดแทน');
  if(Number(s.area)+Number(s.connectedArea||0)>60&&s.open==='open')r.push('พื้นที่เปิดเชื่อมรวมเกินประมาณ 60 ตร.ม. ควรเห็นแปลนและทางเดินลมจริง');
  if(s.glass==='high'&&['afternoon','all'].includes(s.sun)&&s.shading==='none'&&Number(s.area)>30)r.push('กระจกมาก + แดดบ่าย + ไม่มีสิ่งบังแดด ทำให้ความไม่แน่นอนของ Solar gain สูง');
- const unknown=[s.sun,s.glass,s.overhead,s.ceilingClass,s.openDetail].filter(v=>!v||v==='unknown').length;
+ const unknown=[s.sun,s.glass,detailed?s.roof:s.overhead,heightClass,opening].filter(v=>!v||v==='unknown').length;
  if(unknown>=3)r.push('ข้อมูลตัวแปรหลักยังไม่แน่ใจหลายข้อ จึงไม่ควรฟันธงรุ่นพร้อมซื้อ');
  if(s.adaptiveOverflow)r.push('ห้องมีเงื่อนไขเสี่ยงหลายด้านเกินกว่าที่ Quick Flow ควรถามต่อ');
  if(safeLoadHigh()>=48000&&s.phase==='unknown')r.push('ภาระความเย็นระดับใหญ่ แต่ระบบไฟบ้านยังไม่ยืนยัน');
@@ -272,11 +276,12 @@ function hardGateReasons(){
 }
 function softGateReasons(){
  ensure();derive();const r=[];
+ const detailed=flowMode==='detailed';
  if(['roof','deck'].includes(s.overhead)&&['unknown',null].includes(s.roofInsulation))r.push('ชั้นบนสุดแต่ยังไม่ทราบฉนวนเหนือฝ้า/หลังคา');
- if(s.ceilingClass==='high')r.push('ฝ้าสูงกว่าปกติ ต้องตรวจตำแหน่งติดตั้งและทางเดินลม');
+ if(detailed?Number(s.height)>3:s.ceilingClass==='high')r.push('ฝ้าสูงกว่าปกติ ต้องตรวจตำแหน่งติดตั้งและทางเดินลม');
  if(['long','lshape','connected'].includes(s.shapeDetail))r.push('รูปทรงห้องอาจต้องแบ่งจุดจ่ายลมหรือ 2 เครื่อง');
  if((safeLoadHigh()>=24000||Number(s.area)>=35)&&s.phase==='unknown')r.push('ระบบไฟยังไม่ยืนยัน ควรให้ช่างตรวจมิเตอร์ เบรกเกอร์ และโหลดรวม');
- const unknown=[s.sun,s.glass,s.overhead,s.ceilingClass,s.openDetail].filter(v=>!v||v==='unknown').length;
+ const unknown=(detailed?[s.sun,s.glass,s.roof,s.height,s.open]:[s.sun,s.glass,s.overhead,s.ceilingClass,s.openDetail]).filter(v=>!v||v==='unknown').length;
  if(unknown===2)r.push('มีข้อมูลหลักไม่แน่ใจ 2 ข้อ ช่วง BTU ควรถูกมองเป็นช่วงกว้าง');
  return [...new Set(r)];
 }
@@ -364,9 +369,7 @@ restartToWizard=function(){
 
 // Replace the old marketing promise with the current residential contract.
 try{
- const homeTitle=document.querySelector('#home h1');if(homeTitle)homeTitle.innerHTML='เลือกแอร์สำหรับบ้าน<br>โดยไม่ต้องรู้ศัพท์แอร์';
- const homeLead=document.querySelector('#home p.muted');if(homeLead)homeLead.textContent='ตอบเรื่องที่คุณมองเห็นและใช้งานจริง → ระบบคัดขนาด จำนวนเครื่อง และประเภทก่อน → ค่อยเลือกรุ่นตามความต้องการ';
- const quickSmall=document.querySelector('#home .modecard.recommended small');if(quickSmall)quickSmall.textContent='8 คำถามหลัก • ถามเพิ่มเฉพาะห้องที่จำเป็น • ประมาณ 2–3 นาที';
+ const quickSmall=document.querySelector('#home .modecard.recommended small');if(quickSmall)quickSmall.textContent='ตอบเรื่องห้อง 8 ข้อ แล้วเลือกความต้องการและงบ • ถามเพิ่มเฉพาะที่จำเป็น';
 }catch(e){}
 
 window.hdResidentialV3={version:V,coreQuestions,adaptiveQuestions,hardGateReasons,softGateReasons,socialProofLabel,cohortKey,derive};

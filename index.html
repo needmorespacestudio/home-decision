@@ -139,23 +139,25 @@ button:focus-visible,summary:focus-visible,label:focus-visible,a:focus-visible{o
   </div>
 </div></div>
 <div class="wrap">
-<div class="top"><div class="brand">Aircon Decision</div><div class="tag">Aircon Beta • PWA</div></div>
+<div class="top"><div class="brand">Home Decision</div><div class="tag">แอร์สำหรับบ้าน · Beta</div></div>
 <section id="home" class="card">
 <div class="kicker">INDEPENDENT HOME DECISION PLATFORM</div>
-<h1>ก่อนซื้อแอร์<br>เช็กให้รู้ว่าห้องคุณต้องการอะไร</h1>
-<p class="muted">ตอบคำถามหลักไม่กี่ข้อ → ได้ช่วง BTU และตัวเลือกที่เหมาะ → ถ้าต้องการค่อยดูรายละเอียด/เทียบร้านต่อ</p>
+<h1>ก่อนซื้อแอร์<br>ตัดสินใจให้ชัดก่อนจ่ายเงินจริง</h1>
+<p class="muted">ควรติดกี่เครื่อง แบบไหน และรุ่นใดเหมาะกับบ้านคุณ? เราช่วยสรุปเหตุผลและข้อแลกเปลี่ยน พร้อมสิ่งที่ต้องถามร้านก่อนซื้อ</p>
 <span id="runtimeMode" class="hidden"></span><div class="modegrid">
   <button class="modecard recommended" onclick="startMode('quick')">
     <span class="modebadge">แนะนำสำหรับคนทั่วไป</span>
     <b>แบบง่าย</b>
-    <small>8 คำถามหลัก • ประมาณ 1 นาที • ถ้าไม่รู้รายละเอียด ระบบใช้ค่ากลางและบอกสมมติฐานให้</small>
+    <small>ตอบเรื่องห้อง 8 ข้อ แล้วเลือกความต้องการและงบ • ถามเพิ่มเฉพาะที่จำเป็น</small>
   </button>
   <button class="modecard" onclick="startMode('detailed')">
     <b>แบบละเอียด</b>
-    <small>14 คำถาม • เหมาะกับคนที่รู้ข้อมูลห้องและอยากให้ระบบคัดให้ละเอียดขึ้น</small>
+    <small>สำหรับคนที่รู้ข้อมูลห้อง ฝ้า กระจก และระบบไฟ • ปรับรายละเอียดก่อนดูคำแนะนำ</small>
   </button>
 </div>
-<p class="disclaimer">Beta สำหรับทดสอบ Product/UX • ไม่ใช่การคำนวณ Cooling Load ทางวิศวกรรมเต็มรูปแบบ</p>
+<details class="disclosure"><summary>เราช่วยตัดสินใจอะไรบ้าง?</summary><p>จำนวนเครื่องและการแบ่งโซน → ขนาดและประเภท → รุ่นที่เหมาะกับความต้องการ → เตรียมคำถามและเทียบใบเสนอราคา</p><p>คำแนะนำเป็นกลาง ไม่มีแบรนด์ใดซื้ออันดับได้ รุ่นและราคายังไม่ครอบคลุมทั้งตลาด ใบเสนอราคายังกรอกเทียบเองหลังแนบไฟล์</p></details>
+<p class="disclaimer">รุ่นทดลองสำหรับบ้านพักอาศัย • ห้องซับซ้อนต้องให้ช่างตรวจหน้างานก่อนซื้อ</p>
+<p class="muted" style="font-size:12px">อัปเดต 8 ต.ค. 2026 · Beta 2026.10.08.1 <button class="navbtn" onclick="location.reload()">โหลดเวอร์ชันล่าสุด</button></p>
 </section>
 <section id="wiz" class="hidden"><div id="stepmeta" class="muted"></div><div class="progress"><div id="bar" class="bar"></div></div><div id="box" class="card"></div></section>
 <section id="advanced" class="hidden">
@@ -357,7 +359,7 @@ function productLinks(p,detail=false){
 // BEGIN ANALYTICS LAYER
 // Vendor-free, memory-only beta measurement. Never forward room/quote/contact data.
 const HD_EVENTS=new Set(['flow_started','flow_mode_selected','step_viewed','step_answered','flow_abandoned','flow_completed','result_shown','recommended_setup_type','alternative_setup_opened','setup_selected','product_card_viewed','product_detail_opened','official_link_clicked','price_link_clicked','quote_started','quote_message_copied','decision_brief_copied','decision_brief_downloaded','site_check_flagged','catalog_gap_shown','feedback_submitted','feedback_reason_selected','configuration_result_shown','product_clicked']);
-const HD_STEPS=new Set(['room','area','sun','usage','specialNeeds','install','budget','priorities','height','glass','roof','open','people','phase','zoneUsage','shape','zoneControl','ceiling','outdoorSpace']);
+const HD_STEPS=new Set(['room','area','dimensions','sun','usage','specialNeeds','install','budget','priorities','height','glass','roof','open','people','phase','zoneUsage','shape','zoneControl','ceiling','outdoorSpace','openDetail','overhead','ceilingClass','roofInsulation','roofType','shading','connectedArea','kitchenUse','shapeDetail']);
 const HD_REASONS=[['overload','ข้อมูลเยอะไป'],['fit','ยังไม่มั่นใจว่ารุ่นนี้เหมาะจริง'],['catalog','ไม่มีรุ่น/แบรนด์ที่อยากดู'],['budget','ราคา/งบยังไม่ชัด'],['quote','อยากให้เทียบร้าน/ช่างมากกว่านี้'],['readability','ผลลัพธ์อ่านยาก'],['other','อื่น ๆ']];
 const hdDebug={counts:{},steps:{},setups:{},feedback:{},fits:{},times:[],started:0,completed:0,results:0,successful:0,siteChecks:0,detailFlows:0,officialFlows:0,quoteFlows:0};
 let hdFlow=null,hdSeen=new Set(),hdFeedback={rating:null,reason:null},hdCardsObserver=null;
@@ -404,7 +406,8 @@ function hdBudgetStatus(c){
  return c.zone_plan.every((zone,ix)=>withZone(zone,c.unit_count,()=>budgetReality(c.product_matches[ix]).status==='งบเหมาะสม'))?'suitable':'tight';
 }
 function hdResult(){
- const c=selectedConfiguration(),e=coolingConfigurations();
+ const gated=Boolean(window.hdResidentialV3?.hardGateReasons().length);
+ const c=gated?null:selectedConfiguration(),e=coolingConfigurations();
  const fit=!c?'infeasible':!c.product_matches.length?'catalog_gap':c.product_matches.every(l=>l.some(p=>p.match_type==='exact'))?'exact':c.product_matches.every(l=>l.some(p=>['exact','near'].includes(p.match_type)))?'near':'catalog_gap';
  const target=c?.zone_plan[0]?.capacity_per_unit_target;
  const meta={flow_mode:flowMode,setup_type:c?.unit_type,unit_count:c?.unit_count,fit_status:fit,setup_fit_status:c?.fit_status||'infeasible',has_site_check:!c||Boolean(c.site_check_flags.length),alternative_count:e.alternatives.length,budget_status:hdBudgetStatus(c),btu_bucket:!target?'unknown':target<18000?'under_18k':target<=30000?'18k_30k':target<=48000?'30k_48k':'over_48k'};
@@ -478,7 +481,7 @@ function render(){
   <button class="${flowMode==="quick"?"on":""}" onclick="switchFlowMode('quick')">แบบง่าย</button>
   <button class="${flowMode==="detailed"?"on":""}" onclick="switchFlowMode('detailed')">แบบละเอียด</button>
  </div>
- ${flowMode==="quick"?`<div class="quickmeta"><span>Quick Flow • 8 คำถามหลัก • ถามเพิ่มเฉพาะที่มีผล • ไม่ต้องสมัคร</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>`:`<div class="quickmeta"><span>Detailed Flow • 14 คำถามหลัก • ไม่ต้องสมัคร</span><span>ตอบ “ไม่แน่ใจ” ได้</span></div>`}
+ ${flowMode==="quick"?`<div class="quickmeta"><span>Quick Flow • 8 คำถามหลัก • ถามเพิ่มเฉพาะที่มีผล • ไม่ต้องสมัคร</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>`:`<div class="quickmeta"><span>แบบละเอียด • ตอบข้อมูลห้องและความต้องการ • ไม่ต้องสมัคร</span><span>ตอบ “ไม่แน่ใจ” ได้</span></div>`}
  ขั้นตอน ${i+1}/${qs.length}`;
  bar.style.width=((i+1)/qs.length*100)+"%";
  const [key,title,opts]=qs[i]; trackHD('step_viewed',{flow_mode:flowMode,step_key:key},key); let h=`<h2>${title}</h2>`;
@@ -1286,4 +1289,5 @@ if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.se
 </script>
 <script src="scripts/cooling-load-v2.js"></script>
 <script src="scripts/residential-survey-v3.js"></script>
+<script src="scripts/beta-study.js"></script>
 </body></html>

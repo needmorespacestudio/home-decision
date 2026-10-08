@@ -1,6 +1,6 @@
 // Vendor-free, memory-only beta measurement. Never forward room/quote/contact data.
 const HD_EVENTS=new Set(['flow_started','flow_mode_selected','step_viewed','step_answered','flow_abandoned','flow_completed','result_shown','recommended_setup_type','alternative_setup_opened','setup_selected','product_card_viewed','product_detail_opened','official_link_clicked','price_link_clicked','quote_started','quote_message_copied','decision_brief_copied','decision_brief_downloaded','site_check_flagged','catalog_gap_shown','feedback_submitted','feedback_reason_selected','configuration_result_shown','product_clicked']);
-const HD_STEPS=new Set(['room','area','sun','usage','specialNeeds','install','budget','priorities','height','glass','roof','open','people','phase','zoneUsage','shape','zoneControl','ceiling','outdoorSpace']);
+const HD_STEPS=new Set(['room','area','dimensions','sun','usage','specialNeeds','install','budget','priorities','height','glass','roof','open','people','phase','zoneUsage','shape','zoneControl','ceiling','outdoorSpace','openDetail','overhead','ceilingClass','roofInsulation','roofType','shading','connectedArea','kitchenUse','shapeDetail']);
 const HD_REASONS=[['overload','ข้อมูลเยอะไป'],['fit','ยังไม่มั่นใจว่ารุ่นนี้เหมาะจริง'],['catalog','ไม่มีรุ่น/แบรนด์ที่อยากดู'],['budget','ราคา/งบยังไม่ชัด'],['quote','อยากให้เทียบร้าน/ช่างมากกว่านี้'],['readability','ผลลัพธ์อ่านยาก'],['other','อื่น ๆ']];
 const hdDebug={counts:{},steps:{},setups:{},feedback:{},fits:{},times:[],started:0,completed:0,results:0,successful:0,siteChecks:0,detailFlows:0,officialFlows:0,quoteFlows:0};
 let hdFlow=null,hdSeen=new Set(),hdFeedback={rating:null,reason:null},hdCardsObserver=null;
@@ -47,7 +47,8 @@ function hdBudgetStatus(c){
  return c.zone_plan.every((zone,ix)=>withZone(zone,c.unit_count,()=>budgetReality(c.product_matches[ix]).status==='งบเหมาะสม'))?'suitable':'tight';
 }
 function hdResult(){
- const c=selectedConfiguration(),e=coolingConfigurations();
+ const gated=Boolean(window.hdResidentialV3?.hardGateReasons().length);
+ const c=gated?null:selectedConfiguration(),e=coolingConfigurations();
  const fit=!c?'infeasible':!c.product_matches.length?'catalog_gap':c.product_matches.every(l=>l.some(p=>p.match_type==='exact'))?'exact':c.product_matches.every(l=>l.some(p=>['exact','near'].includes(p.match_type)))?'near':'catalog_gap';
  const target=c?.zone_plan[0]?.capacity_per_unit_target;
  const meta={flow_mode:flowMode,setup_type:c?.unit_type,unit_count:c?.unit_count,fit_status:fit,setup_fit_status:c?.fit_status||'infeasible',has_site_check:!c||Boolean(c.site_check_flags.length),alternative_count:e.alternatives.length,budget_status:hdBudgetStatus(c),btu_bucket:!target?'unknown':target<18000?'under_18k':target<=30000?'18k_30k':target<=48000?'30k_48k':'over_48k'};

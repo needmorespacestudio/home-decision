@@ -21,6 +21,10 @@ jobs:
         run: node tests/test_beta_analytics.cjs
       - name: Beta actions
         run: node tests/test_beta_actions.cjs
+      - name: Supervised beta export and summary
+        run: |
+          node tests/test_beta_study.cjs
+          python3 -m unittest discover -s tests -p 'test_beta_summary.py'
       - name: Beta scenarios
         run: node tests/test_beta_scenarios.cjs
       - name: Cooling Load V2

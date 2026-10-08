@@ -24,3 +24,5 @@ Catalog maintenance: [CATALOG_OPERATIONS](docs/CATALOG_OPERATIONS.md). Current s
 
 ## PWA
 `manifest.webmanifest` + `sw.js` enable installability. Navigation is network-first to avoid trapping users on stale releases.
+
+Current beta: [supervised runbook](docs/PRIVATE_BETA_RUNBOOK.md). Optional feedback exports download locally; aggregate voluntarily shared files with `scripts/beta_summary.py`. No automatic collector, monthly KPI or genuine Popular Choice percentages are enabled. Navigation and runtime scripts use fresh network responses with offline fallback.
