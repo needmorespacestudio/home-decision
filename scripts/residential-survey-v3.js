@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='4.0-result-focus';
+const V='5.0-clear-decision';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -127,7 +127,7 @@ function adaptiveQuestions(){
   ['none','แทบไม่มีอะไรช่วยบังแดด'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- if(['partial','open','stair','outdoor'].includes(s.openDetail))all.push(['connectedArea','นอกจากพื้นที่หลัก ยังมีพื้นที่เปิดเชื่อมเพิ่มอีกกี่ ตร.ม.?',null]);
+ if(['partial','open','stair','outdoor'].includes(s.openDetail))all.push(['connectedArea','พื้นที่ที่กรอกไว้ รวมส่วนที่เปิดเชื่อมทั้งหมดแล้วหรือยัง?',null]);
  if(s.room==='ld')all.push(['kitchenUse','พื้นที่นี้เชื่อมกับครัวที่ทำอาหารแบบไหน?',[
   ['none','ไม่มีครัว หรือมีแค่อ่างล้างจาน / เคาน์เตอร์'],
   ['light','อุ่นอาหารหรือต้มอาหารเล็กน้อย'],
@@ -135,11 +135,11 @@ function adaptiveQuestions(){
   ['unknown','ไม่แน่ใจ']
  ]]);
  const ratio=(s.dimensionMode==='dimensions'&&Number(s.width)>0&&Number(s.length)>0)?Math.max(s.width,s.length)/Math.min(s.width,s.length):0;
- if((Number(s.area)>=30||ratio>=1.7)&&!s.shapeDetail)all.push(['shapeDetail','รูปทรงห้องเป็นแบบไหน?',[
-  ['compact','ห้องสี่เหลี่ยมทั่วไป'],
-  ['long','ห้องยาวลึก'],
-  ['lshape','ห้องรูปตัว L หรือมีมุมอับ'],
-  ['connected','มีหลายส่วนเปิดถึงกัน'],
+ if((Number(s.area)>=30||ratio>=1.7)&&!s.shapeDetail)all.push(['shapeDetail','ถ้ามองจากด้านบน พื้นที่นี้มีรูปทรงใกล้เคียงแบบไหน?',[
+  ['compact','ทรงสี่เหลี่ยมทั่วไป ไม่มีส่วนเลี้ยวหรือยื่นลึก'],
+  ['long','ทรงยาวลึก เช่น จากหน้าบ้านถึงหลังบ้าน'],
+  ['lshape','รูปตัว L หรือมีส่วนเลี้ยวเป็นมุม'],
+  ['connected','หลายพื้นที่เชื่อมกัน เช่น นั่งเล่นต่อกับกินข้าว'],
   ['unknown','ไม่แน่ใจ']
  ]]);
  // Keep the user-facing branch short. More than four risk questions means the room itself is complex.
@@ -155,17 +155,17 @@ function configQs(){
  derive();
  const q=[];
  const large=Number(s.area)>=35||s.room==='ld'||s.open==='open'||['long','lshape','connected'].includes(s.shapeDetail);
- if(large)q.push(['zoneUsage','เวลาเปิดแอร์ ใช้ทุกส่วนของพื้นที่พร้อมกันไหม?',[
-  ['together','เปิดแอร์ให้เย็นทุกส่วนพร้อมกัน'],
-  ['partial','บางช่วงใช้เพียงบางส่วนของพื้นที่'],
+ if(large)q.push(['zoneUsage','ปกติอยากให้แอร์เย็นทั่วทุกส่วน หรือเฉพาะจุดที่ใช้งาน?',[
+  ['together','เย็นทั่วทั้งหมด เช่น ห้องนั่งเล่นและกินข้าวพร้อมกัน'],
+  ['partial','เย็นเฉพาะจุดที่ใช้งาน เช่น นั่งดูทีวีเป็นหลัก'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- if(Number(s.area)>=35&&s.ceilingClass!=='double')q.push(['ceiling','ห้องนี้มีฝ้าเพดานที่ช่างสามารถเปิดตรวจด้านบนได้ไหม?',[
-  ['yes','มีฝ้าเรียบ และให้ช่างเปิดตรวจได้'],
-  ['no','ไม่มีฝ้า หรือเปิดตรวจฝ้าไม่ได้'],
+ if(Number(s.area)>=35&&s.ceilingClass!=='double')q.push(['ceiling','เหนือเพดานมีพื้นที่ให้ติดตั้งแอร์ฝังฝ้าหรือไม่?',[
+  ['yes','มีฝ้าเพดาน ช่างสามารถตรวจพื้นที่เหนือฝ้าได้'],
+  ['no','ไม่มีฝ้า หรือไม่สามารถติดตั้งเครื่องเหนือฝ้าได้'],
   ['unknown','ไม่แน่ใจ']
  ]]);
- if(safeLoadHigh()>=24000||Number(s.area)>=35)q.push(['phase','ทราบไหมว่าไฟฟ้าบ้านเป็น 1 เฟสหรือ 3 เฟส?',[
+ if(safeLoadHigh()>=24000||Number(s.area)>=35)q.push(['phase','คุณทราบไหมว่าบ้านใช้ไฟฟ้าระบบไหน?',[
   ['unknown','ไม่ทราบ ให้ช่างตรวจ'],
   ['1','1 เฟส 220V'],
   ['3','3 เฟส']
@@ -179,7 +179,28 @@ getQs=function(){
  ensure();
  if(flowMode==='quick')return quickQuestions();
  // Detailed mode stays available, but v1 scope remains residential by removing office.
- const base=baseGetQs().map(q=>q[0]==='room'?['room',q[1],ROOM_OPTS]:q).filter(q=>q[0]!=='install');
+ const details={
+  area:['พื้นที่รวมที่ต้องการให้แอร์เย็นกี่ตารางเมตร?',null],
+  height:['เพดานสูงจากพื้นประมาณเท่าไร?',null],
+  sun:['แดดส่องกระจกหรือผนังห้องมากที่สุดช่วงไหน?',SUN_OPTS],
+  glass:['ผนังห้องมีกระจกมากแค่ไหน?',GLASS_OPTS.filter(x=>x[0]!=='full')],
+  roof:['เหนือเพดานห้องนี้เป็นอะไร?',[['no','มีห้องอีกชั้นอยู่ด้านบน'],['yes','เป็นชั้นบนสุด ใต้หลังคาหรือดาดฟ้า'],['unknown','ไม่แน่ใจ']]],
+  open:['เวลาเปิดแอร์ ห้องนี้เชื่อมต่อกับพื้นที่อื่นแบบไหน?',[['closed','ปิดประตูแยกเป็นห้องได้'],['partial','มีประตูแต่เปิดค้างบ่อย'],['open','ไม่มีประตูกั้น เปิดโล่งถึงส่วนอื่น'],['unknown','ไม่แน่ใจ']]],
+  people:['ปกติมีคนอยู่พร้อมกันกี่คน?',null],
+  phase:['ทราบไหมว่าระบบไฟบ้านเป็นแบบใด?',[['unknown','ไม่แน่ใจ ให้ช่างตรวจ'],['1','ไฟบ้าน 1 เฟส'],['3','ไฟบ้าน 3 เฟส']]],
+  usage:['ช่วงไหนที่คุณเปิดแอร์บ่อยที่สุด?',[['night','กลางคืน / ตอนนอน'],['day','ช่วงเช้าถึงบ่าย'],['afternoon','ช่วงบ่ายถึงค่ำ'],['long','เปิดหลายช่วง เกือบทั้งวัน']]],
+  specialNeeds:['มีอะไรที่อยากให้แอร์ช่วยเป็นพิเศษ?',null],
+  budget:['อยากใช้งบประมาณสำหรับตัวเครื่องเท่าไร?',null],
+  priorities:['เวลาเลือกแอร์ อะไรสำคัญที่สุดสำหรับคุณ?',null]
+ };
+ const zoneDetails={
+  zoneUsage:['ตอนเปิดแอร์ อยากให้เย็นทั่วทั้งหมด หรือเฉพาะจุดที่ใช้งาน?',[['together','เย็นทั่วทุกส่วน เช่น นั่งเล่นและกินข้าวพร้อมกัน'],['partial','เย็นเฉพาะจุดที่ใช้งานในบางเวลา'],['unknown','ไม่แน่ใจ ให้ระบบช่วยพิจารณา']]],
+  shape:['ถ้ามองจากด้านบน พื้นที่นี้มีลักษณะแบบไหน?',[['compact','สี่เหลี่ยมทั่วไป ไม่มีส่วนเลี้ยว'],['long','ยาวลึก หรือมีส่วนเลี้ยวเป็นมุม'],['connected','หลายพื้นที่เปิดเชื่อมกัน ไม่มีประตูกั้น'],['unknown','ไม่แน่ใจ']]],
+  zoneControl:['ต้องการเปิด–ปิดแอร์แต่ละส่วนแยกกันไหม?',[['yes','ต้องการ เช่น เปิดเฉพาะส่วนดูทีวี'],['no','ไม่จำเป็น เปิดพร้อมกันได้'],['unknown','ยังไม่แน่ใจ']]],
+  ceiling:['เหนือฝ้ามีพื้นที่ติดตั้งแอร์ฝังฝ้าหรือไม่?',[['yes','มีฝ้า และให้ช่างเปิดตรวจได้'],['no','ไม่มีฝ้า หรือไม่สามารถติดตั้งเหนือฝ้าได้'],['unknown','ไม่แน่ใจ ต้องให้ช่างตรวจ']]],
+  outdoorSpace:['มีพื้นที่ติดตั้งเครื่องแอร์ด้านนอกได้กี่จุด?',[['one','ได้เพียงจุดเดียว'],['two','ได้อย่างน้อยสองจุด'],['unknown','ไม่แน่ใจ ต้องตรวจหน้างาน']]]
+ };
+ const base=baseGetQs().map(q=>q[0]==='room'?['room','พื้นที่ที่ต้องการติดแอร์ ใช้ทำอะไร?',ROOM_OPTS]:details[q[0]]?[q[0],details[q[0]][0],details[q[0]][1]||q[2]]:zoneDetails[q[0]]?[q[0],...zoneDetails[q[0]]]:q).filter(q=>q[0]!=='install');
  return base;
 };
 
@@ -206,7 +227,7 @@ function usageHTML(){
  return '<p class="muted">เลือกช่วงที่เปิดแอร์บ่อยที่สุด หากบางวันเปิดช่วงอื่น ระบบยังต้องตรวจภาระสูงสุดด้วย</p><div class="opts">'+opts.map(([v,t])=>'<button class="opt '+(s.usage===v?'selected':'')+'" onclick="hdCorePick(\'usage\',\''+v+'\')">'+t+'</button>').join('')+'</div>';
 }
 function connectedAreaHTML(){
- return `<p class="muted">ไม่ต้องวัดเป๊ะ ใส่พื้นที่คร่าว ๆ ของส่วนที่เปิดถึงกันนอกห้องหลัก</p><label>พื้นที่เปิดเชื่อมเพิ่ม (ตร.ม.)</label><input type="number" min="0" max="200" step="1" value="${s.connectedArea??''}" oninput="s.connectedArea=this.value===''?null:Number(this.value)">`;
+ return `<p class="muted">ถ้ารวมทั้งหมดไว้ในพื้นที่ก่อนหน้าแล้ว ให้ใส่ 0 ไม่ต้องนับพื้นที่ซ้ำ</p><button type="button" class="opt" onclick="s.connectedArea=0;render()">รวมทั้งหมดแล้ว (เพิ่ม 0 ตร.ม.)</button><label>หากยังมีพื้นที่ที่ไม่ได้รวม เพิ่มอีกกี่ ตร.ม.?</label><input type="number" min="0" max="200" step="1" value="${s.connectedArea??''}" oninput="s.connectedArea=this.value===''?null:Number(this.value)">`;
 }
 
 function hdCorePick(k,v){applyPick(k,v);render()}
@@ -408,11 +429,15 @@ function hdResultV4(){
   else groups[2].appendChild(node);
  }
  const products=groups[1].querySelector('#setupProducts');if(products){products.classList.remove('hidden');products.removeAttribute('hidden')}
- for(const group of groups)result.appendChild(group);
+ const master=document.createElement('details');master.id='hdV5More';master.className='hdV4Section hdV5More';
+ const masterSummary=document.createElement('summary');masterSummary.textContent='ดูรายละเอียดเพิ่มเติม · รูปแบบแอร์ รุ่นสินค้า และข้อมูลทั้งหมด';
+ master.appendChild(masterSummary);
+ for(const group of groups)master.appendChild(group);
+ result.appendChild(master);
  const st=document.getElementById('hd-v4-styles')||document.createElement('style');
- if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';document.head.appendChild(st)}
+ if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';st.textContent+=' .hdV5More{background:#f8faf8;border:1px solid #d7e1db;margin-top:12px}.hdV5More>summary{font-size:14px;color:#1d4637}.hdV5More .hdV4Section{margin:7px 12px;background:#fff}.hdV4Section summary{font-size:14px}.hdResultV4Hero h1{font-size:clamp(23px,5vw,29px)}';document.head.appendChild(st)}
 }
-function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
+function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;const parent=document.getElementById('hdV5More');if(parent)parent.open=true;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
 window.hdOpenResultSection=hdOpenResultSection;
 
 configurationResult=function(){
