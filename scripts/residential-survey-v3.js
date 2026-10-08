@@ -106,8 +106,8 @@ function coreQuestions(){return [
 ['usage','ปกติเปิดแอร์ช่วงเวลาไหน?',null]
 ];}
 const CORE_PAGES=[
- ['homePage1','พื้นที่นี้เป็นแบบไหน?',['room','openDetail','ceilingClass']],
- ['homePage2','ห้องใหญ่แค่ไหน?',['dimensions']],
+ ['homePage1','พื้นที่นี้เป็นแบบไหน?',['room','openDetail']],
+ ['homePage2','ขนาดห้องและเพดาน',['dimensions','ceilingClass']],
  ['homePage3','แดดและความร้อน',['sun','glass','overhead']],
  ['homePage4','ใช้ห้องนี้อย่างไร?',['people','usage']]
 ];
@@ -430,6 +430,16 @@ function hdResultV4(){
   '<div class="hdV4Answer"><strong>'+(complex?'ยังต้องตรวจจำนวนและตำแหน่งเครื่อง':esc(c.unit_count+' เครื่อง · '+type))+'</strong><span>'+(complex?'ระบบยังไม่ยืนยันว่าหนึ่งหรือหลายเครื่องเหมาะที่สุด':'ผลคัดเลือกเบื้องต้น ต้องตรวจการติดตั้งและไฟฟ้าก่อนซื้อ')+'</span></div>'+
   '<div class="hdV4Actions"><button class="btn hdV4Primary" onclick="hdOpenResultSection(\'hdV4Choices\')">'+(complex?'เปรียบเทียบทางเลือก':'ดูรูปแบบที่แนะนำ')+' ↓</button><button class="outlinebtn hdV4Secondary" onclick="hdOpenResultSection(\'hdV4Products\')">ดูรุ่นแอร์</button></div>'+
   '<p class="hdV4Foot">ข้อมูลวิศวกรรมและข้อจำกัดทั้งหมดอยู่ในส่วน “รายละเอียดเพิ่มเติม”</p>';
+ if(!complex){
+  const shortlisted=(Array.isArray(c.product_matches)?c.product_matches.flatMap(x=>x||[]):[]).filter(p=>p&&p.match_type==='exact');
+  const distinct=[];for(const p of shortlisted){if(!distinct.some(x=>x.id===p.id))distinct.push(p)}
+  if(distinct.length){
+   const spotlight=document.createElement('section');spotlight.className='hdMvpTop3 card';
+   spotlight.innerHTML='<h2>3 รุ่นที่ควรเปรียบเทียบ</h2><p class="muted">คัดจากสเปกที่ยืนยันได้ตามข้อมูลห้อง ไม่ใช่เปอร์เซ็นต์ความแม่นยำ</p>'+
+    distinct.slice(0,3).map((p,j)=>'<button type="button" class="hdMvpModel" onclick="hdOpenResultSection(\\'hdV4Products\\')"><b>'+(j+1)+'. '+esc(p.brand+' '+p.model)+'</b><span>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกและรายละเอียด →</span></button>').join('');
+   hero.insertAdjacentElement('afterend',spotlight);
+  }
+ }
  const ids=['hdV4Choices','hdV4Products','hdV4Details'];
  const labels=['รูปแบบติดตั้งและทางเลือก','รุ่นแอร์ที่ผ่านการคัดกรอง','รายละเอียดการประเมินและเอกสาร'];
  const groups=ids.map((id,i)=>{const d=document.createElement('details');d.id=id;d.className='hdV4Section';const summary=document.createElement('summary');summary.textContent=labels[i];d.appendChild(summary);return d});
@@ -450,7 +460,7 @@ function hdResultV4(){
  groups[0].appendChild(overview);
  const children=Array.from(result.children);
  for(const node of children){
-  if(node===hero||node.classList?.contains('backhome')||node.classList?.contains('navbtn'))continue;
+  if(node===hero||node.classList?.contains('hdMvpTop3')||node.classList?.contains('backhome')||node.classList?.contains('navbtn'))continue;
   if(node.id==='setupProducts')groups[1].appendChild(node);
   else if(node.id==='setupCompare'||node.classList?.contains('hdSetupVariants')||(node.matches&&node.matches('article.card')))groups[0].appendChild(node);
   else groups[2].appendChild(node);
@@ -462,7 +472,7 @@ function hdResultV4(){
  for(const group of groups)master.appendChild(group);
  result.appendChild(master);
  const st=document.getElementById('hd-v4-styles')||document.createElement('style');
- if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';st.textContent+=' .hdV5More{background:#f8faf8;border:1px solid #d7e1db;margin-top:12px}.hdV5More>summary{font-size:14px;color:#1d4637}.hdV5More .hdV4Section{margin:7px 12px;background:#fff}.hdV4Section summary{font-size:14px}.hdResultV4Hero h1{font-size:clamp(23px,5vw,29px)}';document.head.appendChild(st)}
+ if(!st.id){st.id='hd-v4-styles';st.textContent='.hdResultV4Hero{background:#193730;color:white;border-radius:20px;padding:20px 18px}.hdResultV4Hero h1{font-size:clamp(24px,6vw,31px);line-height:1.2;margin:12px 0;color:#fff}.hdV4Eyebrow{font-size:12px;opacity:.85}.hdV4Room{font-size:13px;opacity:.88;margin:0 0 14px}.hdV4Answer{background:#fff;color:#17392d;border-radius:14px;padding:15px;display:grid;gap:5px}.hdV4Answer strong{font-size:17px;line-height:1.4}.hdV4Answer span{font-size:12px;color:#4f6259;line-height:1.6}.hdV4Actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:13px}.hdV4Actions button{width:100%;min-height:46px}.hdV4Primary{background:#f2dca9;color:#17392d}.hdV4Secondary{border:1px solid #c2d8cb;background:transparent;color:#fff}.hdV4Foot{font-size:11px;color:#dce9e3;margin:13px 0 0}.hdV4Section{border:1px solid #dbe4de;border-radius:15px;background:#fff;margin:12px 0;overflow:hidden}.hdV4Section>summary{cursor:pointer;padding:17px 18px;font-weight:750;list-style-position:inside}.hdV4Section[open]{padding-bottom:14px}.hdV4Section> :not(summary){margin-left:15px;margin-right:15px}.hdV4SectionIntro{font-size:13px;color:#5c675e;line-height:1.6}.hdV4CompactOptions{display:grid;gap:8px;margin:12px 0}.hdV4Choice{display:flex;gap:11px;align-items:start;padding:12px;background:#f5f8f6;border-radius:11px}.hdV4ChoiceNumber{font-weight:800;color:#2f6852}.hdV4Choice strong,.hdV4Choice small{display:block}.hdV4Choice strong{font-size:14px}.hdV4Choice small{font-size:12px;color:#647269;margin-top:3px}#hdV4Products #setupProducts{border:0;padding:0;box-shadow:none}#hdV4Details .card{margin-top:10px}';st.textContent+=' .hdMvpTop3{margin:12px 0;padding:15px}.hdMvpTop3 h2{font-size:19px;margin:0 0 6px}.hdMvpModel{width:100%;display:flex;flex-direction:column;align-items:start;gap:3px;text-align:left;padding:13px 10px;margin:5px 0;border:1px solid #dbe4de;border-radius:12px;background:#fff;color:#193730}.hdMvpModel b{font-size:14px}.hdMvpModel span{font-size:12px;color:#587063}.hdMvpSurvey{border-radius:20px}.hdMvpSurvey h1{font-size:clamp(24px,6vw,32px)} .hdV5More{background:#f8faf8;border:1px solid #d7e1db;margin-top:12px}.hdV5More>summary{font-size:14px;color:#1d4637}.hdV5More .hdV4Section{margin:7px 12px;background:#fff}.hdV4Section summary{font-size:14px}.hdResultV4Hero h1{font-size:clamp(23px,5vw,29px)}';document.head.appendChild(st)}
 }
 function hdOpenResultSection(id){const el=document.getElementById(id);if(!el)return;const parent=document.getElementById('hdV5More');if(parent)parent.open=true;el.open=true;el.scrollIntoView?.({behavior:'smooth',block:'start'})}
 window.hdOpenResultSection=hdOpenResultSection;
