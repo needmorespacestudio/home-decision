@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-const V='5.0-clear-decision';
+const V='5.1-survey-and-shortlist';
 const baseGetQs=getQs;
 const baseRender=render;
 const basePick=pick;
@@ -18,7 +18,7 @@ const ROOM_OPTS=[
  ['bed','ห้องนอน / ห้องนอนเด็ก'],
  ['living','ห้องนั่งเล่น / ห้องดูทีวี'],
  ['ld','ห้องนั่งเล่นรวมกับโต๊ะกินข้าว'],
- ['other','พื้นที่อื่นในบ้าน (ช่วยสรุปให้ตรวจเพิ่มเติม)']
+ ['other','ห้องทำงาน ห้องแต่งตัว ห้องพระ หรือพื้นที่อื่น (ต้องตรวจเพิ่ม)']
 ];
 const SUN_OPTS=[
  ['shade','แทบไม่โดนแดดโดยตรง หรือมีอาคารบัง'],
@@ -49,9 +49,9 @@ const OPEN_OPTS=[
  ['unknown','ไม่แน่ใจ']
 ];
 const HEIGHT_OPTS=[
- ['normal','ประมาณ 2.4–3 เมตร (เพดานทั่วไป)'],
- ['high','ประมาณ 3–4 เมตร (เพดานสูงกว่าปกติ)'],
- ['double','ไม่มีเพดานกั้น เปิดโล่งสูงถึงชั้นถัดไป'],
+ ['normal','เพดานทั่วไป สูงไม่เกิน 3 เมตร'],
+ ['high','เพดานสูงกว่า 3 เมตร แต่ไม่เปิดโล่งถึงชั้นบน'],
+ ['double','โถงเปิดสูงถึงชั้นบน เช่น โถงบ้านสองชั้น'],
  ['unknown','ไม่แน่ใจ']
 ];
 const STAGE2=[
@@ -95,9 +95,9 @@ function derive(){
 }
 
 function coreQuestions(){return [
-['room','พื้นที่ที่ต้องการให้เย็น ใช้ทำอะไรเป็นหลัก?',ROOM_OPTS],
+['room','ปกติพื้นที่นี้ใช้ทำอะไรเป็นหลัก?',ROOM_OPTS],
 ['openDetail','ตอนเปิดแอร์ อากาศจากห้องนี้ไหลไปส่วนอื่นได้หรือไม่?',OPEN_OPTS],
-['ceilingClass','ความสูงจากพื้นถึงเพดานประมาณเท่าไร?',HEIGHT_OPTS],
+['ceilingClass','เพดานห้องนี้สูงแบบไหน?',HEIGHT_OPTS],
 ['dimensions','ห้องกว้าง × ยาวประมาณเท่าไร?',null],
 ['sun','ช่วงไหนที่แดดส่องกระจกหรือผนังห้องนี้มากที่สุด?',SUN_OPTS],
 ['glass','เมื่อมองผนังห้องโดยรวม กระจกมีมากแค่ไหน?',GLASS_OPTS],
@@ -200,7 +200,7 @@ getQs=function(){
   ceiling:['เหนือฝ้ามีพื้นที่ติดตั้งแอร์ฝังฝ้าหรือไม่?',[['yes','มีฝ้า และให้ช่างเปิดตรวจได้'],['no','ไม่มีฝ้า หรือไม่สามารถติดตั้งเหนือฝ้าได้'],['unknown','ไม่แน่ใจ ต้องให้ช่างตรวจ']]],
   outdoorSpace:['มีพื้นที่ติดตั้งเครื่องแอร์ด้านนอกได้กี่จุด?',[['one','ได้เพียงจุดเดียว'],['two','ได้อย่างน้อยสองจุด'],['unknown','ไม่แน่ใจ ต้องตรวจหน้างาน']]]
  };
- const base=baseGetQs().map(q=>q[0]==='room'?['room','พื้นที่ที่ต้องการติดแอร์ ใช้ทำอะไร?',ROOM_OPTS]:details[q[0]]?[q[0],details[q[0]][0],details[q[0]][1]||q[2]]:zoneDetails[q[0]]?[q[0],...zoneDetails[q[0]]]:q).filter(q=>q[0]!=='install');
+ const base=baseGetQs().map(q=>q[0]==='room'?['room','ปกติพื้นที่นี้ใช้ทำอะไรเป็นหลัก?',ROOM_OPTS]:details[q[0]]?[q[0],details[q[0]][0],details[q[0]][1]||q[2]]:zoneDetails[q[0]]?[q[0],...zoneDetails[q[0]]]:q).filter(q=>!['install','zoneControl'].includes(q[0]));
  return base;
 };
 
@@ -314,7 +314,7 @@ function hardGateReasons(){
  const detailed=flowMode==='detailed';
  const opening=detailed?s.open:s.openDetail;
  const heightClass=detailed?(Number(s.height)>4?'double':Number(s.height)>3?'high':s.height==null?'unknown':'normal'):s.ceilingClass;
- if(s.room==='other')r.push('Aircon v1 รองรับห้องนอน ห้องนั่งเล่น และ Living + Dining ในบ้านก่อน');
+ if(s.room==='other')r.push('พื้นที่ใช้งานรูปแบบอื่นต้องตรวจจำนวนคนและแหล่งความร้อนเพิ่มเติมก่อนยืนยันขนาดหรือชนิดแอร์');
  if(heightClass==='double')r.push('เพดานสูงมาก / Double volume ต้องดูตำแหน่งติดตั้งและการหมุนเวียนอากาศหน้างาน');
  if(['stair','outdoor'].includes(opening))r.push('พื้นที่เปิดถึงบันได โถงสูง หรือภายนอก ทำให้ขอบเขตภาระความเย็นไม่ชัด');
  if(s.kitchenUse==='heavy'&&s.open!=='closed')r.push('ครัวผัด–ทอดที่เปิดเชื่อมกับพื้นที่แอร์ต้องประเมิน Hood และอากาศทดแทน');
@@ -414,6 +414,14 @@ function hdResultV4(){
  const ids=['hdV4Choices','hdV4Products','hdV4Details'];
  const labels=['รูปแบบติดตั้งและทางเลือก','รุ่นแอร์ที่ผ่านการคัดกรอง','รายละเอียดการประเมินและเอกสาร'];
  const groups=ids.map((id,i)=>{const d=document.createElement('details');d.id=id;d.className='hdV4Section';const summary=document.createElement('summary');summary.textContent=labels[i];d.appendChild(summary);return d});
+ // Top 3 visible only as an evidence-gated candidate order, never as invented suitability percentages.
+ const shortlisted=(Array.isArray(c.product_matches)?c.product_matches.flatMap(x=>x||[]):[]).filter(p=>p&&p.match_type==='exact');
+ const unique=[];for(const p of shortlisted){if(!unique.some(x=>x.id===p.id))unique.push(p)}
+ if(unique.length){
+  const models=document.createElement('div');models.className='hdV5Shortlist';
+  models.innerHTML='<strong>สามรุ่นแรกที่ผ่านการคัดกรอง</strong><p class="hdV4SectionIntro">ลำดับนี้ไม่ใช่เปอร์เซ็นต์ความเหมาะสมที่รับรองแล้ว '+(complex?'· ต้องยืนยันรูปแบบติดตั้งและ BTU จริงก่อนซื้อ':'')+'</p>'+unique.slice(0,3).map((p,j)=>'<div class="hdV4Choice"><span class="hdV4ChoiceNumber">'+(j+1)+'</span><div><strong>'+esc(p.brand+' '+p.model)+'</strong><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ข้อมูลสำหรับตรวจสอบกับร้าน</small></div></div>').join('');
+  groups[1].appendChild(models);
+ }
  const choiceIntro=document.createElement('p');choiceIntro.className='hdV4SectionIntro';
  choiceIntro.textContent=complex?'รูปแบบต่อไปนี้เป็นทางเลือกเพื่อเปรียบเทียบ ยังไม่ใช่การรับรองว่าแอร์แต่ละแบบรองรับพื้นที่จริง':'ดูเหตุผลและทางเลือกอื่นที่ระบบประเมินไว้';
  groups[0].appendChild(choiceIntro);
