@@ -338,8 +338,9 @@ function hdResultRedesign(){
  const type={wall:'แอร์ติดผนัง',cassette:'แอร์ฝังฝ้า',mixed:'แอร์ติดผนัง + ฝังฝ้า'}[c.unit_type]||'ระบบแอร์';
  const allZones=Array.isArray(c.zone_plan)?c.zone_plan:[];
  const complete=Array.isArray(c.product_matches)&&c.product_matches.length===allZones.length&&c.product_matches.every(x=>Array.isArray(x)&&x.some(p=>p.match_type==='exact'));
- const ready=c.fit_status==='fit'&&complete;
- const metrics=allZones.map(z=>'<div class="hdrMetric"><span>'+esc(z.name)+'</span><strong>'+Number(z.capacity_per_unit_target||0).toLocaleString('th-TH')+'</strong><small>BTU โดยประมาณ</small></div>').join('');
+ const ready=c.fit_status==='fit'&&complete&&!((c.unit_count>1)||s.room==='ld'||['partial','open','stair','outdoor'].includes(s.openDetail));
+ const complex=c.unit_count>1||s.room==='ld'||['partial','open','stair','outdoor'].includes(s.openDetail);
+ const metrics=complex?'<div class="hdrMetric"><span>ช่วงภาระความเย็นรวมของพื้นที่</span><strong>'+Math.round(load().low).toLocaleString('th-TH')+'–'+Math.round(load().high).toLocaleString('th-TH')+'</strong><small>BTU/h · ยังต้องยืนยันกับผู้เชี่ยวชาญ</small></div>':allZones.map(z=>'<div class="hdrMetric"><span>'+esc(z.name)+'</span><strong>'+Number(z.capacity_per_unit_target||0).toLocaleString('th-TH')+'</strong><small>BTU เป้าหมายเบื้องต้น</small></div>').join('');
  const why=(c.key_reasons||[]).slice(0,3).map(x=>'<li>'+esc(x)+'</li>').join('');
  hero.classList.add('hdDecisionHero');
  hero.innerHTML='<p class="hdEyebrow">HOME DECISION · ผลแนะนำสำหรับห้องของคุณ</p><p class="hdEyebrow">'+(ready?'รูปแบบที่เหมาะกับห้องนี้':'แนวทางเบื้องต้น — ต้องตรวจเพิ่ม')+'</p><h1>'+esc(c.unit_count)+' เครื่อง <span>· '+esc(type)+'</span></h1><div class="hdMetricGrid">'+metrics+'</div><div class="hdReason"><strong>ทำไมเราแนะนำแบบนี้</strong><ul>'+why+'</ul></div>'+(ready?'<button class="btn hdCTA" onclick="document.getElementById(\'setupProducts\')?.scrollIntoView({behavior:\'smooth\'})">ดูรุ่นแอร์ที่เหมาะกับคุณ ↓</button>':'<p class="hdWarning">ข้อมูลยังไม่พอจะยืนยันรุ่นพร้อมซื้อ ควรตรวจหน้างานก่อน</p>')+'<p class="hdFineprint">ประเมินเบื้องต้น · ต้องยืนยันจุดติดตั้งและระบบไฟก่อนซื้อ</p>';
