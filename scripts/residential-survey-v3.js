@@ -436,7 +436,7 @@ function hdResultV4(){
   if(distinct.length){
    const spotlight=document.createElement('section');spotlight.className='hdMvpTop3 card';
    spotlight.innerHTML='<h2>3 รุ่นที่ควรเปรียบเทียบ</h2><p class="muted">คัดจากสเปกที่ยืนยันได้ตามข้อมูลห้อง ไม่ใช่เปอร์เซ็นต์ความแม่นยำ</p>'+
-    distinct.slice(0,3).map((p,j)=>'<button type="button" class="hdMvpModel" onclick="hdOpenResultSection(\\'hdV4Products\\')"><b>'+(j+1)+'. '+esc(p.brand+' '+p.model)+'</b><span>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกและรายละเอียด →</span></button>').join('');
+    distinct.slice(0,3).map((p,j)=>'<button type="button" class="hdMvpModel" onclick="hdOpenResultSection(\'hdV4Products\')"><b>'+(j+1)+'. '+esc(p.brand+' '+p.model)+'</b><span>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · ดูสเปกและรายละเอียด →</span></button>').join('');
    hero.insertAdjacentElement('afterend',spotlight);
   }
  }
