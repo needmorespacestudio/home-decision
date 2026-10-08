@@ -33,6 +33,8 @@ jobs:
         run: node tests/test_residential_v3.cjs
       - name: Configuration
         run: node tests/test_configuration.cjs
+      - name: Engineering calibration fixtures (non-certified)
+        run: node tests/test_engineering_cases.cjs
       - name: Recommendation
         run: node tests/test_recommendation.cjs
       - name: PWA
