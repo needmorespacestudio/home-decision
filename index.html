@@ -481,7 +481,7 @@ function render(){
   <button class="${flowMode==="quick"?"on":""}" onclick="switchFlowMode('quick')">แบบง่าย</button>
   <button class="${flowMode==="detailed"?"on":""}" onclick="switchFlowMode('detailed')">แบบละเอียด</button>
  </div>
- ${flowMode==="quick"?`<div class="quickmeta"><span>Quick Flow • 8 คำถามหลัก • ถามเพิ่มเฉพาะที่มีผล • ไม่ต้องสมัคร</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>`:`<div class="quickmeta"><span>Detailed Flow • 14 คำถามหลัก • ไม่ต้องสมัคร</span><span>ตอบ “ไม่แน่ใจ” ได้</span></div>`}
+ ${flowMode==="quick"?`<div class="quickmeta"><span>Quick Flow • 8 คำถามหลัก • ถามเพิ่มเฉพาะที่มีผล • ไม่ต้องสมัคร</span><button class="advancedBtn" onclick="openAdvanced()">ปรับละเอียดเพิ่มเติม</button></div>`:`<div class="quickmeta"><span>แบบละเอียด • ตอบข้อมูลห้องและความต้องการ • ไม่ต้องสมัคร</span><span>ตอบ “ไม่แน่ใจ” ได้</span></div>`}
  ขั้นตอน ${i+1}/${qs.length}`;
  bar.style.width=((i+1)/qs.length*100)+"%";
  const [key,title,opts]=qs[i]; trackHD('step_viewed',{flow_mode:flowMode,step_key:key},key); let h=`<h2>${title}</h2>`;
