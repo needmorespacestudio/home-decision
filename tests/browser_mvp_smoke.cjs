@@ -16,8 +16,8 @@ async function reset(){await expr("restartToWizard();flowMode='quick';render()")
 async function completeBase(){await expr("s.sun='morning';s.glass='low';s.overhead='room_above';s.people=2;s.usage='night';s.budgetMode='unset';s.priorities=['saving','quiet','price'];")}
 async function run(){
  let targets;
- for(let n=0;n<90;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split('\\n')[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
- assert(targets?.[0]?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable');
+ for(let n=0;n<90;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split(String.fromCharCode(10))[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
+ assert(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable; exit='+proc.exitCode+'; stderr='+browserStderr+'; portFile='+fs.existsSync(path.join(tmp,'DevToolsActivePort')));
  ws=new WebSocket(targets.find(x=>x.type==='page').webSocketDebuggerUrl);
  await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject});
  ws.onmessage=event=>{const j=JSON.parse(event.data);if(j.id&&messages.has(j.id)){const x=messages.get(j.id);messages.delete(j.id);j.error?x.reject(new Error(j.error.message)):x.resolve(j)}};
