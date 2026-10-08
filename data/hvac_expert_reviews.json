@@ -1,0 +1,12 @@
+{
+  "schema_version":"1.0",
+  "purpose":"external_hvac_expert_review",
+  "review_status":"pending_external_evidence",
+  "reviews":[
+    {"case_id":"bedroom_16_closed","reviewer":null,"reviewed_at":null,"reference_method":null,"reference_total_btu_per_hour":null,"reference_sensible_btu_per_hour":null,"reference_latent_btu_per_hour":null,"evidence_url":null,"floorplan_verified":false,"installation_concepts_verified":false,"notes":null},
+    {"case_id":"living_30_compact","reviewer":null,"reviewed_at":null,"reference_method":null,"reference_total_btu_per_hour":null,"reference_sensible_btu_per_hour":null,"reference_latent_btu_per_hour":null,"evidence_url":null,"floorplan_verified":false,"installation_concepts_verified":false,"notes":null},
+    {"case_id":"ld_50_total_open","reviewer":null,"reviewed_at":null,"reference_method":null,"reference_total_btu_per_hour":null,"reference_sensible_btu_per_hour":null,"reference_latent_btu_per_hour":null,"evidence_url":null,"floorplan_verified":false,"installation_concepts_verified":false,"notes":null},
+    {"case_id":"ld_50_sunny_glazing","reviewer":null,"reviewed_at":null,"reference_method":null,"reference_total_btu_per_hour":null,"reference_sensible_btu_per_hour":null,"reference_latent_btu_per_hour":null,"evidence_url":null,"floorplan_verified":false,"installation_concepts_verified":false,"notes":null},
+    {"case_id":"hall_90_high","reviewer":null,"reviewed_at":null,"reference_method":null,"reference_total_btu_per_hour":null,"reference_sensible_btu_per_hour":null,"reference_latent_btu_per_hour":null,"evidence_url":null,"floorplan_verified":false,"installation_concepts_verified":false,"notes":null}
+  ]
+}

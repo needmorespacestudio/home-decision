@@ -41,6 +41,10 @@ jobs:
           node scripts/compare-configuration-v2.cjs
       - name: Engineering calibration fixtures (non-certified)
         run: node tests/test_engineering_cases.cjs
+      - name: HVAC expert evidence gate (must remain unapproved without reviews)
+        run: |
+          node tests/test_hvac_expert_evidence.cjs
+          node scripts/check-hvac-expert-evidence.cjs
       - name: Recommendation
         run: node tests/test_recommendation.cjs
       - name: PWA
