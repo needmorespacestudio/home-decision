@@ -8,7 +8,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'hd-chrome-'));
 const binary=process.env.CHROME_BIN||['/usr/bin/google-chrome','/usr/bin/chromium','/usr/bin/chromium-browser'].find(fs.existsSync);
 if(!binary)throw new Error('Chrome/Chromium required for real browser QA');
-const proc=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--remote-allow-origins=*','--remote-debugging-port=0','--user-data-dir='+tmp,'about:blank'],{stdio:['ignore','ignore','pipe']});
+const proc=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--remote-allow-origins=*','--remote-debugging-port=0','--user-data-dir='+tmp,'about:blank'],{stdio:['ignore','ignore','pipe'],env:{...process.env,DBUS_SESSION_BUS_ADDRESS:'unix:path=/run/user/1000/bus'}});
 let browserStderr='';proc.stderr?.on('data',chunk=>{browserStderr=(browserStderr+chunk.toString()).slice(-5000)});const messages=new Map();let next=1,ws;
 function send(method,params={}){const id=next++;return new Promise((resolve,reject)=>{messages.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));setTimeout(()=>{if(messages.has(id)){messages.delete(id);reject(new Error('CDP timeout: '+method))}},12000).unref()})}
 async function expr(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.result?.exceptionDetails)throw new Error(r.result.exceptionDetails.text+': '+(r.result.exceptionDetails.exception?.description||expression));return r.result.result?.value}
@@ -16,7 +16,7 @@ async function reset(){await expr("restartToWizard();flowMode='quick';render()")
 async function completeBase(){await expr("s.sun='morning';s.glass='low';s.overhead='room_above';s.people=2;s.usage='night';s.budgetMode='unset';s.priorities=['saving','quiet','price'];")}
 async function run(){
  let targets;
- for(let n=0;n<90;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split(String.fromCharCode(10))[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
+ for(let n=0;n<280;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split(String.fromCharCode(10))[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
  assert(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable; exit='+proc.exitCode+'; stderr='+browserStderr+'; portFile='+fs.existsSync(path.join(tmp,'DevToolsActivePort')));
  ws=new WebSocket(targets.find(x=>x.type==='page').webSocketDebuggerUrl);
  await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject});
