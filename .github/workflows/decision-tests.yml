@@ -51,6 +51,8 @@ jobs:
         run: node tests/test_recommendation.cjs
       - name: PWA
         run: node tests/test_pwa.cjs
+      - name: Production SKU provenance and readiness audit
+        run: node scripts/catalog_readiness_audit.cjs
       - name: Catalog evidence regression
         run: python3 -m unittest discover -s tests -p 'test_catalog*.py'
       - name: Catalog mirror
