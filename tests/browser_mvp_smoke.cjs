@@ -8,7 +8,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'hd-chrome-'));
 const binary=process.env.CHROME_BIN||['/usr/bin/google-chrome','/usr/bin/chromium','/usr/bin/chromium-browser'].find(fs.existsSync);
 if(!binary)throw new Error('Chrome/Chromium required for real browser QA');
-const proc=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--remote-allow-origins=*','--remote-debugging-port=0','--user-data-dir='+tmp,'about:blank'],{stdio:['ignore','ignore','pipe']});
+const proc=spawn(binary,['--headless=new','--no-sandbox','--disable-dev-shm-usage','--disable-gpu','--remote-allow-origins=*','--remote-debugging-port=0','--user-data-dir='+tmp,'about:blank'],{stdio:['ignore','ignore','pipe'],env:{...process.env,DBUS_SESSION_BUS_ADDRESS:'unix:path=/run/user/1000/bus'}});
 let browserStderr='';proc.stderr?.on('data',chunk=>{browserStderr=(browserStderr+chunk.toString()).slice(-5000)});const messages=new Map();let next=1,ws;
 function send(method,params={}){const id=next++;return new Promise((resolve,reject)=>{messages.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));setTimeout(()=>{if(messages.has(id)){messages.delete(id);reject(new Error('CDP timeout: '+method))}},12000).unref()})}
 async function expr(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.result?.exceptionDetails)throw new Error(r.result.exceptionDetails.text+': '+(r.result.exceptionDetails.exception?.description||expression));return r.result.result?.value}
@@ -16,7 +16,7 @@ async function reset(){await expr("restartToWizard();flowMode='quick';render()")
 async function completeBase(){await expr("s.sun='morning';s.glass='low';s.overhead='room_above';s.people=2;s.usage='night';s.budgetMode='unset';s.priorities=['saving','quiet','price'];")}
 async function run(){
  let targets;
- for(let n=0;n<90;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split(String.fromCharCode(10))[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
+ for(let n=0;n<280;n++){try{const port=fs.readFileSync(path.join(tmp,'DevToolsActivePort'),'utf8').split(String.fromCharCode(10))[0];targets=await(await fetch('http://127.0.0.1:'+port+'/json')).json();if(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl)break}catch(e){}await sleep(160)}
  assert(targets?.find(x=>x.type==='page')?.webSocketDebuggerUrl,'Chrome CDP endpoint unavailable; exit='+proc.exitCode+'; stderr='+browserStderr+'; portFile='+fs.existsSync(path.join(tmp,'DevToolsActivePort')));
  ws=new WebSocket(targets.find(x=>x.type==='page').webSocketDebuggerUrl);
  await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject});
@@ -54,6 +54,21 @@ async function run(){
    assert.equal(await expr("!!result.querySelector('.hdV6Next')||result.textContent.includes('ตรวจ')"),true,'no products yields honest next steps');
   }
 
+  // Phase 2 user journeys: bounded closed-room variations and honest missing-data fallback.
+  for(const scenario of [{area:12,room:'bed'},{area:20,room:'bed'},{area:30,room:'living'}]){
+   await reset();
+   await expr("hdCorePick('room',"+JSON.stringify(scenario.room)+");hdCorePick('openDetail','closed');next();s.dimensionMode='area';s.area="+scenario.area+";hdCorePick('ceilingClass','normal');next()");
+   await completeBase();await expr("next();next();next();next()");
+   assert.equal(await expr("!result.classList.contains('hidden')"),true,'room '+scenario.area+'sqm reaches result');
+   assert.equal(await expr("document.querySelectorAll('.hdV6Product').length<=3"),true,'Top3 maximum');
+   const offers=await expr("Array.from(document.querySelectorAll('.hdV6Product')).map(x=>x.innerText)");
+   assert.equal(offers.every(x=>x.includes('ยังไม่รวมค่าติดตั้ง')&&x.includes('ตรวจ')),true,'offers disclose equipment-only and site caveat');
+   assert.equal(await expr("document.documentElement.scrollWidth<=innerWidth+1"),true,'room '+scenario.area+' has no overflow');
+  }
+  await reset();
+  await expr("hdCorePick('room','bed');hdCorePick('openDetail','unknown');next();s.dimensionMode='area';s.area=16;hdCorePick('ceilingClass','normal');next()");
+  await completeBase();await expr("next();next()");
+  assert.equal(await expr("result.querySelectorAll('.hdV6Product').length"),0,'unknown room closure cannot show buy-ready offers');
   await reset();
   await expr("hdCorePick('room','ld');hdCorePick('openDetail','open');next();s.dimensionMode='area';s.area=50;hdCorePick('ceilingClass','normal');next()");
   await completeBase();

@@ -53,5 +53,7 @@ jobs:
         run: node tests/test_pwa.cjs
       - name: Catalog evidence regression
         run: python3 -m unittest discover -s tests -p 'test_catalog*.py'
+      - name: Phase 2 catalog evidence coverage audit
+        run: python3 scripts/audit_phase2_catalog.py
       - name: Catalog mirror
         run: python3 scripts/catalog_watcher.py --check-mirror --output-dir reports/run
