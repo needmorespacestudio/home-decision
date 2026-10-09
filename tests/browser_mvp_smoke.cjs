@@ -54,6 +54,23 @@ async function run(){
    assert.equal(await expr("!!result.querySelector('.hdV6Next')||result.textContent.includes('ตรวจ')"),true,'no products yields honest next steps');
   }
 
+  // Additional homeowner profiles use the real DOM and decision engine, not a mocked result.
+  for(const sample of [{area:12,room:'bed'},{area:20,room:'bed'},{area:28,room:'living'},{area:35,room:'living'}]){
+   await reset();
+   await expr("hdCorePick('room',"+JSON.stringify(sample.room)+");hdCorePick('openDetail','closed');next();s.dimensionMode='area';s.area="+sample.area+";hdCorePick('ceilingClass','normal');next()");
+   await completeBase();
+   await expr("next();next()");
+   if(await expr("getQs()[i][0]==='budget'"))await expr("next();next()");
+   assert.equal(await expr("!result.classList.contains('hidden')"),true,sample.room+' '+sample.area+'sqm yields a result');
+   assert.equal(await expr("document.documentElement.scrollWidth<=innerWidth+1"),true,'no overflow for '+sample.area+'sqm result');
+   assert.equal(await expr("!result.querySelector('.hdV6ProductCompare') || Array.from(result.querySelectorAll('.hdV6ProductCompare')).every(e=>e.querySelector('a[target=_blank]')&&e.querySelector('.hdV6Data')&&e.querySelector('.hdV6Price'))"),true,'any shortlisted product has source, confidence and price clarity');
+   assert.equal(await expr("!result.querySelector('.hdV6ProductCompare') || !result.textContent.includes('99% เหมาะ')"),true,'do not invent percentage fit');
+  }
+  await reset();
+  await expr("hdCorePick('room','bed');hdCorePick('openDetail','unknown');next();s.dimensionMode='area';s.area=16;hdCorePick('ceilingClass','normal');next()");
+  await completeBase();
+  await expr("next();next()");
+  assert.equal(await expr("result.querySelectorAll('.hdV6Product').length"),0,'unknown room boundary must not produce purchase-ready recommendation');
   await reset();
   await expr("hdCorePick('room','ld');hdCorePick('openDetail','open');next();s.dimensionMode='area';s.area=50;hdCorePick('ceilingClass','normal');next()");
   await completeBase();
