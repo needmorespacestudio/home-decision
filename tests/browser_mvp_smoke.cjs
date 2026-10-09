@@ -54,6 +54,21 @@ async function run(){
    assert.equal(await expr("!!result.querySelector('.hdV6Next')||result.textContent.includes('ตรวจ')"),true,'no products yields honest next steps');
   }
 
+  // Phase 2 user journeys: bounded closed-room variations and honest missing-data fallback.
+  for(const scenario of [{area:12,room:'bed'},{area:20,room:'bed'},{area:30,room:'living'}]){
+   await reset();
+   await expr("hdCorePick('room',"+JSON.stringify(scenario.room)+");hdCorePick('openDetail','closed');next();s.dimensionMode='area';s.area="+scenario.area+";hdCorePick('ceilingClass','normal');next()");
+   await completeBase();await expr("next();next();next();next()");
+   assert.equal(await expr("!result.classList.contains('hidden')"),true,'room '+scenario.area+'sqm reaches result');
+   assert.equal(await expr("document.querySelectorAll('.hdV6Product').length<=3"),true,'Top3 maximum');
+   const offers=await expr("Array.from(document.querySelectorAll('.hdV6Product')).map(x=>x.innerText)");
+   assert.equal(offers.every(x=>x.includes('ยังไม่รวมค่าติดตั้ง')&&x.includes('ตรวจ')),true,'offers disclose equipment-only and site caveat');
+   assert.equal(await expr("document.documentElement.scrollWidth<=innerWidth+1"),true,'room '+scenario.area+' has no overflow');
+  }
+  await reset();
+  await expr("hdCorePick('room','bed');hdCorePick('openDetail','unknown');next();s.dimensionMode='area';s.area=16;hdCorePick('ceilingClass','normal');next()");
+  await completeBase();await expr("next();next()");
+  assert.equal(await expr("result.querySelectorAll('.hdV6Product').length"),0,'unknown room closure cannot show buy-ready offers');
   await reset();
   await expr("hdCorePick('room','ld');hdCorePick('openDetail','open');next();s.dimensionMode='area';s.area=50;hdCorePick('ceilingClass','normal');next()");
   await completeBase();
