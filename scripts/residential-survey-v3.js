@@ -500,6 +500,19 @@ function hdResultV6(){
   const relevant=reasons.filter(x=>!String(x).includes('ยังต้องยืนยัน')).slice(1,3);
   return relevant.length?relevant.join(' · '):'ข้อมูลคุณสมบัติตามความชอบยังไม่ครบ';
  };
+ const priceText=p=>typeof verifiedPrice==='function'&&verifiedPrice(p)&&Number(p.price_thb)>0?'ราคาเครื่องอ้างอิง '+Number(p.price_thb).toLocaleString('th-TH')+' บาท':'ราคาเครื่องยังไม่มีข้อมูลยืนยัน';
+ const caveat=p=>{
+  const missing=[];
+  if(!Array.isArray(p.verified_fields)||!p.verified_fields.includes('phase'))missing.push('ระบบไฟ');
+  if(!(typeof verifiedPrice==='function'&&verifiedPrice(p)))missing.push('ราคา');
+  if(p.lifecycle!=='active')missing.push('สถานะจำหน่าย');
+  return missing.length?'ต้องตรวจ '+missing.join(' / ')+' กับร้าน':'ยังต้องตรวจสต็อกและค่าติดตั้ง';
+ };
+ const capacityText=()=>{
+  const zones=Array.isArray(c.zone_plan)?c.zone_plan:[];
+  const b=zones.length===1?Number(zones[0].capacity_per_unit_target):NaN;
+  return Number.isFinite(b)&&b>0?'ขนาดเป้าหมายเบื้องต้น '+b.toLocaleString('th-TH')+' BTU/h':'ตรวจช่วง BTU และขนาดห้องในรายละเอียด';
+ };
  const oldNodes=Array.from(result.children);
  const details=document.createElement('details');details.className='hdV6Details';details.id='hdV6Details';
  details.innerHTML='<summary>ดูข้อมูลเพิ่มเติมและเอกสารสำหรับร้าน <span aria-hidden="true">⌄</span></summary><p>ข้อมูลทางเทคนิค ข้อจำกัด รูปแบบติดตั้งเพิ่มเติม และเอกสารสรุปของคุณ</p>';
@@ -516,14 +529,14 @@ function hdResultV6(){
  const lead=document.createElement('div');lead.className='hdV6Content';
  if(top.length&&!complex){
   const el=document.createElement('section');el.className='hdV6List';
-  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>'+top.length+' รุ่นที่ผ่านการคัดกรอง</h2><p>เรียงลำดับจากเกณฑ์คัดกรอง ไม่ใช่คะแนนความเหมาะสมเป็นเปอร์เซ็นต์</p></div>'+
-  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="showProductDetail('+esc(JSON.stringify(p.id))+')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · แตะดูรายละเอียด</small><small class="hdV6FitWhy">'+esc(explainModel(p))+'</small></span><span>↗</span></button>').join('')+
+  el.innerHTML='<div class="hdV6SectionHead"><span>เปรียบเทียบรุ่น</span><h2>'+top.length+' รุ่นที่ผ่านการคัดกรอง</h2><p>'+esc(capacityText())+' · เรียงตามความต้องการและความเข้ากันได้ ไม่ใช่เปอร์เซ็นต์รับรอง · เฉพาะรุ่นในฐานข้อมูล</p></div>'+
+  top.map((p,i)=>'<button type="button" class="hdV6Product" onclick="showProductDetail('+esc(JSON.stringify(p.id))+')"><span class="hdV6Rank">0'+(i+1)+'</span><span class="hdV6ProductText"><b>'+esc(p.brand+' '+p.model)+'</b><small>'+Number(p.nominal_btu||0).toLocaleString('th-TH')+' BTU · แตะดูรายละเอียด</small><small class="hdV6FitWhy">'+esc(explainModel(p))+'</small><small class="hdV6Price">'+esc(priceText(p))+' · ยังไม่รวมค่าติดตั้ง</small><small class="hdV6Caveat">'+esc(caveat(p))+'</small></span><span>ดูรุ่น ↗</span></button>').join('')+
   '<p class="hdV6Disclaimer">ยังต้องตรวจราคา สต็อก และค่าติดตั้งกับร้านก่อนตัดสินใจ</p>';
   lead.appendChild(el);
  }else{
   const el=document.createElement('section');el.className='hdV6Next';
   el.innerHTML='<div class="hdV6SectionHead"><span>ขั้นตอนต่อไป</span><h2>'+(complex?'ให้ช่างตรวจตำแหน่งจ่ายลม':'ตรวจรุ่นและข้อจำกัดเพิ่มเติม')+'</h2></div>'+
-  '<p>'+(complex?'อย่าเพิ่งซื้อจากขนาด BTU รวมอย่างเดียว ให้ร้านตรวจแปลน ขอบเขตพื้นที่ และการกระจายลมก่อน':'ยังไม่มีรุ่นที่ยืนยันตรงโจทย์ครบทุกเงื่อนไข ใช้สรุปข้อมูลเพื่อขอคำแนะนำจากร้าน')+'</p>'+
+  '<p>'+(complex?'อย่าเพิ่งซื้อจากขนาด BTU รวมอย่างเดียว ให้ร้านตรวจแปลน ขอบเขตพื้นที่ และการกระจายลมก่อน':'ยังไม่มีรุ่นที่ผ่านการคัดกรองครบในฐานข้อมูลปัจจุบัน ให้ร้านตรวจขนาด ระบบไฟ และสถานะจำหน่ายก่อนตัดสินใจ')+'</p>'+
   '<button class="hdV6LinkButton" onclick="document.getElementById(\'hdV6Details\').open=true;document.getElementById(\'hdV6Details\').scrollIntoView({behavior: \'smooth\'})">ดูข้อมูลสำหรับส่งร้าน ↗</button>';
   lead.appendChild(el);
  }
