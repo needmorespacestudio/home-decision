@@ -1,0 +1,19 @@
+name: Catalog evidence review queue
+on:
+  push:
+    branches: [main, 'sprint/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  review-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Evidence queue tests
+        run: python3 -m unittest discover -s tests -p 'test_catalog_review_priorities.py'
+      - name: Generate read-only review queue
+        run: python3 scripts/catalog_review_priorities.py > /tmp/catalog-evidence-review.json
