@@ -60,6 +60,28 @@ class CatalogReviewTest(unittest.TestCase):
         self.assertEqual(r["summary"]["recommendation_ready_flagged"], 0)
         self.assertEqual(r["summary"]["ready_missing_current_unit_price_evidence"], 0)
 
+    def test_price_needs_scope_date_and_field_provenance(self):
+        p = sample(
+            price_thb=10000,
+            price_scope="unit_only",
+            price_status="verified_current",
+            price_url="https://example.org/retail",
+            price_checked_at="2026-10-07",
+            verified_fields=["model", "nominal_btu", "lifecycle", "price_thb"],
+        )
+        self.assertTrue(audit([p], as_of="2026-10-11")["queue"][0][
+            "missing_current_unit_price_evidence"])
+        p["evidence"]["price_thb"] = {
+            "source": "https://example.org/retail", "checked_at": "2026-10-07"
+        }
+        self.assertFalse(audit([p], as_of="2026-10-11")["queue"][0][
+            "missing_current_unit_price_evidence"])
+        self.assertTrue(audit([p], as_of="2026-12-11")["queue"][0][
+            "missing_current_unit_price_evidence"])
+        p["price_scope"] = "unclear"
+        self.assertTrue(audit([p], as_of="2026-10-11")["queue"][0][
+            "missing_current_unit_price_evidence"])
+
     def test_order_stable_and_inherited_evidence_disclosed(self):
         a = sample(id="a", evidence={
             "model": {"source": "https://example.org", "checked_at": "2026-10-07",
