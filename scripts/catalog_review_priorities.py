@@ -32,7 +32,7 @@ def _review_age_days(value, as_of):
     return age if age >= 0 else None
 
 
-def _has_current_unit_price(product):
+def _has_current_unit_price(product, as_of):
     """Conservative review marker, not proof of stock or a retail offer."""
     price = product.get("price_thb")
     return (
@@ -41,7 +41,7 @@ def _has_current_unit_price(product):
         and product.get("price_scope") in ("unit_only", "equipment_only")
         and product.get("price_status") in ("current", "verified_current")
         and bool(product.get("price_url"))
-        and _review_age_days(product.get("price_checked_at"), date.today()) is not None
+        and _review_age_days(product.get("price_checked_at"), as_of) is not None
         and ("price_thb" in (product.get("verified_fields") or [])
              or "price" in (product.get("verified_fields") or []))
     )
@@ -66,7 +66,7 @@ def audit(rows, as_of=None):
             if isinstance(evidence, dict)
             and "inherited" in str(evidence.get("confidence_scope", "")).lower()
         )
-        current_unit_price = _has_current_unit_price(product)
+        current_unit_price = _has_current_unit_price(product, as_of)
         if ready:
             ready_count += 1
             gaps.update(missing)
