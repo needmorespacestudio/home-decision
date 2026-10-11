@@ -32,6 +32,11 @@ def _review_age_days(value, as_of):
     return age if age >= 0 else None
 
 
+def _is_recent(value, as_of):
+    age = _review_age_days(value, as_of)
+    return age is not None and age <= REVIEW_INTERVAL_DAYS
+
+
 def _has_current_unit_price(product, as_of):
     """Conservative review marker, not proof of stock or a retail offer."""
     price = product.get("price_thb")
@@ -41,7 +46,7 @@ def _has_current_unit_price(product, as_of):
         and product.get("price_scope") in ("unit_only", "equipment_only")
         and product.get("price_status") in ("current", "verified_current")
         and bool(product.get("price_url"))
-        and _review_age_days(product.get("price_checked_at"), as_of) is not None
+        and _is_recent(product.get("price_checked_at"), as_of)
         and ("price_thb" in (product.get("verified_fields") or [])
              or "price" in (product.get("verified_fields") or []))
     )
