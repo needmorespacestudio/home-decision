@@ -1,5 +1,5 @@
 # Catalog evidence review plan
 
-This work is read-only. Source links and checked dates are not proof of current stock or prices. Prioritize exact-model capacity, electrical phase, lifecycle, and unit-only current retail evidence. Never promote a product automatically. Keep all market denominators unknown until independently audited.
+The offline queue is a read-only triage of 53 repository records, not a live market survey. It separates technical field evidence, price scope/date/source, inherited evidence, and age of last recorded check. The presence of a URL or checked date is not proof of current stock, prices, or field accuracy. Unknown market denominators remain null. No product eligibility or recommendation is changed.
 
-Next: implement an offline deterministic review queue, unit tests, CI, and verify Preview before merge.
+Run `python3 scripts/catalog_review_priorities.py` and `python3 -m unittest discover -s tests -p 'test_catalog_review_priorities.py'`. Human reviewers must confirm exact variant identity, electrical supply, lifecycle and retailer equipment-only prices from lawful sources before any catalog promotion. Independent HVAC sign-off is tracked separately in Issue #3.
