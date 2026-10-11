@@ -47,8 +47,7 @@ def _has_current_unit_price(product, as_of):
         and product.get("price_status") in ("current", "verified_current")
         and bool(product.get("price_url"))
         and _is_recent(product.get("price_checked_at"), as_of)
-        and ("price_thb" in (product.get("verified_fields") or [])
-             or "price" in (product.get("verified_fields") or []))
+        and _field_has_evidence(product, "price_thb")
     )
 
 
